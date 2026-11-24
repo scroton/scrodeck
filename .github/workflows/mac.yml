@@ -1,7 +1,7 @@
 # .github/workflows/mac.yml - the Swift shell's first builds, on GitHub's macOS runners (there is no Mac here).
-# 2026-11-19 (an ask page): "yes, within the included minutes". The repo is PRIVATE, so macOS minutes count
-# 10x against the plan's included Actions minutes: this runs ONLY when started by hand (workflow_dispatch), never on a
-# push, with a 25-minute cap. Order as mac/README.md "First-build checklist" asks: the core on Apple clang first, each
+# This repo is PUBLIC, so GitHub's macOS minutes are free: the workflow runs on every push and pull request (and by
+# hand), with a 25-minute cap. A step that fails shows red in its own line AND fails the job (the last step).
+# Order as mac/README.md "First-build checklist" asks: the core on Apple clang first, each
 # layer upward, `swift build` last - every step runs (continue-on-error) so ONE run shows every layer's state.
 name: mac
 on:
@@ -16,6 +16,9 @@ on:
 jobs:
   build:
     runs-on: macos-latest
+    defaults:
+      run:
+        shell: bash
     timeout-minutes: 25
     steps:
       # the deck suite's route bodies were recorded from the office PC's checkout (Windows line endings) and serve
@@ -28,18 +31,23 @@ jobs:
       - name: toolchain
         run: clang++ --version; swift --version; sw_vers
       - name: core model (core/test/run.cpp)
+        id: model
         continue-on-error: true
         run: clang++ -std=c++17 -O2 core/model/layout.cpp core/model/hibernate.cpp core/model/prompts.cpp core/model/triggers.cpp core/test/run.cpp -o /tmp/deck-model && /tmp/deck-model
       - name: core vt (xterm.js parity)
+        id: vt
         continue-on-error: true
         run: clang++ -std=c++17 -O2 -Wall core/vt/terminal.cpp core/vt/buffer.cpp core/vt/parser.cpp core/vt/unicode.cpp core/test/vt/vt_test.cpp -o /tmp/deck-vt && /tmp/deck-vt core/test/fixtures/vt
       - name: core proto
+        id: proto
         continue-on-error: true
         run: clang++ -std=c++17 -O1 -Wall core/test/proto/proto_test.cpp -o /tmp/deck-proto && /tmp/deck-proto core/test/fixtures
       - name: core session
+        id: session
         continue-on-error: true
         run: clang++ -std=c++17 -O1 -Wall core/session/*.cpp core/test/session/session_test.cpp -o /tmp/deck-session && /tmp/deck-session core/test/fixtures/session
       - name: core deck (Windows fakes, then --posix)
+        id: deck
         continue-on-error: true
         run: |
           clang++ -std=c++17 -O1 -Wall -Wextra core/deck/*.cpp core/session/*.cpp core/model/layout.cpp core/test/deck/*.cpp -o /tmp/deck-deck
@@ -49,18 +57,30 @@ jobs:
           grep -E "^FAIL|passed" /tmp/deck-posix.txt | head -120
           grep -q " 0 failed" /tmp/deck-win.txt && grep -q " 0 failed" /tmp/deck-posix.txt
       - name: core input (keys, mouse)
+        id: input
         continue-on-error: true
         run: |
           clang++ -std=c++17 -O1 -Wall -Wextra core/test/input/keys_test.cpp core/deck/platform.cpp core/deck/util.cpp -o /tmp/deck-keys && /tmp/deck-keys | tail -3
           clang++ -std=c++17 -O1 -Wall core/test/input/mouse_test.cpp -o /tmp/deck-mouse && /tmp/deck-mouse core/test/input/mouse-vectors.json | tail -3
       - name: mac bridge test (the C facade on fake seams)
+        id: bridge
         continue-on-error: true
         run: |
           clang++ -std=c++17 -O1 -Wall -I . -I mac/Sources/DeckCoreBridge/include -I mac/Sources/DeckMacSeams \
             core/deck/*.cpp core/session/*.cpp core/vt/*.cpp core/model/layout.cpp \
             mac/Sources/DeckCoreBridge/DeckBridge.cpp mac/Tests/bridge_test.cpp -o /tmp/deck-bridge && /tmp/deck-bridge | tail -5
       - name: swift build (mac/)
-        if: ${{ inputs.swift }}
+        id: swift
+        if: ${{ github.event_name != 'workflow_dispatch' || inputs.swift }}
         continue-on-error: true
         working-directory: mac
         run: swift build 2>&1 | tail -150
+      - name: fail the run if any step above failed
+        if: ${{ always() }}
+        run: |
+          bad=0
+          for s in model:${{ steps.model.outcome }} vt:${{ steps.vt.outcome }} proto:${{ steps.proto.outcome }} session:${{ steps.session.outcome }} deck:${{ steps.deck.outcome }} input:${{ steps.input.outcome }} bridge:${{ steps.bridge.outcome }} swift:${{ steps.swift.outcome }}; do
+            echo "$s"
+            case "$s" in *:failure) bad=1;; esac
+          done
+          exit $bad
