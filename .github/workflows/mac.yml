@@ -75,11 +75,17 @@ jobs:
         continue-on-error: true
         working-directory: mac
         run: swift build 2>&1 | tail -150
+      - name: swift build -c release (mac/)
+        id: swiftrel
+        if: ${{ always() }}
+        continue-on-error: true
+        working-directory: mac
+        run: swift build -c release 2>&1 | tail -150
       - name: fail the run if any step above failed
         if: ${{ always() }}
         run: |
           bad=0
-          for s in model:${{ steps.model.outcome }} vt:${{ steps.vt.outcome }} proto:${{ steps.proto.outcome }} session:${{ steps.session.outcome }} deck:${{ steps.deck.outcome }} input:${{ steps.input.outcome }} bridge:${{ steps.bridge.outcome }} swift:${{ steps.swift.outcome }}; do
+          for s in model:${{ steps.model.outcome }} vt:${{ steps.vt.outcome }} proto:${{ steps.proto.outcome }} session:${{ steps.session.outcome }} deck:${{ steps.deck.outcome }} input:${{ steps.input.outcome }} bridge:${{ steps.bridge.outcome }} swift:${{ steps.swift.outcome }} swiftrel:${{ steps.swiftrel.outcome }}; do
             echo "$s"
             case "$s" in *:failure) bad=1;; esac
           done
