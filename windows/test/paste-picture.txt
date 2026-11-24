@@ -1,0 +1,4 @@
+wait 900; click 700 400; wait 300; feed \e[?2004h; wait 100;
+clipimg 5000; tap ctrl+V; wait 1500;
+clipimg 0; tap ctrl+V; wait 300;
+clipimg 100; rclick 700 400; wait 1500

@@ -1,0 +1,659 @@
+{
+  "now": 1795030640000,
+  "restoring": false,
+  "accounts": [
+    {
+      "id": "main",
+      "label": "main",
+      "abbr": "m",
+      "email": "main@example.com",
+      "key": "1",
+      "isDefault": true
+    },
+    {
+      "id": "work",
+      "label": "work",
+      "abbr": "wk",
+      "email": "work@example.com",
+      "key": "2",
+      "isDefault": false
+    },
+    {
+      "id": "side",
+      "label": "side",
+      "abbr": "",
+      "email": "side@example.com",
+      "key": "3",
+      "isDefault": false
+    }
+  ],
+  "settings": {
+    "fontSize": 14,
+    "zoomFontSize": 0,
+    "fontFamily": "",
+    "cwd": "C:\\Users\\you",
+    "effortStyle": "tag",
+    "sidebarSide": "left",
+    "pinSide": "edge",
+    "bars": {
+      "session": {
+        "show": true,
+        "name": "Session (5 h)",
+        "from": "#22c55e",
+        "to": "#ef4444"
+      },
+      "week": {
+        "show": true,
+        "name": "Week",
+        "from": "#22c55e",
+        "to": "#ef4444"
+      },
+      "fable": {
+        "show": true,
+        "name": "Fable (if applicable)",
+        "from": "#22d3ee",
+        "to": "#d946ef"
+      },
+      "context": {
+        "show": true,
+        "name": "Context",
+        "from": "#fbbf24",
+        "to": "#f97316"
+      }
+    },
+    "barLabels": {
+      "time": true,
+      "day": true
+    },
+    "barLabelMode": "reset",
+    "msgLines": {
+      "normal": 3,
+      "wide": 10
+    },
+    "notify": {
+      "waiting": true,
+      "done": true
+    },
+    "animations": true,
+    "driver": "auto",
+    "grid": {
+      "rows": 2,
+      "cols": 2
+    },
+    "oneWindow": true,
+    "stepEscape": true,
+    "asks": {
+      "showTile": true,
+      "showMarks": true,
+      "closeOnDone": true
+    },
+    "pages": []
+  },
+  "groups": [
+    "build bot",
+    "bug queues"
+  ],
+  "usage": {
+    "main": {
+      "state": "ok",
+      "fetchedAt": 1795030600000,
+      "plan": "max",
+      "session": {
+        "used": 37,
+        "resetsAt": "2026-11-18T22:00:00.000000+00:00"
+      },
+      "week": {
+        "used": 71,
+        "resetsAt": "2026-11-22T15:00:00.000000+00:00"
+      },
+      "scoped": [
+        {
+          "model": "Fable",
+          "used": 58,
+          "resetsAt": "2026-11-22T15:00:00.000000+00:00"
+        }
+      ]
+    },
+    "work": {
+      "state": "ok",
+      "fetchedAt": 1795030600000,
+      "plan": "max",
+      "session": {
+        "used": 92,
+        "resetsAt": "2026-11-18T20:10:00.000000+00:00"
+      },
+      "week": {
+        "used": 14,
+        "resetsAt": "2026-11-24T08:00:00.000000+00:00"
+      },
+      "scoped": [
+        {
+          "model": "Claude Fable 5",
+          "used": 96,
+          "resetsAt": "2026-11-24T08:00:00.000000+00:00"
+        }
+      ]
+    },
+    "side": {
+      "state": "expired",
+      "plan": "pro",
+      "fetchedAt": 1795030600000
+    }
+  },
+  "triggers": [
+    {
+      "name": "ci_green",
+      "on": false
+    }
+  ],
+  "restart": {
+    "armed": true,
+    "why": "manual",
+    "armedAt": 1795030500000,
+    "quietSince": null,
+    "settleLeftMs": null,
+    "blockers": [
+      {
+        "id": "t1",
+        "title": "Port the worklist todo list to web",
+        "reason": "mid-turn (4 min)"
+      },
+      {
+        "id": "t2",
+        "title": "Bug queue: fold open PRs per base case before the shortfall maths",
+        "reason": "waiting for you (permission: Bash)"
+      },
+      {
+        "id": "t6",
+        "title": "untitled session",
+        "reason": "starting up"
+      }
+    ],
+    "shells": 1,
+    "update": null
+  },
+  "browserOption": true,
+  "cloudOption": true,
+  "asks": [
+    {
+      "sessionId": "sess-0002",
+      "name": "bug-queue",
+      "account": "work",
+      "ended": false,
+      "latest": "2026-11-18T19:21:00.000Z",
+      "total": 5,
+      "drafted": 0,
+      "sent": false,
+      "rounds": [
+        {
+          "id": "ask_a1",
+          "round": 1,
+          "created": "2026-11-18T19:21:00.000Z",
+          "title": "Bug queue decisions",
+          "total": 5,
+          "answered": 0,
+          "later": 0,
+          "drafted": 0,
+          "sent": null,
+          "replaces": [],
+          "items": []
+        }
+      ]
+    },
+    {
+      "sessionId": "sess-outside-9",
+      "name": "label sizes run",
+      "title": "Label sizes: which stock for 10 px",
+      "account": "main",
+      "ended": false,
+      "latest": "2026-11-18T17:02:00.000Z",
+      "total": 3,
+      "drafted": 2,
+      "sent": false,
+      "rounds": [
+        {
+          "id": "ask_b1",
+          "round": 2,
+          "created": "2026-11-18T17:02:00.000Z",
+          "title": "Label sizes",
+          "total": 3,
+          "answered": 0,
+          "later": 0,
+          "drafted": 2,
+          "sent": null,
+          "replaces": [],
+          "items": []
+        }
+      ]
+    }
+  ],
+  "askLog": [
+    {
+      "id": "ask_z9",
+      "sessionId": "sess-0001",
+      "name": "worklist",
+      "account": "main",
+      "title": "Worklist cutover",
+      "round": 1,
+      "at": 1795023440000,
+      "how": "deck",
+      "lines": [],
+      "total": 4,
+      "answered": 4,
+      "url": null
+    },
+    {
+      "id": "ask_z8",
+      "sessionId": "sess-0004",
+      "name": "handoff",
+      "account": "main",
+      "title": "Handoff",
+      "round": 1,
+      "at": 1794944240000,
+      "how": "deck",
+      "lines": [],
+      "total": 2,
+      "answered": 2,
+      "url": null
+    }
+  ],
+  "tiles": [
+    {
+      "id": "t1",
+      "kind": "claude",
+      "account": "main",
+      "sessionId": "sess-0001",
+      "pinned": true,
+      "group": "build bot",
+      "title": "Port the worklist todo list to web",
+      "lastText": "Reading the todo-list formulas now.",
+      "model": "claude-fable-5-2",
+      "effort": "xhigh",
+      "ultracode": true,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": 46,
+      "lastAt": 1795030635000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": {
+        "cols": 120,
+        "rows": 40
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [
+        "w0"
+      ],
+      "inWindow": 0,
+      "sleepBlocker": "busy",
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795030000000,
+      "status": "busy",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t2",
+      "kind": "claude",
+      "account": "work",
+      "sessionId": "sess-0002",
+      "pinned": true,
+      "group": "bug queues",
+      "title": "Bug queue: fold open PRs per base case before the shortfall maths",
+      "lastText": "I need to run the lookup against the live sheet.\n\nAllow `python lookup.py job results`?  ⚠️ this reads the LIVE sheet, never a stale copy\n\n1. Yes\n2. Yes, and don't ask again\n3. No",
+      "model": "claude-opus-4-8",
+      "effort": "high",
+      "ultracode": false,
+      "browser": false,
+      "desk": null,
+      "attention": false,
+      "context": 81,
+      "lastAt": 1795030340000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": {
+        "cols": 120,
+        "rows": 40
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": "waiting for you",
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795030340000,
+      "status": "waiting",
+      "waitingFor": "permission: Bash",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": [
+        {
+          "id": "h1",
+          "kind": "timed",
+          "text": "continue with the ACM reorder once the session limit resets\nthen post the table",
+          "at": 1795039800000,
+          "state": "held",
+          "note": null
+        },
+        {
+          "id": "h2",
+          "kind": "recurring",
+          "text": "check the open PRs sheet for new rows",
+          "everyMin": 30,
+          "startMin": 540,
+          "endMin": 1020,
+          "state": "held",
+          "note": null
+        },
+        {
+          "id": "h3",
+          "kind": "next",
+          "text": "also fold the DEV logs into Results",
+          "state": "due",
+          "note": "waiting for you"
+        }
+      ]
+    },
+    {
+      "id": "t3",
+      "kind": "claude",
+      "account": "side",
+      "sessionId": "sess-0003",
+      "pinned": false,
+      "group": "build bot",
+      "title": "ラベル印刷の調査 — test labels 10 px 🏷️ reprint for the new launch collection",
+      "lastText": "完了しました ✅ ラック用ラベルを 48 枚生成しました。\n次のステップ: Morgan に送信する前にサイズを確認してください (2.25\" × 1.25\")。\nFiles: test-labels-10ml.pdf, slot-map.xlsx\nA fourth line that must be cut by the clamp.",
+      "model": "claude-sonnet-4-9",
+      "effort": "medium",
+      "ultracode": false,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": 23,
+      "lastAt": 1795029740000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": {
+        "cols": 120,
+        "rows": 40
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": 1,
+      "sleepBlocker": null,
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795029740000,
+      "status": "idle",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t4",
+      "kind": "claude",
+      "account": "main",
+      "sessionId": "sess-0004",
+      "pinned": false,
+      "group": null,
+      "title": "Handoff: append the 11-18 entry",
+      "lastText": "Done. The HANDOFF entry is inserted above the top heading and the work file moved to docs/work/finished/.",
+      "model": "claude-fable-5-2",
+      "effort": "max",
+      "ultracode": false,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": 12,
+      "lastAt": 1795016240000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": null,
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": true,
+      "sleptAt": 1795019840000,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": null,
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795016240000,
+      "status": "asleep",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t5",
+      "kind": "shell",
+      "account": null,
+      "sessionId": null,
+      "pinned": false,
+      "group": null,
+      "title": null,
+      "lastText": null,
+      "model": null,
+      "effort": null,
+      "ultracode": false,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": null,
+      "lastAt": 1795028240000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": {
+        "cols": 120,
+        "rows": 40
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": null,
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795010000000,
+      "status": "shell",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t6",
+      "kind": "claude",
+      "account": "work",
+      "sessionId": null,
+      "pinned": false,
+      "group": "bug queues",
+      "title": null,
+      "lastText": null,
+      "model": null,
+      "effort": null,
+      "ultracode": false,
+      "browser": true,
+      "desk": null,
+      "attention": false,
+      "context": null,
+      "lastAt": 1795030630000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": {
+        "cols": 120,
+        "rows": 40
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": "starting",
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1795005000000,
+      "status": "starting",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": true,
+      "held": []
+    },
+    {
+      "id": "t7",
+      "kind": "claude",
+      "account": "side",
+      "sessionId": "sess-0007",
+      "pinned": false,
+      "group": null,
+      "title": "CSV table rebuild",
+      "lastText": "Traceback (most recent call last):\n  File \"parse_sds.py\", line 88, in <module>\nKeyError: 'flash_point'",
+      "model": "claude-haiku-4-5",
+      "effort": "low",
+      "ultracode": false,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": 64,
+      "lastAt": 1794860000000,
+      "bridge": null,
+      "mirror": null,
+      "ptySize": null,
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": null,
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1794860000000,
+      "status": "off",
+      "exited": true,
+      "exitCode": 1,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t8",
+      "kind": "claude",
+      "account": "work",
+      "sessionId": "sess-0008",
+      "pinned": false,
+      "group": "bug queues",
+      "title": "API plan: Charlie's quantity changes",
+      "lastText": "Both drafts are in your self-DM. Quantities: 60 → 120 units on three URLs; two jobs are rescheduled.",
+      "model": "Claude Fable 5",
+      "effort": "max",
+      "ultracode": true,
+      "browser": null,
+      "desk": "web",
+      "attention": true,
+      "context": 97,
+      "lastAt": 1795027000000,
+      "bridge": null,
+      "mirror": {
+        "cols": 52,
+        "rows": 30
+      },
+      "ptySize": {
+        "cols": 52,
+        "rows": 30
+      },
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [
+        "phone"
+      ],
+      "inWindow": null,
+      "sleepBlocker": "a phone is watching",
+      "driver": "phone",
+      "driverAt": 1795027000000,
+      "lastStoppedAt": 1794990000000,
+      "status": "idle",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": []
+    },
+    {
+      "id": "t9",
+      "kind": "cloud",
+      "account": "main",
+      "sessionId": null,
+      "pinned": false,
+      "group": null,
+      "title": "Cloud: page inventory of the build bot",
+      "lastText": "Listing every route under app/ and who made it.",
+      "model": "claude-fable-5-2",
+      "effort": null,
+      "ultracode": false,
+      "browser": null,
+      "desk": null,
+      "attention": false,
+      "context": null,
+      "lastAt": 1795030000000,
+      "bridge": "cse_01abc",
+      "mirror": null,
+      "ptySize": null,
+      "altScreen": false,
+      "mouseOn": false,
+      "sgrMouse": false,
+      "asleep": false,
+      "sleptAt": null,
+      "shownBy": [],
+      "inWindow": null,
+      "sleepBlocker": null,
+      "driver": null,
+      "driverAt": null,
+      "lastStoppedAt": 1794980000000,
+      "status": "idle",
+      "exited": false,
+      "exitCode": null,
+      "cwd": "C:\\Users\\you",
+      "fresh": false,
+      "held": [],
+      "cloudId": "cse_01abc",
+      "cloudUrl": "https://claude.ai/code/session_01abc",
+      "cloudError": null
+    }
+  ]
+}

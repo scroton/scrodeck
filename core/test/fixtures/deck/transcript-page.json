@@ -1,0 +1,3358 @@
+{
+ "cases": [
+  {
+   "raw": "{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"hello there\"}}\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"Hi.\\r\\nSecond line.\"}]}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":[{\"type\":\"text\",\"text\":\"and a block\"},{\"type\":\"text\",\"text\":\"second block\"}]}}\n",
+   "entries": [
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "hello there",
+     "i": 0
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "Hi.\nSecond line.",
+     "i": 1
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "and a block\n\nsecond block",
+     "i": 2
+    }
+   ],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "hello there",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "Hi.\nSecond line.",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "hello there",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "Hi.\nSecond line.",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "hello there",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "Hi.\nSecond line.",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "hello there",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "Hi.\nSecond line.",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "hello there",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "Hi.\nSecond line.",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 3,
+      "from": 2,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 3,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 3,
+      "from": 2,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "and a block\n\nsecond block",
+        "i": 2
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "raw": "{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"do some work\"}}\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"On it.\"},{\"type\":\"tool_use\",\"id\":\"t1\",\"name\":\"Bash\",\"input\":{\"command\":\"ls -la\\nsecond line\",\"description\":\"list\"}},{\"type\":\"tool_use\",\"id\":\"t2\",\"name\":\"mcp__slack__slack_search_users\",\"input\":{\"query\":\"who\"}}]}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":[{\"type\":\"tool_result\",\"tool_use_id\":\"t1\",\"content\":\"file-a\\nfile-b\"},{\"type\":\"tool_result\",\"tool_use_id\":\"t2\",\"content\":[{\"type\":\"text\",\"text\":\"one\"},{\"type\":\"image\"},{\"type\":\"text\",\"text\":\"two\"}]}]}}\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"tool_use\",\"id\":\"t3\",\"name\":\"Read\",\"input\":{\"file_path\":\"C:\\\\x\\\\y.txt\"}},{\"type\":\"tool_use\",\"id\":\"t4\",\"name\":\"Grep\",\"input\":{\"pattern\":\"needle\",\"path\":\"src\"}},{\"type\":\"tool_use\",\"id\":\"t5\",\"name\":\"Bash\",\"input\":{\"command\":\"xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\"}}]}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":[{\"type\":\"tool_result\",\"tool_use_id\":\"t3\",\"content\":\"rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\"},{\"type\":\"text\",\"text\":\"mixed text with a result\"}]}}\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"tool_use\",\"id\":\"t6\",\"name\":\"Write\",\"input\":{\"file_path\":\"a.txt\",\"content\":\"written body\"}},{\"type\":\"tool_use\",\"id\":\"t7\",\"name\":\"Edit\",\"input\":{\"file_path\":\"a.txt\",\"old_string\":\"old\",\"new_string\":\"new\"}},{\"type\":\"tool_use\",\"id\":\"t8\",\"name\":\"Task\",\"input\":{\"prompt\":\"sub task\"}},{\"type\":\"tool_use\",\"id\":\"t9\",\"name\":\"NotebookEdit\",\"input\":{\"new_source\":\"cell\"}},{\"type\":\"tool_use\",\"id\":\"t10\",\"name\":\"WebFetch\",\"input\":{\"url\":\"https://example.com\"}},{\"type\":\"tool_use\",\"id\":\"t11\",\"name\":\"Odd\",\"input\":{\"n\":5,\"later\":\"  \",\"text\":\" first string value \"}},{\"type\":\"tool_use\",\"id\":null,\"name\":null,\"input\":\"not an object\"},{\"type\":\"tool_use\",\"id\":\"t12\",\"name\":\"Empty\",\"input\":{}}]}}\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:09:00.000Z\",\"effort\":\"\",\"message\":{\"role\":\"assistant\",\"model\":\"\",\"content\":[{\"type\":\"text\",\"text\":\"All done.\"}]},\"n\":9}\n",
+   "entries": [
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "do some work",
+     "i": 0
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "On it.",
+     "i": 1
+    },
+    {
+     "role": "tool",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "Called Bash 2 times, slack, Read, Grep",
+     "calls": [
+      {
+       "name": "Bash",
+       "brief": "ls -la",
+       "body": "ls -la\nsecond line",
+       "result": "file-a\nfile-b"
+      },
+      {
+       "name": "slack",
+       "brief": "who",
+       "body": "",
+       "result": "one\ntwo"
+      },
+      {
+       "name": "Read",
+       "brief": "C:\\x\\y.txt",
+       "body": "",
+       "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+      },
+      {
+       "name": "Grep",
+       "brief": "needle  in src",
+       "body": ""
+      },
+      {
+       "name": "Bash",
+       "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+       "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+      }
+     ],
+     "i": 2
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "tool result",
+     "text": "mixed text with a result",
+     "i": 3
+    },
+    {
+     "role": "tool",
+     "at": "2027-01-15T08:09:00.000Z",
+     "text": "Called Write, Edit, Task, NotebookEdit, WebFetch, Odd, tool, Empty",
+     "calls": [
+      {
+       "name": "Write",
+       "brief": "a.txt",
+       "body": "written body"
+      },
+      {
+       "name": "Edit",
+       "brief": "a.txt",
+       "body": "--- old\nold\n+++ new\nnew"
+      },
+      {
+       "name": "Task",
+       "brief": "sub task",
+       "body": "sub task"
+      },
+      {
+       "name": "NotebookEdit",
+       "brief": "cell",
+       "body": "cell"
+      },
+      {
+       "name": "WebFetch",
+       "brief": "https://example.com",
+       "body": ""
+      },
+      {
+       "name": "Odd",
+       "brief": "first string value",
+       "body": ""
+      },
+      {
+       "name": "tool",
+       "brief": "",
+       "body": ""
+      },
+      {
+       "name": "Empty",
+       "brief": "",
+       "body": ""
+      }
+     ],
+     "i": 4
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:09:00.000Z",
+     "model": null,
+     "effort": null,
+     "text": "All done.",
+     "i": 5
+    }
+   ],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 6,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "do some work",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "On it.",
+        "i": 1
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "Called Bash 2 times, slack, Read, Grep",
+        "calls": [
+         {
+          "name": "Bash",
+          "brief": "ls -la",
+          "body": "ls -la\nsecond line",
+          "result": "file-a\nfile-b"
+         },
+         {
+          "name": "slack",
+          "brief": "who",
+          "body": "",
+          "result": "one\ntwo"
+         },
+         {
+          "name": "Read",
+          "brief": "C:\\x\\y.txt",
+          "body": "",
+          "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+         },
+         {
+          "name": "Grep",
+          "brief": "needle  in src",
+          "body": ""
+         },
+         {
+          "name": "Bash",
+          "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+         }
+        ],
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "mixed text with a result",
+        "i": 3
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:09:00.000Z",
+        "text": "Called Write, Edit, Task, NotebookEdit, WebFetch, Odd, tool, Empty",
+        "calls": [
+         {
+          "name": "Write",
+          "brief": "a.txt",
+          "body": "written body"
+         },
+         {
+          "name": "Edit",
+          "brief": "a.txt",
+          "body": "--- old\nold\n+++ new\nnew"
+         },
+         {
+          "name": "Task",
+          "brief": "sub task",
+          "body": "sub task"
+         },
+         {
+          "name": "NotebookEdit",
+          "brief": "cell",
+          "body": "cell"
+         },
+         {
+          "name": "WebFetch",
+          "brief": "https://example.com",
+          "body": ""
+         },
+         {
+          "name": "Odd",
+          "brief": "first string value",
+          "body": ""
+         },
+         {
+          "name": "tool",
+          "brief": "",
+          "body": ""
+         },
+         {
+          "name": "Empty",
+          "brief": "",
+          "body": ""
+         }
+        ],
+        "i": 4
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 6,
+      "from": 1,
+      "to": 6,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "On it.",
+        "i": 1
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "Called Bash 2 times, slack, Read, Grep",
+        "calls": [
+         {
+          "name": "Bash",
+          "brief": "ls -la",
+          "body": "ls -la\nsecond line",
+          "result": "file-a\nfile-b"
+         },
+         {
+          "name": "slack",
+          "brief": "who",
+          "body": "",
+          "result": "one\ntwo"
+         },
+         {
+          "name": "Read",
+          "brief": "C:\\x\\y.txt",
+          "body": "",
+          "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+         },
+         {
+          "name": "Grep",
+          "brief": "needle  in src",
+          "body": ""
+         },
+         {
+          "name": "Bash",
+          "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+         }
+        ],
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "mixed text with a result",
+        "i": 3
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:09:00.000Z",
+        "text": "Called Write, Edit, Task, NotebookEdit, WebFetch, Odd, tool, Empty",
+        "calls": [
+         {
+          "name": "Write",
+          "brief": "a.txt",
+          "body": "written body"
+         },
+         {
+          "name": "Edit",
+          "brief": "a.txt",
+          "body": "--- old\nold\n+++ new\nnew"
+         },
+         {
+          "name": "Task",
+          "brief": "sub task",
+          "body": "sub task"
+         },
+         {
+          "name": "NotebookEdit",
+          "brief": "cell",
+          "body": "cell"
+         },
+         {
+          "name": "WebFetch",
+          "brief": "https://example.com",
+          "body": ""
+         },
+         {
+          "name": "Odd",
+          "brief": "first string value",
+          "body": ""
+         },
+         {
+          "name": "tool",
+          "brief": "",
+          "body": ""
+         },
+         {
+          "name": "Empty",
+          "brief": "",
+          "body": ""
+         }
+        ],
+        "i": 4
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "do some work",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "On it.",
+        "i": 1
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "Called Bash 2 times, slack, Read, Grep",
+        "calls": [
+         {
+          "name": "Bash",
+          "brief": "ls -la",
+          "body": "ls -la\nsecond line",
+          "result": "file-a\nfile-b"
+         },
+         {
+          "name": "slack",
+          "brief": "who",
+          "body": "",
+          "result": "one\ntwo"
+         },
+         {
+          "name": "Read",
+          "brief": "C:\\x\\y.txt",
+          "body": "",
+          "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+         },
+         {
+          "name": "Grep",
+          "brief": "needle  in src",
+          "body": ""
+         },
+         {
+          "name": "Bash",
+          "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+         }
+        ],
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 6,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "do some work",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "On it.",
+        "i": 1
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "Called Bash 2 times, slack, Read, Grep",
+        "calls": [
+         {
+          "name": "Bash",
+          "brief": "ls -la",
+          "body": "ls -la\nsecond line",
+          "result": "file-a\nfile-b"
+         },
+         {
+          "name": "slack",
+          "brief": "who",
+          "body": "",
+          "result": "one\ntwo"
+         },
+         {
+          "name": "Read",
+          "brief": "C:\\x\\y.txt",
+          "body": "",
+          "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+         },
+         {
+          "name": "Grep",
+          "brief": "needle  in src",
+          "body": ""
+         },
+         {
+          "name": "Bash",
+          "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+         }
+        ],
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "mixed text with a result",
+        "i": 3
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:09:00.000Z",
+        "text": "Called Write, Edit, Task, NotebookEdit, WebFetch, Odd, tool, Empty",
+        "calls": [
+         {
+          "name": "Write",
+          "brief": "a.txt",
+          "body": "written body"
+         },
+         {
+          "name": "Edit",
+          "brief": "a.txt",
+          "body": "--- old\nold\n+++ new\nnew"
+         },
+         {
+          "name": "Task",
+          "brief": "sub task",
+          "body": "sub task"
+         },
+         {
+          "name": "NotebookEdit",
+          "brief": "cell",
+          "body": "cell"
+         },
+         {
+          "name": "WebFetch",
+          "brief": "https://example.com",
+          "body": ""
+         },
+         {
+          "name": "Odd",
+          "brief": "first string value",
+          "body": ""
+         },
+         {
+          "name": "tool",
+          "brief": "",
+          "body": ""
+         },
+         {
+          "name": "Empty",
+          "brief": "",
+          "body": ""
+         }
+        ],
+        "i": 4
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 6,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "do some work",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "On it.",
+        "i": 1
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "Called Bash 2 times, slack, Read, Grep",
+        "calls": [
+         {
+          "name": "Bash",
+          "brief": "ls -la",
+          "body": "ls -la\nsecond line",
+          "result": "file-a\nfile-b"
+         },
+         {
+          "name": "slack",
+          "brief": "who",
+          "body": "",
+          "result": "one\ntwo"
+         },
+         {
+          "name": "Read",
+          "brief": "C:\\x\\y.txt",
+          "body": "",
+          "result": "rrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrrr\n… (500 more characters)"
+         },
+         {
+          "name": "Grep",
+          "brief": "needle  in src",
+          "body": ""
+         },
+         {
+          "name": "Bash",
+          "brief": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+          "body": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx\n… (1000 more characters)"
+         }
+        ],
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "mixed text with a result",
+        "i": 3
+       },
+       {
+        "role": "tool",
+        "at": "2027-01-15T08:09:00.000Z",
+        "text": "Called Write, Edit, Task, NotebookEdit, WebFetch, Odd, tool, Empty",
+        "calls": [
+         {
+          "name": "Write",
+          "brief": "a.txt",
+          "body": "written body"
+         },
+         {
+          "name": "Edit",
+          "brief": "a.txt",
+          "body": "--- old\nold\n+++ new\nnew"
+         },
+         {
+          "name": "Task",
+          "brief": "sub task",
+          "body": "sub task"
+         },
+         {
+          "name": "NotebookEdit",
+          "brief": "cell",
+          "body": "cell"
+         },
+         {
+          "name": "WebFetch",
+          "brief": "https://example.com",
+          "body": ""
+         },
+         {
+          "name": "Odd",
+          "brief": "first string value",
+          "body": ""
+         },
+         {
+          "name": "tool",
+          "brief": "",
+          "body": ""
+         },
+         {
+          "name": "Empty",
+          "brief": "",
+          "body": ""
+         }
+        ],
+        "i": 4
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 6,
+      "from": 5,
+      "to": 6,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 6,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 6,
+      "from": 5,
+      "to": 6,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:09:00.000Z",
+        "model": null,
+        "effort": null,
+        "text": "All done.",
+        "i": 5
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "raw": "{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<system-reminder>be careful</system-reminder>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<bash-stdout>out</bash-stdout><bash-stderr>err</bash-stderr>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"a compact summary\"},\"isCompactSummary\":true}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"visible only\"},\"isVisibleInTranscriptOnly\":true}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<command-name> /clear </command-name><command-message>clear</command-message><command-args></command-args>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<command-name></command-name> nothing named\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<local-command-stdout>done</local-command-stdout>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"[Request interrupted by user]\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"Caveat: The messages below were generated\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"meta context\"},\"isMeta\":true}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"Base directory for this skill: C:\\\\Users\\\\x\\\\.claude\\\\skills\\\\ask-page\\n\\n# Ask page\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"text\\nBase directory for this skill:\\n\\n  /home/x/skills/deck-triggers  \\nmore\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"with a result object\"},\"toolUseResult\":{\"ok\":true}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<pasted_content id=\\\"1\\\">\\npasted text\\nline two\\n</pasted_content id=\\\"1\\\">\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"before <bash-input> ls -la </bash-input> after\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"\\n\\nleading and trailing newlines\\n\\n\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<pasted_contents>not the tag</pasted_contents>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"<artifact-content-authored-by-others/>\\n\\n\\n\\nkept <system-reminder>x</system-reminder>\"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"   \"}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":[]}}\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":null}}\n{\"type\":\"user\",\"isSidechain\":true,\"message\":{\"content\":\"a subagent\"}}\n{\"type\":\"summary\",\"summary\":\"x\"}\n{\"type\":\"assistant\",\"message\":{\"content\":[{\"type\":\"thinking\",\"thinking\":\"hm\"}]}}\n{\"type\":\"user\"}\n",
+   "entries": [
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "system reminder",
+     "text": "be careful",
+     "i": 0
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "command output",
+     "text": "out\n\nerr",
+     "i": 1
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "summary",
+     "text": "a compact summary",
+     "i": 2
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "summary",
+     "text": "visible only",
+     "i": 3
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "command /clear",
+     "text": "clear",
+     "i": 4
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "<command-name></command-name> nothing named",
+     "i": 5
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "command output",
+     "text": "done",
+     "i": 6
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "interrupted",
+     "text": "[Request interrupted by user]",
+     "i": 7
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "local commands",
+     "text": "Caveat: The messages below were generated",
+     "i": 8
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "context",
+     "text": "meta context",
+     "i": 9
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "skill ask-page",
+     "text": "Base directory for this skill: C:\\Users\\x\\.claude\\skills\\ask-page\n\n# Ask page",
+     "i": 10
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "skill deck-triggers",
+     "text": "text\nBase directory for this skill:\n\n  /home/x/skills/deck-triggers  \nmore",
+     "i": 11
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "tool result",
+     "text": "with a result object",
+     "i": 12
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "pasted text\nline two",
+     "i": 13
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "before ! ls -la after",
+     "i": 14
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "leading and trailing newlines",
+     "i": 15
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "<pasted_contents>not the tag</pasted_contents>",
+     "i": 16
+    },
+    {
+     "role": "meta",
+     "at": "2027-01-15T08:01:00.000Z",
+     "label": "system reminder",
+     "text": "kept x",
+     "i": 17
+    }
+   ],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 18,
+      "from": 0,
+      "to": 18,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "be careful",
+        "i": 0
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command output",
+        "text": "out\n\nerr",
+        "i": 1
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "summary",
+        "text": "a compact summary",
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "summary",
+        "text": "visible only",
+        "i": 3
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command /clear",
+        "text": "clear",
+        "i": 4
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<command-name></command-name> nothing named",
+        "i": 5
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command output",
+        "text": "done",
+        "i": 6
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "interrupted",
+        "text": "[Request interrupted by user]",
+        "i": 7
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "local commands",
+        "text": "Caveat: The messages below were generated",
+        "i": 8
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "context",
+        "text": "meta context",
+        "i": 9
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill ask-page",
+        "text": "Base directory for this skill: C:\\Users\\x\\.claude\\skills\\ask-page\n\n# Ask page",
+        "i": 10
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill deck-triggers",
+        "text": "text\nBase directory for this skill:\n\n  /home/x/skills/deck-triggers  \nmore",
+        "i": 11
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "with a result object",
+        "i": 12
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "pasted text\nline two",
+        "i": 13
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "before ! ls -la after",
+        "i": 14
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "leading and trailing newlines",
+        "i": 15
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<pasted_contents>not the tag</pasted_contents>",
+        "i": 16
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 18,
+      "from": 13,
+      "to": 18,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "pasted text\nline two",
+        "i": 13
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "before ! ls -la after",
+        "i": 14
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "leading and trailing newlines",
+        "i": 15
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<pasted_contents>not the tag</pasted_contents>",
+        "i": 16
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 18,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "be careful",
+        "i": 0
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command output",
+        "text": "out\n\nerr",
+        "i": 1
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "summary",
+        "text": "a compact summary",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 18,
+      "from": 8,
+      "to": 18,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "local commands",
+        "text": "Caveat: The messages below were generated",
+        "i": 8
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "context",
+        "text": "meta context",
+        "i": 9
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill ask-page",
+        "text": "Base directory for this skill: C:\\Users\\x\\.claude\\skills\\ask-page\n\n# Ask page",
+        "i": 10
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill deck-triggers",
+        "text": "text\nBase directory for this skill:\n\n  /home/x/skills/deck-triggers  \nmore",
+        "i": 11
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "with a result object",
+        "i": 12
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "pasted text\nline two",
+        "i": 13
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "before ! ls -la after",
+        "i": 14
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "leading and trailing newlines",
+        "i": 15
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<pasted_contents>not the tag</pasted_contents>",
+        "i": 16
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 18,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 18,
+      "from": 0,
+      "to": 18,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "be careful",
+        "i": 0
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command output",
+        "text": "out\n\nerr",
+        "i": 1
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "summary",
+        "text": "a compact summary",
+        "i": 2
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "summary",
+        "text": "visible only",
+        "i": 3
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command /clear",
+        "text": "clear",
+        "i": 4
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<command-name></command-name> nothing named",
+        "i": 5
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "command output",
+        "text": "done",
+        "i": 6
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "interrupted",
+        "text": "[Request interrupted by user]",
+        "i": 7
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "local commands",
+        "text": "Caveat: The messages below were generated",
+        "i": 8
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "context",
+        "text": "meta context",
+        "i": 9
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill ask-page",
+        "text": "Base directory for this skill: C:\\Users\\x\\.claude\\skills\\ask-page\n\n# Ask page",
+        "i": 10
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "skill deck-triggers",
+        "text": "text\nBase directory for this skill:\n\n  /home/x/skills/deck-triggers  \nmore",
+        "i": 11
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "tool result",
+        "text": "with a result object",
+        "i": 12
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "pasted text\nline two",
+        "i": 13
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "before ! ls -la after",
+        "i": 14
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "leading and trailing newlines",
+        "i": 15
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "<pasted_contents>not the tag</pasted_contents>",
+        "i": 16
+       },
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 18,
+      "from": 17,
+      "to": 18,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 18,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 18,
+      "from": 17,
+      "to": 18,
+      "entries": [
+       {
+        "role": "meta",
+        "at": "2027-01-15T08:01:00.000Z",
+        "label": "system reminder",
+        "text": "kept x",
+        "i": 17
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "raw": "",
+   "entries": [],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 0,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    }
+   ]
+  },
+  {
+   "raw": "not json\n{\"type\":\"user\",\"message\":{\"content\":\"after junk\"}}\n\n7\n\"x\"\n[1]\n{\"type\":\"assistant\",\"message\":{\"content\":\"a string body\"}}",
+   "entries": [
+    {
+     "role": "user",
+     "at": null,
+     "text": "after junk",
+     "i": 0
+    },
+    {
+     "role": "assistant",
+     "at": null,
+     "model": null,
+     "effort": null,
+     "text": "a string body",
+     "i": 1
+    }
+   ],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 2,
+      "entries": [
+       {
+        "role": "user",
+        "at": null,
+        "text": "after junk",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 2,
+      "entries": [
+       {
+        "role": "user",
+        "at": null,
+        "text": "after junk",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 2,
+      "entries": [
+       {
+        "role": "user",
+        "at": null,
+        "text": "after junk",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 2,
+      "entries": [
+       {
+        "role": "user",
+        "at": null,
+        "text": "after junk",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 2,
+      "entries": [
+       {
+        "role": "user",
+        "at": null,
+        "text": "after junk",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 2,
+      "from": 1,
+      "to": 2,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 2,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 2,
+      "from": 1,
+      "to": 2,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": null,
+        "model": null,
+        "effort": null,
+        "text": "a string body",
+        "i": 1
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "raw": "{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 0\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 1\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 2\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 3\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 4\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 5\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 6\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 7\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 8\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 9\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 10\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 11\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 12\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 13\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 14\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 15\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 16\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 17\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 18\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 19\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 20\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 21\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 22\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 23\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 24\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 25\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 26\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 27\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 28\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 29\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 30\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 31\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 32\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 33\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 34\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 35\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 36\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 37\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 38\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 39\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 40\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 41\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 42\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 43\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 44\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 45\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 46\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 47\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 48\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 49\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 50\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 51\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 52\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 53\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 54\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 55\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 56\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 57\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 58\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 59\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 60\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 61\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 62\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 63\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 64\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 65\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 66\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 67\"}]}}\r\n{\"type\":\"user\",\"timestamp\":\"2027-01-15T08:01:00.000Z\",\"message\":{\"role\":\"user\",\"content\":\"question 68\"}}\r\n{\"type\":\"assistant\",\"timestamp\":\"2027-01-15T08:02:00.000Z\",\"effort\":\"high\",\"message\":{\"role\":\"assistant\",\"model\":\"claude-fable-5-1\",\"content\":[{\"type\":\"text\",\"text\":\"answer 69\"}]}}",
+   "entries": [
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 0",
+     "i": 0
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 1",
+     "i": 1
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 2",
+     "i": 2
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 3",
+     "i": 3
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 4",
+     "i": 4
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 5",
+     "i": 5
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 6",
+     "i": 6
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 7",
+     "i": 7
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 8",
+     "i": 8
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 9",
+     "i": 9
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 10",
+     "i": 10
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 11",
+     "i": 11
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 12",
+     "i": 12
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 13",
+     "i": 13
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 14",
+     "i": 14
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 15",
+     "i": 15
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 16",
+     "i": 16
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 17",
+     "i": 17
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 18",
+     "i": 18
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 19",
+     "i": 19
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 20",
+     "i": 20
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 21",
+     "i": 21
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 22",
+     "i": 22
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 23",
+     "i": 23
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 24",
+     "i": 24
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 25",
+     "i": 25
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 26",
+     "i": 26
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 27",
+     "i": 27
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 28",
+     "i": 28
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 29",
+     "i": 29
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 30",
+     "i": 30
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 31",
+     "i": 31
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 32",
+     "i": 32
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 33",
+     "i": 33
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 34",
+     "i": 34
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 35",
+     "i": 35
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 36",
+     "i": 36
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 37",
+     "i": 37
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 38",
+     "i": 38
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 39",
+     "i": 39
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 40",
+     "i": 40
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 41",
+     "i": 41
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 42",
+     "i": 42
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 43",
+     "i": 43
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 44",
+     "i": 44
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 45",
+     "i": 45
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 46",
+     "i": 46
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 47",
+     "i": 47
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 48",
+     "i": 48
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 49",
+     "i": 49
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 50",
+     "i": 50
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 51",
+     "i": 51
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 52",
+     "i": 52
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 53",
+     "i": 53
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 54",
+     "i": 54
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 55",
+     "i": 55
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 56",
+     "i": 56
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 57",
+     "i": 57
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 58",
+     "i": 58
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 59",
+     "i": 59
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 60",
+     "i": 60
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 61",
+     "i": 61
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 62",
+     "i": 62
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 63",
+     "i": 63
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 64",
+     "i": 64
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 65",
+     "i": 65
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 66",
+     "i": 66
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 67",
+     "i": 67
+    },
+    {
+     "role": "user",
+     "at": "2027-01-15T08:01:00.000Z",
+     "text": "question 68",
+     "i": 68
+    },
+    {
+     "role": "assistant",
+     "at": "2027-01-15T08:02:00.000Z",
+     "model": "claude-fable-5-1",
+     "effort": "high",
+     "text": "answer 69",
+     "i": 69
+    }
+   ],
+   "pages": [
+    {
+     "opts": {},
+     "out": {
+      "total": 70,
+      "from": 40,
+      "to": 70,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 40",
+        "i": 40
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 41",
+        "i": 41
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 42",
+        "i": 42
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 43",
+        "i": 43
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 44",
+        "i": 44
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 45",
+        "i": 45
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 46",
+        "i": 46
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 47",
+        "i": 47
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 48",
+        "i": 48
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 49",
+        "i": 49
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 50",
+        "i": 50
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 51",
+        "i": 51
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 52",
+        "i": 52
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 53",
+        "i": 53
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 54",
+        "i": 54
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 55",
+        "i": 55
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 56",
+        "i": 56
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 57",
+        "i": 57
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 58",
+        "i": 58
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 59",
+        "i": 59
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 60",
+        "i": 60
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 61",
+        "i": 61
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 62",
+        "i": 62
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 63",
+        "i": 63
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 64",
+        "i": 64
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 65",
+        "i": 65
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 66",
+        "i": 66
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 67",
+        "i": 67
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 68",
+        "i": 68
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 69",
+        "i": 69
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 5
+     },
+     "out": {
+      "total": 70,
+      "from": 65,
+      "to": 70,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 65",
+        "i": 65
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 66",
+        "i": 66
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 67",
+        "i": 67
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 68",
+        "i": 68
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 69",
+        "i": 69
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 3
+     },
+     "out": {
+      "total": 70,
+      "from": 0,
+      "to": 3,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 0",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 1",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 2",
+        "i": 2
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 40,
+      "limit": 10
+     },
+     "out": {
+      "total": 70,
+      "from": 30,
+      "to": 40,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 30",
+        "i": 30
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 31",
+        "i": 31
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 32",
+        "i": 32
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 33",
+        "i": 33
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 34",
+        "i": 34
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 35",
+        "i": 35
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 36",
+        "i": 36
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 37",
+        "i": 37
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 38",
+        "i": 38
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 39",
+        "i": 39
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": 0
+     },
+     "out": {
+      "total": 70,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "before": 9999,
+      "limit": 500
+     },
+     "out": {
+      "total": 70,
+      "from": 0,
+      "to": 70,
+      "entries": [
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 0",
+        "i": 0
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 1",
+        "i": 1
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 2",
+        "i": 2
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 3",
+        "i": 3
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 4",
+        "i": 4
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 5",
+        "i": 5
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 6",
+        "i": 6
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 7",
+        "i": 7
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 8",
+        "i": 8
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 9",
+        "i": 9
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 10",
+        "i": 10
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 11",
+        "i": 11
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 12",
+        "i": 12
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 13",
+        "i": 13
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 14",
+        "i": 14
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 15",
+        "i": 15
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 16",
+        "i": 16
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 17",
+        "i": 17
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 18",
+        "i": 18
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 19",
+        "i": 19
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 20",
+        "i": 20
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 21",
+        "i": 21
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 22",
+        "i": 22
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 23",
+        "i": 23
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 24",
+        "i": 24
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 25",
+        "i": 25
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 26",
+        "i": 26
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 27",
+        "i": 27
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 28",
+        "i": 28
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 29",
+        "i": 29
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 30",
+        "i": 30
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 31",
+        "i": 31
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 32",
+        "i": 32
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 33",
+        "i": 33
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 34",
+        "i": 34
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 35",
+        "i": 35
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 36",
+        "i": 36
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 37",
+        "i": 37
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 38",
+        "i": 38
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 39",
+        "i": 39
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 40",
+        "i": 40
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 41",
+        "i": 41
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 42",
+        "i": 42
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 43",
+        "i": 43
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 44",
+        "i": 44
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 45",
+        "i": 45
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 46",
+        "i": 46
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 47",
+        "i": 47
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 48",
+        "i": 48
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 49",
+        "i": 49
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 50",
+        "i": 50
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 51",
+        "i": 51
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 52",
+        "i": 52
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 53",
+        "i": 53
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 54",
+        "i": 54
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 55",
+        "i": 55
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 56",
+        "i": 56
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 57",
+        "i": 57
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 58",
+        "i": 58
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 59",
+        "i": 59
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 60",
+        "i": 60
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 61",
+        "i": 61
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 62",
+        "i": 62
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 63",
+        "i": 63
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 64",
+        "i": 64
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 65",
+        "i": 65
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 66",
+        "i": 66
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 67",
+        "i": 67
+       },
+       {
+        "role": "user",
+        "at": "2027-01-15T08:01:00.000Z",
+        "text": "question 68",
+        "i": 68
+       },
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 69",
+        "i": 69
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "limit": 0
+     },
+     "out": {
+      "total": 70,
+      "from": 69,
+      "to": 70,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 69",
+        "i": 69
+       }
+      ]
+     }
+    },
+    {
+     "opts": {
+      "before": -4
+     },
+     "out": {
+      "total": 70,
+      "from": 0,
+      "to": 0,
+      "entries": []
+     }
+    },
+    {
+     "opts": {
+      "limit": null
+     },
+     "out": {
+      "total": 70,
+      "from": 69,
+      "to": 70,
+      "entries": [
+       {
+        "role": "assistant",
+        "at": "2027-01-15T08:02:00.000Z",
+        "model": "claude-fable-5-1",
+        "effort": "high",
+        "text": "answer 69",
+        "i": 69
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,4 @@
+wait 1500; shot asks-e2e-0-before;
+ask appclick 40 23; wait 3000; ask dump; wait 300; shot asks-e2e-1-open;
+ask in 0 document.querySelectorAll('.card')[0].querySelector('[data-pick]'); wait 700;
+ask host document.querySelector('section.ap-sess .ap-done'); wait 2200; ask dump; wait 400; shot asks-e2e-2-done

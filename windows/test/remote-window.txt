@@ -1,0 +1,3 @@
+wait 900; click 700 400; wait 300; dump tiles; rzone tile sel; wait 200; menu Open in a new window; wait 1500; dump windows; win 1 dump state; win 1 dump screen; dump state;
+wait 2500; win 1 dump screen;
+win 1 close; wait 800; dump windows; dump state

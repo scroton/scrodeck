@@ -1,0 +1,43 @@
+{
+ "fixture": "decstr",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 6,
+ "cursor": {
+  "x": 1,
+  "y": 0
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 1000,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 5
+ },
+ "title": "",
+ "replies": "\u001b[1;2R",
+ "scrollbackLength": 2,
+ "viewport": [
+  "n 52,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 32,1,d,d,0 15*-,1,d,d,0",
+  "n 61,1,d,d,0 66,1,d,d,0 74,1,d,d,0 65,1,d,d,0 72,1,d,d,0 15*71,1,d,d,0",
+  "w 5*71,1,d,d,0 15*-,1,d,d,0",
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 35,1,d,d,0 15*-,1,d,d,0",
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 36,1,d,d,0 15*-,1,d,d,0",
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 37,1,d,d,0 15*-,1,d,d,0"
+ ],
+ "scrollback": [
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 30,1,d,d,0 15*-,1,d,d,0",
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 31,1,d,d,0 15*-,1,d,d,0"
+ ]
+}

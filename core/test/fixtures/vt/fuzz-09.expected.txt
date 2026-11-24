@@ -1,0 +1,16 @@
+init 33 9 0
+size 33 9
+cursor 8 2
+modes alt=0 appCursor=1 appKeypad=0 bracketedPaste=1 mouse=0 mouseEnc=0 focus=0 cursorVisible=0 cursorShape=1 cursorBlink=1 origin=1 wraparound=1 insert=0 sync=1 scrollTop=0 scrollBottom=8
+title 743237
+replies 1b5b3f32353b3124791b5b306e1b5b306e1b50312472313b39721b5c1b5b343b3224791b5b3f373b3232521b5b373b323452
+scrollback 0
+V n 33*-,1,d,d,0
+V n 33*-,1,d,d,0
+V n 33*-,1,d,d,0
+V n 33*-,1,d,d,0
+V n 21*-,1,d,d,0 65+301,1,d,p6,2a6c 11*-,1,d,d,0
+V n 33*-,1,d,d,0
+V n 71,1,d,p6,2a6d 75,1,d,p6,2a6d 69,1,d,p6,2a6d 63,1,d,p6,2a6d 6b,1,d,p6,2a6d 20,1,d,p6,2a6d 62,1,d,p6,2a6d 72,1,d,p6,2a6d 6f,1,d,p6,2a6d 77,1,d,p6,2a6d 6e,1,d,p6,2a6d 20,1,d,p6,2a6d 66,1,d,p6,2a6d 6f,1,d,p6,2a6d 78,1,d,p6,2a6d 20,1,d,p6,2a6d 12*-,1,d,d,0 5*-,1,d,p6,0
+V n 32*78,1,d,p6,2a6c -,1,d,p6,0
+V n 33*-,1,d,d,0

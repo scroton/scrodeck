@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <!-- interactive-widget=resizes-content: when the soft keyboard opens, the layout viewport shrinks,
+       so the flex column shortens the terminal and the key row stays above the keyboard -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, maximum-scale=1, user-scalable=no, interactive-widget=resizes-content">
+  <meta name="theme-color" content="#0f0f0f">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title>Claude Deck</title>
+  <link rel="manifest" href="/manifest.webmanifest" crossorigin="use-credentials">
+  <link rel="icon" href="/icon-192.png">
+  <link rel="apple-touch-icon" href="/icon-192.png">
+  <link rel="stylesheet" href="/vendor/xterm.css">
+  <link rel="stylesheet" href="/style.css?v=144">
+</head>
+<body>
+<!-- One screen at a time, the way the Claude app does it: the list is the home screen, everything
+     else is pushed on top of it and comes off with the phone's own back gesture. -->
+
+<div id="screens">
+  <!-- ------------------------------------------------------------------ the list (home) -->
+  <section class="screen on" id="s-list">
+    <header class="topbar">
+      <span class="bar-title">Claude Deck</span>
+      <span class="bar-right">
+        <span class="page-btns" id="page-btns"></span>
+        <button class="tbtn" id="t-msgs" title="message previews">msg</button>
+        <button class="tbtn" id="t-bars" title="usage bars">bars</button>
+        <button class="tbtn" id="t-drive" title="who drives the size of the sessions: tap to drive from this phone">auto</button>
+      </span>
+    </header>
+    <div class="body" id="list"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ a terminal -->
+  <section class="screen" id="s-term">
+    <header class="topbar">
+      <button class="back" data-back>‹</button>
+      <span class="bar-title" id="term-title">session</span>
+      <span class="bar-right">
+        <button class="tbtn ask-btn" id="term-ask" hidden title="this session's questions on an ask page">?</button>
+        <span class="seg" id="viewseg"><button id="seg-text" class="on">text</button><button id="seg-term">terminal</button></span>
+        <button class="tbtn" id="term-menu">•••</button>
+      </span>
+    </header>
+    <!-- Reading is the common case, so it is the default: the conversation off disk, scrolling
+         natively. The terminal is a mode you switch into to act. -->
+    <!-- Both views share one box. The terminal is never display:none: hidden that way it has
+         no size, measures as a dozen columns, and tells the SESSION so. It stays laid out at the
+         exact size of the text view and is merely invisible while text is showing. -->
+    <div class="stage" id="stage">
+      <div class="textview" id="textview"><div class="tv-top" id="tv-top"></div><div id="tv-list"></div></div>
+      <div class="term-wrap"><div id="term"></div></div>
+    </div>
+    <!-- Selection and drag-to-scroll want the same surface, so selecting is an explicit mode. -->
+    <div class="selbar" id="selbar" hidden><span>Selecting — long-press the text, then Copy</span><button id="sel-done">done</button></div>
+    <!-- The terminal's text, as text. xterm draws its rows in a way Android's long press will
+         not take hold of; this is the same characters in an ordinary element, which it will. -->
+    <div class="selview" id="selview" hidden><pre id="sel-text"></pre></div>
+    <!-- When the session is asking you to pick something, its options appear here as real buttons:
+         the list in the terminal is 12px tall and nearly untappable. -->
+    <div class="choicerow" id="choicerow" hidden></div>
+    <!-- Line mode: nothing reaches the session until you press send, so the phone keyboard's
+         autocorrect and swipe-typing can be fixed in the box instead of corrupting the prompt. -->
+    <div class="compose" id="compose-bar" hidden>
+      <span class="compose-keys" id="compose-keys" hidden>
+        <button data-send="esc" title="cancel what the session is doing">esc</button>
+        <button data-send="cc" title="interrupt">^C</button>
+      </span>
+      <textarea id="compose-input" rows="1" placeholder="message this session"
+                autocomplete="off" autocorrect="off" autocapitalize="sentences" spellcheck="true" enterkeyhint="enter"></textarea>
+      <button id="compose-send">send</button>
+    </div>
+    <!-- two rows, nothing to scroll sideways for: moving about on the first, control on the second -->
+    <!-- in line mode the message box stands where the session's prompt was, and its footer follows here -->
+    <pre class="footer-strip" id="footer-strip" hidden></pre>
+    <!-- the session's footer under the message box in the text view; long-press for model, effort, mode -->
+    <div class="term-tail" id="tv-footer" hidden></div>
+    <!-- keys mode: the session's own prompt row and footer, fixed here rather than scrolling with the history -->
+    <div class="term-tail" id="term-tail" hidden></div>
+    <input type="file" id="file-pick" multiple hidden>
+    <div class="keyrow" id="keyrow">
+      <!-- esc stands tall on the left with a gap beside it, so a stray thumb does not land on it -->
+      <button data-key="esc" class="k-esc" id="k-esc">esc</button>
+      <span class="kgap-esc"></span>
+      <div class="kcol">
+        <div class="krow top">
+          <span class="kpad"></span>
+          <button data-key="tab">tab</button>
+          <button data-key="ctrl" id="k-ctrl">ctrl</button>
+          <button data-key="clear" class="k-clr" title="empty the input">clr</button>
+          <button data-key="file" class="k-file" title="send a file to the session: it is saved on the PC and its path put in the input">file</button>
+          <button data-key="cc" id="k-cc" title="interrupt (shell only)">^C</button>
+          <button data-key="end" id="k-end" class="k-end" title="back to the newest message">end</button>
+        </div>
+        <div class="krow">
+          <span class="kpad"></span>
+          <button data-key="up" class="k-arrow">▲</button>
+          <button data-key="down" class="k-arrow">▼</button>
+          <button data-key="left" class="k-arrow">◀</button>
+          <button data-key="right" class="k-arrow">▶</button>
+          <button data-key="kbd" id="k-kbd" title="switch between the line box and typing straight into the session">line</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ new session -->
+  <section class="screen" id="s-new">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">New session</span></header>
+    <div class="body">
+      <p class="hint">Starts a session on this PC, in <span id="new-cwd" class="mono"></span>.</p>
+      <div id="new-accts" class="rows"></div>
+      <h3>Bring one in</h3>
+      <div class="rows">
+        <button class="row" id="go-elsewhere"><span>Running elsewhere</span><span class="chev">›</span></button>
+        <button class="row" id="go-past"><span>Sessions on disk</span><span class="chev">›</span></button>
+      </div>
+      <h3>Terminal</h3>
+      <div class="rows"><button class="row" id="new-shell"><span>New PowerShell</span><span class="chev">›</span></button></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ search -->
+  <section class="screen" id="s-search">
+    <header class="topbar">
+      <button class="back" data-back>‹</button>
+      <input id="search-input" type="search" placeholder="title, message, account" autocomplete="off" spellcheck="false">
+    </header>
+    <div class="body" id="search-list"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ groups -->
+  <section class="screen" id="s-groups">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">Groups</span></header>
+    <div class="body" id="groups-body"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ move all -->
+  <section class="screen" id="s-move">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">Open as another account</span></header>
+    <div class="body">
+      <p class="hint">Every open session of one account, reopened under another. The same thing as pressing <code>open</code> on each tile.</p>
+      <label class="field"><span>From</span><select id="move-from"></select></label>
+      <div class="bars-box" id="move-from-bars"></div>
+      <label class="field"><span>To</span><select id="move-to"></select></label>
+      <div class="bars-box" id="move-to-bars"></div>
+      <div class="move-mode">
+        <button id="move-mode-all" class="on">all</button><button id="move-mode-these">these</button>
+      </div>
+      <div id="move-pick" class="rows" hidden></div>
+      <label class="chk"><input type="checkbox" id="move-continue"><span>say <code>continue</code> where the last message was a usage notice</span></label>
+      <div id="move-confirm" class="confirm" hidden></div>
+      <button class="wide danger" id="move-go">Move</button>
+      <div id="move-status" class="hint"></div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ elsewhere / past -->
+  <section class="screen" id="s-elsewhere">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">Running elsewhere</span></header>
+    <div class="body" id="elsewhere-body"></div>
+  </section>
+  <section class="screen" id="s-past">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">Sessions on disk</span></header>
+    <div class="body" id="past-body"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ asks (the ask-page skill's pages) -->
+  <section class="screen" id="s-asks">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title" id="asks-title">Asks</span></header>
+    <div class="body asks-body" id="asks-body">
+      <div id="asks-list">
+        <section class="ap-sess ap-recent" style="order: 100000" hidden><div class="ap-head"><div class="ap-who"><span class="ap-name">Recently answered</span></div></div><div class="ap-lrows"></div></section>
+      </div>
+      <div class="empty" id="asks-empty" hidden>No questions waiting.</div>
+    </div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ a page from the PC (Settings -> Phone -> Pages on the phone) -->
+  <section class="screen" id="s-page">
+    <header class="topbar"><button class="back" id="page-back">‹</button><span class="bar-title" id="page-title">Page</span>
+      <span class="bar-right"><button class="tbtn" id="page-reload" title="fetch it again from the PC">reload</button></span></header>
+    <div class="body page-body" id="page-body"></div>
+  </section>
+
+  <!-- ------------------------------------------------------------------ settings -->
+  <section class="screen" id="s-settings">
+    <header class="topbar"><button class="back" data-back>‹</button><span class="bar-title">Settings</span>
+      <span class="bar-right"><button class="tbtn primary" id="set-save">Save</button></span></header>
+    <div class="body" id="settings-body"></div>
+  </section>
+</div>
+
+<!-- bottom bar: each icon is a screen of its own -->
+<nav id="tabbar">
+  <button data-go="s-new" aria-label="new session">
+    <svg viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"/></svg><span>new</span>
+  </button>
+  <button data-go="s-search" aria-label="search">
+    <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg><span>search</span>
+  </button>
+  <button data-go="s-groups" aria-label="groups">
+    <svg viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></svg><span>groups</span>
+  </button>
+  <button data-go="s-move" aria-label="move">
+    <svg viewBox="0 0 24 24"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg><span>move</span>
+  </button>
+  <button data-go="s-settings" aria-label="settings">
+    <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8 2 2 0 1 1-2.8 2.8 1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5 2 2 0 1 1-4 0 1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3 2 2 0 1 1-2.8-2.8 1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1 2 2 0 1 1 0-4 1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8 2 2 0 1 1 2.8-2.8 1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5 2 2 0 1 1 4 0 1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3 2 2 0 1 1 2.8 2.8 1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1 2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg><span>settings</span>
+  </button>
+</nav>
+
+<!-- long-press on a tile -->
+<div id="sheet" hidden><div class="sheet-box"><div class="sheet-title" id="sheet-title"></div><div id="sheet-actions"></div></div></div>
+<div id="toast" hidden></div>
+<div id="offline" hidden>reconnecting…</div>
+<div id="stale" hidden></div>
+<div id="held" hidden title="tap to hide">This app's own changes wait for the restart</div>
+
+<script src="/vendor/xterm.js"></script>
+<script src="/vendor/addon-fit.js"></script>
+<script src="/app.js?v=144"></script>
+</body>
+</html>

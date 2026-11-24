@@ -1,0 +1,18 @@
+normal text
+[?1049halt line 0
+alt line 1
+alt line 2
+alt line 3
+alt line 4
+alt line 5
+alt line 6
+alt line 7
+alt line 8[Hrepaint 0[K
+repaint 1[K
+repaint 2[K
+repaint 3[K
+repaint 4[K
+repaint 5[K
+repaint 6[K
+repaint 7[K
+repaint 8[K[5;3Hcursor

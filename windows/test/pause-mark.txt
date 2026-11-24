@@ -1,0 +1,4 @@
+wait 900; sel Bug queue; wait 200; dump auditors;
+faketile pause {'state':'paused','untilRestart':false,'want':false,'by':'prompt'}; wait 400; dump auditors; shot rv-pause-mark;
+faketile pause {'state':'pausing','untilRestart':true,'want':false}; wait 400; dump auditors;
+faketile pause null; wait 400; dump auditors; shot rv-pause-mark-gone

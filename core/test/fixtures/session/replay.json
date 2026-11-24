@@ -1,0 +1,3367 @@
+{
+ "module": "replay",
+ "generatedFrom": "main.js (onData, trackModes, modePrefix, replaySinceResize, replayCut) + Node StringDecoder",
+ "limit": 524288,
+ "cases": [
+  {
+   "name": "empty",
+   "note": "nothing written: no replay at all (replayFor answers null)",
+   "steps": [
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 0,
+      "bytes": 0,
+      "total": 0,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": null,
+      "replayForSince": null
+     }
+    }
+   ]
+  },
+  {
+   "name": "small",
+   "note": "",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "68656c6c6f20",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 6,
+      "total": 6,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 6,
+       "fnv": "a9bcaacca21f7011",
+       "hex": "68656c6c6f20"
+      },
+      "since": {
+       "utf8Bytes": 6,
+       "fnv": "a9bcaacca21f7011",
+       "hex": "68656c6c6f20"
+      },
+      "replayFor": {
+       "utf8Bytes": 6,
+       "fnv": "a9bcaacca21f7011",
+       "hex": "68656c6c6f20"
+      },
+      "replayForSince": {
+       "utf8Bytes": 6,
+       "fnv": "a9bcaacca21f7011",
+       "hex": "68656c6c6f20"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "776f726c640d0a",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 13,
+      "total": 13,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 13,
+       "fnv": "90ab5f74f097347c",
+       "hex": "68656c6c6f20776f726c640d0a"
+      },
+      "since": {
+       "utf8Bytes": 13,
+       "fnv": "90ab5f74f097347c",
+       "hex": "68656c6c6f20776f726c640d0a"
+      },
+      "replayFor": {
+       "utf8Bytes": 13,
+       "fnv": "90ab5f74f097347c",
+       "hex": "68656c6c6f20776f726c640d0a"
+      },
+      "replayForSince": {
+       "utf8Bytes": 13,
+       "fnv": "90ab5f74f097347c",
+       "hex": "68656c6c6f20776f726c640d0a"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "modes",
+   "note": "the six tracked modes, set and cleared; untracked private modes are ignored",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d65",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 37,
+      "total": 37,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303030681b5b3f31303036681b5b3f3230303468",
+      "modes": {
+       "1000": true,
+       "1006": true,
+       "1049": true,
+       "2004": true
+      },
+      "all": {
+       "utf8Bytes": 37,
+       "fnv": "f93b382e1603dad0",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d65"
+      },
+      "since": {
+       "utf8Bytes": 37,
+       "fnv": "f93b382e1603dad0",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d65"
+      },
+      "replayFor": {
+       "utf8Bytes": 76,
+       "fnv": "aaf269952ad182ae",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303030681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d65"
+      },
+      "replayForSince": {
+       "utf8Bytes": 76,
+       "fnv": "aaf269952ad182ae",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303030681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d65"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "6d6f72651b5b3f313030306c1b5b3f3130303268",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 57,
+      "total": 57,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303032681b5b3f31303036681b5b3f3230303468",
+      "modes": {
+       "1002": true,
+       "1006": true,
+       "1049": true,
+       "2004": true
+      },
+      "all": {
+       "utf8Bytes": 57,
+       "fnv": "6ed281a3630b421f",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f3130303268"
+      },
+      "since": {
+       "utf8Bytes": 57,
+       "fnv": "6ed281a3630b421f",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f3130303268"
+      },
+      "replayFor": {
+       "utf8Bytes": 96,
+       "fnv": "ef6be095e10574c3",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303032681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f3130303268"
+      },
+      "replayForSince": {
+       "utf8Bytes": 96,
+       "fnv": "ef6be095e10574c3",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303032681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f3130303268"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "1b5b3f313034396c",
+     "times": 1,
+     "after": {
+      "chunks": 3,
+      "bytes": 65,
+      "total": 65,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f31303032681b5b3f31303036681b5b3f3230303468",
+      "modes": {
+       "1002": true,
+       "1006": true,
+       "2004": true
+      },
+      "all": {
+       "utf8Bytes": 65,
+       "fnv": "0ad7bbcd19d5e5a4",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c"
+      },
+      "since": {
+       "utf8Bytes": 65,
+       "fnv": "0ad7bbcd19d5e5a4",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c"
+      },
+      "replayFor": {
+       "utf8Bytes": 89,
+       "fnv": "51242b8ad9fafa81",
+       "hex": "1b5b3f31303032681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c"
+      },
+      "replayForSince": {
+       "utf8Bytes": 89,
+       "fnv": "51242b8ad9fafa81",
+       "hex": "1b5b3f31303032681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "1b5b3f31303033681b5b3f32356c1b5b3f31303034681b5b3f313268",
+     "times": 1,
+     "after": {
+      "chunks": 4,
+      "bytes": 93,
+      "total": 93,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f31303032681b5b3f31303033681b5b3f31303036681b5b3f3230303468",
+      "modes": {
+       "1002": true,
+       "1003": true,
+       "1006": true,
+       "2004": true
+      },
+      "all": {
+       "utf8Bytes": 93,
+       "fnv": "753e6cc4ce784391",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c1b5b3f31303033681b5b3f32356c1b5b3f31303034681b5b3f313268"
+      },
+      "since": {
+       "utf8Bytes": 93,
+       "fnv": "753e6cc4ce784391",
+       "hex": "1b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c1b5b3f31303033681b5b3f32356c1b5b3f31303034681b5b3f313268"
+      },
+      "replayFor": {
+       "utf8Bytes": 125,
+       "fnv": "7b9a3a5470835977",
+       "hex": "1b5b3f31303032681b5b3f31303033681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c1b5b3f31303033681b5b3f32356c1b5b3f31303034681b5b3f313268"
+      },
+      "replayForSince": {
+       "utf8Bytes": 125,
+       "fnv": "7b9a3a5470835977",
+       "hex": "1b5b3f31303032681b5b3f31303033681b5b3f31303036681b5b3f32303034681b5b3f31303439681b5b3f31303030681b5b3f31303036681b5b3f32303034686672616d656d6f72651b5b3f313030306c1b5b3f31303032681b5b3f313034396c1b5b3f31303033681b5b3f32356c1b5b3f31303034681b5b3f313268"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "mode split across chunks",
+   "note": "main.js scans one chunk at a time, so a split sequence is missed; a combined set is not matched either",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "611b5b3f3130",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 6,
+      "total": 6,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 6,
+       "fnv": "2d86a2d461c4971e",
+       "hex": "611b5b3f3130"
+      },
+      "since": {
+       "utf8Bytes": 6,
+       "fnv": "2d86a2d461c4971e",
+       "hex": "611b5b3f3130"
+      },
+      "replayFor": {
+       "utf8Bytes": 6,
+       "fnv": "2d86a2d461c4971e",
+       "hex": "611b5b3f3130"
+      },
+      "replayForSince": {
+       "utf8Bytes": 6,
+       "fnv": "2d86a2d461c4971e",
+       "hex": "611b5b3f3130"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "343968",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 9,
+      "total": 9,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 9,
+       "fnv": "cd22f39f6b4d5237",
+       "hex": "611b5b3f3130343968"
+      },
+      "since": {
+       "utf8Bytes": 9,
+       "fnv": "cd22f39f6b4d5237",
+       "hex": "611b5b3f3130343968"
+      },
+      "replayFor": {
+       "utf8Bytes": 9,
+       "fnv": "cd22f39f6b4d5237",
+       "hex": "611b5b3f3130343968"
+      },
+      "replayForSince": {
+       "utf8Bytes": 9,
+       "fnv": "cd22f39f6b4d5237",
+       "hex": "611b5b3f3130343968"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "1b5b3f313030303b3130303668",
+     "times": 1,
+     "after": {
+      "chunks": 3,
+      "bytes": 22,
+      "total": 22,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 22,
+       "fnv": "945c143d55e951a1",
+       "hex": "611b5b3f31303439681b5b3f313030303b3130303668"
+      },
+      "since": {
+       "utf8Bytes": 22,
+       "fnv": "945c143d55e951a1",
+       "hex": "611b5b3f31303439681b5b3f313030303b3130303668"
+      },
+      "replayFor": {
+       "utf8Bytes": 22,
+       "fnv": "945c143d55e951a1",
+       "hex": "611b5b3f31303439681b5b3f313030303b3130303668"
+      },
+      "replayForSince": {
+       "utf8Bytes": 22,
+       "fnv": "945c143d55e951a1",
+       "hex": "611b5b3f31303439681b5b3f313030303b3130303668"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "1b5b3f32303034",
+     "times": 1,
+     "after": {
+      "chunks": 4,
+      "bytes": 29,
+      "total": 29,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 29,
+       "fnv": "9e6a09db1f0bab06",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034"
+      },
+      "since": {
+       "utf8Bytes": 29,
+       "fnv": "9e6a09db1f0bab06",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034"
+      },
+      "replayFor": {
+       "utf8Bytes": 29,
+       "fnv": "9e6a09db1f0bab06",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034"
+      },
+      "replayForSince": {
+       "utf8Bytes": 29,
+       "fnv": "9e6a09db1f0bab06",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "781b5b3f1b5b3f3130303668",
+     "times": 1,
+     "after": {
+      "chunks": 5,
+      "bytes": 41,
+      "total": 41,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f3130303668",
+      "modes": {
+       "1006": true
+      },
+      "all": {
+       "utf8Bytes": 41,
+       "fnv": "dca9cd7e108bde51",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034781b5b3f1b5b3f3130303668"
+      },
+      "since": {
+       "utf8Bytes": 41,
+       "fnv": "dca9cd7e108bde51",
+       "hex": "611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034781b5b3f1b5b3f3130303668"
+      },
+      "replayFor": {
+       "utf8Bytes": 49,
+       "fnv": "128e77df62660b2d",
+       "hex": "1b5b3f3130303668611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034781b5b3f1b5b3f3130303668"
+      },
+      "replayForSince": {
+       "utf8Bytes": 49,
+       "fnv": "128e77df62660b2d",
+       "hex": "1b5b3f3130303668611b5b3f31303439681b5b3f313030303b31303036681b5b3f32303034781b5b3f1b5b3f3130303668"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "since resize",
+   "note": "",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "6265666f72652d3120",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 9,
+      "total": 9,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 9,
+       "fnv": "42a57e1d4eb6a058",
+       "hex": "6265666f72652d3120"
+      },
+      "since": {
+       "utf8Bytes": 9,
+       "fnv": "42a57e1d4eb6a058",
+       "hex": "6265666f72652d3120"
+      },
+      "replayFor": {
+       "utf8Bytes": 9,
+       "fnv": "42a57e1d4eb6a058",
+       "hex": "6265666f72652d3120"
+      },
+      "replayForSince": {
+       "utf8Bytes": 9,
+       "fnv": "42a57e1d4eb6a058",
+       "hex": "6265666f72652d3120"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "6265666f72652d3220",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 18,
+      "total": 18,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      },
+      "since": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      },
+      "replayFor": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      },
+      "replayForSince": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 2,
+      "bytes": 18,
+      "total": 18,
+      "dropped": 0,
+      "cut": 18,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 18,
+       "fnv": "53d0f901e29307f8",
+       "hex": "6265666f72652d31206265666f72652d3220"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "61667465722d3120",
+     "times": 1,
+     "after": {
+      "chunks": 3,
+      "bytes": 26,
+      "total": 26,
+      "dropped": 0,
+      "cut": 18,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 26,
+       "fnv": "029ece58bee713cc",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d3120"
+      },
+      "since": {
+       "utf8Bytes": 8,
+       "fnv": "f365ef585f6f8d65",
+       "hex": "61667465722d3120"
+      },
+      "replayFor": {
+       "utf8Bytes": 26,
+       "fnv": "029ece58bee713cc",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d3120"
+      },
+      "replayForSince": {
+       "utf8Bytes": 8,
+       "fnv": "f365ef585f6f8d65",
+       "hex": "61667465722d3120"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "61667465722d32",
+     "times": 1,
+     "after": {
+      "chunks": 4,
+      "bytes": 33,
+      "total": 33,
+      "dropped": 0,
+      "cut": 18,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 33,
+       "fnv": "b068028394556739",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d32"
+      },
+      "since": {
+       "utf8Bytes": 15,
+       "fnv": "2436e51187b5c59a",
+       "hex": "61667465722d312061667465722d32"
+      },
+      "replayFor": {
+       "utf8Bytes": 33,
+       "fnv": "b068028394556739",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d32"
+      },
+      "replayForSince": {
+       "utf8Bytes": 15,
+       "fnv": "2436e51187b5c59a",
+       "hex": "61667465722d312061667465722d32"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 4,
+      "bytes": 33,
+      "total": 33,
+      "dropped": 0,
+      "cut": 33,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 33,
+       "fnv": "b068028394556739",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d32"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 33,
+       "fnv": "b068028394556739",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d32"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "78",
+     "times": 1,
+     "after": {
+      "chunks": 5,
+      "bytes": 34,
+      "total": 34,
+      "dropped": 0,
+      "cut": 33,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 34,
+       "fnv": "162386950d1e7373",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d3278"
+      },
+      "since": {
+       "utf8Bytes": 1,
+       "fnv": "af63f54c86021707",
+       "hex": "78"
+      },
+      "replayFor": {
+       "utf8Bytes": 34,
+       "fnv": "162386950d1e7373",
+       "hex": "6265666f72652d31206265666f72652d322061667465722d312061667465722d3278"
+      },
+      "replayForSince": {
+       "utf8Bytes": 1,
+       "fnv": "af63f54c86021707",
+       "hex": "78"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "resize with nothing after",
+   "note": "",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "616263",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 3,
+      "total": 3,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      },
+      "since": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      },
+      "replayFor": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      },
+      "replayForSince": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 1,
+      "bytes": 3,
+      "total": 3,
+      "dropped": 0,
+      "cut": 3,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 3,
+       "fnv": "e71fa2190541574b",
+       "hex": "616263"
+      },
+      "replayForSince": null
+     }
+    }
+   ]
+  },
+  {
+   "name": "trim keeps whole chunks",
+   "note": "over 512 K the oldest chunks go, whole",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "41",
+     "times": 307200,
+     "after": {
+      "chunks": 1,
+      "bytes": 307200,
+      "total": 307200,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 307200,
+       "fnv": "2a643be63e3a9325"
+      },
+      "since": {
+       "utf8Bytes": 307200,
+       "fnv": "2a643be63e3a9325"
+      },
+      "replayFor": {
+       "utf8Bytes": 307200,
+       "fnv": "2a643be63e3a9325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 307200,
+       "fnv": "2a643be63e3a9325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "42",
+     "times": 204800,
+     "after": {
+      "chunks": 2,
+      "bytes": 512000,
+      "total": 512000,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512000,
+       "fnv": "873383332b729325"
+      },
+      "since": {
+       "utf8Bytes": 512000,
+       "fnv": "873383332b729325"
+      },
+      "replayFor": {
+       "utf8Bytes": 512000,
+       "fnv": "873383332b729325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 512000,
+       "fnv": "873383332b729325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "43",
+     "times": 102400,
+     "after": {
+      "chunks": 2,
+      "bytes": 307200,
+      "total": 614400,
+      "dropped": 307200,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 307200,
+       "fnv": "7a67e9f146e87325"
+      },
+      "since": {
+       "utf8Bytes": 307200,
+       "fnv": "7a67e9f146e87325"
+      },
+      "replayFor": {
+       "utf8Bytes": 307200,
+       "fnv": "7a67e9f146e87325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 307200,
+       "fnv": "7a67e9f146e87325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "44",
+     "times": 10,
+     "after": {
+      "chunks": 3,
+      "bytes": 307210,
+      "total": 614410,
+      "dropped": 307200,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 307210,
+       "fnv": "db5110b999975a55"
+      },
+      "since": {
+       "utf8Bytes": 307210,
+       "fnv": "db5110b999975a55"
+      },
+      "replayFor": {
+       "utf8Bytes": 307210,
+       "fnv": "db5110b999975a55"
+      },
+      "replayForSince": {
+       "utf8Bytes": 307210,
+       "fnv": "db5110b999975a55"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "one huge chunk is kept",
+   "note": "the window never drops its last chunk, however big",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "5a",
+     "times": 716800,
+     "after": {
+      "chunks": 1,
+      "bytes": 716800,
+      "total": 716800,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 716800,
+       "fnv": "c9dd4c5a8cfea325"
+      },
+      "since": {
+       "utf8Bytes": 716800,
+       "fnv": "c9dd4c5a8cfea325"
+      },
+      "replayFor": {
+       "utf8Bytes": 716800,
+       "fnv": "c9dd4c5a8cfea325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 716800,
+       "fnv": "c9dd4c5a8cfea325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "7461696c",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 4,
+      "total": 716804,
+      "dropped": 716800,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 4,
+       "fnv": "d94c56ef0798d723",
+       "hex": "7461696c"
+      },
+      "since": {
+       "utf8Bytes": 4,
+       "fnv": "d94c56ef0798d723",
+       "hex": "7461696c"
+      },
+      "replayFor": {
+       "utf8Bytes": 4,
+       "fnv": "d94c56ef0798d723",
+       "hex": "7461696c"
+      },
+      "replayForSince": {
+       "utf8Bytes": 4,
+       "fnv": "d94c56ef0798d723",
+       "hex": "7461696c"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "59",
+     "times": 614400,
+     "after": {
+      "chunks": 1,
+      "bytes": 614400,
+      "total": 1331204,
+      "dropped": 716804,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 614400,
+       "fnv": "333c7c0be96f0325"
+      },
+      "since": {
+       "utf8Bytes": 614400,
+       "fnv": "333c7c0be96f0325"
+      },
+      "replayFor": {
+       "utf8Bytes": 614400,
+       "fnv": "333c7c0be96f0325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 614400,
+       "fnv": "333c7c0be96f0325"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "trim then since",
+   "note": "replayCut is measured against bytes ever written; replayDropped moves the window under it",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "61",
+     "times": 409600,
+     "after": {
+      "chunks": 1,
+      "bytes": 409600,
+      "total": 409600,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      },
+      "since": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      },
+      "replayFor": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 1,
+      "bytes": 409600,
+      "total": 409600,
+      "dropped": 0,
+      "cut": 409600,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 409600,
+       "fnv": "c5cd17bf404d6325"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "62",
+     "times": 102400,
+     "after": {
+      "chunks": 2,
+      "bytes": 512000,
+      "total": 512000,
+      "dropped": 0,
+      "cut": 409600,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512000,
+       "fnv": "6aa8214e021d6325"
+      },
+      "since": {
+       "utf8Bytes": 102400,
+       "fnv": "a1042710f5f22325"
+      },
+      "replayFor": {
+       "utf8Bytes": 512000,
+       "fnv": "6aa8214e021d6325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 102400,
+       "fnv": "a1042710f5f22325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "63",
+     "times": 102400,
+     "after": {
+      "chunks": 2,
+      "bytes": 204800,
+      "total": 614400,
+      "dropped": 409600,
+      "cut": 409600,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 204800,
+       "fnv": "043a975448b87325"
+      },
+      "since": {
+       "utf8Bytes": 204800,
+       "fnv": "043a975448b87325"
+      },
+      "replayFor": {
+       "utf8Bytes": 204800,
+       "fnv": "043a975448b87325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 204800,
+       "fnv": "043a975448b87325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "64",
+     "times": 409600,
+     "after": {
+      "chunks": 2,
+      "bytes": 512000,
+      "total": 1024000,
+      "dropped": 512000,
+      "cut": 409600,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      },
+      "since": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      },
+      "replayFor": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 2,
+      "bytes": 512000,
+      "total": 1024000,
+      "dropped": 512000,
+      "cut": 1024000,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 512000,
+       "fnv": "94127d84f0fe7325"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "65",
+     "times": 1,
+     "after": {
+      "chunks": 3,
+      "bytes": 512001,
+      "total": 1024001,
+      "dropped": 512000,
+      "cut": 1024000,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512001,
+       "fnv": "99de88e5805dd5c0"
+      },
+      "since": {
+       "utf8Bytes": 1,
+       "fnv": "af63d84c8601e5c0",
+       "hex": "65"
+      },
+      "replayFor": {
+       "utf8Bytes": 512001,
+       "fnv": "99de88e5805dd5c0"
+      },
+      "replayForSince": {
+       "utf8Bytes": 1,
+       "fnv": "af63d84c8601e5c0",
+       "hex": "65"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "cut inside a chunk that was partly before the resize",
+   "note": "",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "78",
+     "times": 532480,
+     "after": {
+      "chunks": 1,
+      "bytes": 532480,
+      "total": 532480,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      },
+      "since": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      },
+      "replayFor": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 1,
+      "bytes": 532480,
+      "total": 532480,
+      "dropped": 0,
+      "cut": 532480,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 532480,
+       "fnv": "f03b42a9974ca325"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "7461696c2d6166746572",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 10,
+      "total": 532490,
+      "dropped": 532480,
+      "cut": 532480,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 10,
+       "fnv": "63c2c6fcb828d4b0",
+       "hex": "7461696c2d6166746572"
+      },
+      "since": {
+       "utf8Bytes": 10,
+       "fnv": "63c2c6fcb828d4b0",
+       "hex": "7461696c2d6166746572"
+      },
+      "replayFor": {
+       "utf8Bytes": 10,
+       "fnv": "63c2c6fcb828d4b0",
+       "hex": "7461696c2d6166746572"
+      },
+      "replayForSince": {
+       "utf8Bytes": 10,
+       "fnv": "63c2c6fcb828d4b0",
+       "hex": "7461696c2d6166746572"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "71",
+     "times": 512000,
+     "after": {
+      "chunks": 2,
+      "bytes": 512010,
+      "total": 1044490,
+      "dropped": 532480,
+      "cut": 532480,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 512010,
+       "fnv": "7f174621261304b0"
+      },
+      "since": {
+       "utf8Bytes": 512010,
+       "fnv": "7f174621261304b0"
+      },
+      "replayFor": {
+       "utf8Bytes": 512010,
+       "fnv": "7f174621261304b0"
+      },
+      "replayForSince": {
+       "utf8Bytes": 512010,
+       "fnv": "7f174621261304b0"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "72",
+     "times": 20480,
+     "after": {
+      "chunks": 1,
+      "bytes": 20480,
+      "total": 1064970,
+      "dropped": 1044490,
+      "cut": 532480,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 20480,
+       "fnv": "b9639f51c8e92325"
+      },
+      "since": {
+       "utf8Bytes": 20480,
+       "fnv": "b9639f51c8e92325"
+      },
+      "replayFor": {
+       "utf8Bytes": 20480,
+       "fnv": "b9639f51c8e92325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 20480,
+       "fnv": "b9639f51c8e92325"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "lengths are UTF-16 units",
+   "note": "é counts 1, an emoji 2: replayBytes is a string length",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "68c3a96c6c6f20e29c9320",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 8,
+      "total": 8,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 11,
+       "fnv": "798dba57853ca225",
+       "hex": "68c3a96c6c6f20e29c9320"
+      },
+      "since": {
+       "utf8Bytes": 11,
+       "fnv": "798dba57853ca225",
+       "hex": "68c3a96c6c6f20e29c9320"
+      },
+      "replayFor": {
+       "utf8Bytes": 11,
+       "fnv": "798dba57853ca225",
+       "hex": "68c3a96c6c6f20e29c9320"
+      },
+      "replayForSince": {
+       "utf8Bytes": 11,
+       "fnv": "798dba57853ca225",
+       "hex": "68c3a96c6c6f20e29c9320"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "f09f988020656d6f6a69",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 16,
+      "total": 16,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      },
+      "since": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      },
+      "replayFor": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      },
+      "replayForSince": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 2,
+      "bytes": 16,
+      "total": 16,
+      "dropped": 0,
+      "cut": 16,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 21,
+       "fnv": "f2565d63fcb0e1a6",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a69"
+      },
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "7461696c20e697a5e69cac",
+     "times": 1,
+     "after": {
+      "chunks": 3,
+      "bytes": 23,
+      "total": 23,
+      "dropped": 0,
+      "cut": 16,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 32,
+       "fnv": "8d98fbcd5d6bc778",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a697461696c20e697a5e69cac"
+      },
+      "since": {
+       "utf8Bytes": 11,
+       "fnv": "6c6a2381fbd3fd05",
+       "hex": "7461696c20e697a5e69cac"
+      },
+      "replayFor": {
+       "utf8Bytes": 32,
+       "fnv": "8d98fbcd5d6bc778",
+       "hex": "68c3a96c6c6f20e29c9320f09f988020656d6f6a697461696c20e697a5e69cac"
+      },
+      "replayForSince": {
+       "utf8Bytes": 11,
+       "fnv": "6c6a2381fbd3fd05",
+       "hex": "7461696c20e697a5e69cac"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "the limit counts units, not bytes",
+   "note": "512 K of three-byte characters is exactly at the limit; one more unit trims",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "e697a5",
+     "times": 307200,
+     "after": {
+      "chunks": 1,
+      "bytes": 307200,
+      "total": 307200,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 921600,
+       "fnv": "5752b30a73942325"
+      },
+      "since": {
+       "utf8Bytes": 921600,
+       "fnv": "5752b30a73942325"
+      },
+      "replayFor": {
+       "utf8Bytes": 921600,
+       "fnv": "5752b30a73942325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 921600,
+       "fnv": "5752b30a73942325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "e69cac",
+     "times": 217088,
+     "after": {
+      "chunks": 2,
+      "bytes": 524288,
+      "total": 524288,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 1572864,
+       "fnv": "413232479408e325"
+      },
+      "since": {
+       "utf8Bytes": 1572864,
+       "fnv": "413232479408e325"
+      },
+      "replayFor": {
+       "utf8Bytes": 1572864,
+       "fnv": "413232479408e325"
+      },
+      "replayForSince": {
+       "utf8Bytes": 1572864,
+       "fnv": "413232479408e325"
+      }
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "21",
+     "times": 1,
+     "after": {
+      "chunks": 2,
+      "bytes": 217089,
+      "total": 524289,
+      "dropped": 307200,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 651265,
+       "fnv": "ed0d8dc82c63bfcc"
+      },
+      "since": {
+       "utf8Bytes": 651265,
+       "fnv": "ed0d8dc82c63bfcc"
+      },
+      "replayFor": {
+       "utf8Bytes": 651265,
+       "fnv": "ed0d8dc82c63bfcc"
+      },
+      "replayForSince": {
+       "utf8Bytes": 651265,
+       "fnv": "ed0d8dc82c63bfcc"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "failed start line",
+   "note": "pushed without counting: bytes and total stay 0",
+   "steps": [
+    {
+     "op": "pushUncounted",
+     "dHex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 0,
+      "total": 0,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "since": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "replayFor": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "replayForSince": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 1,
+      "bytes": 0,
+      "total": 0,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "since": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "replayFor": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      },
+      "replayForSince": {
+       "utf8Bytes": 66,
+       "fnv": "f2698cca39219885",
+       "hex": "0d0a5b636c617564652d6465636b5d206661696c656420746f20737461727420706f7765727368656c6c2e6578653a2046696c65206e6f7420666f756e643a200d0a"
+      }
+     }
+    }
+   ]
+  },
+  {
+   "name": "reset on respawn",
+   "note": "",
+   "steps": [
+    {
+     "op": "push",
+     "dHex": "1b5b3f31303439686f6c642073637265656e",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 18,
+      "total": 18,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "1b5b3f31303439681b5b324a1b5b48",
+      "modes": {
+       "1049": true
+      },
+      "all": {
+       "utf8Bytes": 18,
+       "fnv": "3be710730ba17bc1",
+       "hex": "1b5b3f31303439686f6c642073637265656e"
+      },
+      "since": {
+       "utf8Bytes": 18,
+       "fnv": "3be710730ba17bc1",
+       "hex": "1b5b3f31303439686f6c642073637265656e"
+      },
+      "replayFor": {
+       "utf8Bytes": 33,
+       "fnv": "c94a6bedfac5a7be",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303439686f6c642073637265656e"
+      },
+      "replayForSince": {
+       "utf8Bytes": 33,
+       "fnv": "c94a6bedfac5a7be",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303439686f6c642073637265656e"
+      }
+     }
+    },
+    {
+     "op": "resize",
+     "after": {
+      "chunks": 1,
+      "bytes": 18,
+      "total": 18,
+      "dropped": 0,
+      "cut": 18,
+      "prefixHex": "1b5b3f31303439681b5b324a1b5b48",
+      "modes": {
+       "1049": true
+      },
+      "all": {
+       "utf8Bytes": 18,
+       "fnv": "3be710730ba17bc1",
+       "hex": "1b5b3f31303439686f6c642073637265656e"
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": {
+       "utf8Bytes": 33,
+       "fnv": "c94a6bedfac5a7be",
+       "hex": "1b5b3f31303439681b5b324a1b5b481b5b3f31303439686f6c642073637265656e"
+      },
+      "replayForSince": {
+       "utf8Bytes": 15,
+       "fnv": "51079940a1eedb06",
+       "hex": "1b5b3f31303439681b5b324a1b5b48"
+      }
+     }
+    },
+    {
+     "op": "reset",
+     "after": {
+      "chunks": 0,
+      "bytes": 0,
+      "total": 0,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "since": {
+       "utf8Bytes": 0,
+       "fnv": "cbf29ce484222325",
+       "hex": ""
+      },
+      "replayFor": null,
+      "replayForSince": null
+     }
+    },
+    {
+     "op": "push",
+     "dHex": "6e65772070726f63657373",
+     "times": 1,
+     "after": {
+      "chunks": 1,
+      "bytes": 11,
+      "total": 11,
+      "dropped": 0,
+      "cut": 0,
+      "prefixHex": "",
+      "modes": {},
+      "all": {
+       "utf8Bytes": 11,
+       "fnv": "2b9b84d4b8719098",
+       "hex": "6e65772070726f63657373"
+      },
+      "since": {
+       "utf8Bytes": 11,
+       "fnv": "2b9b84d4b8719098",
+       "hex": "6e65772070726f63657373"
+      },
+      "replayFor": {
+       "utf8Bytes": 11,
+       "fnv": "2b9b84d4b8719098",
+       "hex": "6e65772070726f63657373"
+      },
+      "replayForSince": {
+       "utf8Bytes": 11,
+       "fnv": "2b9b84d4b8719098",
+       "hex": "6e65772070726f63657373"
+      }
+     }
+    }
+   ]
+  }
+ ],
+ "sliceOf": {
+  "hex": "61c3a9e29c93f09f98807a",
+  "slices": [
+   {
+    "skip": 0,
+    "hex": "61c3a9e29c93f09f98807a"
+   },
+   {
+    "skip": 1,
+    "hex": "c3a9e29c93f09f98807a"
+   },
+   {
+    "skip": 2,
+    "hex": "e29c93f09f98807a"
+   },
+   {
+    "skip": 3,
+    "hex": "f09f98807a"
+   },
+   {
+    "skip": 4,
+    "hex": "efbfbd7a"
+   },
+   {
+    "skip": 5,
+    "hex": "7a"
+   },
+   {
+    "skip": 6,
+    "hex": ""
+   }
+  ]
+ },
+ "decode": [
+  {
+   "name": "ascii",
+   "partsHex": [
+    "68656c6c6f"
+   ],
+   "outHex": [
+    "68656c6c6f"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "two-byte split",
+   "partsHex": [
+    "68c3",
+    "a96c"
+   ],
+   "outHex": [
+    "68",
+    "c3a96c"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "three-byte split 1+2",
+   "partsHex": [
+    "e2",
+    "9c93"
+   ],
+   "outHex": [
+    "",
+    "e29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "three-byte split 2+1",
+   "partsHex": [
+    "e29c",
+    "93"
+   ],
+   "outHex": [
+    "",
+    "e29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "four-byte split every way",
+   "partsHex": [
+    "f0",
+    "9f",
+    "98",
+    "80",
+    "f09f",
+    "9880",
+    "f09f98",
+    "80"
+   ],
+   "outHex": [
+    "",
+    "",
+    "",
+    "f09f9880",
+    "",
+    "f09f9880",
+    "",
+    "f09f9880"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "lone continuation",
+   "partsHex": [
+    "80",
+    "41bf42"
+   ],
+   "outHex": [
+    "efbfbd",
+    "41efbfbd42"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "overlong and invalid leads",
+   "partsHex": [
+    "c080",
+    "c1bf",
+    "f5808080",
+    "ff41fe"
+   ],
+   "outHex": [
+    "efbfbdefbfbd",
+    "efbfbdefbfbd",
+    "efbfbdefbfbdefbfbdefbfbd",
+    "efbfbd41efbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "truncated then ascii",
+   "partsHex": [
+    "e29c41",
+    "f09f9841",
+    "c341"
+   ],
+   "outHex": [
+    "efbfbd41",
+    "efbfbd41",
+    "efbfbd41"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "surrogate encoded",
+   "partsHex": [
+    "eda080",
+    "edb080",
+    "ed9fbf"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbdefbfbd",
+    "ed9fbf"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "e0 and f0 lower bounds",
+   "partsHex": [
+    "e080af",
+    "e0a080",
+    "f0808080",
+    "f0908080",
+    "f4908080",
+    "f48fbfbf"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd",
+    "e0a080",
+    "efbfbdefbfbdefbfbdefbfbd",
+    "f0908080",
+    "efbfbdefbfbdefbfbdefbfbd",
+    "f48fbfbf"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "incomplete at end",
+   "partsHex": [
+    "41e29c"
+   ],
+   "outHex": [
+    "41"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "incomplete four at end",
+   "partsHex": [
+    "f09f98"
+   ],
+   "outHex": [
+    ""
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "split invalid",
+   "partsHex": [
+    "e2",
+    "41",
+    "f09f",
+    "e29c93",
+    "c3",
+    "c3a9"
+   ],
+   "outHex": [
+    "",
+    "efbfbd41",
+    "",
+    "efbfbde29c93",
+    "",
+    "efbfbdc3a9"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 0",
+   "partsHex": [
+    "e29c",
+    "93",
+    "80",
+    "ffe29c93",
+    "41e2",
+    "9c93e29c",
+    "93",
+    "0ae29c93e2",
+    "ff0a",
+    "eded0a41ed",
+    "41e20a80e2",
+    "e29c930a80",
+    "ed800a0a41"
+   ],
+   "outHex": [
+    "",
+    "e29c93",
+    "efbfbd",
+    "efbfbde29c93",
+    "41",
+    "e29c93",
+    "e29c93",
+    "0ae29c93",
+    "efbfbdefbfbd0a",
+    "efbfbdefbfbd0a41",
+    "efbfbd41efbfbd0aefbfbd",
+    "efbfbde29c930aefbfbd",
+    "efbfbd0a0a41"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 1",
+   "partsHex": [
+    "e29c93410a",
+    "80",
+    "edff",
+    "ed",
+    "ed41",
+    "ff804180e2",
+    "e29c93ff",
+    "80",
+    "e29c9380",
+    "ffffffe20a",
+    "e2e241e2",
+    "9c93e280"
+   ],
+   "outHex": [
+    "e29c93410a",
+    "efbfbd",
+    "efbfbdefbfbd",
+    "",
+    "efbfbdefbfbd41",
+    "efbfbdefbfbd41efbfbd",
+    "efbfbde29c93efbfbd",
+    "efbfbd",
+    "e29c93efbfbd",
+    "efbfbdefbfbdefbfbdefbfbd0a",
+    "efbfbdefbfbd41",
+    "e29c93"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 2",
+   "partsHex": [
+    "e29c",
+    "938041e2ff",
+    "ffed0a",
+    "e29c93e2",
+    "ff80ed80ff",
+    "4180ed80",
+    "e2800a",
+    "41",
+    "0a41ffe29c",
+    "93ffe2",
+    "9c",
+    "9341"
+   ],
+   "outHex": [
+    "",
+    "e29c93efbfbd41efbfbdefbfbd",
+    "efbfbdefbfbd0a",
+    "e29c93",
+    "efbfbdefbfbdefbfbdefbfbdefbfbd",
+    "41efbfbd",
+    "efbfbdefbfbd0a",
+    "41",
+    "0a41efbfbd",
+    "e29c93efbfbd",
+    "",
+    "e29c9341"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 3",
+   "partsHex": [
+    "41ed80e2",
+    "0a80ffe2",
+    "ed80ffe29c",
+    "93ede280",
+    "ffe29c",
+    "9380e2",
+    "80",
+    "ff",
+    "e29c9380",
+    "e29c93ed0a",
+    "ffffe280"
+   ],
+   "outHex": [
+    "41efbfbd",
+    "efbfbd0aefbfbdefbfbd",
+    "efbfbdefbfbdefbfbd",
+    "e29c93efbfbd",
+    "efbfbdefbfbd",
+    "e29c93efbfbd",
+    "",
+    "efbfbdefbfbd",
+    "e29c93efbfbd",
+    "e29c93efbfbd0a",
+    "efbfbdefbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 4",
+   "partsHex": [
+    "ede2ed80",
+    "ed41e29c93",
+    "e2ff41",
+    "41",
+    "ff",
+    "e24180",
+    "e29c93e2",
+    "0ae29c93e2",
+    "e2",
+    "9c93e2e29c",
+    "93",
+    "ede2",
+    "e2e2e28041"
+   ],
+   "outHex": [
+    "efbfbdefbfbd",
+    "efbfbdefbfbd41e29c93",
+    "efbfbdefbfbd41",
+    "41",
+    "efbfbd",
+    "efbfbd41efbfbd",
+    "e29c93",
+    "efbfbd0ae29c93",
+    "efbfbd",
+    "e29c93efbfbd",
+    "e29c93",
+    "efbfbd",
+    "efbfbdefbfbdefbfbdefbfbd41"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 5",
+   "partsHex": [
+    "ede2e2ed80",
+    "e2e241e29c",
+    "93e2",
+    "9c93",
+    "8080ff",
+    "ffff0a",
+    "e280e2",
+    "8041e28041",
+    "410a0a4141",
+    "41"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbdefbfbd41",
+    "e29c93",
+    "e29c93",
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbd0a",
+    "efbfbd",
+    "efbfbd41efbfbd41",
+    "410a0a4141",
+    "41"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 6",
+   "partsHex": [
+    "0a800a80",
+    "80eded0aff",
+    "ed",
+    "ff41ffed41",
+    "0ae29c93",
+    "ff0a80ed",
+    "41e29c93e2",
+    "e20ae29c93",
+    "80800a"
+   ],
+   "outHex": [
+    "0aefbfbd0aefbfbd",
+    "efbfbdefbfbdefbfbd0aefbfbd",
+    "",
+    "efbfbdefbfbd41efbfbdefbfbd41",
+    "0ae29c93",
+    "efbfbd0aefbfbd",
+    "efbfbd41e29c93",
+    "efbfbdefbfbd0ae29c93",
+    "efbfbdefbfbd0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 7",
+   "partsHex": [
+    "800aed",
+    "e29c93e241",
+    "41ff80",
+    "ed",
+    "e2800a0a",
+    "4141ff0a",
+    "80e2e2",
+    "e2ff80",
+    "e29c930a",
+    "41e2",
+    "9c9380ff"
+   ],
+   "outHex": [
+    "efbfbd0a",
+    "efbfbde29c93efbfbd41",
+    "41efbfbdefbfbd",
+    "",
+    "efbfbdefbfbd0a0a",
+    "4141efbfbd0a",
+    "efbfbdefbfbd",
+    "efbfbdefbfbdefbfbdefbfbd",
+    "e29c930a",
+    "41",
+    "e29c93efbfbdefbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 8",
+   "partsHex": [
+    "0affe280",
+    "eded0a",
+    "e2",
+    "9c93",
+    "e20a41e29c",
+    "938080e2",
+    "9c93",
+    "41",
+    "4180ff4141",
+    "0aff",
+    "ffffed",
+    "ed80e2",
+    "e29c93"
+   ],
+   "outHex": [
+    "0aefbfbd",
+    "efbfbdefbfbdefbfbd0a",
+    "",
+    "e29c93",
+    "efbfbd0a41",
+    "e29c93efbfbdefbfbd",
+    "e29c93",
+    "41",
+    "41efbfbdefbfbd4141",
+    "0aefbfbd",
+    "efbfbdefbfbd",
+    "efbfbdefbfbd",
+    "efbfbde29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 9",
+   "partsHex": [
+    "41e2",
+    "41ffff",
+    "e29c93",
+    "80ed41",
+    "ffe29c9380",
+    "e29c93",
+    "e29c93e2",
+    "9c9380e2",
+    "0ae29c93",
+    "80",
+    "410ae29c",
+    "930ae24180",
+    "80",
+    "eded"
+   ],
+   "outHex": [
+    "41",
+    "efbfbd41efbfbdefbfbd",
+    "e29c93",
+    "efbfbdefbfbd41",
+    "efbfbde29c93efbfbd",
+    "e29c93",
+    "e29c93",
+    "e29c93efbfbd",
+    "efbfbd0ae29c93",
+    "efbfbd",
+    "410a",
+    "e29c930aefbfbd41efbfbd",
+    "efbfbd",
+    "efbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 10",
+   "partsHex": [
+    "ffe2ff41",
+    "41ffffe2",
+    "ffedffff",
+    "8041e2ffe2",
+    "9c93",
+    "e2",
+    "9c93",
+    "41",
+    "4180e2ed80",
+    "e2",
+    "9c",
+    "93ff",
+    "e280ed41"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd41",
+    "41efbfbdefbfbd",
+    "efbfbdefbfbdefbfbdefbfbdefbfbd",
+    "efbfbd41efbfbdefbfbd",
+    "e29c93",
+    "",
+    "e29c93",
+    "41",
+    "41efbfbdefbfbd",
+    "efbfbd",
+    "",
+    "e29c93efbfbd",
+    "efbfbdefbfbd41"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 11",
+   "partsHex": [
+    "ed80ed41ff",
+    "4141",
+    "e2",
+    "ff4141e2",
+    "9c93eded0a",
+    "e20a80ff",
+    "e29c",
+    "930a800a",
+    "ede29c93ed",
+    "e29c93e29c",
+    "9341ed"
+   ],
+   "outHex": [
+    "efbfbdefbfbd41efbfbd",
+    "4141",
+    "",
+    "efbfbdefbfbd4141",
+    "e29c93efbfbdefbfbd0a",
+    "efbfbd0aefbfbdefbfbd",
+    "",
+    "e29c930aefbfbd0a",
+    "efbfbde29c93",
+    "efbfbde29c93",
+    "e29c9341"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 12",
+   "partsHex": [
+    "ed0aed",
+    "e29c93",
+    "800a80e29c",
+    "930aed",
+    "41",
+    "e29c93",
+    "4180e2",
+    "9c9380e2",
+    "9c9341",
+    "e2ffe2",
+    "9c",
+    "9380",
+    "80",
+    "e28080ed",
+    "ff80ed"
+   ],
+   "outHex": [
+    "efbfbd0a",
+    "efbfbde29c93",
+    "efbfbd0aefbfbd",
+    "e29c930a",
+    "efbfbd41",
+    "e29c93",
+    "41efbfbd",
+    "e29c93efbfbd",
+    "e29c9341",
+    "efbfbdefbfbd",
+    "",
+    "e29c93efbfbd",
+    "efbfbd",
+    "e28080",
+    "efbfbdefbfbdefbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 13",
+   "partsHex": [
+    "ff",
+    "ed41e2",
+    "9c93",
+    "800a0a41ff",
+    "41edff",
+    "ed",
+    "410a41",
+    "e29c93",
+    "ff41",
+    "edffff",
+    "41",
+    "e29c",
+    "93e2e2",
+    "9c93",
+    "e2",
+    "9c93ff",
+    "0ae2",
+    "9c93"
+   ],
+   "outHex": [
+    "efbfbd",
+    "efbfbd41",
+    "e29c93",
+    "efbfbd0a0a41efbfbd",
+    "41efbfbdefbfbd",
+    "",
+    "efbfbd410a41",
+    "e29c93",
+    "efbfbd41",
+    "efbfbdefbfbdefbfbd",
+    "41",
+    "",
+    "e29c93efbfbd",
+    "e29c93",
+    "",
+    "e29c93efbfbd",
+    "0a",
+    "e29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 14",
+   "partsHex": [
+    "ffff0a80ed",
+    "ed0ae2e2",
+    "9c93e2edff",
+    "ffe2e29c93",
+    "0aff",
+    "ed",
+    "41",
+    "4141",
+    "e29c93ed",
+    "ffe29c93ed",
+    "808041ff"
+   ],
+   "outHex": [
+    "efbfbdefbfbd0aefbfbd",
+    "efbfbdefbfbd0aefbfbd",
+    "e29c93efbfbdefbfbdefbfbd",
+    "efbfbdefbfbde29c93",
+    "0aefbfbd",
+    "",
+    "efbfbd41",
+    "4141",
+    "e29c93",
+    "efbfbdefbfbde29c93",
+    "ed808041efbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 15",
+   "partsHex": [
+    "e2410a8041",
+    "80ed41e2",
+    "9c93",
+    "e2",
+    "9c",
+    "93",
+    "e2e2e2",
+    "9c9380",
+    "4180e2ed",
+    "41e2",
+    "9c93e20a",
+    "ff4180e2e2",
+    "410aff"
+   ],
+   "outHex": [
+    "efbfbd410aefbfbd41",
+    "efbfbdefbfbd41",
+    "e29c93",
+    "",
+    "",
+    "e29c93",
+    "efbfbdefbfbd",
+    "e29c93efbfbd",
+    "41efbfbdefbfbd",
+    "efbfbd41",
+    "e29c93efbfbd0a",
+    "efbfbd41efbfbdefbfbd",
+    "efbfbd410aefbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 16",
+   "partsHex": [
+    "ed0a",
+    "e2",
+    "9c93ed0a0a",
+    "ff",
+    "80e2ff",
+    "0a0a0a",
+    "ffed0a80",
+    "ed80",
+    "0a41",
+    "e29c93f0",
+    "9f98",
+    "80e29c93",
+    "41e2e241",
+    "e2e2"
+   ],
+   "outHex": [
+    "efbfbd0a",
+    "",
+    "e29c93efbfbd0a0a",
+    "efbfbd",
+    "efbfbdefbfbdefbfbd",
+    "0a0a0a",
+    "efbfbdefbfbd0aefbfbd",
+    "",
+    "efbfbd0a41",
+    "e29c93",
+    "",
+    "f09f9880e29c93",
+    "41efbfbdefbfbd41",
+    "efbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 17",
+   "partsHex": [
+    "0aed80e2ed",
+    "41ffede2e2",
+    "ff",
+    "0affff80",
+    "0ae280e2",
+    "9c930a",
+    "4180",
+    "80ff0ae280",
+    "e29c",
+    "93800a"
+   ],
+   "outHex": [
+    "0aefbfbdefbfbd",
+    "efbfbd41efbfbdefbfbdefbfbd",
+    "efbfbdefbfbd",
+    "0aefbfbdefbfbdefbfbd",
+    "0aefbfbd",
+    "e29c930a",
+    "41efbfbd",
+    "efbfbdefbfbd0a",
+    "efbfbd",
+    "e29c93efbfbd0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 18",
+   "partsHex": [
+    "0ae2e29c93",
+    "edff0a",
+    "ede2e29c93",
+    "80ffffe29c",
+    "9341e2e2",
+    "80ed41e2",
+    "e2c3a941",
+    "e2e29c",
+    "9380e2",
+    "0a",
+    "ed0a"
+   ],
+   "outHex": [
+    "0aefbfbde29c93",
+    "efbfbdefbfbd0a",
+    "efbfbdefbfbde29c93",
+    "efbfbdefbfbdefbfbd",
+    "e29c9341efbfbd",
+    "efbfbdefbfbd41",
+    "efbfbdefbfbdc3a941",
+    "efbfbd",
+    "e29c93efbfbd",
+    "efbfbd0a",
+    "efbfbd0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 19",
+   "partsHex": [
+    "e29c93",
+    "ff80",
+    "ed41",
+    "80e2",
+    "9c93ffe2",
+    "9c",
+    "930ae29c",
+    "93e2",
+    "9c93",
+    "ede2",
+    "9c",
+    "9380",
+    "eded80",
+    "ed8041ed80",
+    "e2ffff80",
+    "ede29c93",
+    "0a"
+   ],
+   "outHex": [
+    "e29c93",
+    "efbfbdefbfbd",
+    "efbfbd41",
+    "efbfbd",
+    "e29c93efbfbd",
+    "",
+    "e29c930a",
+    "e29c93",
+    "e29c93",
+    "efbfbd",
+    "",
+    "e29c93efbfbd",
+    "efbfbd",
+    "efbfbdefbfbd41",
+    "efbfbdefbfbdefbfbdefbfbdefbfbd",
+    "efbfbde29c93",
+    "0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 20",
+   "partsHex": [
+    "8041e29c",
+    "93ffed41e2",
+    "ed",
+    "e29c",
+    "93e280ffff",
+    "e29c930aff",
+    "e29c93",
+    "e2ff80",
+    "ed",
+    "ed",
+    "80",
+    "e241ed",
+    "41ff41",
+    "80"
+   ],
+   "outHex": [
+    "efbfbd41",
+    "e29c93efbfbdefbfbd41",
+    "efbfbd",
+    "efbfbd",
+    "e29c93efbfbdefbfbdefbfbd",
+    "e29c930aefbfbd",
+    "e29c93",
+    "efbfbdefbfbdefbfbd",
+    "",
+    "efbfbd",
+    "",
+    "efbfbdefbfbd41",
+    "efbfbd41efbfbd41",
+    "efbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 21",
+   "partsHex": [
+    "ff0a80",
+    "ffed8041",
+    "e29c93e20a",
+    "ffe2",
+    "9c9341800a",
+    "0ae2e2e29c",
+    "93",
+    "ffe29c93ed",
+    "e2e20a41",
+    "ff0a",
+    "80ed"
+   ],
+   "outHex": [
+    "efbfbd0aefbfbd",
+    "efbfbdefbfbd41",
+    "e29c93efbfbd0a",
+    "efbfbd",
+    "e29c9341efbfbd0a",
+    "0aefbfbdefbfbd",
+    "e29c93",
+    "efbfbde29c93",
+    "efbfbdefbfbdefbfbd0a41",
+    "efbfbd0a",
+    "efbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 22",
+   "partsHex": [
+    "41",
+    "410a80",
+    "800ae2",
+    "800aff",
+    "ffe29c93",
+    "0a0aff",
+    "e2ff",
+    "e29c93edff",
+    "edffe28080",
+    "e29c93",
+    "41",
+    "e280",
+    "ff"
+   ],
+   "outHex": [
+    "41",
+    "410aefbfbd",
+    "efbfbd0a",
+    "efbfbd0aefbfbd",
+    "efbfbde29c93",
+    "0a0aefbfbd",
+    "efbfbdefbfbd",
+    "e29c93efbfbdefbfbd",
+    "efbfbdefbfbde28080",
+    "e29c93",
+    "41",
+    "",
+    "efbfbdefbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 23",
+   "partsHex": [
+    "e280e2",
+    "ede29c93",
+    "ffe2",
+    "ff",
+    "80ff",
+    "80e24180",
+    "ed",
+    "ff",
+    "80ffe2800a",
+    "41eded",
+    "80e2ff",
+    "0aff",
+    "0a"
+   ],
+   "outHex": [
+    "efbfbd",
+    "efbfbdefbfbde29c93",
+    "efbfbd",
+    "efbfbdefbfbd",
+    "efbfbdefbfbd",
+    "efbfbdefbfbd41efbfbd",
+    "",
+    "efbfbdefbfbd",
+    "efbfbdefbfbdefbfbd0a",
+    "41efbfbd",
+    "efbfbdefbfbdefbfbd",
+    "0aefbfbd",
+    "0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 24",
+   "partsHex": [
+    "0a80ed80",
+    "e29c93",
+    "edff",
+    "4180e2",
+    "9c93e2e2",
+    "80ede2e2",
+    "ffed80ff41",
+    "edff",
+    "41",
+    "0aeded",
+    "e29c9341e2",
+    "9c"
+   ],
+   "outHex": [
+    "0aefbfbd",
+    "efbfbde29c93",
+    "efbfbdefbfbd",
+    "41efbfbd",
+    "e29c93efbfbd",
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbdefbfbdefbfbd41",
+    "efbfbdefbfbd",
+    "41",
+    "0aefbfbd",
+    "efbfbde29c9341",
+    ""
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 25",
+   "partsHex": [
+    "edff0a80",
+    "e2edff",
+    "80ff",
+    "0affe29c93",
+    "e2e29c93ed",
+    "ed41",
+    "0ae2",
+    "ed418080",
+    "ed",
+    "ff8041",
+    "eded",
+    "80"
+   ],
+   "outHex": [
+    "efbfbdefbfbd0aefbfbd",
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbd",
+    "0aefbfbde29c93",
+    "efbfbde29c93",
+    "efbfbdefbfbd41",
+    "0a",
+    "efbfbdefbfbd41efbfbdefbfbd",
+    "",
+    "efbfbdefbfbdefbfbd41",
+    "efbfbd",
+    ""
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 26",
+   "partsHex": [
+    "0aededed0a",
+    "ff800a",
+    "0a",
+    "e29c93",
+    "ed",
+    "41e2e29c",
+    "93e29c93",
+    "ff80ed",
+    "0ae241",
+    "ffed",
+    "41",
+    "e2",
+    "9c93e29c",
+    "93e2edff",
+    "80"
+   ],
+   "outHex": [
+    "0aefbfbdefbfbdefbfbd0a",
+    "efbfbdefbfbd0a",
+    "0a",
+    "e29c93",
+    "",
+    "efbfbd41efbfbd",
+    "e29c93e29c93",
+    "efbfbdefbfbd",
+    "efbfbd0aefbfbd41",
+    "efbfbd",
+    "efbfbd41",
+    "",
+    "e29c93",
+    "e29c93efbfbdefbfbdefbfbd",
+    "efbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 27",
+   "partsHex": [
+    "ffe2ff",
+    "e2ffe241e2",
+    "9c93",
+    "ed80",
+    "41e241ff",
+    "0aff0affe2",
+    "800affe29c",
+    "9341e241e2",
+    "9c",
+    "93e29c9380",
+    "e2"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd",
+    "efbfbdefbfbdefbfbd41",
+    "e29c93",
+    "",
+    "efbfbd41efbfbd41efbfbd",
+    "0aefbfbd0aefbfbd",
+    "efbfbd0aefbfbd",
+    "e29c9341efbfbd41",
+    "",
+    "e29c93e29c93efbfbd",
+    ""
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 28",
+   "partsHex": [
+    "f0",
+    "9fe2",
+    "9c930a41",
+    "ed4141e2e2",
+    "9c930a",
+    "eded",
+    "ff0ae2",
+    "9c",
+    "93e29c93e2",
+    "9c93",
+    "80ff",
+    "e29c93ed",
+    "e2",
+    "e20a41",
+    "e29c93e2e2",
+    "9c93",
+    "ede29c93"
+   ],
+   "outHex": [
+    "",
+    "efbfbd",
+    "e29c930a41",
+    "efbfbd4141efbfbd",
+    "e29c930a",
+    "efbfbd",
+    "efbfbdefbfbd0a",
+    "",
+    "e29c93e29c93",
+    "e29c93",
+    "efbfbdefbfbd",
+    "e29c93",
+    "efbfbd",
+    "efbfbdefbfbd0a41",
+    "e29c93efbfbd",
+    "e29c93",
+    "efbfbde29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 29",
+   "partsHex": [
+    "80e241",
+    "80e29c",
+    "9341",
+    "414180e29c",
+    "93e29c",
+    "9341",
+    "e241",
+    "e29c930a0a",
+    "e29c9380",
+    "eded",
+    "0ae20a41",
+    "e28080",
+    "e29c93e2"
+   ],
+   "outHex": [
+    "efbfbdefbfbd41",
+    "efbfbd",
+    "e29c9341",
+    "4141efbfbd",
+    "e29c93",
+    "e29c9341",
+    "efbfbd41",
+    "e29c930a0a",
+    "e29c93efbfbd",
+    "efbfbd",
+    "efbfbd0aefbfbd0a41",
+    "e28080",
+    "e29c93"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 30",
+   "partsHex": [
+    "8080ffed",
+    "80ed",
+    "e2edff",
+    "8080",
+    "ff80",
+    "ed",
+    "0a80e2",
+    "edff80e2e2",
+    "9c",
+    "93",
+    "ff410a",
+    "ffffe29c93",
+    "e2",
+    "9c930a"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd",
+    "efbfbd",
+    "efbfbdefbfbdefbfbdefbfbd",
+    "efbfbdefbfbd",
+    "efbfbdefbfbd",
+    "",
+    "efbfbd0aefbfbd",
+    "efbfbdefbfbdefbfbdefbfbdefbfbd",
+    "",
+    "e29c93",
+    "efbfbd410a",
+    "efbfbdefbfbde29c93",
+    "",
+    "e29c930a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 31",
+   "partsHex": [
+    "ff41ede241",
+    "ed0aff",
+    "80410aed",
+    "8041",
+    "e29c93",
+    "e29c9380",
+    "edff41ed",
+    "e2",
+    "9c930aff",
+    "ff",
+    "e20ae2e2",
+    "e29c93"
+   ],
+   "outHex": [
+    "efbfbd41efbfbdefbfbd41",
+    "efbfbd0aefbfbd",
+    "efbfbd410a",
+    "efbfbd41",
+    "e29c93",
+    "e29c93efbfbd",
+    "efbfbdefbfbd41",
+    "efbfbd",
+    "e29c930aefbfbd",
+    "efbfbd",
+    "efbfbd0aefbfbd",
+    "efbfbde29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 32",
+   "partsHex": [
+    "e2e29c",
+    "93e2",
+    "9c",
+    "41e2",
+    "ffed",
+    "0a0a",
+    "41e29c93",
+    "e2e2",
+    "e2",
+    "9c",
+    "93e2ed",
+    "ffed",
+    "e29c93",
+    "e2e2e29c",
+    "93e2",
+    "9c93e2e2",
+    "80e29c",
+    "93ffe2ed"
+   ],
+   "outHex": [
+    "efbfbd",
+    "e29c93",
+    "",
+    "efbfbd41",
+    "efbfbdefbfbd",
+    "efbfbd0a0a",
+    "41e29c93",
+    "efbfbd",
+    "efbfbd",
+    "",
+    "e29c93efbfbd",
+    "efbfbdefbfbd",
+    "efbfbde29c93",
+    "efbfbdefbfbd",
+    "e29c93",
+    "e29c93efbfbd",
+    "efbfbd",
+    "e29c93efbfbdefbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 33",
+   "partsHex": [
+    "41",
+    "ed0ae2e2e2",
+    "4141",
+    "ff",
+    "ff41",
+    "0a41",
+    "0aed",
+    "41ed",
+    "ed0a",
+    "ffed",
+    "0ae2",
+    "9c93",
+    "0aede29c93",
+    "e20aff0a"
+   ],
+   "outHex": [
+    "41",
+    "efbfbd0aefbfbdefbfbd",
+    "efbfbd4141",
+    "efbfbd",
+    "efbfbd41",
+    "0a41",
+    "0a",
+    "efbfbd41",
+    "efbfbdefbfbd0a",
+    "efbfbd",
+    "efbfbd0a",
+    "e29c93",
+    "0aefbfbde29c93",
+    "efbfbd0aefbfbd0a"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 34",
+   "partsHex": [
+    "0a",
+    "e29c93",
+    "ffe29c",
+    "93e20a",
+    "ffed",
+    "ede29c93",
+    "e2",
+    "9c93",
+    "41",
+    "41e2",
+    "9c938041ed",
+    "8080e20a41",
+    "0a80",
+    "ede29c",
+    "93e29c93",
+    "0a",
+    "e2e2"
+   ],
+   "outHex": [
+    "0a",
+    "e29c93",
+    "efbfbd",
+    "e29c93efbfbd0a",
+    "efbfbd",
+    "efbfbdefbfbde29c93",
+    "",
+    "e29c93",
+    "41",
+    "41",
+    "e29c93efbfbd41",
+    "ed8080efbfbd0a41",
+    "0aefbfbd",
+    "efbfbd",
+    "e29c93e29c93",
+    "0a",
+    "efbfbd"
+   ],
+   "endHex": "efbfbd"
+  },
+  {
+   "name": "random 35",
+   "partsHex": [
+    "8080ed0a",
+    "41",
+    "4180ff",
+    "edffffe29c",
+    "93ff",
+    "ede29c93",
+    "41",
+    "ede29ce29c",
+    "93ff",
+    "e241e2e2",
+    "ed80e2",
+    "9c930a41e2",
+    "9c93"
+   ],
+   "outHex": [
+    "efbfbdefbfbdefbfbd0a",
+    "41",
+    "41efbfbdefbfbd",
+    "efbfbdefbfbdefbfbd",
+    "e29c93efbfbd",
+    "efbfbde29c93",
+    "41",
+    "efbfbdefbfbd",
+    "e29c93efbfbd",
+    "efbfbd41efbfbd",
+    "efbfbdefbfbd",
+    "e29c930a41",
+    "e29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 36",
+   "partsHex": [
+    "0a",
+    "ffedffe2",
+    "9c9380",
+    "e2ede2",
+    "8041800ae2",
+    "9c930a41",
+    "e29c93",
+    "e29c",
+    "93e29c",
+    "93",
+    "800aede2",
+    "ffede2",
+    "800a0a",
+    "e29c",
+    "93"
+   ],
+   "outHex": [
+    "0a",
+    "efbfbdefbfbdefbfbd",
+    "e29c93efbfbd",
+    "efbfbdefbfbd",
+    "efbfbd41efbfbd0a",
+    "e29c930a41",
+    "e29c93",
+    "",
+    "e29c93",
+    "e29c93",
+    "efbfbd0aefbfbd",
+    "efbfbdefbfbdefbfbd",
+    "efbfbd0a0a",
+    "",
+    "e29c93"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 37",
+   "partsHex": [
+    "0a41",
+    "ffffe241",
+    "e29c9380e2",
+    "0ae29c93ff",
+    "e29c9380",
+    "804141ff0a",
+    "0a41",
+    "0a8041e2",
+    "e29c",
+    "93",
+    "41e29c93",
+    "8080"
+   ],
+   "outHex": [
+    "0a41",
+    "efbfbdefbfbdefbfbd41",
+    "e29c93efbfbd",
+    "efbfbd0ae29c93efbfbd",
+    "e29c93efbfbd",
+    "efbfbd4141efbfbd0a",
+    "0a41",
+    "0aefbfbd41",
+    "efbfbd",
+    "e29c93",
+    "41e29c93",
+    "efbfbdefbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 38",
+   "partsHex": [
+    "ed",
+    "ed",
+    "800a41",
+    "e2e29c",
+    "93ed80",
+    "e2e2ff0a",
+    "0aff80",
+    "80410ae2",
+    "80e29c93e2",
+    "e29c93",
+    "ed41edc3a9",
+    "0aff"
+   ],
+   "outHex": [
+    "",
+    "efbfbd",
+    "efbfbd0a41",
+    "efbfbd",
+    "e29c93",
+    "efbfbdefbfbdefbfbdefbfbd0a",
+    "0aefbfbdefbfbd",
+    "efbfbd410a",
+    "efbfbde29c93",
+    "efbfbde29c93",
+    "efbfbd41efbfbdc3a9",
+    "0aefbfbd"
+   ],
+   "endHex": ""
+  },
+  {
+   "name": "random 39",
+   "partsHex": [
+    "e29c",
+    "93",
+    "e2ff41",
+    "e2e29c93",
+    "0a",
+    "41e29c93",
+    "ffffed",
+    "e29c93410a",
+    "e241",
+    "e24141",
+    "edffe20a",
+    "80e2e29c93",
+    "ff",
+    "e280"
+   ],
+   "outHex": [
+    "",
+    "e29c93",
+    "efbfbdefbfbd41",
+    "efbfbde29c93",
+    "0a",
+    "41e29c93",
+    "efbfbdefbfbd",
+    "efbfbde29c93410a",
+    "efbfbd41",
+    "efbfbd4141",
+    "efbfbdefbfbdefbfbd0a",
+    "efbfbdefbfbde29c93",
+    "efbfbd",
+    ""
+   ],
+   "endHex": "efbfbd"
+  }
+ ]
+}

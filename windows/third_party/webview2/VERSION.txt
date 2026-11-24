@@ -1,0 +1,13 @@
+WebView2.h          Microsoft.Web.WebView2 1.0.4314.35 (NuGet, nuget.org), build/native/include/WebView2.h, unmodified.
+                    Its target runtime (CORE_WEBVIEW_TARGET_PRODUCT_VERSION): 156.0.4314.35.
+LICENSE.txt         the package's licence (BSD-style, (c) Microsoft Corporation).
+NOTICE.txt          the package's third-party notices.
+LICENSE-webview.txt MIT, (c) 2017 Serge Zaitsev, (c) 2022 Steffen André Langnes: the webview/webview project, whose
+                    built-in loader (core/include/webview/detail/platform/windows/webview2/loader.hh) is what
+                    windows/web/webview2_loader.cpp is ported from.
+
+No binary is kept here and none is shipped: WebView2Loader.dll is not used (windows/web/webview2_loader.cpp finds the
+installed Evergreen runtime and calls its EmbeddedBrowserWebView.dll itself), and the runtime is Windows' own.
+
+Updating: download https://www.nuget.org/api/v2/package/Microsoft.Web.WebView2 (a zip), replace WebView2.h, LICENSE.txt
+and NOTICE.txt, change the version above, run windows/web-test/build.ps1.

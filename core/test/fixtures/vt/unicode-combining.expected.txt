@@ -1,0 +1,13 @@
+init 20 6 10000
+size 20 6
+cursor 1 5
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=0 scrollBottom=5
+title -
+replies -
+scrollback 0
+V n 65+301,1,d,d,0 20,1,d,d,0 61+308+304,1,d,d,0 20,1,d,d,0 6e+303,1,d,d,0 15*-,1,d,d,0
+V n 301,0,d,d,0 78,1,d,d,0 18*-,1,d,d,0
+V n 61,1,d,d,0 62+200d,1,d,d,0 63,1,d,d,0 64+fe0f,1,d,d,0 65,1,d,d,0 66+200b+200c+200e,1,d,d,0 14*-,1,d,d,0
+V n 4e2d+301,2,d,d,0 -,0,d,d,0 6587+fe00,2,d,d,0 -,0,d,d,0 16*-,1,d,d,0
+V n 71,1,d,d,0 -,1,d,d,0 301,0,d,d,0 17*-,1,d,d,0
+V n 7a+301+302+303+304+305+306+307+308,1,d,d,0 19*-,1,d,d,0

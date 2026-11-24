@@ -1,0 +1,330 @@
+[?9001h[?1004h[?25l[2J[m[2;1H]0;C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe[?25h[?25l
+    Directory: C:\Windows[6;1HMode                 LastWriteTime         Length Name[65X
+----                 -------------         ------ ----[65X
+d-----         8/27/2026   9:49 AM                appcompat[60X
+d-----        11/17/2026   7:42 AM                apppatch[61X
+d-----        11/18/2026   4:10 AM                AppReadiness[57X
+d-----         12/9/2025  12:50 PM                assembly[61X
+d-----        11/10/2026   5:47 PM                bcastdvr[61X
+d-----          4/1/2024   3:34 AM                Boot[65X
+d-----          4/1/2024   3:26 AM                Branding[61X
+d-----        11/10/2026   5:47 PM                BrowserCore[58X
+d-----        11/18/2026   4:30 PM                CbsTemp[62X
+d-----          4/1/2024   4:03 AM                Containers[59X
+d-----         4/28/2025  10:46 PM                CSC[66X
+d-----          4/1/2024   3:26 AM                Cursors[62X
+d-----         8/25/2025  10:31 PM                debug[64X
+[?25hd-----          4/1/2024   3:34 AM                diagnostics[58X
+d-----         8/12/2026  11:32 PM                DiagTrack[60X
+d-----          4/1/2024   4:00 AM                DigitalLocker[56X
+d---s-          4/1/2024   3:26 AM                Downloaded Program Files[45X
+d-----        11/10/2026   5:47 PM                en-US[64X
+d-r-s-        11/10/2026   5:47 PM                Fonts[64X
+d-----          4/1/2024   3:26 AM                GameBarPresenceWriter[48X
+d-----          4/1/2024   4:03 AM                Globalization[56X
+d-----          4/1/2024   4:00 AM                Help[65X
+d-----          4/1/2024   3:34 AM                IdentityCRL[58X
+d-----         5/29/2025   8:06 AM                IME
+d-r---        11/10/2026   5:47 PM                ImmersiveControlPanel
+d-----          9/9/2026  12:29 AM                InboxApps
+d-----        11/16/2026   9:29 AM                INF
+d-----          4/1/2024   3:34 AM                InputMethod
+d-----          9/9/2026  12:29 AM                L2Schemas
+d-----          7/1/2026   6:33 PM                LiveKernelReports
+d-----         11/4/2026  10:18 AM                Logs
+d-r-s-          4/1/2024   3:34 AM                Media
+d-----         5/29/2025   8:06 AM                Microsoft
+d-----        11/18/2026  11:23 AM                Microsoft.NET
+d-----          4/1/2024   3:26 AM                Migration
+d-----         9/29/2026   7:50 AM                Minidump[61X
+d-----          4/1/2024   3:26 AM                ModemLogs
+d-----          4/1/2024   4:03 AM                OCR
+d-r---          4/1/2024   3:26 AM                Offline Web Pages
+d-----          6/9/2025  11:43 AM                Panther
+d-----          4/1/2024   3:26 AM                Performance
+d-----          4/1/2024   3:34 AM                PLA
+d-----        11/10/2026   5:47 PM                PolicyDefinitions
+d-----        11/18/2026   1:23 PM                Prefetch
+d-----        11/10/2026   5:47 PM                Provisioning
+d-----         5/29/2025  11:01 AM                Registration
+d-----          4/1/2024   4:03 AM                RemotePackages
+d-----          4/1/2024   3:26 AM                rescache
+d-----          4/1/2024   3:34 AM                Resources
+d-----          4/1/2024   3:26 AM                SchCache
+d-----         5/29/2025   8:08 AM                schemas
+d-----         8/12/2026  11:32 PM                SecureBoot
+d-----          4/1/2024   4:03 AM                security
+d-----         5/29/2025   8:08 AM                ServiceProfiles
+d-----          4/7/2026   8:58 AM                ServiceState
+d-----        11/10/2026   5:47 PM                servicing
+d-----         5/29/2025   8:11 AM                Setup
+d-----        11/10/2026   5:47 PM                ShellComponents[54X
+d-----        11/10/2026   5:47 PM                ShellExperiences
+d-----          4/1/2024   3:34 AM                SKB
+d-----         5/29/2025  11:00 AM                SoftwareDistribution
+d-----          4/1/2024   3:26 AM                Speech
+d-----          4/1/2024   3:26 AM                Speech_OneCore
+d-----          4/1/2024   3:26 AM                System
+d-----        11/16/2026   9:29 AM                System32
+d-----         7/16/2026   9:59 PM                SystemApps
+d-----        11/10/2026   5:47 PM                SystemResources
+d-----        11/18/2026  12:23 PM                SystemTemp
+d-----        11/10/2026   5:47 PM                SysWOW64
+d-----          4/1/2024   3:26 AM                TAPI
+d-----         5/29/2025  11:00 AM                Tasks
+d-----        11/18/2026   3:53 PM                Temp
+d-----          4/1/2024   3:26 AM                tracing[62X
+d-----         7/16/2026   9:59 PM                twain_32
+d-----        11/10/2026   5:47 PM                UUS
+d-----          4/1/2024   3:26 AM                Vss
+d-----          4/1/2024   3:26 AM                WaaS
+d-----          4/1/2024   3:34 AM                Web
+d-----        11/13/2026  11:03 AM                WinSxS
+d-----        11/10/2026   5:47 PM                WUModels
+-a----        11/10/2026   3:55 PM         147456 bfsvc.exe
+-a--s-        11/17/2026  10:25 PM          67584 bootstat.dat
+-a----         5/29/2025  11:00 AM           6524 comsetup.log[57X
+-a----         8/25/2026   5:01 PM          14312 DPINST.LOG
+-a----         3/11/2026  10:45 PM           2516 DtcInstall.log
+-a----        11/10/2026   3:55 PM        3358576 explorer.exe
+-a----        11/10/2026   3:55 PM        1081344 HelpPane.exe
+-a----        11/10/2026   3:55 PM          40960 hh.exe
+-a----          4/1/2024   3:22 AM          43131 mib.bin
+-a----        11/10/2026   3:55 PM         360448 notepad.exe
+-a----         4/29/2025  10:20 AM             28 OutLog.txt
+-a----        11/16/2026   9:22 AM         397908 PFRO.log
+-a----          4/1/2024   3:22 AM          25359 Professional.xml
+-a----          4/8/2025   3:46 PM         772976 py.exe
+-a----          4/8/2025   3:46 PM          53096 pyshellext.amd64.dll
+-a----          4/8/2025   3:46 PM         770552 pyw.exe
+-a----        11/10/2026   3:55 PM         577536 regedit.exe
+-a----         2/29/2024   5:12 AM         967176 RTUWPSrvcLib.dll
+-a----          6/6/2024   5:31 AM        1026064 RTUWPSrvcMain.exe
+-a----         2/29/2024   5:12 AM        1050336 RTUWPUsbSwExt.dll
+-a----         2/29/2024   5:12 AM         910960 RTUWPWlanExt.dll
+-a----        11/16/2026   9:22 AM        1282425 setupact.log
+-a----         5/29/2025  10:59 AM              0 setuperr.log
+-a----        11/10/2026   3:55 PM         225280 splwow64.exe
+-a----          5/7/2022   1:22 AM            219 system.ini
+-a----        11/10/2026   3:55 PM          90624 twain_32.dll
+-a----         8/25/2026   5:01 PM          71281 unins000.dat
+-a----         8/25/2026   5:01 PM        1496791 unins000.exe
+-a----         9/19/2026   2:28 AM         265455 unins001.dat[57X
+-a----         9/19/2026   2:28 AM        1510111 unins001.exe
+-a----          5/7/2022   1:22 AM             92 win.ini
+-a----        11/18/2026   4:30 PM            276 WindowsUpdate.log
+-a----         8/25/2025   9:48 AM          12288 winhlp32.exe
+-a----          4/1/2024   4:03 AM         316640 WMSysPr9.prx
+
+Id      : 39612
+Handles : 498
+CPU     : 0.46875
+SI      : 1
+Name    : AcrobatNotificationClient
+
+
+Id      : 39440
+Handles : 2840
+CPU     : 201.25
+SI      : 1
+Name    : Adobe Desktop Service
+
+
+Id      : 7728
+Handles : 523
+CPU     : 0.484375
+SI      : 1
+Name    : AdobeCollabSync
+
+
+Id      : 12184
+Handles : 730
+CPU     : 238.140625
+SI      : 1
+Name    : AdobeCollabSync
+
+
+Id      : 8180
+Handles : 234
+CPU     : 54.828125
+SI      : 1
+Name    : AdobeIPCBroker
+
+
+Id      : 71184
+Handles : 516
+CPU     : 0.21875
+SI      : 1
+Name    : AdobeNotificationClient
+
+
+Id      : 5080
+Handles : 257
+CPU     :[1C
+SI      : 0
+Name    : AdobeUpdateService
+
+
+Id      : 6732
+Handles : 253
+CPU     :
+SI      : 0
+Name    : AggregatorHost
+
+
+Id      : 2768
+Handles : 349
+CPU     : 4.828125
+SI      : 1
+Name    : AppActions
+
+
+Id      : 4936
+Handles : 153
+CPU     :
+SI      : 0
+Name    : armsvc
+
+
+Id      : 10652
+Handles : 256
+CPU     : 185.453125
+SI      : 1
+Name    : AutoHotkey64
+
+
+Id      : 25300
+Handles : 275
+CPU     : 262.921875
+SI      : 1
+Name    : AutoHotkey64
+
+
+Id      : 700
+Handles : 156
+CPU     : 0.53125
+SI      : 1
+Name    : bash
+
+
+Id      : 9680
+Handles : 143
+CPU     : 0
+SI      : 1
+Name    : bash
+
+
+Id      : 10956
+Handles : 170
+CPU     : 1.5625
+SI      : 1
+Name    : bash
+
+
+Id      : 11016
+Handles : 170
+CPU     : 1.0625
+SI      : 1
+Name    : bash
+
+
+Id      : 11220
+Handles : 167
+CPU     : 0.015625
+SI      : 1
+Name    : bash
+
+
+Id      : 12888
+Handles : 170
+CPU     : 1.1875
+SI      : 1
+Name    : bash
+
+
+Id      : 15748
+Handles : 82
+CPU     : 0.015625
+SI      : 1
+Name    : bash
+
+
+Id      : 20284
+Handles : 241
+CPU     : 0.03125
+SI      : 1
+Name    : bash
+
+
+Id      : 22600
+Handles : 91
+CPU     : 0
+SI      : 1
+Name    : bash
+
+
+Id      : 25068
+Handles : 166
+CPU     : 1.875
+SI      : 1
+Name    : bash
+
+
+Id      : 25380
+Handles : 166
+CPU     : 0.015625
+SI      : 1
+Name    : bash
+
+
+Id      : 25956
+Handles : 170
+CPU     : 0.796875
+SI      : 1
+Name    : bash
+
+
+Id      : 26152
+Handles : 170
+CPU     : 0.375
+SI      : 1
+Name    : bash
+
+
+Id      : 26456
+Handles : 180
+CPU     : 0.03125
+SI      : 1
+Name    : bash
+
+
+Id      : 26888
+Handles : 91
+CPU     : 0.015625
+SI      : 1
+Name    : bash
+
+
+Id      : 27792
+Handles : 170
+CPU     : 0.875
+SI      : 1
+Name    : bash
+
+
+Id      : 29508
+Handles : 231
+CPU     : 0.046875
+SI      : 1
+Name    : bash
+
+
+Id      : 30012
+Handles : 82
+CPU     : 0.015625
+SI      : 1
+Name    : bash
+
+[38;5;10mok[m
+
+

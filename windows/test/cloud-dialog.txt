@@ -1,0 +1,20 @@
+wait 900; rzone new-acct vv; wait 300; dump ozones; shot cdlg-0-menu; menu New vv cloud; wait 400; dump ozones; shot cdlg-a-open;
+
+ozone cdlg-go; wait 200; dump ozones; shot cdlg-b-empty;
+
+text Port the worklist page to web.; tap enter; text Keep the sheet running until the switch.; wait 200; dump ozones; shot cdlg-c-typed;
+tap enter; text line 3; tap enter; text line 4; tap enter; text line 5; tap enter; text line 6; tap enter; text line 7; tap enter; text line 8; tap enter; text line 9 is the last; wait 200; dump ozones; shot cdlg-d-scrolled;
+wheel 700 400 360; wait 200; dump ozones; shot cdlg-d2-wheeled;
+tap ctrl+home; tap shift+end; wait 200; shot cdlg-d3-selected; tap up; tap down; tap down; tap end; text  (edited); wait 200; dump ozones;
+
+tap tab; wait 100; tap ctrl+A; text C:\work\other repo; wait 200; dump ozones; shot cdlg-e-folder;
+tap F9; wait 300; shot cdlg-e2-sidebar-key; tap F9; wait 300; tap 3; wait 100;
+
+tap ctrl+enter; wait 400; dump ozones; shot cdlg-f-starting; ozone cdlg-go; wait 200;
+cdlg fail Error invoking remote method 'tile:new': Error: no such folder: C:\work\other repo; wait 200; dump ozones; shot cdlg-g-refused;
+ozone cdlg-go; wait 300; dump ozones;
+tap esc; wait 300; dump state; shot cdlg-h-closed;
+
+tap ctrl+shift+P; wait 200; text cloud session: work; wait 200; tap enter; wait 400; dump ozones; shot cdlg-i-palette; size 500 420; wait 300; shot cdlg-i2-narrow; size 1400 900; wait 200;
+ozone cdlg-cancel; wait 200; dump ozones;
+tap ctrl+shift+P; wait 200; text cloud session: vv; tap enter; wait 300; click 30 30; wait 300; dump ozones; dump state

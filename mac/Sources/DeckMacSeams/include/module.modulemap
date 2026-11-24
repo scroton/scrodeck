@@ -1,0 +1,6 @@
+// Swift sees DeckMacSeams.h only (C). MacSeams.hpp / KeychainNames.hpp are C++ and stay private to the target.
+// UNBUILT. VERIFY together with DeckCoreBridge's module map.
+module DeckMacSeams {
+  header "DeckMacSeams.h"
+  export *
+}

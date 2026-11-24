@@ -1,0 +1,90 @@
+{
+ "module": "default-settings",
+ "generatedFrom": "main.js DEFAULT_SETTINGS (HOME = C:\\Users\\fixture, no CLAUDE_DECK_CWD)",
+ "home": "C:\\Users\\fixture",
+ "settings": {
+  "aliases": {},
+  "fontSize": 14,
+  "zoomFontSize": 0,
+  "fontFamily": "",
+  "cwd": "C:\\Users\\fixture",
+  "autoTrust": true,
+  "resumeChoice": "ask",
+  "animations": true,
+  "effortStyle": "tag",
+  "sidebarSide": "left",
+  "pinSide": "edge",
+  "bars": {
+   "session": {
+    "show": true,
+    "name": "Session (5 h)",
+    "from": "#22c55e",
+    "to": "#ef4444"
+   },
+   "week": {
+    "show": true,
+    "name": "Week",
+    "from": "#22c55e",
+    "to": "#ef4444"
+   },
+   "fable": {
+    "show": true,
+    "name": "Fable (if applicable)",
+    "from": "#22d3ee",
+    "to": "#d946ef"
+   },
+   "context": {
+    "show": true,
+    "name": "Context",
+    "from": "#fbbf24",
+    "to": "#f97316"
+   }
+  },
+  "barLabels": {
+   "time": true,
+   "day": true
+  },
+  "barLabelMode": "reset",
+  "msgLines": {
+   "normal": 3,
+   "wide": 10
+  },
+  "notify": {
+   "waiting": true,
+   "done": true,
+   "asks": true,
+   "minTurnSec": 20,
+   "sound": true
+  },
+  "phone": {
+   "enabled": false,
+   "port": 8788,
+   "bind": "tailscale",
+   "token": ""
+  },
+  "pages": [],
+  "hibernate": {
+   "enabled": true,
+   "idleMinutes": 30,
+   "keepPinned": true,
+   "maxPerTick": 3
+  },
+  "grid": {
+   "rows": 2,
+   "cols": 2
+  },
+  "oneWindow": true,
+  "stepEscape": true,
+  "driver": "auto",
+  "asks": {
+   "deckThreshold": null,
+   "picker": "alongside",
+   "usePages": true,
+   "background": true,
+   "showTile": true,
+   "showMarks": true,
+   "closeOnDone": true
+  },
+  "deskOpen": true
+ }
+}

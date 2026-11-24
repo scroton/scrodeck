@@ -1,0 +1,38 @@
+{
+ "fixture": "sgr-underline-save-restore",
+ "xterm": "6.0.0",
+ "cols": 30,
+ "rows": 4,
+ "cursor": {
+  "x": 5,
+  "y": 0
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 61,1,d,d,608 63,1,d,d,8 64,1,d,d,0 66,1,d,d,8 67,1,d,d,8 25*-,1,d,d,0",
+  "n 30*-,1,d,d,0",
+  "n 30*-,1,d,d,0",
+  "n 30*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

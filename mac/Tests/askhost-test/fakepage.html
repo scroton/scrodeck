@@ -1,0 +1,41 @@
+<!doctype html>
+<html><head><meta charset="utf-8"><title>a fake ask page</title></head>
+<body><div>a fake ask page: the host bridge of the skill's templates/page.html, nothing else</div>
+<script>
+// mac/Tests/askhost-test/fakepage.html - an ask page as the ask pane sees it: it speaks the host bridge of the
+// ask-page skill's templates/page.html ("the host bridge"), message for message:
+//   page -> host: ready {h, answered, later, total, drafted}, change {state, ...progress}, height {h},
+//                 answers {req, answers, text, locked}
+//   host -> page: load {state | null, readonly?}, get {req}, clear, lock
+// plus the test's own levers (askpage '__test_*'), which the real page does not have. A page whose id holds
+// "legacy" never says ready (a page made before the bridge).
+(function () {
+  const id = decodeURIComponent(location.pathname.split('/').pop().replace(/\.html$/, ''));
+  const host = window.parent !== window ? window.parent : null;
+  if (!host || /legacy/.test(id)) return;
+  let S = {}, locked = false, cleared = 0;
+  const items = ['q1', 'q2'];
+  const tell = (what, extra) => { try { host.postMessage(Object.assign({ askpage: what, id }, extra || {}), '*'); } catch (e) {} };
+  const has = q => S[q] && (S[q].pick || (S[q].text || '').trim());
+  const answers = () => {
+    const lines = items.filter(has).map(q => `${q}: ${(S[q].text || '').trim() || S[q].pick}`);
+    return { kind: 'ask-page-answers', id, lines, answered: lines.length, later: 0, total: items.length };
+  };
+  const progress = () => { const A = answers(); return { answered: A.answered, later: 0, total: A.total, drafted: items.filter(has).length }; };
+  const changed = () => tell('change', Object.assign({ state: S }, progress()));
+  window.addEventListener('message', ev => {
+    const m = ev.data;
+    if (ev.source !== host || !m || typeof m !== 'object' || (m.id && m.id !== id)) return;
+    if (m.askpage === 'load') { S = m.state && typeof m.state === 'object' ? JSON.parse(JSON.stringify(m.state)) : {}; if (m.readonly) locked = true; else if (!locked) changed(); tell('height', { h: 222 }); }
+    else if (m.askpage === 'lock') locked = true;
+    else if (m.askpage === 'get') { const A = answers(); tell('answers', { req: m.req, answers: A, text: A.lines.join('\n'), locked }); }
+    else if (m.askpage === 'clear' && !locked) { S = {}; cleared++; changed(); }
+    // the test's levers
+    else if (m.askpage === '__test_set' && !locked) { S[m.qid] = { text: m.text || '', pick: m.pick || null }; changed(); }
+    else if (m.askpage === '__test_force_change') { S[m.qid] = { text: m.text || '', pick: null }; changed(); }
+    else if (m.askpage === '__test_state') tell('__test_state', { state: S, locked, cleared });
+    else if (m.askpage === '__test_spoof') { try { host.postMessage({ askpage: 'change', id: 'ask_other', state: { evil: 1 }, drafted: 9, answered: 9, total: 9 }, '*'); } catch (e) {} }
+  });
+  tell('ready', Object.assign({ h: 200 }, progress()));
+})();
+</script></body></html>

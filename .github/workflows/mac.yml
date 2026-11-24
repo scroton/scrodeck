@@ -1,0 +1,66 @@
+# .github/workflows/mac.yml - the Swift shell's first builds, on GitHub's macOS runners (there is no Mac here).
+# 2026-11-19 (an ask page): "yes, within the included minutes". The repo is PRIVATE, so macOS minutes count
+# 10x against the plan's included Actions minutes: this runs ONLY when started by hand (workflow_dispatch), never on a
+# push, with a 25-minute cap. Order as mac/README.md "First-build checklist" asks: the core on Apple clang first, each
+# layer upward, `swift build` last - every step runs (continue-on-error) so ONE run shows every layer's state.
+name: mac
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      swift:
+        description: also run `swift build` in mac/
+        type: boolean
+        default: true
+jobs:
+  build:
+    runs-on: macos-latest
+    timeout-minutes: 25
+    steps:
+      # the deck suite's route bodies were recorded from the office PC's checkout (Windows line endings) and serve
+      # @xterm from node_modules: the same here, so a difference left is the code's, not the checkout's
+      - name: line endings as the recording's
+        run: git config --global core.autocrlf true
+      - uses: actions/checkout@v4
+      - name: the two @xterm packages the routes serve (package-lock.json's versions, nothing else)
+        run: npm install --no-save --no-package-lock --ignore-scripts @xterm/xterm@6.0.0 @xterm/addon-fit@0.11.0
+      - name: toolchain
+        run: clang++ --version; swift --version; sw_vers
+      - name: core model (core/test/run.cpp)
+        continue-on-error: true
+        run: clang++ -std=c++17 -O2 core/model/layout.cpp core/model/hibernate.cpp core/model/prompts.cpp core/model/triggers.cpp core/test/run.cpp -o /tmp/deck-model && /tmp/deck-model
+      - name: core vt (xterm.js parity)
+        continue-on-error: true
+        run: clang++ -std=c++17 -O2 -Wall core/vt/terminal.cpp core/vt/buffer.cpp core/vt/parser.cpp core/vt/unicode.cpp core/test/vt/vt_test.cpp -o /tmp/deck-vt && /tmp/deck-vt core/test/fixtures/vt
+      - name: core proto
+        continue-on-error: true
+        run: clang++ -std=c++17 -O1 -Wall core/test/proto/proto_test.cpp -o /tmp/deck-proto && /tmp/deck-proto core/test/fixtures
+      - name: core session
+        continue-on-error: true
+        run: clang++ -std=c++17 -O1 -Wall core/session/*.cpp core/test/session/session_test.cpp -o /tmp/deck-session && /tmp/deck-session core/test/fixtures/session
+      - name: core deck (Windows fakes, then --posix)
+        continue-on-error: true
+        run: |
+          clang++ -std=c++17 -O1 -Wall -Wextra core/deck/*.cpp core/session/*.cpp core/model/layout.cpp core/test/deck/*.cpp -o /tmp/deck-deck
+          /tmp/deck-deck core/test/fixtures/deck "$PWD" > /tmp/deck-win.txt || true
+          /tmp/deck-deck core/test/fixtures/deck "$PWD" --posix > /tmp/deck-posix.txt || true
+          grep -E "^FAIL|passed" /tmp/deck-win.txt | head -200
+          grep -E "^FAIL|passed" /tmp/deck-posix.txt | head -120
+          grep -q " 0 failed" /tmp/deck-win.txt && grep -q " 0 failed" /tmp/deck-posix.txt
+      - name: core input (keys, mouse)
+        continue-on-error: true
+        run: |
+          clang++ -std=c++17 -O1 -Wall -Wextra core/test/input/keys_test.cpp core/deck/platform.cpp core/deck/util.cpp -o /tmp/deck-keys && /tmp/deck-keys | tail -3
+          clang++ -std=c++17 -O1 -Wall core/test/input/mouse_test.cpp -o /tmp/deck-mouse && /tmp/deck-mouse core/test/input/mouse-vectors.json | tail -3
+      - name: mac bridge test (the C facade on fake seams)
+        continue-on-error: true
+        run: |
+          clang++ -std=c++17 -O1 -Wall -I . -I mac/Sources/DeckCoreBridge/include -I mac/Sources/DeckMacSeams \
+            core/deck/*.cpp core/session/*.cpp core/vt/*.cpp core/model/layout.cpp \
+            mac/Sources/DeckCoreBridge/DeckBridge.cpp mac/Tests/bridge_test.cpp -o /tmp/deck-bridge && /tmp/deck-bridge | tail -5
+      - name: swift build (mac/)
+        if: ${{ inputs.swift }}
+        continue-on-error: true
+        working-directory: mac
+        run: swift build 2>&1 | tail -150

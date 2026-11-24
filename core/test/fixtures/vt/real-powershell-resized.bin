@@ -1,0 +1,86 @@
+[?9001h[?1004h[?25l[2J[m[HPS C:\Windows>[1C]0;C:\WINDOWS\System32\WindowsPowerShell\v1.0\powershell.exe[?25h[?25l[1;14H> [36m'line of text that is fairly long, long enough to wrap when the window gets narrow ' [90m* [97m3
+[?25h[mline of text that is fairly long, long enough to wrap when the window gets narrow line of text that is fairly long, long enough to wrap when the window gets narrow line of text that is fairly long, long enough to wrap when the window gets narrow 
+PS C:\Windows> [?25l[5;14H> [97m1[90m..[97m25[m
+1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25[?25h
+PS C:\Windows>[1C[?25l[8;20;70t[H7[K
+8[K
+9[K
+10[K
+11[K
+12[K
+13[K
+14[K
+15[K
+16[K
+17[K
+18[K
+19[K
+20[K
+21[K
+22[K
+23[K
+24[K
+25[K
+PS C:\Windows>[K[1C[?25h[?25l[H7[K
+8[K
+9[K
+10[K
+11[K
+12[K
+13[K
+14[K
+15[K
+16[K
+17[K
+18[K
+19[K
+20[K
+21[K
+22[K
+23[K
+24[K
+25[K
+PS C:\Windows>[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K
+[K[20;16H[?25h[?25l[20;14H> [36m'after the resizes'[m
+after the resizes
+PS C:\Windows> [?25h[?25l[92mexit
+[?25h

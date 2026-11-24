@@ -1,0 +1,1454 @@
+{
+ "accounts": [
+  {
+   "id": "a1",
+   "dir": "D:/fake/a1"
+  },
+  {
+   "id": "a2",
+   "dir": "D:/fake/a2"
+  },
+  {
+   "id": "a3",
+   "dir": "D:/fake/a3"
+  }
+ ],
+ "steps": [
+  {
+   "label": "no credentials anywhere",
+   "clock": 1000000,
+   "force": false,
+   "reload": false,
+   "creds": {},
+   "stamps": {},
+   "responses": {},
+   "requests": 0,
+   "calls": [],
+   "data": {
+    "a1": {
+     "state": "no-credentials",
+     "fetchedAt": 1000000
+    },
+    "a2": {
+     "state": "no-credentials",
+     "fetchedAt": 1000000
+    },
+    "a3": {
+     "state": "no-credentials",
+     "fetchedAt": 1000000
+    }
+   },
+   "cache": null
+  },
+  {
+   "label": "first poll: ok / 401 / 429 with retry-after",
+   "clock": 1010000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 401
+    },
+    "T3": {
+     "status": 429,
+     "headers": {
+      "retry-after": "120"
+     }
+    }
+   },
+   "requests": 3,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    },
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    },
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1010000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "expired",
+     "fetchedAt": 1010000,
+     "plan": null
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1010000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1010000
+    }
+   }
+  },
+  {
+   "label": "ten seconds later: nothing is asked again",
+   "clock": 1020000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 401
+    },
+    "T3": {
+     "status": 429,
+     "headers": {
+      "retry-after": "120"
+     }
+    }
+   },
+   "requests": 0,
+   "calls": [],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1010000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "expired",
+     "fetchedAt": 1010000,
+     "plan": null
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1010000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1010000
+    }
+   }
+  },
+  {
+   "label": "the credentials changed for a2: asked at once; a3 is still backing off",
+   "clock": 1030000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2b",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 500
+    },
+    "T3": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    }
+   },
+   "requests": 1,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1010000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "error",
+     "fetchedAt": 1030000,
+     "plan": null,
+     "error": "HTTP 500"
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1010000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1010000
+    }
+   }
+  },
+  {
+   "label": "forced: a1 again, a3 still backing off",
+   "clock": 1040000,
+   "force": true,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2b",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 500
+    },
+    "T3": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    }
+   },
+   "requests": 2,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    },
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1040000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "error",
+     "fetchedAt": 1040000,
+     "plan": null,
+     "error": "HTTP 500"
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1010000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1040000
+    }
+   }
+  },
+  {
+   "label": "after the retry-after: a3 is asked; 429 with no header backs off ten minutes",
+   "clock": 1131000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2b",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 200,
+     "json": {}
+    },
+    "T3": {
+     "status": 429
+    }
+   },
+   "requests": 0,
+   "calls": [],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1040000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "error",
+     "fetchedAt": 1040000,
+     "plan": null,
+     "error": "HTTP 500"
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1010000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1040000
+    }
+   }
+  },
+  {
+   "label": "three minutes on: a1 and a2 refresh, a3 waits",
+   "clock": 1312000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {
+      "accessToken": "T2",
+      "expiresAt": 9000000000000
+     }
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "s1",
+    "D:/fake/a2": "s2b",
+    "D:/fake/a3": "s3"
+   },
+   "responses": {
+    "T1": {
+     "status": 200,
+     "json": {
+      "five_hour": {
+       "utilization": 12.5,
+       "resets_at": "2026-11-18T10:00:00Z"
+      },
+      "seven_day": {
+       "utilization": 40,
+       "resets_at": "2026-11-22T00:00:00Z"
+      },
+      "limits": [
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "display_name": "Fable",
+          "id": "fable"
+         }
+        },
+        "percent": 7,
+        "resets_at": "2026-11-22T00:00:00Z"
+       },
+       {
+        "kind": "weekly_scoped",
+        "scope": {
+         "model": {
+          "id": "opus"
+         }
+        },
+        "percent": "x"
+       },
+       {
+        "kind": "other"
+       },
+       null
+      ]
+     }
+    },
+    "T2": {
+     "status": 200,
+     "json": {}
+    },
+    "T3": {
+     "status": 429
+    }
+   },
+   "requests": 3,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    },
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    },
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "ok",
+     "fetchedAt": 1312000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "ok",
+     "fetchedAt": 1312000,
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": []
+    },
+    "a3": {
+     "state": "rate-limited",
+     "fetchedAt": 1312000,
+     "plan": "max"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1312000
+    },
+    "a2": {
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": [],
+     "savedAt": 1312000
+    }
+   }
+  },
+  {
+   "label": "an expired token, a missing token, a network error",
+   "clock": 2500000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 5
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {}
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T9",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "x1",
+    "D:/fake/a2": "x2",
+    "D:/fake/a3": "x3"
+   },
+   "responses": {},
+   "requests": 1,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "expired",
+     "fetchedAt": 2500000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "no-credentials",
+     "fetchedAt": 2500000,
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": []
+    },
+    "a3": {
+     "state": "error",
+     "fetchedAt": 2500000,
+     "plan": "max",
+     "error": "fetch failed"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1312000
+    },
+    "a2": {
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": [],
+     "savedAt": 1312000
+    }
+   }
+  },
+  {
+   "label": "a body that is not JSON",
+   "clock": 3500000,
+   "force": false,
+   "reload": false,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 5
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {}
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {
+    "D:/fake/a1": "x1",
+    "D:/fake/a2": "x2",
+    "D:/fake/a3": "x4"
+   },
+   "responses": {
+    "T3": {
+     "status": 200,
+     "text": "<html>"
+    }
+   },
+   "requests": 1,
+   "calls": [
+    {
+     "url": "https://api.anthropic.com/api/oauth/usage",
+     "auth": "Bearer <token>",
+     "beta": "oauth-2025-04-20",
+     "type": "application/json"
+    }
+   ],
+   "data": {
+    "a1": {
+     "state": "expired",
+     "fetchedAt": 3500000,
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ]
+    },
+    "a2": {
+     "state": "no-credentials",
+     "fetchedAt": 3500000,
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": []
+    },
+    "a3": {
+     "state": "error",
+     "fetchedAt": 3500000,
+     "plan": "max",
+     "error": "Unexpected token '<', \"<html>\" is not valid JSON"
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1312000
+    },
+    "a2": {
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": [],
+     "savedAt": 1312000
+    }
+   }
+  },
+  {
+   "label": "a new poller reads the cache",
+   "clock": 3600000,
+   "force": false,
+   "reload": true,
+   "creds": {
+    "D:/fake/a1": {
+     "claudeAiOauth": {
+      "accessToken": "T1",
+      "subscriptionType": "max",
+      "expiresAt": 5
+     }
+    },
+    "D:/fake/a2": {
+     "claudeAiOauth": {}
+    },
+    "D:/fake/a3": {
+     "claudeAiOauth": {
+      "accessToken": "T3",
+      "subscriptionType": "max",
+      "expiresAt": 9000000000000
+     }
+    }
+   },
+   "stamps": {},
+   "responses": {
+    "T3": {
+     "status": 200,
+     "text": "<html>"
+    }
+   },
+   "requests": 0,
+   "calls": [],
+   "data": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1312000,
+     "state": "no-credentials",
+     "fetchedAt": 3600000
+    },
+    "a2": {
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": [],
+     "savedAt": 1312000,
+     "state": "no-credentials",
+     "fetchedAt": 3600000
+    },
+    "a3": {
+     "state": "no-credentials",
+     "fetchedAt": 3600000
+    }
+   },
+   "cache": {
+    "a1": {
+     "plan": "max",
+     "session": {
+      "used": 12.5,
+      "resetsAt": "2026-11-18T10:00:00Z"
+     },
+     "week": {
+      "used": 40,
+      "resetsAt": "2026-11-22T00:00:00Z"
+     },
+     "scoped": [
+      {
+       "model": "Fable",
+       "used": 7,
+       "resetsAt": "2026-11-22T00:00:00Z"
+      },
+      {
+       "model": "opus",
+       "used": null,
+       "resetsAt": null
+      }
+     ],
+     "savedAt": 1312000
+    },
+    "a2": {
+     "plan": null,
+     "session": {
+      "used": null,
+      "resetsAt": null
+     },
+     "week": {
+      "used": null,
+      "resetsAt": null
+     },
+     "scoped": [],
+     "savedAt": 1312000
+    }
+   }
+  }
+ ]
+}

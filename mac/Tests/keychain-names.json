@@ -1,0 +1,83 @@
+{
+ "home": "/Users/t",
+ "cwd": "/Users/t/work",
+ "cases": [
+  {
+   "dir": "/Users/t/.claude",
+   "names": [
+    "Claude Code-credentials-600c4be7",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "/Users/t/.claude/",
+   "names": [
+    "Claude Code-credentials-0c3502d8",
+    "Claude Code-credentials-600c4be7",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "/Users/t/.claude-work//",
+   "names": [
+    "Claude Code-credentials-e0c46396",
+    "Claude Code-credentials-6ef7d3fc",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "~/.claude-demo",
+   "names": [
+    "Claude Code-credentials-956f3f65",
+    "Claude Code-credentials-6c697318",
+    "Claude Code-credentials-825c1e59",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": ".claude-rel",
+   "names": [
+    "Claude Code-credentials-41862ac4",
+    "Claude Code-credentials-122bcaef",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "../up/.claude",
+   "names": [
+    "Claude Code-credentials-b5ac8856",
+    "Claude Code-credentials-0213d79c",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "/Users/t/café/.claude",
+   "names": [
+    "Claude Code-credentials-f86ad603",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "/a/./b/../c",
+   "names": [
+    "Claude Code-credentials-6ed6f038",
+    "Claude Code-credentials-61f97427",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "",
+   "names": [
+    "Claude Code-credentials-b9a5132d",
+    "Claude Code-credentials"
+   ]
+  },
+  {
+   "dir": "/",
+   "names": [
+    "Claude Code-credentials-8a5edab2",
+    "Claude Code-credentials"
+   ]
+  }
+ ]
+}

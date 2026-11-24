@@ -1,0 +1,40 @@
+{
+ "fixture": "charset-national",
+ "xterm": "6.0.0",
+ "cols": 40,
+ "rows": 4,
+ "cursor": {
+  "x": 23,
+  "y": 3
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 1,
+ "viewport": [
+  "w 40,1,d,d,0 c4,1,d,d,0 d6,1,d,d,0 c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e9,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 a3,1,d,d,0 e0,1,d,d,0 b0,1,d,d,0 e7,1,d,d,0 a7,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 60,1,d,d,0 e9,1,d,d,0 f9,1,d,d,0 e8,1,d,d,0 a8,1,d,d,0 20,1,d,d,0 23,1,d,d,0 e0,1,d,d,0 e2,1,d,d,0 e7,1,d,d,0 ea,1,d,d,0 ee,1,d,d,0 5f,1,d,d,0 f4,1,d,d,0 e9,1,d,d,0 f9,1,d,d,0 e8,1,d,d,0 fb,1,d,d,0 20,1,d,d,0 23,1,d,d,0 a7,1,d,d,0",
+  "w c4,1,d,d,0 d6,1,d,d,0 dc,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 60,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 fc,1,d,d,0 df,1,d,d,0 20,1,d,d,0 a3,1,d,d,0 a7,1,d,d,0 b0,1,d,d,0 e7,1,d,d,0 e9,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 f9,1,d,d,0 e0,1,d,d,0 f2,1,d,d,0 e8,1,d,d,0 ec,1,d,d,0 20,1,d,d,0 23,1,d,d,0 c4,1,d,d,0 c6,1,d,d,0 d8,1,d,d,0 c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e4,1,d,d,0 e6,1,d,d,0 f8,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 23,1,d,d,0 c4,1,d,d,0 c6,1,d,d,0",
+  "w d8,1,d,d,0 c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e4,1,d,d,0 e6,1,d,d,0 f8,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 a3,1,d,d,0 a7,1,d,d,0 a1,1,d,d,0 d1,1,d,d,0 bf,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 60,1,d,d,0 b0,1,d,d,0 f1,1,d,d,0 e7,1,d,d,0 7e,1,d,d,0 20,1,d,d,0 23,1,d,d,0 c9,1,d,d,0 c4,1,d,d,0 d6,1,d,d,0 c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e9,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 23,1,d,d,0 c9,1,d,d,0 c4,1,d,d,0 d6,1,d,d,0",
+  "w c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e9,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 f9,1,d,d,0 e0,1,d,d,0 e9,1,d,d,0 e7,1,d,d,0 ea,1,d,d,0 ee,1,d,d,0 e8,1,d,d,0 f4,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 fc,1,d,d,0 fb,1,d,d,0 23,1,d,d,0 40,1,d,d,0 17*-,1,d,d,0"
+ ],
+ "scrollback": [
+  "n a3,1,d,d,0 40,1,d,d,0 5b,1,d,d,0 5c,1,d,d,0 5d,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 60,1,d,d,0 7b,1,d,d,0 7c,1,d,d,0 7d,1,d,d,0 7e,1,d,d,0 20,1,d,d,0 a3,1,d,d,0 be,1,d,d,0 69,1,d,d,0 bd,1,d,d,0 7c,1,d,d,0 5e,1,d,d,0 5f,1,d,d,0 60,1,d,d,0 a8,1,d,d,0 66,1,d,d,0 bc,1,d,d,0 b4,1,d,d,0 20,1,d,d,0 23,1,d,d,0 40,1,d,d,0 c4,1,d,d,0 d6,1,d,d,0 c5,1,d,d,0 dc,1,d,d,0 5f,1,d,d,0 e9,1,d,d,0 e4,1,d,d,0 f6,1,d,d,0 e5,1,d,d,0 fc,1,d,d,0 20,1,d,d,0 23,1,d,d,0"
+ ]
+}

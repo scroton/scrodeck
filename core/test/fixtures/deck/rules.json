@@ -1,0 +1,908 @@
+{
+ "terminalReply": [
+  {
+   "in": "",
+   "out": false
+  },
+  {
+   "in": "a",
+   "out": false
+  },
+  {
+   "in": "\u001b[I",
+   "out": true
+  },
+  {
+   "in": "\u001b[O",
+   "out": true
+  },
+  {
+   "in": "\u001b[I\u001b[O",
+   "out": true
+  },
+  {
+   "in": "\u001b[12;40R",
+   "out": true
+  },
+  {
+   "in": "\u001b[?1;2c",
+   "out": true
+  },
+  {
+   "in": "\u001b[>0;276;0c",
+   "out": true
+  },
+  {
+   "in": "\u001b[0n",
+   "out": true
+  },
+  {
+   "in": "\u001b]11;rgb:0c0c/0c0c/0c0c\u0007",
+   "out": true
+  },
+  {
+   "in": "\u001b]10;x\u001b\\",
+   "out": true
+  },
+  {
+   "in": "\u001b[<64;40;12M",
+   "out": true
+  },
+  {
+   "in": "\u001b[<0;1;1m",
+   "out": true
+  },
+  {
+   "in": "\u001b[Mabc",
+   "out": true
+  },
+  {
+   "in": "\u001b[Mééé",
+   "out": true
+  },
+  {
+   "in": "\u001b[Mab",
+   "out": false
+  },
+  {
+   "in": "\u001b[<;M",
+   "out": true
+  },
+  {
+   "in": "\u001b[A",
+   "out": false
+  },
+  {
+   "in": "\u001b[I ",
+   "out": false
+  },
+  {
+   "in": "x\u001b[I",
+   "out": false
+  },
+  {
+   "in": "\u001b",
+   "out": false
+  },
+  {
+   "in": "\u001b[",
+   "out": false
+  },
+  {
+   "in": "\u001b]never",
+   "out": false
+  },
+  {
+   "in": "\u001b[<64;40;12M4;40;12M",
+   "out": false
+  },
+  {
+   "in": "\r",
+   "out": false
+  },
+  {
+   "in": "\u001b[200~paste\u001b[201~",
+   "out": false
+  },
+  {
+   "in": "\u001b[R",
+   "out": true
+  },
+  {
+   "in": "\u001b[?c\u001b[I\u001b[<1;2;3M",
+   "out": true
+  }
+ ],
+ "usageNotice": [
+  {
+   "in": "",
+   "out": false
+  },
+  {
+   "in": "all good",
+   "out": false
+  },
+  {
+   "in": "You hit your spend limit",
+   "out": true
+  },
+  {
+   "in": "Usage limit reached",
+   "out": true
+  },
+  {
+   "in": "RATE LIMIT exceeded",
+   "out": true
+  },
+  {
+   "in": "your limit resets at 5pm",
+   "out": true
+  },
+  {
+   "in": "see /usage-credits",
+   "out": true
+  },
+  {
+   "in": "You hit your weekly limit",
+   "out": true
+  },
+  {
+   "in": "hit your org's monthly cap",
+   "out": true
+  },
+  {
+   "in": "hit your orgs session",
+   "out": true
+  },
+  {
+   "in": "hit your daily",
+   "out": false
+  },
+  {
+   "in": "out of usage",
+   "out": true
+  },
+  {
+   "in": "out of credits",
+   "out": true
+  },
+  {
+   "in": "out of ideas",
+   "out": false
+  },
+  {
+   "in": "usage will reset soon",
+   "out": true
+  },
+  {
+   "in": "usage\nreset",
+   "out": false
+  },
+  {
+   "in": "reset of usage",
+   "out": false
+  },
+  {
+   "in": "the usage figures\r\nreset tomorrow",
+   "out": false
+  }
+ ],
+ "triggerNames": [
+  {
+   "in": "ci_green",
+   "out": "ci_green"
+  },
+  {
+   "in": " padded ",
+   "out": "padded"
+  },
+  {
+   "in": "a.b-c_d",
+   "out": "a.b-c_d"
+  },
+  {
+   "in": "",
+   "out": null
+  },
+  {
+   "in": "has space",
+   "out": null
+  },
+  {
+   "in": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+   "in": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "out": null
+  },
+  {
+   "in": "slash/no",
+   "out": null
+  },
+  {
+   "in": "dot.",
+   "out": "dot."
+  },
+  {
+   "in": "é",
+   "out": null
+  },
+  {
+   "in": null,
+   "out": null
+  },
+  {
+   "in": 7,
+   "out": "7"
+  },
+  {
+   "in": "tab\tno",
+   "out": null
+  }
+ ],
+ "os": "win32",
+ "keys": [
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5"
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5",
+    "control": true
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5",
+    "control": true,
+    "shift": true
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5",
+    "alt": true
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F5",
+    "code": "KeyF5",
+    "meta": true
+   },
+   "action": "redraw"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6"
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6",
+    "control": true
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6",
+    "control": true,
+    "shift": true
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6",
+    "alt": true
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F6",
+    "code": "KeyF6",
+    "meta": true
+   },
+   "action": "zoom"
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7"
+   },
+   "action": "asks"
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7",
+    "control": true,
+    "shift": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F7",
+    "code": "KeyF7",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9"
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9",
+    "control": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9",
+    "control": true,
+    "shift": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9",
+    "alt": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F9",
+    "code": "KeyF9",
+    "meta": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10"
+   },
+   "action": "fullscreen"
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10",
+    "control": true
+   },
+   "action": "fullscreen"
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10",
+    "control": true,
+    "shift": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10",
+    "alt": true
+   },
+   "action": "fullscreen"
+  },
+  {
+   "input": {
+    "key": "F10",
+    "code": "KeyF10",
+    "meta": true
+   },
+   "action": "fullscreen"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11"
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11",
+    "control": true
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11",
+    "control": true,
+    "shift": true
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11",
+    "alt": true
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F11",
+    "code": "KeyF11",
+    "meta": true
+   },
+   "action": "prev"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12"
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12",
+    "control": true
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12",
+    "control": true,
+    "shift": true
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12",
+    "alt": true
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "F12",
+    "code": "KeyF12",
+    "meta": true
+   },
+   "action": "next"
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP",
+    "control": true,
+    "shift": true
+   },
+   "action": "palette"
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "p",
+    "code": "KeyP",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP",
+    "control": true,
+    "shift": true
+   },
+   "action": "palette"
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "P",
+    "code": "KeyP",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI",
+    "control": true,
+    "shift": true
+   },
+   "action": "devtools"
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": "devtools"
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "i",
+    "code": "KeyI",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote",
+    "control": true
+   },
+   "action": "sidebar"
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote",
+    "control": true,
+    "shift": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "`",
+    "code": "Backquote",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA",
+    "control": true,
+    "shift": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "a",
+    "code": "KeyA",
+    "meta": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER"
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER",
+    "control": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER",
+    "control": true,
+    "shift": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER",
+    "control": true,
+    "shift": true,
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER",
+    "alt": true
+   },
+   "action": null
+  },
+  {
+   "input": {
+    "key": "Enter",
+    "code": "KeyENTER",
+    "meta": true
+   },
+   "action": null
+  }
+ ],
+ "keyHelp": {
+  "sidebar": "F9 / Ctrl+`",
+  "fullscreen": "F10",
+  "prev": "F11",
+  "next": "F12",
+  "palette": "Ctrl+Shift+P",
+  "redraw": "F5",
+  "zoom": "F6",
+  "asks": "F7"
+ },
+ "fontStack": "\"Cascadia Mono\", \"Cascadia Code\", Consolas, monospace"
+}

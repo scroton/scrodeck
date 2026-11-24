@@ -1,0 +1,10 @@
+wait 700; ask open all; wait 2500; ask dump; wait 200; shot askcards-a-open;
+ask nclick pick 1 Q1 a; wait 400; ask nclick box 1 Q2; text add 150 MB instead; wait 600; ask native;
+ask nclick link 0; wait 300;
+wheel 900 500 -480; wait 300; ask native; shot askcards-b-answered;
+tap ctrl+shift+P; wait 600; shot askcards-c-palette; tap esc; wait 400;
+ask nclick ui done 1; wait 2000; ask dump; wait 200; shot askcards-d-done;
+ask nclick pick 0 Q2 b; wait 400; ask nclick ui copy 0; wait 400; ask native;
+ask nclick ui discard 0; wait 900; ask native; shot askcards-e-confirm; ask nclick ui discard-yes 0; wait 900; ask dump; wait 200;
+tap F7; wait 1200; ask dump; wait 200; shot askcards-f-sent;
+close

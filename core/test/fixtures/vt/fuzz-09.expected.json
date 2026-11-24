@@ -1,0 +1,43 @@
+{
+ "fixture": "fuzz-09",
+ "xterm": "6.0.0",
+ "cols": 33,
+ "rows": 9,
+ "cursor": {
+  "x": 8,
+  "y": 2
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 1,
+  "appKeypad": 0,
+  "bracketedPaste": 1,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 0,
+  "cursorShape": 1,
+  "cursorBlink": 1,
+  "origin": 1,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 1,
+  "scrollTop": 0,
+  "scrollBottom": 8
+ },
+ "title": "t27",
+ "replies": "\u001b[?25;1$y\u001b[0n\u001b[0n\u001bP1$r1;9r\u001b\\\u001b[4;2$y\u001b[?7;22R\u001b[7;24R",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 33*-,1,d,d,0",
+  "n 33*-,1,d,d,0",
+  "n 33*-,1,d,d,0",
+  "n 33*-,1,d,d,0",
+  "n 21*-,1,d,d,0 65+301,1,d,p6,2a6c 11*-,1,d,d,0",
+  "n 33*-,1,d,d,0",
+  "n 71,1,d,p6,2a6d 75,1,d,p6,2a6d 69,1,d,p6,2a6d 63,1,d,p6,2a6d 6b,1,d,p6,2a6d 20,1,d,p6,2a6d 62,1,d,p6,2a6d 72,1,d,p6,2a6d 6f,1,d,p6,2a6d 77,1,d,p6,2a6d 6e,1,d,p6,2a6d 20,1,d,p6,2a6d 66,1,d,p6,2a6d 6f,1,d,p6,2a6d 78,1,d,p6,2a6d 20,1,d,p6,2a6d 12*-,1,d,d,0 5*-,1,d,p6,0",
+  "n 32*78,1,d,p6,2a6c -,1,d,p6,0",
+  "n 33*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

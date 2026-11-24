@@ -1,0 +1,72 @@
+init 60 15 10000
+size 60 15
+cursor 0 6
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=0 scrollBottom=14
+title 743537
+replies 1b50312472313b3135721b5c1b5b3f373b3124791b5b333b31521b5b3f31353b3238521b5b3f31323b31521b5b3e303b3237363b30631b5b306e1b5b333b31521b5b3f32353b3124791b5b3f31343b31521b50312472313b3135721b5c1b5b3f32353b3124791b5b3f313b32631b50312472323b3134721b5c1b5b3f313b34521b5b3f313b32631b50312472313b3135721b5c1b5b3f31353b353652
+scrollback 50
+V n 301,0,d,p3,0 2764+fe0f,1,d,p3,0 61,1,d,p3,0 20,1,d,p3,0 250c,1,d,d,4 2500,1,d,d,4 2510,1,d,d,4 53*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+V n 60*-,1,d,p3,0
+S n 74,1,pde,d,a2c 61,1,pde,d,a2c 62,1,pde,d,a2c 6c,1,d,d,0 6f,1,d,d,0 3*5a,1,d,d,708 301,0,pde,d,228 50*5a,1,d,d,708 68,1,pde,d,a2c
+S n 60*78,1,pde,d,a2c
+S w 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 30,1,pde,d,a2c 20,1,pde,d,a2c 53*79,1,pde,d,a2c
+S w 10*79,1,pde,d,a2c 3*79,1,d,d,708 47*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 20,1,pde,d,a2c 52*79,1,pde,d,a2c -,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 32,1,pde,d,a2c 20,1,pde,d,a2c 11*79,1,pde,d,a2c 42*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 33,1,pde,d,a2c 20,1,pde,d,a2c 42*79,1,pde,d,a2c 11*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 34,1,pde,d,a2c 20,1,pde,d,a2c 24*79,1,pde,d,a2c 29*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 35,1,pde,d,a2c 20,1,pde,d,a2c 13*79,1,pde,d,a2c 40*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 36,1,pde,d,a2c 20,1,pde,d,a2c 53*79,1,pde,d,a2c
+S w 10*79,1,pde,d,a2c 34*79,1,d,d,708 16*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 37,1,pde,d,a2c 20,1,pde,d,a2c 13*79,1,pde,d,a2c 40*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 38,1,pde,d,a2c 20,1,pde,d,a2c 3*79,1,pde,d,a2c 5*79,1,d,d,708 45*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 39,1,pde,d,a2c 20,1,pde,d,a2c 37*79,1,pde,d,a2c 16*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 30,1,pde,d,a2c 20,1,pde,d,a2c 47*79,1,pde,d,a2c 5*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 2*31,1,pde,d,a2c 20,1,pde,d,a2c 45*79,1,pde,d,a2c 7*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 32,1,pde,d,a2c 20,1,pde,d,a2c 40*79,1,pde,d,a2c 12*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 33,1,pde,d,a2c 20,1,pde,d,a2c 13*79,1,pde,d,a2c 39*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 34,1,pde,d,a2c 20,1,pde,d,a2c 49*79,1,pde,d,a2c 3*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 35,1,pde,d,a2c 20,1,pde,d,a2c 47*79,1,pde,d,a2c 5*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 36,1,pde,d,a2c 20,1,pde,d,a2c 50*79,1,pde,d,a2c 2*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 37,1,pde,d,a2c 20,1,pde,d,a2c 35*79,1,pde,d,a2c 17*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 38,1,pde,d,a2c 20,1,pde,d,a2c 52*79,1,pde,d,a2c
+S w 17*79,1,pde,d,a2c 43*-,1,d,d,0
+S n 62,1,pde,d,a2c 75,1,pde,d,a2c 6c,1,pde,d,a2c 6b,1,pde,d,a2c 20,1,pde,d,a2c 31,1,pde,d,a2c 39,1,pde,d,a2c 20,1,pde,d,a2c 52*79,1,pde,d,a2c
+S n 301,0,r7d4002,p42,2a5c 61,1,r7d4002,p42,2a5c 2*6c,1,r7d4002,p42,2a5c 6f,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 1f600,1,r7d4002,p42,2a5c 52*78,1,r7d4002,d,2a5c 62,1,r7d4002,p42,2a5c
+S w 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 30,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 34*79,1,r7d4002,p42,2a5c 20*5a,1,r7d4002,d,2a5c
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 9*79,1,r7d4002,p42,2a5c 44*5a,1,r7d4002,d,2a5c
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 32,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 40*79,1,r7d4002,p42,2a5c 13*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 33,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 53*79,1,r7d4002,p42,2a5c
+S w 3*79,1,r7d4002,p42,2a5c 39,1,pde,d,a2c 20,1,pde,d,a2c 52*79,1,pde,d,a2c 3*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 34,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 29*79,1,r7d4002,p42,2a5c 24*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 35,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 53*79,1,r7d4002,p42,2a5c
+S w 12*79,1,r7d4002,p42,2a5c 45*-,1,d,p4d,0 3*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 36,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 47*79,1,r7d4002,p42,2a5c 6*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 37,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 5*79,1,r7d4002,p42,2a5c 48*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 38,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 53*79,1,r7d4002,p42,2a5c
+S w 4*79,1,r7d4002,p42,2a5c 56*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 39,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 6*79,1,r7d4002,p42,2a5c 47*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 30,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 28*79,1,r7d4002,p42,2a5c 24*-,1,d,d,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 2*31,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 20*79,1,r7d4002,p42,2a5c 32*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 32,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 15*79,1,r7d4002,p42,2a5c 37*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 33,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 4*79,1,r7d4002,p42,2a5c 48*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 34,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 34*79,1,r7d4002,p42,2a5c 18*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 35,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 52*79,1,r7d4002,p42,2a5c
+S w 2*79,1,r7d4002,p42,2a5c 58*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 36,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 43*79,1,r7d4002,p42,2a5c 9*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 37,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 52*79,1,r7d4002,p42,2a5c
+S w 8*79,1,r7d4002,p42,2a5c 52*-,1,d,p42,0
+S n 62,1,r7d4002,p42,2a5c 75,1,r7d4002,p42,2a5c 6c,1,r7d4002,p42,2a5c 6b,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 31,1,r7d4002,p42,2a5c 38,1,r7d4002,p42,2a5c 20,1,r7d4002,p42,2a5c 51*79,1,r7d4002,p42,2a5c -,1,d,p42,0

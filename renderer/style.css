@@ -1,0 +1,703 @@
+:root {
+  --bg: #0c0c0c;
+  --sb: #0f0f0f;
+  --tile: #171717;
+  --tile-active: #1e1e1e;
+  --tile-border: #2c2c2c;
+  --box: #242424;
+  --fg: #ececec;
+  --fg-dim: #9a9a9a;
+  --fg-faint: #6a6a6a;
+  --green: #3ecf5a;
+  --track: #3c3c3c;          /* the unfilled part of a bar: readable against the tile */
+  --msg-lines: 3;
+  --msg-lines-wide: 10;
+  --btn: #262626;
+  --btn-border: #383838;
+  --danger: #c94a4a;
+  --sb-width: 340px;
+  --pad-x: 4px;
+  --pad-y: 6px;
+}
+
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html, body { margin: 0; height: 100%; background: var(--bg); color: var(--fg);
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; font-size: 13px; overflow: hidden; }
+button { font: inherit; color: inherit; cursor: pointer; }
+input { font: inherit; }
+
+#app { display: flex; height: 100vh; width: 100vw; }
+
+/* ---------------------------------------------------------------- sidebar */
+/* min-width: --sb-min, the widest tile strip at its natural size (80-sidebar.js measureSidebarMin; 160 at least) */
+#sidebar { position: relative; width: var(--sb-width); min-width: var(--sb-min, 160px); max-width: 70vw; flex: 0 0 auto;
+  background: var(--sb); display: flex; flex-direction: column; height: 100%; overflow: hidden; }
+
+/* bottom-left: the collapse button carries the clock */
+.collapse-btn { display: inline-flex; align-items: center; gap: 5px; background: transparent; border: 0; border-radius: 0; padding: 2px 8px 2px 5px; height: 24px; color: var(--fg-dim); }
+.collapse-btn:hover { background: #1f1f1f; color: var(--fg); }
+#clock { font-size: 12.5px; font-variant-numeric: tabular-nums; }
+
+.icon-btn { background: transparent; border: 0; width: 26px; height: 26px; border-radius: 0; display: grid; place-items: center; padding: 0; color: var(--fg-dim); }
+.icon-btn:hover { background: #1f1f1f; color: var(--fg); }
+.burger { display: block; width: 15px; height: 2px; background: var(--fg); border-radius: 0; position: relative; }
+.burger::before, .burger::after { content: ""; position: absolute; left: 0; width: 15px; height: 2px; background: var(--fg); border-radius: 0; }
+.burger::before { top: -5px; } .burger::after { top: 5px; width: 10px; }
+
+#tiles { flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; padding: 8px var(--pad-x) 6px var(--pad-x); display: flex; flex-direction: column; gap: 4px;
+  scrollbar-width: none; }
+#tiles::-webkit-scrollbar { display: none; }
+
+/* collapsed rail: thin, and the whole strip is the button */
+#rail { width: 14px; flex: 0 0 auto; background: var(--sb); display: flex; flex-direction: column; align-items: center; justify-content: flex-end; padding-bottom: 8px; cursor: pointer; }
+#rail:hover { background: #1a1a1a; }
+#rail .icon-btn { width: 14px; height: 22px; pointer-events: none; }
+#rail .icon-btn svg { width: 11px; height: 11px; }
+
+#sb-resize { position: absolute; top: 0; right: 0; width: 5px; height: 100%; cursor: col-resize; z-index: 30; }   /* above the settings panel too */
+#sb-resize:hover { background: #2a2a2a88; }
+
+/* ---------------------------------------------------------------- tile */
+.tile { position: relative; background: var(--tile); border: 1px solid transparent; border-radius: 0; padding: var(--pad-y) var(--pad-x);
+  display: flex; flex-direction: column; gap: 1px; cursor: pointer; user-select: none; }
+/* renaming: the box takes the whole tile width and a full-height row, whatever the title length */
+.tile.renaming .t-abbr, .tile.renaming .t-age { display: none; }
+.tile.renaming .t-title { flex: 1 1 100%; }
+.t-title input.rename { display: block; width: 100%; height: 28px; background: #0f0f0f; border: 1px solid #555; color: var(--fg); border-radius: 0; padding: 2px 8px; font-size: 13.5px; }
+.tile:hover { background: #1b1b1b; }
+.tile.active { background: #222; border-color: #bdbdbd; }
+.tile.dragging { opacity: 0.45; }
+.tile.drop-before { box-shadow: 0 -3px 0 0 var(--fg-dim); }
+.tile.drop-after { box-shadow: 0 3px 0 0 var(--fg-dim); }
+
+/* the pin sits on the tile's top-left corner, half outside it; faint until pinned */
+.t-pin { position: absolute; top: -5px; left: -5px; width: 13px; height: 13px; display: grid; place-items: center;
+  background: #1f1f1f; color: #8a8a8a; opacity: 0; z-index: 2; cursor: pointer; transition: opacity 120ms, background 120ms, color 120ms; }
+/* unpinned: invisible until the cursor is near the corner (the zone), brighter over the pin itself */
+.t-pin-zone { position: absolute; top: -8px; left: -8px; width: 46px; height: 34px; z-index: 1; }
+.t-pin-zone:hover + .t-pin { opacity: 0.7; }
+.t-pin:hover { opacity: 1; background: #2e2e2e; }
+.t-pin.on { opacity: 1; color: #f0f0f0; background: #3a3a3a; }
+.t-pin.on:hover { background: #5a5a5a; color: #fff; }
+.t-pin svg { width: 8px; height: 8px; fill: currentColor; }
+
+.t-top { display: flex; align-items: baseline; gap: 6px; min-height: 17px; }
+.t-sub { margin-top: -2px; }
+.t-abbr { flex: 0 0 auto; font-size: 13px; font-weight: 600; color: var(--fg-dim); }
+.t-abbr.busy { color: var(--green); }
+.t-title { flex: 1 1 auto; min-width: 0; font-size: 14px; line-height: 1.25; color: var(--fg);
+  white-space: normal; overflow-wrap: anywhere; word-break: break-word; }
+.t-title.untitled { color: var(--fg-dim); font-style: italic; }
+.t-age { flex: 0 0 auto; color: var(--fg-dim); font-size: 12px; font-variant-numeric: tabular-nums; }
+.t-effort { flex: 0 0 auto; font-size: 10px; border: 1px solid #2e2e2e; padding: 0 4px; line-height: 13px; letter-spacing: 0.2px; }
+/* where a placed session sits: a 2×2 of 4px cells beside the age */
+.t-quad { flex: 0 0 auto; display: grid; grid-template-columns: 1fr 1fr; gap: 1px; width: 11px; height: 11px; }
+/* four cells across 11px would be 2px dots: a grid with a fourth row or column gets 3px cells, like a 3×3 */
+.t-quad.g4 { width: 15px; height: 15px; }
+.t-quad i { display: block; background: #2a2a2a; }
+.t-quad i.on { background: #bdbdbd; }
+/* placed in another deck window (R5): the glyph as an empty frame, the tile a touch dimmer */
+.t-quad.elsewhere { outline: 1px solid #6f7fa0; outline-offset: 0; }
+.tile.elsewhere .t-title { color: var(--fg-dim); }
+
+.t-sub { display: flex; align-items: center; gap: 6px; font-size: 11.5px; line-height: 12px; color: var(--fg-dim); min-height: 12px; }
+.t-acct-name { color: var(--fg-dim); font-weight: 500; }
+.t-acct-name.busy { color: var(--green); }
+.t-status { color: var(--fg-faint); }
+.t-status.paused { color: #8fb0d8; }                     /* soft blue: a PAUSE prompt went in; the next prompt ends it */
+.t-status.exited { color: var(--danger); }
+.t-status.asleep { color: #6f7fa0; }                      /* cool grey-blue: nothing is wrong, nothing is running */
+.t-status.waiting { color: #f0b429; font-weight: 600; }   /* amber: the session is waiting on you */
+/* A sleeping tile reads as present but idle. Dim the whole tile rather than only the status word: the
+   sidebar is scanned, not read, and at twenty-four tiles one word on the second line disappears. The
+   title stays legible on purpose - the tile is still how you find the session. */
+.tile.asleep .t-abbr, .tile.asleep .t-bars, .tile.asleep .t-msg { opacity: 0.45; }
+.tile.asleep .t-title { color: var(--fg-dim); }
+.t-sub .spacer { flex: 1; }
+.tile.pinned { cursor: grab; }
+.tile.pinned:active { cursor: grabbing; }
+
+/* bars: one label block (reset time on top, reset day at the bottom) spanning the height of all bars */
+.t-bars { display: flex; align-items: stretch; gap: 6px; margin: 2px 0 1px; flex-wrap: wrap; }
+.bars-lbls { flex: 0 0 34px; display: flex; flex-direction: column; justify-content: space-between; }
+.bar-lbl { text-align: left; font-size: 9px; color: var(--fg-dim); font-variant-numeric: tabular-nums; white-space: nowrap; line-height: 1; }
+.bars-rows { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; justify-content: center; gap: 3px; }   /* bars stay close; three fill the label height */
+.bar { height: 4px; background: var(--track); overflow: hidden; }
+.t-bars-note { flex: 1 1 100%; }
+.fill { height: 100%; width: 0; transition: width 400ms ease, background 400ms ease; }
+.t-bars.unavailable .bar { opacity: 0.5; }
+.t-bars-note { font-size: 10px; color: var(--fg-faint); }
+
+/* exactly three lines; a fourth is replaced by an ellipsis at the end of the third */
+/* the box bleeds 2px into the tile padding so its TEXT starts where every other text starts */
+.t-msg { background: var(--box); border-radius: 0; padding: 1px 2px; margin: 0 -2px; font-size: 10px; line-height: 13px; color: #d0d0d0;
+  white-space: pre-wrap; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: var(--msg-lines); -webkit-box-orient: vertical; overflow: hidden; }
+body.sb-wide .t-msg { -webkit-line-clamp: var(--msg-lines-wide); }   /* sidebar wider than 400px */
+
+/* effort as colour: left border by level; the whole border when the tile is selected.
+   A clear ramp: dark grey (low) → grey (medium) → high unchanged → white (xhigh) → terracotta (max). */
+body.effort-color .tile.effort-low { border-left-color: #4a4a4a; }
+body.effort-color .tile.effort-medium { border-left-color: #8a8a8a; }
+body.effort-color .tile.effort-xhigh { border-left-color: #ffffff; }
+/* max, unselected: a 1px rainbow strip drawn over the LEFT border only (a border-image would paint all four sides) */
+body.effort-color .tile.effort-max:not(.active)::before,
+body.effort-color .tile.ultracode:not(.active)::before { content: ""; position: absolute; left: -1px; top: -1px; bottom: -1px; width: 2px; pointer-events: none; z-index: 1; }   /* 2px: the border pixel plus one inward; nothing else moves */
+body.effort-color .tile.effort-max:not(.active)::before { background: linear-gradient(180deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff); }
+/* ultracode (the mode is on, at any effort): purple; pulsing when animations are on; strip unselected, full border selected */
+body.effort-color .tile.ultracode:not(.active)::before { background: linear-gradient(180deg, #c084fc, #6d28d9); }
+body.effort-color .tile.active.ultracode { border-color: #a855f7; }
+body.anim-on.effort-color .tile.ultracode:not(.active)::before { animation: ultra-pulse 2.4s ease-in-out infinite; }
+body.anim-on.effort-color .tile.active.ultracode { animation: ultra-pulse-border 2.4s ease-in-out infinite; }
+@keyframes ultra-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
+@keyframes ultra-pulse-border { 0%, 100% { border-color: #6d28d9; } 50% { border-color: #d8b4fe; } }
+body.effort-color .tile.active.effort-low { border-color: #4a4a4a; }
+body.effort-color .tile.active.effort-medium { border-color: #8a8a8a; }
+body.effort-color .tile.active.effort-xhigh { border-color: #ffffff; }
+/* max, selected: the rainbow border is an overlay pseudo-element, so its hue can be animated without touching the tile's content */
+body.effort-color .tile.active.effort-max { border-color: transparent; }
+body.effort-color .tile.active.effort-max::after { content: ""; position: absolute; inset: -1px; pointer-events: none; z-index: 1;
+  border: 1px solid transparent; border-image: linear-gradient(135deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff) 1; }
+body.anim-on.effort-color .tile.active.effort-max::after { animation: rainbow-hue 4.5s linear infinite; }
+/* effort as tag: same ramp, brighter than the age text */
+.t-effort { font-weight: 600; color: #cfcbc4; border-color: #4a4a4a; background: #1f1f1f; }
+.tile.effort-low .t-effort { color: #7a7a7a; border-color: #3a3a3a; }
+.tile.effort-medium .t-effort { color: #a8a8a8; border-color: #4a4a4a; }
+.tile.effort-high .t-effort { color: #d8d4cc; border-color: #555; }
+.tile.effort-xhigh .t-effort { color: #ffffff; border-color: #8a8a8a; background: #2a2a2a; }
+.tile.effort-max .t-effort { color: transparent; -webkit-background-clip: text; background-clip: text; border-color: #7a7a7a; font-weight: 700;
+  background-image: linear-gradient(90deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff, #ff5f6d); background-size: 300% 100%; }   /* max: rainbow, as Claude Code paints it */
+/* the drift is a hue rotation of the whole element: text clipped to a background is cached by Chromium and a
+   moving background-position never repaints it, whereas a filter is re-composited every frame */
+body.anim-on .tile.effort-max .t-effort { animation: rainbow-hue 4.5s linear infinite; will-change: filter; }
+body.anim-on.effort-color .tile.effort-max:not(.active)::before { animation: rainbow-hue 4.5s linear infinite; }   /* the strip only, never the tile */
+@keyframes rainbow-hue { from { filter: hue-rotate(0deg); } to { filter: hue-rotate(360deg); } }
+/* Selected ultracode: purple, whatever the level. Written after the level rules on purpose: with the same
+   specificity, the xhigh white used to win whenever animations were off (the pulse hid it when they were on). */
+body.effort-color .tile.active.ultracode { border-color: #a855f7; }
+/* ultracode at max vs ultracode at any other level (2026-09-29: "slightly different depending on which
+   ultracode"). Purple always means ultracode, and the max rainbow joins it only at max, as a line of its own, so
+   the difference holds with animations off too. Everything pulses like ultracode, because the max hue drift
+   would rotate the purple as well.
+     unselected   the ultracode purple edge, one pixel wider, with a 1px rainbow line on its inner side
+     selected     the ultracode purple border all round, with a rainbow line just inside its edge
+                  (instead of the max rainbow border)
+     tag          the ultracode text in a rainbow frame */
+body.effort-color .tile.effort-max.ultracode:not(.active)::before { width: 3px;
+  background: linear-gradient(180deg, #c084fc, #6d28d9) left top / 2px 100% no-repeat,
+              linear-gradient(180deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff) right top / 1px 100% no-repeat; }
+body.anim-on.effort-color .tile.effort-max.ultracode:not(.active)::before { animation: ultra-pulse 2.4s ease-in-out infinite; }
+body.effort-color .tile.active.effort-max.ultracode::after { display: none; }
+body.effort-color .tile.active.effort-max.ultracode::before { content: ""; position: absolute; left: 0; top: 0; bottom: 0; width: 2px; pointer-events: none; z-index: 1;
+  background: linear-gradient(180deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff); }
+body.anim-on.effort-color .tile.active.effort-max.ultracode::before { animation: ultra-pulse 2.4s ease-in-out infinite; }
+.tile.effort-max.ultracode .t-effort { border-image: linear-gradient(90deg, #ff5f6d, #ffc371, #c4f26a, #4fd1ff, #b388ff) 1; }
+body.anim-on .tile.effort-max.ultracode .t-effort { filter: none; }
+/* ultracode tag: purple text, pulsing when animations are on */
+.tile.ultracode .t-effort { color: #d8b4fe; border-color: #7c3aed; background: #1d1530; -webkit-background-clip: border-box; background-clip: border-box; background-image: none; }
+body.anim-on .tile.ultracode .t-effort { animation: ultra-pulse-text 2.4s ease-in-out infinite; }
+@keyframes ultra-pulse-text { 0%, 100% { color: #a78bfa; border-color: #5b21b6; } 50% { color: #f3e8ff; border-color: #c084fc; } }
+body:not(.effort-tag) .t-effort { display: none !important; }
+
+/* actions: one row of buttons, never wrapping; a confirm question sits on its own line above */
+.t-actions { display: flex; flex-direction: column; gap: 2px; margin-top: 1px; }
+/* held prompts: one row each under the message box */
+.t-held { display: flex; flex-direction: column; gap: 1px; margin: 1px -2px 0; }
+.held-row { display: flex; align-items: center; gap: 4px; font-size: 10px; line-height: 13px; color: #c9c9c9; background: var(--box); padding: 0 2px; min-width: 0; }
+.held-row .held-when { color: #9ecbff; flex: none; }
+.held-row .held-text { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.held-row .held-state { color: var(--fg-faint); flex: none; }
+.held-row.due .held-state { color: #f0b429; }
+.held-row.sent .held-state { color: var(--green); }
+.held-row.failed .held-state { color: var(--danger); }
+.held-row .held-x { flex: none; background: none; border: 0; color: var(--fg-faint); padding: 0 2px; height: 13px; line-height: 13px; font-size: 12px; cursor: pointer; }
+.held-row .held-x:hover { color: var(--danger); background: none; }
+.held-row .held-send { font-size: 10px; color: #9ecbff; }
+.held-row .held-send:hover { color: var(--green); }
+.hold-form { display: flex; flex-direction: column; gap: 3px; }
+.hold-form .hold-text { width: 100%; box-sizing: border-box; background: #111; color: var(--fg); border: 1px solid #4e4e4e; border-radius: 0; font: inherit; font-size: 11px; padding: 2px 3px; resize: vertical; min-height: 40px; }
+.hold-form .hold-when { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; }
+.hold-form .hold-time { background: #111; color: var(--fg); border: 1px solid #4e4e4e; border-radius: 0; font: inherit; font-size: 10.5px; padding: 0 3px; height: 17px; color-scheme: dark; }
+.hold-form .hold-pick { height: 17px; font-size: 10px; }
+.hold-form .hold-err { color: var(--danger); }
+/* special-prompt kinds (R17): a small tab row, the active one accented, plus per-kind field panes */
+.sp-kinds { display: flex; gap: 2px; flex-wrap: wrap; }
+.sp-kind { height: 17px; font-size: 10px; padding: 0 5px; background: var(--btn); border: 1px solid #3a3a3a; color: var(--fg-dim); cursor: pointer; }
+.sp-kind.on { color: var(--fg); border-color: #6fa3d8; }
+.sp-pane { display: flex; flex-direction: column; gap: 3px; }
+.sp-fields { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; }
+.sp-lab { display: inline-flex; align-items: center; gap: 3px; font-size: 10px; color: var(--fg-dim); }
+.sp-num { width: 40px; }
+.sp-num, .sp-time, .sp-trig { background: #111; color: var(--fg); border: 1px solid #4e4e4e; font: inherit; font-size: 10.5px; padding: 0 3px; height: 17px; color-scheme: dark; }
+.sp-trig { width: 130px; }
+.sp-hint { color: var(--fg-faint); font-size: 9.5px; }
+.held-row .held-when { max-width: 46%; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.t-actions button.primary { border-color: #6fa3d8; }
+.btn-row { display: flex; flex-wrap: nowrap; gap: 4px; align-items: center; min-width: 0; }
+.t-actions button, .new-accts button { background: var(--btn); border: 1px solid #4e4e4e; border-radius: 0; padding: 0 3px; height: 17px;
+  font-size: 11px; line-height: 15px; color: var(--fg); white-space: nowrap; flex: 0 0 auto; }
+.btn-row { overflow: hidden; }   /* fitButtons() shrinks the font until nothing is clipped */
+.t-actions button:hover, .new-accts button:hover { background: #303030; }
+.t-actions button.danger { border-color: var(--danger); color: #f2b3b3; }
+/* sleep / close as icons (30-tiles.js TILE_ICONS): 1em, so fitButtons() shrinks them with the words */
+.t-actions button.icon { padding: 0 6px; display: inline-flex; align-items: center; justify-content: center; }
+.t-actions button.icon svg { width: 1em; height: 1em; display: block; pointer-events: none; }
+.t-actions button.danger:hover { background: #3a1f1f; }
+.t-actions .confirm-text { font-size: 11px; color: var(--fg-dim); line-height: 1.3; }
+
+/* ---------------------------------------------------------------- bottom: new tile + tools */
+#sb-bottom { position: relative; flex: 0 0 auto; padding: 4px var(--pad-x) 6px var(--pad-x); display: flex; flex-direction: column; gap: 4px; border-top: 1px solid #161616; }
+.new-tile { border-style: dashed; border-color: #2f3a4a; background: #171d27; }   /* a plain blue tint */
+.new-tile:hover { border-color: #3a3a3a; }
+.new-tile .t-title { color: var(--fg-dim); font-size: 13px; }
+.new-tile .t-age { font-size: 16px; line-height: 1; color: var(--fg-dim); }
+/* the account keys: one line when they fit, all the same size; the same breath above them as the tile keeps above its title */
+/* the account keys, just under the title: one line when they fit, all one size; when the abbreviations are too
+   long to share a line, each takes its own */
+.new-accts { display: flex; flex-wrap: wrap; gap: 5px; margin-top: 4px; }
+.new-accts button { flex: 1 1 0; min-width: max-content; text-align: center; border-color: #4a4a4a; }
+.new-accts button { font-weight: 600; }
+#sb-tools { display: flex; justify-content: space-between; align-items: center; }
+/* "elsewhere": live Claude sessions running in other windows that the deck can take over */
+.pull-btn { background: transparent; border: 1px solid var(--btn-border); color: var(--fg-dim); font-size: 10.5px; padding: 0 5px; height: 16px; line-height: 14px; margin-right: 4px; }
+.pull-btn:hover { background: #262626; color: var(--fg); }
+.pull-btn.none { opacity: 0.4; }
+/* elsewhere / past: anchored to the top of the bottom block, grows upward (max height set on open), scrolls with no bar */
+#pull-menu { position: absolute; left: var(--pad-x); right: var(--pad-x); bottom: calc(100% + 8px); overflow-y: auto; scrollbar-width: none; z-index: 15;
+  background: #1c1c1c; border: 1px solid #333; padding: 4px; display: flex; flex-direction: column; gap: 2px; box-shadow: 0 8px 24px #000a; }
+.pull-row { display: flex; align-items: center; gap: 6px; padding: 4px 6px; cursor: pointer; font-size: 12px; }
+.pull-row:hover { background: #2a2a2a; }
+.pull-row .pr-abbr { font-weight: 600; color: var(--fg-dim); flex: 0 0 auto; }
+.pull-row .pr-abbr.busy { color: var(--green); }
+.pull-row .pr-title { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.pull-row .pr-status { color: var(--fg-faint); font-size: 10.5px; flex: 0 0 auto; }
+.pull-confirm { padding: 4px 6px; font-size: 11.5px; color: var(--fg-dim); display: flex; flex-direction: column; gap: 4px; }
+/* in-place confirm: the clicked row stays as a title on top, the dialog under it, one white 1px bound around both */
+.pull-confirm-wrap { border: 1px solid #ffffff; display: flex; flex-direction: column; }
+.pull-confirm-wrap .pull-row.as-title { cursor: default; }
+.pull-confirm-wrap .pull-row.as-title:hover { background: #161616; }
+.pull-confirm .btn-row button { background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg); font-size: 11px; height: 17px; padding: 0 6px; }
+.pull-confirm .btn-row button.danger { border-color: var(--danger); color: #f2b3b3; }
+.pull-empty { padding: 6px; font-size: 11.5px; color: var(--fg-faint); }
+#msgs-btn.off { color: var(--fg-faint); }
+#msgs-btn.off .msgs-line { display: none; }
+body.hide-msgs .t-msg { display: none !important; }
+#bars-btn .bars-slash { display: none; }
+#bars-btn.off { color: var(--fg-faint); }
+#bars-btn.off .bars-line { opacity: 0.45; }                 /* off: the bars stay, dimmed, with a strike through them */
+/* who drives the size (js/80-sidebar.js): the icon is WHO (data-driver), the colour is whether that is THIS screen */
+#drive-btn .drv { display: none; }
+#drive-btn[data-driver="office"] .drv-office, #drive-btn[data-driver="phone"] .drv-phone,
+#drive-btn[data-driver="remote"] .drv-remote, #drive-btn[data-driver="auto"] .drv-auto { display: block; }
+#drive-btn.drive-mine { color: var(--green); }               /* this screen drives */
+#drive-btn.drive-other { color: var(--fg-faint); }           /* another screen drives; this one shows its size */
+#drive-btn.drive-auto { color: var(--fg-dim); }              /* auto: whoever is looking */
+#bars-btn.off .bars-slash { display: block; stroke-width: 2.2; }
+/* restart when quiet (js/82-restart.js): amber while armed (turning, when animations are on); green with a dot
+   when the deck's own code changed on disk and a restart would pick it up */
+#restart-btn { position: relative; }
+#restart-btn.armed { color: #fbbf24; }
+body.anim-on #restart-btn.armed svg { animation: rs-turn 2.4s linear infinite; }
+@keyframes rs-turn { to { transform: rotate(360deg); } }
+#restart-btn.offer { color: var(--green); }
+#restart-btn.offer::after { content: ''; position: absolute; top: 4px; right: 4px; width: 5px; height: 5px; background: var(--green); }
+.restart-strip { display: flex; flex-direction: column; gap: 3px; margin: 4px 0 2px; padding: 5px 6px; font-size: 12px;
+  background: #1a1608; border: 1px solid #6b5518; }
+.restart-strip.offer { background: #0d1a10; border-color: #1f6b33; }
+.restart-strip .rs-title { font-weight: 600; color: #fbbf24; overflow-wrap: anywhere; }
+.restart-strip.offer .rs-title { color: var(--green); }
+.restart-strip.settling .rs-title { color: var(--fg); }
+.rs-code { display: flex; flex-direction: column; gap: 1px; color: var(--fg-dim); overflow-wrap: anywhere; }
+.rs-code .bad { color: #f2b3b3; }
+.rs-list { display: flex; flex-direction: column; gap: 1px; max-height: 40vh; overflow-y: auto; scrollbar-width: none; }
+.rs-row { display: flex; gap: 8px; padding: 1px 2px; cursor: pointer; }
+.rs-row:hover { background: #2a2410; }
+.rs-row .rs-t { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; }
+.rs-row .rs-r { flex: 0 1 auto; color: var(--fg-dim); text-align: right; overflow-wrap: anywhere; }
+/* a narrow sidebar wraps the ROW (the note on its own line, the buttons under it), never a button's label:
+   a fixed-height button with a wrapped label left "when quiet" hanging below "Restart" (2026-09-29) */
+.rs-actions { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 4px 5px; }
+.rs-actions .rs-note { flex: 1 1 110px; }
+.rs-actions button { flex: 0 0 auto; white-space: nowrap; background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg); font-size: 11px; height: 18px; padding: 0 7px; }
+.rs-actions button:hover { background: #333; }
+.rs-actions button.danger { border-color: var(--danger); color: #f2b3b3; }
+body.hide-bars .tile .t-bars { display: none !important; }
+.acct-bars { margin: 0 0 4px 0; }
+
+
+/* ---------------------------------------------------------------- settings panel */
+.panel { position: absolute; left: 0; right: 0; bottom: 0; max-height: 100%; background: #141414; border-top: 1px solid #2a2a2a;
+  border-radius: 0; display: flex; flex-direction: column; z-index: 20; box-shadow: 0 -8px 30px #000a;
+  animation: slide-up 160ms ease-out; }
+/* a short rise and fade, not a slide from below: a slide crossed the tool row and hid its buttons */
+@keyframes slide-up { from { transform: translateY(10px); opacity: 0; } to { transform: translateY(0); opacity: 1; } }
+.panel-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; padding: 8px 12px 6px 14px; font-size: 14px; }
+/* Save / Cancel never leave the head: the status hint gives way (one line, ellipsis, full text in its title)
+   rather than pushing the buttons out of a narrow sidebar (2026-09-09: "what happened to save / cancel") */
+.panel-head-actions { display: inline-flex; align-items: center; gap: 8px; min-width: 0; flex: 1 1 auto; justify-content: flex-end; }
+.panel-head-actions .hint { flex: 1 1 auto; min-width: 0; max-width: 260px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: right; }
+.panel-head-actions .head-btn { flex: 0 0 auto; }
+.panel-head > span:first-child { flex: 0 0 auto; }
+.head-btn { background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg); font-size: 12.5px; height: 24px; padding: 0 12px; }
+.head-btn:hover { background: #303030; }
+.head-btn.primary { background: #f0f0f0; color: #111; border-color: #f0f0f0; font-weight: 600; }
+.head-btn.primary:hover { background: #fff; }
+.panel-body { overflow-y: auto; padding: 0 14px 14px 14px; display: flex; flex-direction: column; gap: 6px; scrollbar-width: none; }
+.panel-body::-webkit-scrollbar { display: none; }
+.panel-body h3 { margin: 10px 0 2px; font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: #b4b4b4; font-weight: 600; }   /* a step brighter than the hints under it */
+.hint { margin: 0; font-size: 11.5px; color: #8c8c8c; }
+/* account editor: ONE grid for all rows so columns line up; cells centre vertically and rows grow with their text */
+#alias-rows { display: grid; grid-template-columns: minmax(90px, 1.1fr) minmax(120px, 1.5fr) 44px minmax(60px, auto) 20px; gap: 5px 6px; align-items: center; font-size: 12px; }
+.acct-row { display: contents; }
+.acct-row input { min-width: 0; width: 100%; }
+.acct-row .a-who { color: var(--fg-dim); font-size: 11px; overflow-wrap: anywhere; min-width: 0; text-align: right; justify-self: end; }
+/* graphs settings: show | name | from → to */
+.bar-settings { display: grid; grid-template-columns: 18px 1fr 34px 34px; gap: 4px 6px; align-items: center; font-size: 12px; }
+.bar-settings input[type=color] { width: 34px; height: 20px; padding: 0; border: 1px solid #333; background: #0f0f0f; }
+.inline-fields { display: inline-flex; align-items: center; gap: 4px; }
+.inline-fields input[type=number] { width: 48px; }
+.labels-field .chk { display: inline-flex; align-items: center; gap: 4px; font-size: 12px; margin-left: 8px; }
+/* the phone link: the whole URL, wrapped, one click copies it (2026-09-09) */
+.phone-url { width: 100%; box-sizing: border-box; flex: 0 0 auto; resize: none; overflow: hidden; white-space: pre-wrap; word-break: break-all; overflow-wrap: anywhere;   /* flex 0 0: a column-flex item would shrink it to one row */
+  font: 12px/1.4 Consolas, "Cascadia Mono", monospace; background: #0f0f0f; color: var(--fg); border: 1px solid #333; padding: 4px 6px; cursor: copy; }
+.phone-url:hover { border-color: #777; }   /* (no :empty rule: a textarea is :empty whatever its value; the `hidden` attribute hides it) */
+.phone-pages { cursor: text; resize: vertical; overflow: auto; word-break: normal; }   /* the pages list is typed in, not copied */
+.small-btn { background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg); font-size: 11px; height: 19px; padding: 0 7px; align-self: flex-start; }
+.small-btn:hover { background: #303030; }
+.small-btn.danger { border-color: var(--danger); color: #f2b3b3; padding: 0 5px; }
+#acct-add { margin-top: 2px; }
+/* font: dropdown + free text, last touched wins, the other is greyed */
+.font-field select, .font-field input { flex: 1 1 0; min-width: 0; }
+.font-field select { background: #0f0f0f; border: 1px solid #333; color: var(--fg); padding: 3px 4px; font-size: 12.5px; }
+.font-field .dim { opacity: 0.45; }
+input[type=text], input[type=number] { background: #0f0f0f; border: 1px solid #333; color: var(--fg); border-radius: 0; padding: 3px 6px; font-size: 12.5px; }
+input:focus { outline: 1px solid #555; }
+.field { display: flex; align-items: center; justify-content: space-between; gap: 8px; font-size: 12.5px; }
+.field input[type=text] { flex: 1 1 auto; min-width: 0; }
+.field input[type=number] { width: 64px; }
+/* bottom tools: collapse left, bubble centred, move-all + gear on the right with a little air between */
+.tools-right { display: contents; }   /* its buttons join the row so space-between spaces everything evenly */
+#moveall-menu { position: absolute; left: var(--pad-x); right: var(--pad-x); bottom: 42px; z-index: 15; background: #1c1c1c; border: 1px solid #333;
+  padding: 6px 8px 8px; display: flex; flex-direction: column; gap: 6px; box-shadow: 0 8px 24px #000a; font-size: 12px; }
+.move-all { display: flex; flex-direction: column; gap: 4px; }          /* one account per line: emails fit too */
+#moveall-menu .menu-title { white-space: nowrap; overflow: hidden; padding: 2px 2px 4px; }
+.move-mode { display: flex; gap: 4px; }
+.mode-btn { flex: 1 1 0; background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg-dim); font-size: 11.5px; height: 20px; padding: 0; }
+.mode-btn.on { background: #333; color: var(--fg); border-color: #555; }
+.acct-bars { margin-left: 0; }
+.move-line { display: flex; align-items: center; gap: 6px; }
+.move-line span { flex: 0 0 22px; }
+.move-all select { flex: 1 1 auto; min-width: 0; background: #0f0f0f; border: 1px solid #333; color: var(--fg); padding: 2px 4px; font-size: 12px; }
+.move-opt { display: flex; align-items: flex-start; gap: 6px; font-size: 11.5px; color: var(--fg-dim); cursor: pointer; line-height: 1.35; }
+.move-opt input { flex: 0 0 auto; margin: 1px 0 0; }
+.move-opt span { flex: 1 1 auto; min-width: 0; }                          /* wraps as one running line */
+.move-opt code { background: #0f0f0f; padding: 0 3px; font-size: 11px; }
+.move-actions { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+/* advanced picker: one row per session of the source account, title with the recent message under it */
+.move-pick { display: flex; flex-direction: column; gap: 3px; max-height: 40vh; overflow-y: auto; scrollbar-width: none; }
+.move-pick::-webkit-scrollbar { display: none; }
+.pick-row { display: flex; align-items: flex-start; gap: 6px; padding: 3px 5px; background: #161616; cursor: pointer;
+  border: 1px solid transparent; border-left-width: 2px; }
+.pick-row:hover { background: #1f1f1f; }
+.pick-row.sel { border-color: #ffffff; }                         /* picked: white bound, 2px on the left */
+.pick-row input { display: none; }                               /* the row itself is the control */
+.pick-row .pk-body { flex: 1 1 auto; min-width: 0; }
+.pick-row .pk-title { font-size: 12px; color: var(--fg); overflow-wrap: anywhere; }
+.pick-row .pk-msg { font-size: 10px; line-height: 13px; color: #b8b8b8; white-space: pre-wrap; overflow-wrap: anywhere; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.pick-row .pk-usage { font-size: 10px; color: #f0b429; }
+.move-actions button, #move-all-confirm button { background: var(--btn); border: 1px solid var(--btn-border); color: var(--fg); font-size: 11.5px; height: 20px; padding: 0 8px; margin-left: 4px; }
+#move-all-confirm { flex: 1 1 auto; min-width: 0; }
+#move-all-confirm button.danger { border-color: var(--danger); color: #f2b3b3; }
+.panel-actions { display: flex; justify-content: flex-end; align-items: center; gap: 10px; padding-top: 8px; }
+.panel-actions button { background: #f0f0f0; color: #111; border: 0; border-radius: 0; padding: 5px 14px; font-size: 12.5px; font-weight: 600; }
+.panel-actions button:hover { background: #fff; }
+
+/* ---------------------------------------------------------------- search pane, past menu, palette */
+/* past and elsewhere: one column on the right, both the width of the wider (two digits by default; they grow together) */
+.new-links { display: flex; gap: 4px; margin-top: 6px; }
+.new-links .pull-btn { margin: 0; flex: 1 1 0; text-align: center; border-color: #4a4a4a; }
+.search-pane { display: flex; align-items: center; gap: 6px; padding: 4px 0 2px; }
+.search-pane input { flex: 1 1 auto; min-width: 0; background: #0f0f0f; border: 1px solid #333; color: var(--fg); padding: 3px 6px; font-size: 12.5px; }
+.search-pane .hint { flex: 0 0 auto; }
+#search-btn.on { color: var(--fg); background: #262626; }
+.past-head { display: flex; align-items: center; gap: 6px; padding: 2px 2px 4px; }
+.past-head input { flex: 1 1 auto; min-width: 0; background: #0f0f0f; border: 1px solid #333; color: var(--fg); padding: 2px 6px; font-size: 12px; }
+#pull-menu::-webkit-scrollbar { display: none; }
+#past-rows { overflow: visible; }
+.palette { position: fixed; inset: 0; background: #0008; z-index: 100; display: flex; align-items: flex-start; justify-content: center; padding-top: 12vh; }
+.pal-box { width: min(560px, 90vw); background: #161616; border: 1px solid #3a3a3a; box-shadow: 0 12px 40px #000c; display: flex; flex-direction: column; }
+.pal-box input { background: #0f0f0f; border: 0; border-bottom: 1px solid #333; color: var(--fg); padding: 9px 12px; font-size: 14px; outline: none; }
+.pal-list { max-height: 50vh; overflow-y: auto; scrollbar-width: none; padding: 4px 0; }
+.pal-list::-webkit-scrollbar { display: none; }
+.pal-group { font-size: 10px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--fg-faint); padding: 6px 12px 2px; }
+.pal-row { display: flex; justify-content: space-between; gap: 10px; padding: 5px 12px; font-size: 13px; cursor: pointer; border-left: 2px solid transparent; }
+.pal-row.sel { background: #262626; border-left-color: #fff; }
+.pal-label { min-width: 0; overflow-wrap: anywhere; }
+.pal-hint { color: var(--fg-faint); font-size: 11.5px; flex: 0 0 auto; }
+
+/* ---------------------------------------------------------------- terminal area */
+#main { flex: 1 1 auto; position: relative; min-width: 0; background: var(--bg); }
+#empty { position: absolute; inset: 0; display: grid; place-items: center; color: var(--fg-faint); text-align: center; padding: 20px; }
+.term { position: absolute; inset: 0; display: none; }
+.term.active { display: block; }
+/* Quadrant layout (F1): with a layout in force every .term is `grid`, and only the placed ones show, each
+   at the percent box 25-layout.js gives it. A hairline separates panes; the selected pane is brighter. */
+#main { overflow: hidden; }
+/* the grid's cell lines, drawn on the area itself so EMPTY cells are bounded too; a placed pane has an
+   opaque background and covers the lines under it (a spanning block shows no line through it) */
+#main.has-grid { background-image: linear-gradient(to right, #262626 1px, transparent 1px), linear-gradient(to bottom, #262626 1px, transparent 1px);
+  background-size: calc(100% / var(--grid-cols, 2)) 100%, 100% calc(100% / var(--grid-rows, 2)); background-position: -1px 0, 0 -1px; }
+.term.grid.placed { background: var(--bg); }
+.term.grid { display: none; inset: auto; box-sizing: border-box; }
+.term.grid.placed { display: block; }
+/* Pane borders are an OVERLAY drawn above the terminal: an inset outline on the pane is painted over by
+   the opaque xterm inside it (invisible in practice — 2026-09-06). A hairline on every pane; the
+   SELECTED pane gets a dim-but-noticeable 1px, so the pane a sidebar tap will land in is unambiguous. */
+.term.grid.placed::after { content: ""; position: absolute; inset: 0; border: 1px solid #1e1e1e; pointer-events: none; z-index: 3; }
+.term.grid.placed.under-preview::after { border-color: transparent; }   /* no lines between the panes a multi-cell drop preview covers */
+.term.grid.placed.active::after { border-color: #8a8a8a; }
+.term.grid.placed.active { z-index: 1; }
+/* Zoom (2026-09-14): the zoomed pane takes the whole area; the others stay placed but hidden (not
+   resized); the grid lines and the slot / preview / leaving overlays are off; a small tag on the name. */
+#main.zoomed { background-image: none; }
+.term.grid.placed.zoom-hidden { display: none; }
+.term.grid.placed.zoomed { z-index: 2; }
+#main.zoomed #slot-sel, #main.zoomed #drop-preview, #main.zoomed #leaving { display: none; }
+.term.zoomed .pane-name::after { content: " · zoomed"; color: var(--fg-faint); font-weight: 400; }
+#zoom-note { position: absolute; top: 8px; left: 50%; transform: translateX(-50%); z-index: 6; max-width: 90%; padding: 6px 12px;
+  border: 1px solid #8a8a8a; border-radius: 4px; background: rgba(30, 30, 30, 0.96); color: #d4d4d4; font: 12px var(--pane-name-font, system-ui, sans-serif);
+  pointer-events: none; text-align: center; overflow-wrap: anywhere; }
+/* the selected EMPTY slot: same border language, dashed, so "tap a tile to fill this" reads at a glance */
+#slot-sel { position: absolute; box-sizing: border-box; border: 1px dashed #8a8a8a; pointer-events: none; z-index: 3; }
+/* F4: the drop preview — the rectangle the dragged session WILL take, with the rest of the area shaded so
+   what it will NOT take is just as visible (R4 zones: corners, edge midpoints, centre). */
+#drop-preview { position: absolute; box-sizing: border-box; border: 3px solid #bdbdbd; background: rgba(189, 189, 189, 0.08);
+  box-shadow: 0 0 0 4000px rgba(0, 0, 0, 0.45); pointer-events: none; z-index: 5; }   /* no transition: a drop target must SNAP, a slide reads as lag */
+/* the target's frame pulses 2px -> 5px, quick but not frantic (2026-09-08); animations off = a steady 3px */
+@keyframes drop-pulse { 0%, 100% { border-width: 2px; } 50% { border-width: 5px; } }
+body.anim-on #drop-preview { animation: drop-pulse 0.8s ease-in-out infinite; }
+/* a placed session about to GROW: its label goes bold and steps between its size and the console size, same tempo */
+.term.growing .pane-name { font-weight: 700; }
+@keyframes label-grow {
+  0%   { font-size: var(--pane-name-size, 13px); }
+  25%  { font-size: calc((var(--pane-name-size, 13px) + var(--pane-font-size, 14px)) / 2); }
+  50%  { font-size: var(--pane-font-size, 14px); }
+  75%  { font-size: calc((var(--pane-name-size, 13px) + var(--pane-font-size, 14px)) / 2); }
+  100% { font-size: var(--pane-name-size, 13px); }
+}
+body.anim-on .term.growing .pane-name { animation: label-grow 0.8s step-end infinite; }
+/* the leaving mark: over the pane a session is about to be removed from */
+#leaving { position: absolute; box-sizing: border-box; border: 2px dashed #d9a441; pointer-events: none; z-index: 6;
+  background: repeating-linear-gradient(135deg, rgba(217, 164, 65, 0.10) 0 8px, transparent 8px 18px); }
+#leaving::after { content: "moving away"; position: absolute; top: 4px; right: 6px; font-size: 11px; color: #d9a441;
+  background: rgba(12, 12, 12, 0.85); padding: 1px 6px; border-radius: 3px; }
+#drop-preview::after { content: attr(data-zone); position: absolute; right: 6px; bottom: 4px; font-size: 11px; color: #bdbdbd; opacity: .7; }
+/* padding lives on .xterm so the fit addon subtracts it (it ignores the parent's padding) */
+/* top padding leaves a one-line band for the pane's name; xterm's fit addon subtracts it, so no row hides under the label */
+.term .xterm { height: 100%; padding: calc(var(--pane-name-size, 13px) * 1.2 + 6px) 4px 8px 8px; }
+/* the pane's name: top-left, in that band, console font one size smaller, dim, above the terminal and the pane border */
+.term .pane-name:hover { color: var(--fg); background: rgba(40, 40, 40, 0.92); }
+.term.redrawn .pane-name { color: var(--green); }   /* a brief flash: the tap was taken */
+.term .pane-name { position: absolute; top: 1px; left: 1px; z-index: 4; cursor: pointer; user-select: none;   /* inside the 1px pane border, so the border stays whole; a tap redraws the pane, never selects its text */ max-width: 70%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;
+  padding: 1px 7px 2px 8px; font-family: var(--pane-name-font, monospace); font-size: var(--pane-name-size, 13px); line-height: 1.2; color: #d4d4d4;
+  background: rgba(12, 12, 12, 0.82); border-bottom-right-radius: 4px; pointer-events: auto; }
+.term .pane-name:empty { display: none; }
+.term .pane-name .abbr { font-weight: 600; color: var(--fg-dim); }
+.term .pane-name .abbr.busy { color: var(--green); }
+.term .xterm-viewport { scrollbar-width: thin; scrollbar-color: #333 transparent; }
+
+/* ---------------------------------------------------------------- groups + context menus */
+.group-bar { display: flex; align-items: center; gap: 6px; padding: 2px 4px 2px 2px; font-size: 11px; color: var(--fg-dim); cursor: pointer; user-select: none;
+  border-bottom: 1px solid #262626; }
+.group-bar:hover { color: var(--fg); }
+.group-bar .g-chev { width: 0; height: 0; border-left: 4px solid transparent; border-right: 4px solid transparent; border-top: 5px solid currentColor; transition: transform 120ms; }
+.group-bar.collapsed .g-chev { transform: rotate(-90deg); }
+.group-bar .g-name { flex: 1 1 auto; min-width: 0; overflow-wrap: anywhere; font-weight: 600; letter-spacing: 0.2px; }
+.group-bar .g-count { font-variant-numeric: tabular-nums; color: var(--fg-faint); }
+.tile.in-collapsed { display: none !important; }
+#groups-btn.on { color: var(--fg); background: #262626; }
+.ctx-menu { position: fixed; z-index: 200; background: #1c1c1c; border: 1px solid #3a3a3a; box-shadow: 0 8px 24px #000a; padding: 3px; min-width: 150px; font-size: 12.5px; }
+.ctx-item { padding: 5px 10px; cursor: pointer; white-space: nowrap; }
+.ctx-item:hover, .ctx-item.active { background: #2a2a2a; }
+.ctx-item.sub::after { content: "\25B8"; float: right; margin-left: 14px; color: var(--fg-dim); }   /* a submenu: Right or a click opens it */
+.ctx-item.checked::before { content: "✓  "; color: var(--green); }
+.ctx-item.dim { color: var(--fg-dim); }
+.ctx-sep { height: 1px; background: #333; margin: 3px 0; }
+.ctx-input { width: 180px; background: #0f0f0f; border: 1px solid #333; color: var(--fg); padding: 3px 6px; font-size: 12.5px; }
+
+/* ---------------------------------------------------------------- sidebar on the right
+   Settings → Tiles → "Sidebar on the". A mirror of the frame only: the pane swaps sides, both
+   chevrons point the other way, the bottom icon row reverses, the drag handle moves to the inner
+   edge, and the marks that live on a tile's OUTER edge — the effort colour and the max / ultracode
+   strip — move to the other edge so they still sit against the window. Nothing inside a tile moves:
+   titles, bars, previews, buttons and the terminal all read the same way round. */
+body.sb-right #app { flex-direction: row-reverse; }
+body.sb-right #collapse svg, body.sb-right #expand svg { transform: scaleX(-1); }
+body.sb-right #sb-tools { flex-direction: row-reverse; }         /* .tools-right is display:contents, so its two buttons reverse with the rest */
+body.sb-right #sb-resize { right: auto; left: 0; }
+body.sb-right.effort-color .tile.effort-low { border-left-color: transparent; border-right-color: #4a4a4a; }
+body.sb-right.effort-color .tile.effort-medium { border-left-color: transparent; border-right-color: #8a8a8a; }
+body.sb-right.effort-color .tile.effort-xhigh { border-left-color: transparent; border-right-color: #ffffff; }
+body.sb-right.effort-color .tile.effort-max:not(.active)::before,
+body.sb-right.effort-color .tile.ultracode:not(.active)::before { left: auto; right: -1px; }
+/* ultracode at max on a right-hand sidebar: the purple stays on the outer side, the rainbow line inside */
+body.sb-right.effort-color .tile.effort-max.ultracode:not(.active)::before { background-position: right top, left top; }
+body.sb-right.effort-color .tile.active.effort-max.ultracode::before { left: auto; right: 0; }
+/* the pin lives half outside the tile's OUTER corner, so it belongs to the frame, not the content:
+   it follows the mirror like the effort marks do */
+body.sb-right .t-pin { left: auto; right: -5px; }
+body.sb-right .t-pin-zone { left: auto; right: -8px; }
+
+/* Pin corner. "edge" (the default) keeps it against the window edge, so it follows the sidebar side;
+   "centre" puts it in the corner facing the terminal. Two body classes beat one, so the combined
+   rule wins over the plain mirror above. */
+body.pin-centre .t-pin { left: auto; right: -5px; }
+body.pin-centre .t-pin-zone { left: auto; right: -8px; }
+body.sb-right.pin-centre .t-pin { right: auto; left: -5px; }
+body.sb-right.pin-centre .t-pin-zone { right: auto; left: -8px; }
+
+/* ---------------------------------------------------------------- cloud sessions (48-cloud.js, 2026-10-12)
+   A cloud tile wears a small cloud right after its account's name — on the sidebar line, the pane's name and the
+   Elsewhere row — and its pane is the session's claude.ai page, laid over the terminal below the pane's name. */
+.cloud-ico { width: 1em; height: 1em; fill: currentColor; display: block; }
+:root { --cloud: #8fb8e8; }
+.t-cloud { flex: 0 0 auto; align-self: center; display: inline-flex; color: var(--cloud); font-size: 13px; margin-left: -3px; }
+.t-cloud[hidden] { display: none; }
+.t-cloud.busy, .cloud-mark.busy { color: var(--green); }
+.t-cloud-sub { font-size: 11.5px; margin-left: -3px; }
+.cloud-mark { display: inline-block; color: var(--cloud); width: 1em; height: 1em; margin-left: 3px; vertical-align: -0.14em; }
+.pull-row .pr-abbr .cloud-mark { margin-left: 3px; }
+.term .cloud-pane { position: absolute; left: 0; right: 0; bottom: 0; top: calc(var(--pane-name-size, 13px) * 1.2 + 6px); z-index: 2; border: 0; background: #262624; }
+webview.cloud-pane { display: flex; }
+.term.cloud .xterm { visibility: hidden; }       /* the terminal under the page: the run that made the session, kept for every terminal code path */
+.term .cloud-hint { position: absolute; left: 50%; transform: translateX(-50%); top: calc(var(--pane-name-size, 13px) * 1.2 + 14px); z-index: 4; max-width: 80%;
+  background: #1c2a3a; border: 1px solid #3e6a9a; color: #dbe8f6; font-size: 12.5px; padding: 6px 10px; pointer-events: none; }
+.cloud-card { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; padding: 24px 28px; background: var(--bg); color: var(--fg); font-size: 13.5px; }
+.cloud-card .cc-head { display: flex; align-items: center; gap: 6px; font-size: 15px; font-weight: 600; color: var(--cloud); }
+.cloud-card .cc-head .cloud-ico { width: 18px; height: 18px; }
+.cloud-card .cc-text { color: var(--fg-dim); max-width: 46ch; line-height: 1.4; }
+.cloud-card .cc-link { color: #9cc7f5; border: 1px solid #3e6a9a; padding: 4px 10px; text-decoration: none; }
+.cloud-card .cc-link:hover { background: #1c2a3a; }
+.cloud-dlg-back { position: fixed; inset: 0; z-index: 300; background: rgba(0, 0, 0, 0.55); display: grid; place-items: center; }
+.cloud-dlg { width: min(640px, calc(100vw - 32px)); box-sizing: border-box; background: #1c1c1c; border: 1px solid #3a3a3a; box-shadow: 0 12px 40px #000c;
+  padding: 14px 16px 12px; display: flex; flex-direction: column; gap: 10px; font-size: 13px; }
+.cloud-dlg .cd-title { display: flex; align-items: center; gap: 4px; font-size: 14.5px; font-weight: 600; }
+.cloud-dlg .cd-title .cloud-ico { color: var(--cloud); width: 16px; height: 16px; }
+.cloud-dlg textarea, .cloud-dlg input { box-sizing: border-box; width: 100%; background: #0f0f0f; color: var(--fg); border: 1px solid #444; padding: 6px 8px;
+  font: 13px/1.4 system-ui, sans-serif; color-scheme: dark; }
+.cloud-dlg textarea { resize: vertical; min-height: 110px; }
+.cloud-dlg textarea:focus, .cloud-dlg input:focus { outline: none; border-color: #6fa3d8; }
+.cloud-dlg .cd-folder { display: flex; align-items: center; gap: 8px; }
+.cloud-dlg .cd-folder span { color: var(--fg-dim); flex: 0 0 auto; }
+.cloud-dlg .cd-note { color: var(--fg-dim); font-size: 12px; line-height: 1.4; }
+.cloud-dlg .btn-row { overflow: visible; gap: 6px; }
+.cloud-dlg button { background: var(--btn); border: 1px solid #4e4e4e; color: var(--fg); padding: 3px 14px; font-size: 12.5px; }
+.cloud-dlg button:hover { background: #303030; }
+.cloud-dlg button.primary { border-color: #6fa3d8; }
+.cloud-dlg button:disabled { opacity: 0.5; cursor: default; }
+.cloud-dlg .cd-keys { margin-left: auto; color: var(--fg-faint); font-size: 11.5px; }
+.cloud-dlg .cd-err { color: #f2b3b3; font-size: 12px; min-height: 0; }
+.cloud-dlg .cd-err:empty { display: none; }
+
+/* ---------------------------------------------------------------- the ask pane (2026-11-10; js/49-asks.js)
+   The ask pages' blue (their accent), so a question never reads as the amber "waiting for you". */
+:root { --ask: #6aa9ff; --ask-ink: #0b1220; --ask-dim: #4a6c99; }
+/* the mark: hollow = questions waiting, filled = answers in progress, a dim tick = sent, not read yet */
+.t-ask { flex: 0 0 auto; display: inline-block; min-width: 15px; height: 13px; padding: 0 3px; border: 1px solid var(--ask);
+  color: var(--ask); font-size: 10px; line-height: 11px; font-weight: 700; text-align: center; font-variant-numeric: tabular-nums;
+  font-family: "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; }
+.t-ask::before { content: "?"; margin-right: 1px; opacity: .75; }
+.t-ask.drafted { background: var(--ask); color: var(--ask-ink); }
+.t-ask.sent { border-color: var(--ask-dim); color: var(--ask-dim); }
+.t-ask.sent::before { content: ""; margin: 0; }
+.pane-name .pane-ask { margin-left: 6px; vertical-align: 1px; }
+
+/* the asks tile: always the top of the sidebar, outside the scrolling list */
+/* not a session: no bars, its own small display, the deck's "waiting for you" amber, pulsing while a question
+   waits (11-10); the session marks inside it keep the ask pages' blue */
+.asks-tile { margin: 8px var(--pad-x) 0; flex: 0 0 auto; gap: 2px; background: #1a1710; border: 1px solid #3a3020; }
+.asks-tile:hover { background: #211d13; }
+.asks-tile.active { background: #262013; border-color: #f0b429; }
+.asks-tile.asking { border-color: #f0b429; }
+@keyframes ask-pulse { 0%, 100% { box-shadow: 0 0 0 0 rgba(240, 180, 41, 0); border-color: #8a6a1c; } 50% { box-shadow: 0 0 0 2px rgba(240, 180, 41, 0.55); border-color: #f0b429; } }
+body.anim-on .asks-tile.asking:not(.active) { animation: ask-pulse 1.6s ease-in-out infinite; }
+/* A desk the Claude on-call just opened as a tile (2026-11-16: "noticeable for the user"): its sidebar tile and its pane
+   wear the deck's amber, pulsing with animations on, until the user types into it (or ten minutes; main.js deskAttention). */
+.tile.desk-attn { border-color: #f0b429; }
+body.anim-on .tile.desk-attn { animation: ask-pulse 1.6s ease-in-out infinite; }
+.term.desk-attn::before { content: ""; position: absolute; inset: 0; border: 2px solid #f0b429; pointer-events: none; z-index: 5; }
+@keyframes desk-attn-pulse { 0%, 100% { border-color: #8a6a1c; } 50% { border-color: #f0b429; } }
+body.anim-on .term.desk-attn::before { animation: desk-attn-pulse 1.6s ease-in-out infinite; }
+.term.desk-attn .pane-name { color: #f0b429; }
+.asks-tile .t-top { gap: 6px; }
+.asks-tile .t-title { font-size: 13px; font-weight: 600; flex: 0 0 auto; }
+.asks-tile .at-glyph { flex: 0 0 auto; width: 15px; height: 15px; border: 1px solid #f0b429; color: #f0b429; font-size: 11px; line-height: 13px; text-align: center; font-weight: 700; }
+.asks-tile.asking .at-glyph { background: #f0b429; color: #1a1408; }
+.asks-tile .at-count { flex: 1 1 auto; text-align: right; color: #f0b429; font-size: 12px; font-weight: 600; font-variant-numeric: tabular-nums; }
+.asks-tile.none .at-count { color: var(--fg-faint); }
+.asks-tile.none .at-glyph { border-color: var(--fg-faint); color: var(--fg-faint); }
+.asks-tile.none .t-title { color: var(--fg-dim); font-weight: 500; }
+.at-rows { display: flex; flex-direction: column; gap: 1px; max-height: 132px; overflow-y: auto; scrollbar-width: none; }
+.at-row { display: flex; align-items: baseline; gap: 6px; padding: 1px 2px; font-size: 12px; border: 1px solid transparent; }
+.at-row:hover { background: #262626; }
+.at-row.picked { border-color: #8a6a1c; background: #2a2414; }
+.at-abbr { flex: 0 0 auto; color: var(--fg-dim); font-weight: 600; }
+.at-name { flex: 1 1 auto; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.at-where { flex: 0 0 auto; color: var(--fg-faint); font-size: 11px; }
+.at-row.ended .at-name { opacity: .6; }                 /* its session has ended: nobody reads the answers until it resumes */
+.at-age { flex: 0 0 auto; color: var(--fg-faint); font-size: 11px; font-variant-numeric: tabular-nums; }
+/* the asks tile is the selection: the session tile behind the terminal stops looking selected */
+body.asks-focus #tiles .tile.active { border-color: transparent; background: var(--tile); }
+
+/* the pane: over the whole terminal area, as F6's zoom is; the session tiles and their panes stay where they are */
+#ask-pane { position: absolute; inset: 0; z-index: 20; display: flex; flex-direction: column; background: var(--bg); outline: none; }
+#ask-pane .ap-bar { flex: 0 0 auto; display: flex; align-items: baseline; gap: 10px; padding: 4px 8px; background: #0f0f0f; border-bottom: 1px solid var(--tile-border); }
+#ask-pane .ap-title { font-weight: 600; font-size: 13px; }
+#ask-pane .ap-hint { flex: 1 1 auto; color: var(--fg-faint); font-size: 11.5px; }
+#ask-pane .ap-close { background: transparent; border: 0; color: var(--fg-dim); font-size: 16px; line-height: 16px; padding: 0 4px; }
+#ask-pane .ap-close:hover { color: var(--fg); background: #1f1f1f; }
+#ask-pane .ap-scroll { flex: 1 1 auto; overflow-y: auto; overflow-x: hidden; }
+#ask-pane .ap-list { display: flex; flex-direction: column; }
+#ask-pane .ap-empty { padding: 16px; color: var(--fg-dim); }
+/* one section per session; its header sticks to the top until the next session's header pushes it away */
+.ap-sess { border-bottom: 1px solid var(--tile-border); }
+.ap-head { position: sticky; top: 0; z-index: 2; background: #141414; border-bottom: 1px solid var(--tile-border); border-left: 2px solid var(--ask); padding: 4px 8px 5px; }
+.ap-who { display: flex; align-items: baseline; gap: 6px; min-width: 0; }
+.ap-who .t-ask { align-self: center; }
+.ap-abbr { color: var(--fg-dim); font-weight: 600; }
+.ap-name { font-weight: 600; font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; }
+.ap-meta { color: var(--fg-faint); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; min-width: 0; flex: 1 1 auto; }
+.ap-row, .ap-confirm { display: flex; align-items: center; gap: 4px; margin-top: 4px; flex-wrap: wrap; }
+.ap-head button { height: 22px; padding: 0 10px; font-size: 12px; background: var(--btn); border: 1px solid var(--btn-border); border-radius: 0; color: var(--fg); }
+.ap-head button:hover:not(:disabled) { filter: brightness(1.25); }
+.ap-head button:disabled { opacity: .4; cursor: default; }
+.ap-head button.primary { background: var(--ask); border-color: var(--ask); color: var(--ask-ink); font-weight: 600; }
+.ap-head button.danger { background: var(--danger); border-color: var(--danger); color: #fff; }
+.ap-count { color: var(--fg-dim); font-size: 12px; margin-left: 6px; font-variant-numeric: tabular-nums; }
+.ap-flash { color: var(--green); font-size: 12px; flex: 1 1 auto; min-width: 0; }
+/* Discard sits apart, at the far end, quiet; it asks again before it does anything (the user: hard to misclick) */
+.ap-head button.ap-discard { margin-left: auto; background: transparent; border-color: transparent; color: var(--fg-faint); }
+.ap-head button.ap-discard:hover:not(:disabled) { color: var(--danger); border-color: #3a2424; filter: none; }
+.ap-confirm-text { color: var(--fg); font-size: 12px; margin-right: 8px; }
+.ap-body { display: flex; flex-direction: column; padding: 0 8px 6px; }
+.ap-round { display: flex; flex-direction: column; }
+.ap-rnote { color: var(--fg-dim); font-size: 11.5px; padding: 6px 0 0; }
+.ap-frame { display: block; width: 100%; height: 320px; border: 0; background: var(--bg); }
+/* Settings -> Asks: marks off hides them on the session tiles and pane names (the asks tile keeps its own) */
+body.no-ask-marks #tiles .t-ask, body.no-ask-marks .pane-name .pane-ask { display: none !important; }
+#settings .subhead { font-size: 11px; color: var(--fg-dim); font-weight: 600; margin: 10px 0 2px; }
+#settings .ask-dep.off { opacity: .45; }
+#settings .ask-recipe { cursor: help; color: var(--ask); }
+/* the recently answered list, after every session's section: one row each, opened read-only */
+.at-recent .at-name { color: var(--fg-dim); }
+.ap-recent .ap-rhead { border-left-color: var(--fg-faint); }
+.ap-lrows { display: flex; flex-direction: column; gap: 2px; padding-top: 4px; }
+.ap-lrow { display: flex; flex-direction: column; border: 1px solid var(--tile-border); background: #121212; }
+.ap-lhead { display: flex; align-items: baseline; gap: 6px; padding: 3px 6px; cursor: pointer; min-width: 0; }
+.ap-lhead:hover { background: #1b1b1b; }
+.ap-lchev::before { content: "\25B8"; color: var(--fg-faint); font-size: 10px; }
+.ap-lrow.open .ap-lchev::before { content: "\25BE"; }
+.ap-lbody { padding: 0 6px 6px; }
+.ap-lines { margin: 4px 0 0; padding: 4px 6px; background: var(--bg); border: 1px solid var(--tile-border); white-space: pre-wrap; font: 12px/1.4 Consolas, "Cascadia Mono", monospace; color: var(--fg); }
+.ap-round.blocked { position: relative; }
+.ap-round.blocked::after { content: ""; position: absolute; inset: 0; cursor: not-allowed; }   /* an older page that cannot lock itself */

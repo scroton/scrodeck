@@ -1,0 +1,40 @@
+{
+ "fixture": "reports-dsr-da",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 6,
+ "cursor": {
+  "x": 6,
+  "y": 3
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 5
+ },
+ "title": "",
+ "replies": "\u001b[0n\u001b[1;4R\u001b[4;7R\u001b[?4;7R\u001b[?1;2c\u001b[?1;2c\u001b[>0;276;0c\u001b[>0;276;0c",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 61,1,d,d,0 62,1,d,d,0 63,1,d,d,0 17*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

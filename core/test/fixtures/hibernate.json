@@ -1,0 +1,416 @@
+{
+  "module": "hibernate",
+  "generatedFrom": "lib/hibernate.js",
+  "cases": [
+    {
+      "fn": "config",
+      "args": [
+        {}
+      ],
+      "out": {
+        "enabled": true,
+        "idleMinutes": 30,
+        "keepPinned": true,
+        "maxPerTick": 3
+      },
+      "note": "defaults (ships OFF, 30 min)"
+    },
+    {
+      "fn": "config",
+      "args": [
+        {
+          "rows": 9
+        }
+      ],
+      "out": {
+        "enabled": true,
+        "idleMinutes": 30,
+        "keepPinned": true,
+        "maxPerTick": 3
+      },
+      "note": "unknown keys ignored, defaults kept"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 60,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": null,
+      "note": "a quiet idle session may sleep -> null"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "busy",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 30,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "status: busy",
+      "note": "busy -> blocked"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": true,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 30,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "pinned",
+      "note": "pinned -> blocked"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [
+            "win:0"
+          ],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 30,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "on screen (win:0)",
+      "note": "on screen -> blocked"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 1,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 30,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "holding a prompt",
+      "note": "holding a prompt -> blocked"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": false,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 30,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "nothing to resume yet",
+      "note": "never prompted (nothing to resume) -> blocked"
+    },
+    {
+      "fn": "sleepBlocker",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699999400000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 60,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": "active 600s ago",
+      "note": "active recently -> blocked"
+    },
+    {
+      "fn": "maySleep",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": false,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        },
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 60,
+          "keepPinned": true,
+          "maxPerTick": 3
+        }
+      ],
+      "out": true,
+      "note": "true"
+    },
+    {
+      "fn": "wakeReason",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": true,
+          "pinned": false,
+          "shownBy": [
+            "win:1"
+          ],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        }
+      ],
+      "out": "on screen (win:1)",
+      "note": "on screen -> wakes"
+    },
+    {
+      "fn": "wakeReason",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": true,
+          "pinned": false,
+          "shownBy": [],
+          "held": 2,
+          "lastActivityAt": 1699992800000
+        }
+      ],
+      "out": "a prompt is waiting for it",
+      "note": "a due prompt -> wakes"
+    },
+    {
+      "fn": "wakeReason",
+      "args": [
+        {
+          "id": "a",
+          "kind": "claude",
+          "sessionId": "s1",
+          "resumable": true,
+          "status": "idle",
+          "running": true,
+          "asleep": true,
+          "pinned": false,
+          "shownBy": [],
+          "held": 0,
+          "lastActivityAt": 1699992800000
+        }
+      ],
+      "out": null,
+      "note": "nobody wants it -> null"
+    },
+    {
+      "fn": "chooseSleepers",
+      "args": [
+        [
+          {
+            "id": "q3",
+            "kind": "claude",
+            "sessionId": "s1",
+            "resumable": true,
+            "status": "idle",
+            "running": true,
+            "asleep": false,
+            "pinned": false,
+            "shownBy": [],
+            "held": 0,
+            "lastActivityAt": 1699989200000
+          },
+          {
+            "id": "q4",
+            "kind": "claude",
+            "sessionId": "s1",
+            "resumable": true,
+            "status": "idle",
+            "running": true,
+            "asleep": false,
+            "pinned": false,
+            "shownBy": [],
+            "held": 0,
+            "lastActivityAt": 1699985600000
+          },
+          {
+            "id": "busy",
+            "kind": "claude",
+            "sessionId": "s1",
+            "resumable": true,
+            "status": "busy",
+            "running": true,
+            "asleep": false,
+            "pinned": false,
+            "shownBy": [],
+            "held": 0,
+            "lastActivityAt": 1699992800000
+          }
+        ],
+        1700000000000,
+        {
+          "enabled": true,
+          "idleMinutes": 60,
+          "keepPinned": true,
+          "maxPerTick": 1
+        }
+      ],
+      "out": [
+        {
+          "id": "q4",
+          "quietMs": 14400000
+        }
+      ],
+      "note": "longest-quiet first, capped"
+    },
+    {
+      "fn": "chooseWakers",
+      "args": [
+        [
+          {
+            "id": "w",
+            "kind": "claude",
+            "sessionId": "s1",
+            "resumable": true,
+            "status": "idle",
+            "running": true,
+            "asleep": true,
+            "pinned": false,
+            "shownBy": [
+              "win:0"
+            ],
+            "held": 0,
+            "lastActivityAt": 1699992800000
+          },
+          {
+            "id": "x",
+            "kind": "claude",
+            "sessionId": "s1",
+            "resumable": true,
+            "status": "idle",
+            "running": true,
+            "asleep": true,
+            "pinned": false,
+            "shownBy": [],
+            "held": 0,
+            "lastActivityAt": 1699992800000
+          }
+        ]
+      ],
+      "out": [
+        {
+          "id": "w",
+          "reason": "on screen (win:0)"
+        }
+      ],
+      "note": "only the wanted one"
+    }
+  ]
+}

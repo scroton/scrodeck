@@ -1,0 +1,80 @@
+{
+  "now": 1795030640000,
+  "restoring": false,
+  "accounts": [
+    {
+      "id": "main",
+      "label": "main",
+      "abbr": "m",
+      "email": "main@example.com",
+      "key": "1",
+      "isDefault": true
+    },
+    {
+      "id": "work",
+      "label": "work",
+      "abbr": "wk",
+      "email": "work@example.com",
+      "key": "2",
+      "isDefault": false
+    },
+    {
+      "id": "side",
+      "label": "side",
+      "abbr": "",
+      "email": "side@example.com",
+      "key": "3",
+      "isDefault": false
+    }
+  ],
+  "settings": {
+    "fontSize": 14,
+    "zoomFontSize": 0,
+    "fontFamily": "",
+    "cwd": "C:\\Users\\you",
+    "effortStyle": "tag",
+    "sidebarSide": "left",
+    "pinSide": "edge",
+    "barLabels": {
+      "time": true,
+      "day": true
+    },
+    "barLabelMode": "reset",
+    "msgLines": {
+      "normal": 3,
+      "wide": 10
+    },
+    "animations": true,
+    "driver": "auto",
+    "grid": {
+      "rows": 2,
+      "cols": 2
+    },
+    "oneWindow": true,
+    "stepEscape": true,
+    "asks": {
+      "showTile": true,
+      "showMarks": true,
+      "closeOnDone": true
+    },
+    "pages": []
+  },
+  "groups": [],
+  "usage": {},
+  "triggers": [],
+  "restart": {
+    "armed": false,
+    "why": null,
+    "armedAt": null,
+    "quietSince": null,
+    "settleLeftMs": null,
+    "blockers": [],
+    "shells": 0,
+    "update": null
+  },
+  "browserOption": true,
+  "cloudOption": true,
+  "asks": [],
+  "askLog": [],
+  "tiles": []
+}

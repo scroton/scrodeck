@@ -1,0 +1,7 @@
+// The Swift-visible surface of DeckCoreBridge is ONE C header. DeckBridgeHost.hpp (C++: std::function, the core's
+// seam classes) sits beside it for DeckMacSeams to #include and is deliberately not part of the module.
+// UNBUILT: never read by a Swift compiler. VERIFY: SwiftPM honours a hand-written module.modulemap in `include/`.
+module DeckCoreBridge {
+  header "DeckBridge.h"
+  export *
+}

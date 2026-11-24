@@ -1,0 +1,13 @@
+init 20 6 10000
+size 20 6
+cursor 0 0
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=1 scrollBottom=3
+title -
+replies 1b50312472306d1b5c1b50312472313b36721b5c1b50312472323b34721b5c1b503124723120711b5c1b5031247236313b3122701b5c1b503124723022711b5c1b503024721b5c1b503024721b5c1b503124723220711b5c1b50312472306d1b5c1b50312472323b34721b5c
+scrollback 0
+V n 20*-,1,d,d,0
+V n 20*-,1,d,d,0
+V n 20*-,1,d,d,0
+V n 20*-,1,d,d,0
+V n 20*-,1,d,d,0
+V n 20*-,1,d,d,0

@@ -1,0 +1,1313 @@
+{
+ "token": "0123456789abcdef",
+ "pageKey": "63a782521c4ef607",
+ "requests": [
+  {
+   "method": "GET",
+   "target": "/",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/?t=0123456789abcdef",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": "deck_phone=0123456789abcdef; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly",
+    "csp": null,
+    "length": 13695,
+    "sha256": "9a78153f3eddb7c6e2f30a9e9807234ed7957b885cc2f713ce7ff3b9c1d4762d",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 13695,
+    "sha256": "9a78153f3eddb7c6e2f30a9e9807234ed7957b885cc2f713ce7ff3b9c1d4762d",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/index.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 13695,
+    "sha256": "9a78153f3eddb7c6e2f30a9e9807234ed7957b885cc2f713ce7ff3b9c1d4762d",
+    "text": null
+   }
+  },
+  {
+   "method": "HEAD",
+   "target": "/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/app.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 223028,
+    "sha256": "ef8a6d08755a2ed8bea9b8fd09fb7ba134d0fc531907b4aaa1400a59f03ebb07",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/style.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 42256,
+    "sha256": "a618b65238a775e9f16bf2288fddfba6b4badd1ffd26e55a962aff779bc97613",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/sw.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 2340,
+    "sha256": "9c4a7d6f8ca2152ebd0055e4b40a58222a60b9b5a51d45aea1696b2740586338",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/nope.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/manifest.webmanifest",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "application/manifest+json",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 665,
+    "sha256": "97f2147e29a2d49930a1ef6ab21f6bbe653551a82d909e60923b1b6b197b0bde",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/icon-192.png",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "image/png",
+    "cache": "max-age=300",
+    "cookie": null,
+    "csp": null,
+    "length": 1262,
+    "sha256": "cdd4439f159f8ca682830f1d5a36f085d13f843c9ec1a9105fa1bbfb5bbfb8d9",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/icon-512.png",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "image/png",
+    "cache": "max-age=300",
+    "cookie": null,
+    "csp": null,
+    "length": 4191,
+    "sha256": "cc37c060a5fe8a02ced503e2e78b2d8df4d28c34354ce166b55092aad7675754",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/icon-512.png",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "image/png",
+    "cache": "max-age=300",
+    "cookie": null,
+    "csp": null,
+    "length": 4191,
+    "sha256": "cc37c060a5fe8a02ced503e2e78b2d8df4d28c34354ce166b55092aad7675754",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/manifest.webmanifest?t=0123456789abcdef",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "application/manifest+json",
+    "cache": "no-cache",
+    "cookie": "deck_phone=0123456789abcdef; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly",
+    "csp": null,
+    "length": 665,
+    "sha256": "97f2147e29a2d49930a1ef6ab21f6bbe653551a82d909e60923b1b6b197b0bde",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/%6danifest.webmanifest",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "application/manifest+json",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 665,
+    "sha256": "97f2147e29a2d49930a1ef6ab21f6bbe653551a82d909e60923b1b6b197b0bde",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/vendor/xterm.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 488663,
+    "sha256": "14903579ff54664cd72f8e8699e6961a6272c21863ec1c3b118cdc8af5d4a972",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/vendor/xterm.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 7112,
+    "sha256": "854a7c0fb70e8b1a083c16797ab827299fb18744f5ad34f227b48337e33293c6",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/vendor/addon-fit.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 1521,
+    "sha256": "ba3ea256ce0620a0992a197d6c9baea64823fc93d8da07a9e366ca9943c18527",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/vendor/nope.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/vendor/xterm.js",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/?t=0123456789abcdef",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": "deck_phone=0123456789abcdef; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly",
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/index.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/index.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 27034,
+    "sha256": "d489e17d159a1dcb759aa9262c3721f2fb8ed23cd116b403829b43b23a0ac1c0",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/style.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 60369,
+    "sha256": "f83413fd83b47e9924b2367b33aefaa63b2928b79b6b053b827e23079e23d9bf",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/desk/bridge.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 23333,
+    "sha256": "35bd1fa4620866b66544f2695a4feed15e340adc6db7fa8f3d36c5b191512362",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/lib/layout.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 13692,
+    "sha256": "8948a32d64645ebfb396eb275d4fb4e641018a7b7fae3819a930217910126fff",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/lib/phone.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/main.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/js/10-state.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/js/nope.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/node_modules/@xterm/xterm/lib/xterm.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 488663,
+    "sha256": "14903579ff54664cd72f8e8699e6961a6272c21863ec1c3b118cdc8af5d4a972",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/node_modules/@xterm/xterm/css/xterm.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 7112,
+    "sha256": "854a7c0fb70e8b1a083c16797ab827299fb18744f5ad34f227b48337e33293c6",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/node_modules/@xterm/addon-fit/lib/addon-fit.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 1521,
+    "sha256": "ba3ea256ce0620a0992a197d6c9baea64823fc93d8da07a9e366ca9943c18527",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/node_modules/ws/index.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/assets/fonts/fonts.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 2737,
+    "sha256": "42297bec0a52991f4e42ee611515926b0362cd1a853359ab58650512786b36ca",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/assets/icon.png",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/js/../style.css",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 60369,
+    "sha256": "f83413fd83b47e9924b2367b33aefaa63b2928b79b6b053b827e23079e23d9bf",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/renderer/%2e%2e/main.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/desk/x/..%2f..%2fmain.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/desk/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 405,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "HEAD",
+   "target": "/desk/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/../main.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/..%2fmain.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/..%5c..%5cmain.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/%2e%2e/%2e%2e/main.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/a/../app.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 223028,
+    "sha256": "ef8a6d08755a2ed8bea9b8fd09fb7ba134d0fc531907b4aaa1400a59f03ebb07",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/./app.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 223028,
+    "sha256": "ef8a6d08755a2ed8bea9b8fd09fb7ba134d0fc531907b4aaa1400a59f03ebb07",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "//app.js",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 13695,
+    "sha256": "9a78153f3eddb7c6e2f30a9e9807234ed7957b885cc2f713ce7ff3b9c1d4762d",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_abc-1.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 16,
+    "sha256": "58a944d359e392cc0c0726398f86129c040375dbe0cf62ae9122f8b64b8fe889",
+    "text": "no such ask page"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_abc-1.html",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/ask/ask_abc-1.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 403,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/nope.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_a.b.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/0123456789abcdef/0123456789abcdef/page.html",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/x",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/view/0123456789abcdef/0123456789abcdef/page.html",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 405,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0123456789abcdef/page.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/upload",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef",
+    "x-file-name": "my%20notes%20(1).txt"
+   },
+   "body": "hello upload",
+   "res": {
+    "status": 200,
+    "type": "application/json",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 39,
+    "sha256": "23d62e20a96f8a4a5a83d9a4a74131061f6d6950a5ec7582aadf9ab0f20dfb20",
+    "text": "{\"path\":\"UPLOADED:my notes (1).txt:12\"}"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/upload",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": "no name",
+   "res": {
+    "status": 200,
+    "type": "application/json",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 26,
+    "sha256": "c329302185e30bcdea0f8fc68d9612a2cf20bf32892d7959f8d9eafe5cfa85ac",
+    "text": "{\"path\":\"UPLOADED:file:7\"}"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/upload",
+   "headers": {},
+   "body": "refused",
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/upload",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/?t=wrong",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/",
+   "headers": {
+    "cookie": "deck_phone=wrong"
+   },
+   "body": null,
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "DELETE",
+   "target": "/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "length": 13695,
+    "sha256": "9a78153f3eddb7c6e2f30a9e9807234ed7957b885cc2f713ce7ff3b9c1d4762d",
+    "text": null
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/app.js?x=1&t=0123456789abcdef&y=2",
+   "headers": {},
+   "body": null,
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": "deck_phone=0123456789abcdef; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly",
+    "csp": null,
+    "length": 223028,
+    "sha256": "ef8a6d08755a2ed8bea9b8fd09fb7ba134d0fc531907b4aaa1400a59f03ebb07",
+    "text": null
+   }
+  }
+ ],
+ "sockets": [
+  {
+   "target": "/",
+   "headers": {},
+   "res": {
+    "status": 401
+   }
+  },
+  {
+   "target": "/?t=wrong",
+   "headers": {},
+   "res": {
+    "status": 401
+   }
+  },
+  {
+   "target": "/?t=0123456789abcdef",
+   "headers": {},
+   "res": {
+    "status": 101,
+    "first": "init",
+    "keys": [
+     "assets",
+     "build",
+     "home",
+     "meta",
+     "pageKey",
+     "platform",
+     "t"
+    ]
+   }
+  },
+  {
+   "target": "/any/path/at/all?t=0123456789abcdef",
+   "headers": {},
+   "res": {
+    "status": 101,
+    "first": "init",
+    "keys": [
+     "assets",
+     "build",
+     "home",
+     "meta",
+     "pageKey",
+     "platform",
+     "t"
+    ]
+   }
+  },
+  {
+   "target": "/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 101,
+    "first": "init",
+    "keys": [
+     "assets",
+     "build",
+     "home",
+     "meta",
+     "pageKey",
+     "platform",
+     "t"
+    ]
+   }
+  },
+  {
+   "target": "/desk/",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 101,
+    "first": "init",
+    "keys": [
+     "assets",
+     "build",
+     "home",
+     "meta",
+     "pageKey",
+     "platform",
+     "t"
+    ]
+   }
+  }
+ ],
+ "uploads": [
+  {
+   "name": "my notes (1).txt",
+   "size": 12
+  },
+  {
+   "name": "file",
+   "size": 7
+  }
+ ]
+}

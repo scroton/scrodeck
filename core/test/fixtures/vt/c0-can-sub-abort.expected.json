@@ -1,0 +1,38 @@
+{
+ "fixture": "c0-can-sub-abort",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 4,
+ "cursor": {
+  "x": 14,
+  "y": 0
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 61,1,d,d,0 6d,1,d,d,0 62,1,d,d,0 6d,1,d,d,0 63,1,d,d,0 74,1,d,d,0 69,1,d,d,0 74,1,d,d,0 6c,1,d,d,0 65,1,d,d,0 5b,1,d,d,0 64,1,d,d,0 6f,1,p3,d,0 6b,1,p3,d,0 6*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

@@ -1,0 +1,5 @@
+wait 900; zone tool settings-btn; wait 700; wheel 300 500 -1680; wait 300; ozone set-color session:from; wait 300; dump ozones; shot cp-open;
+ozone cp-sv; wait 150; ozone cp-hue; wait 150; dump ozones; shot cp-dragged;
+ozone edit cp-hex; tap ctrl+A; text #ff8800; wait 150; dump ozones; tap esc; wait 150; dump ozones;
+ozone set-color week:to; wait 300; ozone cp-hue; wait 150; click 700 20; wait 200; dump ozones;
+ozone set-color week:from; wait 300; ozone edit cp-hex; tap ctrl+A; text 123abc; tap enter; wait 200; dump ozones

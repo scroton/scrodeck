@@ -1,0 +1,8 @@
+node_modules/
+build/
+windows/test/out/
+windows/host-test/out/
+windows/web-test/out/
+*.exe
+*.o
+*.obj

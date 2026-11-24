@@ -1,0 +1,40 @@
+{
+ "fixture": "cursor-cnl-cpl",
+ "xterm": "6.0.0",
+ "cols": 12,
+ "rows": 6,
+ "cursor": {
+  "x": 1,
+  "y": 1
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 5
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 64,1,d,d,0 10*41,1,d,d,0 -,1,d,d,0",
+  "n 65,1,d,d,0 9*42,1,d,d,0 2*-,1,d,d,0",
+  "n 63,1,d,d,0 8*43,1,d,d,0 3*-,1,d,d,0",
+  "n 11*44,1,d,d,0 -,1,d,d,0",
+  "n 61,1,d,d,0 9*45,1,d,d,0 2*-,1,d,d,0",
+  "n 62,1,d,d,0 8*46,1,d,d,0 3*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

@@ -1,0 +1,846 @@
+{
+ "root": "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR",
+ "token": "0123456789abcdef",
+ "pageKey": "63a782521c4ef607",
+ "shown": {
+  "dir": "0054172065a58f06",
+  "name": "report.html"
+ },
+ "page": "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\report.html",
+ "askId": "ask_deck-test_0123abcd_r1_1118-0930_beef",
+ "goneId": "ask_deck-test_0123abcd_r2_1118-0931_cafe",
+ "notHtmlId": "ask_deck-test_0123abcd_r3_1118-0932_f00d",
+ "stateDir": "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\ask-state",
+ "files": {
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\report.html": {
+   "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a></body></html>\n"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\other.html": {
+   "text": "<p>no closing body tag, so the script is appended"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\UPPER.HTML": {
+   "text": "<html><BODY>upper</BODY >\n</html>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\a b.html": {
+   "text": "<body>a space in the name</body>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\sub\\style.css": {
+   "text": "h1 { color: #c33; }\n"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\sub\\deep\\app.mjs": {
+   "text": "export const x = 1;\n"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\img.png": {
+   "hex": "89504e470d0a1a0a00010203fffe"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\data.json": {
+   "text": "{\"never\":\"served\"}"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\.hidden.html": {
+   "text": "<body>dotfile</body>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pages\\.git\\config.html": {
+   "text": "<body>dot folder</body>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\pagesibling\\secret.html": {
+   "text": "<body>a sibling folder whose name starts the same</body>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\elsewhere\\not-shown.html": {
+   "text": "<body>its folder was never shown</body>"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\ask-pages\\ask_deck-test_0123abcd_r1_1118-0930_beef.html": {
+   "text": "<!doctype html><title>Ask</title><body><script>parent.postMessage({ kind: \"ask-page\" }, \"*\")</script>Q1?</body>\n"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\ask-pages\\ask_deck-test_0123abcd_r3_1118-0932_f00d.txt": {
+   "text": "a round whose page is not an ask_*.html file"
+  },
+  "C:\\Users\\demo\\AppData\\Local\\Temp\\deck-fx-r2-pPaKDR\\ask-state\\aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee.json": {
+   "text": "{\"session_id\":\"aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee\",\"session_name\":\"route test\",\"account\":\"claudet\",\"answers\":{},\"rounds\":[{\"id\":\"ask_deck-test_0123abcd_r1_1118-0930_beef\",\"round\":1,\"status\":\"open\",\"created\":\"2026-11-18T09:30:00-05:00\",\"title\":\"One\",\"page\":\"C:\\\\Users\\\\demo\\\\AppData\\\\Local\\\\Temp\\\\deck-fx-r2-pPaKDR\\\\ask-pages\\\\ask_deck-test_0123abcd_r1_1118-0930_beef.html\",\"items\":[{\"qid\":\"Q1\",\"key\":\"k1\",\"title\":\"first\"}]},{\"id\":\"ask_deck-test_0123abcd_r2_1118-0931_cafe\",\"round\":2,\"status\":\"open\",\"created\":\"2026-11-18T09:31:00-05:00\",\"title\":\"Two\",\"page\":\"C:\\\\Users\\\\demo\\\\AppData\\\\Local\\\\Temp\\\\deck-fx-r2-pPaKDR\\\\ask-pages\\\\ask_deck-test_0123abcd_r2_1118-0931_cafe.html\",\"items\":[{\"qid\":\"Q1\",\"key\":\"k2\",\"title\":\"second\"}]},{\"id\":\"ask_deck-test_0123abcd_r3_1118-0932_f00d\",\"round\":3,\"status\":\"open\",\"created\":\"2026-11-18T09:32:00-05:00\",\"title\":\"Three\",\"page\":\"C:\\\\Users\\\\demo\\\\AppData\\\\Local\\\\Temp\\\\deck-fx-r2-pPaKDR\\\\ask-pages\\\\ask_deck-test_0123abcd_r3_1118-0932_f00d.txt\",\"items\":[]}]}"
+  }
+ },
+ "requests": [
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 656,
+    "sha256": "9405694c3862badfa2c94aa7ce4a6b5e55e3c6966cf34377406e891b02e23463",
+    "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a><script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body></html>\n"
+   }
+  },
+  {
+   "method": "HEAD",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/other.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 559,
+    "sha256": "8abc078e4f5431b34f6a471103a77deef93e5cc814b4c80c28747678ded9aefd",
+    "text": "<p>no closing body tag, so the script is appended<script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/UPPER.HTML",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 543,
+    "sha256": "14445680e5d97c4c9d39cf9a0e7c3458f5b368ec827eeb15b3ef51326bb7d924",
+    "text": "<html><BODY>upper<script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></BODY >\n</html>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/a%20b.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 542,
+    "sha256": "b0f73e249f74f3288287dadeeb974fcae671ab8f6939500100d8b1d227265ffa",
+    "text": "<body>a space in the name<script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body>"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub/style.css",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/css; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 20,
+    "sha256": "d9398da7d24f6c76b35a78b929342e383fdc2b5afb43a919468047c999897d91",
+    "text": "h1 { color: #c33; }\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub/deep/app.mjs",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/javascript; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 20,
+    "sha256": "b40dedde60828bf61d1fadbfc3bb7ea2e0421e9511d22f1b5fb44ae5ba07dbb3",
+    "text": "export const x = 1;\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/img.png",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "image/png",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": null,
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 14,
+    "sha256": "4033735c485f1e032d3414a913c885fc8824e0882c102e2fc78452707739848d",
+    "text": "�PNG\r\n\u001a\n\u0000\u0001\u0002\u0003��"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/data.json",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/.hidden.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/.git/config.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/nope.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub/../report.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 656,
+    "sha256": "9405694c3862badfa2c94aa7ce4a6b5e55e3c6966cf34377406e891b02e23463",
+    "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a><script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body></html>\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub/%2e%2e/report.html",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 656,
+    "sha256": "9405694c3862badfa2c94aa7ce4a6b5e55e3c6966cf34377406e891b02e23463",
+    "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a><script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body></html>\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/..%2fpagesibling%2fsecret.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/../pagesibling/secret.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub%5cstyle.css",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/%zz.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub/",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html?x=1#frag",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 656,
+    "sha256": "9405694c3862badfa2c94aa7ce4a6b5e55e3c6966cf34377406e891b02e23463",
+    "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a><script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body></html>\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads allow-modals; default-src 'self' data: blob: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' blob: https:; style-src 'self' 'unsafe-inline' https:; img-src 'self' data: blob: https:; font-src 'self' data: https:; connect-src 'self' https:; media-src 'self' data: blob: https:; frame-src 'self' data: blob: https:; form-action 'none'",
+    "referrer": "no-referrer",
+    "nosniff": "nosniff",
+    "length": 656,
+    "sha256": "9405694c3862badfa2c94aa7ce4a6b5e55e3c6966cf34377406e891b02e23463",
+    "text": "<!doctype html><html><head><link rel=\"stylesheet\" href=\"sub/style.css\"></head><body><h1>Report é</h1><a href=\"other.html\">next</a><script>/* claude-deck: the page viewer */document.addEventListener(\"click\",function(e){var a=e.target&&e.target.closest?e.target.closest(\"a[href]\"):null;if(!a||e.defaultPrevented||e.button!==0||e.metaKey||e.ctrlKey||e.shiftKey||a.hasAttribute(\"download\"))return;var u;try{u=new URL(a.getAttribute(\"href\"),location.href);}catch(x){return;}if(!/^https?:$/.test(u.protocol))return;e.preventDefault();if(u.origin===location.origin)location.replace(u.href);else window.open(u.href,\"_blank\",\"noopener\");});</script></body></html>\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/a/b/c/d/e/f/g/h.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/a/b/c/d/e/f/g/h/i.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/sub//style.css",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 405,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "DELETE",
+   "target": "/view/63a782521c4ef607/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 405,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/0000000000000000/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63A782521C4EF607/0054172065a58f06/report.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/0000000000000000/report.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/3e80d8951592b93/report.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/63a782521c4ef607/3e200d9dd45fe4d5/not-shown.html",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/x",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/view/",
+   "headers": {},
+   "res": {
+    "status": 404,
+    "type": "text/plain; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads; default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:",
+    "referrer": null,
+    "nosniff": null,
+    "length": 112,
+    "sha256": "31885953566ef4bee022e3b8b2b8f3c69457d1e358c273f24ed6ed2285bbfa82",
+    "text": "<!doctype html><title>Ask</title><body><script>parent.postMessage({ kind: \"ask-page\" }, \"*\")</script>Q1?</body>\n"
+   }
+  },
+  {
+   "method": "HEAD",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": null,
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads; default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:",
+    "referrer": null,
+    "nosniff": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.html?t=0123456789abcdef",
+   "headers": {},
+   "res": {
+    "status": 200,
+    "type": "text/html; charset=utf-8",
+    "cache": "no-cache",
+    "cookie": "deck_phone=0123456789abcdef; Path=/; Max-Age=31536000; SameSite=Lax; HttpOnly",
+    "csp": "sandbox allow-scripts allow-popups allow-popups-to-escape-sandbox allow-downloads; default-src 'none'; script-src 'unsafe-inline'; style-src 'unsafe-inline'; img-src data:",
+    "referrer": null,
+    "nosniff": null,
+    "length": 112,
+    "sha256": "31885953566ef4bee022e3b8b2b8f3c69457d1e358c273f24ed6ed2285bbfa82",
+    "text": "<!doctype html><title>Ask</title><body><script>parent.postMessage({ kind: \"ask-page\" }, \"*\")</script>Q1?</body>\n"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.html",
+   "headers": {},
+   "res": {
+    "status": 401,
+    "type": "text/html; charset=utf-8",
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 381,
+    "sha256": "3dafc56ce9c4c0418bd199be676a7fa5e36440edefc795331f70966cef16c50d",
+    "text": "<meta name=\"viewport\" content=\"width=device-width,initial-scale=1\"><body style=\"font:16px system-ui;background:#0f0f0f;color:#ccc;padding:24px\">Claude Deck: this link needs its token. Open the link shown under Settings &rarr; Phone on the desk once (it carries the token); after that the app remembers it. The token changes only when you press &ldquo;new token&rdquo; there.</body>"
+   }
+  },
+  {
+   "method": "POST",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 403,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 0,
+    "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+    "text": ""
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r2_1118-0931_cafe.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 16,
+    "sha256": "58a944d359e392cc0c0726398f86129c040375dbe0cf62ae9122f8b64b8fe889",
+    "text": "no such ask page"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r3_1118-0932_f00d.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 16,
+    "sha256": "58a944d359e392cc0c0726398f86129c040375dbe0cf62ae9122f8b64b8fe889",
+    "text": "no such ask page"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r9_1118-0930_beef.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 16,
+    "sha256": "58a944d359e392cc0c0726398f86129c040375dbe0cf62ae9122f8b64b8fe889",
+    "text": "no such ask page"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_x.html",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 16,
+    "sha256": "58a944d359e392cc0c0726398f86129c040375dbe0cf62ae9122f8b64b8fe889",
+    "text": "no such ask page"
+   }
+  },
+  {
+   "method": "GET",
+   "target": "/ask/ask_deck-test_0123abcd_r1_1118-0930_beef.htm",
+   "headers": {
+    "cookie": "deck_phone=0123456789abcdef"
+   },
+   "res": {
+    "status": 404,
+    "type": null,
+    "cache": null,
+    "cookie": null,
+    "csp": null,
+    "referrer": null,
+    "nosniff": null,
+    "length": 9,
+    "sha256": "907ba78b4545338d3539683e63ecb51cf51c10adc9dabd86e92bd52339f298b9",
+    "text": "not found"
+   }
+  }
+ ]
+}

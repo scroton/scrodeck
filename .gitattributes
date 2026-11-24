@@ -1,0 +1,9 @@
+# text files are LF in the repository and native on checkout; binaries are never touched
+* text=auto
+*.sh text eol=lf
+*.cmd text eol=crlf
+*.png binary
+*.ico binary
+*.ttf binary
+*.otf binary
+*.woff2 binary

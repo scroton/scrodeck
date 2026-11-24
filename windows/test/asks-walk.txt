@@ -1,0 +1,35 @@
+wait 700; dump tiles; shot asks-0-before;
+
+ask appclick 40 23; wait 2600; ask dump; wait 300; shot asks-a-open;
+
+ask in 0 document.querySelectorAll('.card')[0].querySelector('[data-pick]'); wait 600;
+ask in 0 document.querySelectorAll('.card')[1].querySelector('textarea'); wait 500;
+ask text add 150 MB instead; wait 800; ask dump; wait 300; shot asks-b-answered;
+
+ask key esc; wait 600; ask dump; wait 200;
+
+tap ctrl+shift+P; wait 800; shot asks-g-palette; tap esc; wait 700; ask dump; wait 200; shot asks-g2-uncovered;
+rzone tile sel; wait 700; shot asks-g3-menu; tap esc; wait 600;
+
+size 1100 720; wait 800; shot asks-h-resized; tap F9; wait 700; shot asks-h2-collapsed; tap F9; wait 300; size 1400 900; wait 700;
+
+ask host document.querySelector('section.ap-sess .ap-done'); wait 1600; ask dump; wait 300; shot asks-c-done;
+
+ask eval - (window.__k=[],window.addEventListener('keydown',function(e){window.__k.push(e.key)},true),'recording'); wait 200;
+ask key enter; wait 500; ask key tab; wait 500; ask eval - window.__k.join(); wait 300;
+ask key F6; wait 800; ask dump; wait 200;
+
+ask appclick 200 126; wait 600; tap F7; wait 1800; ask dump; wait 300; shot asks-d-session;
+ask key F7; wait 800; ask dump; wait 200; shot asks-f-closed; wait 2300; shot asks-f2-repainted;
+
+rzone tile sel; wait 500; dump ozones; menu Answer its; wait 1600; ask dump; wait 200;
+ask in 0 document.querySelector('.card [data-pick="b"]'); wait 700;
+ask host document.querySelector('section.ap-sess:not([hidden]):not(.ap-recent) .ap-done'); wait 1800; ask dump; wait 200; shot asks-c2-done-closed;
+
+call __read ['ask_bug-queue_aaaaaaaa_r1_1118-1935_c233']; wait 2500;
+tap F7; wait 1800; ask dump; wait 300; shot asks-e-log; tap esc; wait 500;
+zone asks __recent; wait 1500; ask host document.querySelector('.ap-lhead'); wait 1600; ask dump; wait 300; shot asks-e2-recent;
+tap F6; wait 500;
+tap ctrl+shift+P; text recently; wait 300; dump ozones; tap enter; wait 1300; ask dump; wait 300;
+ask appclick 200 126; wait 500; ask dump; wait 300;
+close

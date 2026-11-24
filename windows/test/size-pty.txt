@@ -1,0 +1,5 @@
+wait 900; click 700 400; wait 300; fakeset remoteDesk true; wait 200; dump drive;
+faketile sizeBy 'office'; faketile ptySize {'cols':100,'rows':30}; wait 400; dump drive;
+faketile ptySize {'cols':120,'rows':40}; wait 400; dump drive;
+faketile sizeBy 'remote'; wait 400; dump drive;
+faketile sizeBy 'phone'; faketile mirror {'cols':60,'rows':20}; faketile ptySize {'cols':60,'rows':20}; wait 400; dump drive

@@ -1,0 +1,38 @@
+{
+ "fixture": "alt-modes-report",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 4,
+ "cursor": {
+  "x": 0,
+  "y": 0
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "\u001b[?1049;2$y\u001b[?1049;1$y\u001b[?47;1$y\u001b[?1047;1$y\u001b[?1048;1$y\u001b[?47;2$y",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

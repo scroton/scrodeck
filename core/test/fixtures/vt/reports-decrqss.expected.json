@@ -1,0 +1,40 @@
+{
+ "fixture": "reports-decrqss",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 6,
+ "cursor": {
+  "x": 0,
+  "y": 0
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 1,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "\u001bP1$r0m\u001b\\\u001bP1$r1;6r\u001b\\\u001bP1$r2;4r\u001b\\\u001bP1$r1 q\u001b\\\u001bP1$r61;1\"p\u001b\\\u001bP1$r0\"q\u001b\\\u001bP0$r\u001b\\\u001bP0$r\u001b\\\u001bP1$r2 q\u001b\\\u001bP1$r0m\u001b\\\u001bP1$r2;4r\u001b\\",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0",
+  "n 20*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

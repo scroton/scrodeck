@@ -1,0 +1,18 @@
+init 20 6 10000
+op feed 176
+op resize 12 4
+op feed 49
+op resize 26 7
+size 26 7
+cursor 11 2
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=0 scrollBottom=6
+title -
+replies -
+scrollback 0
+V n 6e,1,d,d,0 6f,1,d,d,0 72,1,d,d,0 6d,1,d,d,0 61,1,d,d,0 6c,1,d,d,0 20,1,d,d,0 5*6e,1,d,d,0 14*-,1,d,d,0
+V w 12*6e,1,d,d,0 14*-,1,d,d,0
+V w 7*6e,1,d,d,0 62,1,d,d,0 61,1,d,d,0 63,1,d,d,0 6b,1,d,d,0 15*-,1,d,d,0
+V n 26*-,1,d,d,0
+V n 26*-,1,d,d,0
+V n 26*-,1,d,d,0
+V n 26*-,1,d,d,0

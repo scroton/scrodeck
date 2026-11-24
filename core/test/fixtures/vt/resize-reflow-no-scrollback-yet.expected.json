@@ -1,0 +1,44 @@
+{
+ "fixture": "resize-reflow-no-scrollback-yet",
+ "xterm": "6.0.0",
+ "cols": 25,
+ "rows": 10,
+ "cursor": {
+  "x": 8,
+  "y": 5
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 9
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 25*61,1,d,d,0",
+  "w 25*61,1,d,d,0",
+  "w 20*61,1,d,d,0 5*-,1,d,d,0",
+  "n 25*62,1,d,d,0",
+  "w 15*62,1,d,d,0 10*-,1,d,d,0",
+  "n 70,1,d,d,0 72,1,d,d,0 6f,1,d,d,0 6d,1,d,d,0 70,1,d,d,0 74,1,d,d,0 3e,1,d,d,0 20,1,d,d,0 17*-,1,d,d,0",
+  "n 25*-,1,d,d,0",
+  "n 25*-,1,d,d,0",
+  "n 25*-,1,d,d,0",
+  "n 25*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

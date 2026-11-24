@@ -1,0 +1,20 @@
+wait 900; shot anim-0-static;
+faketile ultracode true; faketile effort 'high';
+sel Fix the label; faketile kind 'claude'; faketile cloudId null; faketile effort 'max';
+sel Read the CSV; faketile kind 'claude'; faketile cloudId null; faketile attention true; faketile status 'idle';
+sel write the tests; faketile ultracode true; faketile effort 'max'; faketile kind 'claude'; faketile status 'idle';
+fakeset restart {'armed':true,'blockers':[]};
+sel Bug queue; wait 300; shot anim-1-off;
+anim 0; wait 100; anim dump; shot anim-2-t0;
+anim 400; wait 100; shot anim-2-t400;
+anim 800; wait 100; shot anim-2-t800;
+anim 1200; wait 100; shot anim-2-t1200;
+anim 2250; wait 100; shot anim-2-t2250;
+fakeset settings.effortStyle 'color'; anim 0; wait 100; shot anim-3-color-t0;
+anim 600; wait 100; shot anim-3-color-t600;
+anim 1200; wait 100; shot anim-3-color-t1200;
+sel Fix the label; anim 2250; wait 100; shot anim-3-color-sel-max;
+sel write the tests; anim 1200; wait 100; shot anim-3-color-sel-ultramax;
+sel Read the CSV; key alt+1; keyup 1; anim 0; wait 100; shot anim-4-pane-t0; anim 800; wait 100; anim dump; shot anim-4-pane-t800;
+downzone tile 'title:Bug queue'; move 700 300; wait 100; anim 0; shot anim-5-drop-t0; anim 200; shot anim-5-drop-t200; anim 400; shot anim-5-drop-t400; up 700 300; wait 200;
+fakeset settings.animations false; wait 200; anim dump; shot anim-6-setting-off

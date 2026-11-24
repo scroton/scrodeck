@@ -1,0 +1,2421 @@
+{
+ "clip": [
+  {
+   "text": "",
+   "lines": 1,
+   "out": ""
+  },
+  {
+   "text": "",
+   "lines": 2,
+   "out": ""
+  },
+  {
+   "text": "",
+   "lines": 3,
+   "out": ""
+  },
+  {
+   "text": "",
+   "lines": 10,
+   "out": ""
+  },
+  {
+   "text": "one line",
+   "lines": 1,
+   "out": "one line"
+  },
+  {
+   "text": "one line",
+   "lines": 2,
+   "out": "one line"
+  },
+  {
+   "text": "one line",
+   "lines": 3,
+   "out": "one line"
+  },
+  {
+   "text": "one line",
+   "lines": 10,
+   "out": "one line"
+  },
+  {
+   "text": "one\ntwo\nthree\nfour\nfive",
+   "lines": 1,
+   "out": "one"
+  },
+  {
+   "text": "one\ntwo\nthree\nfour\nfive",
+   "lines": 2,
+   "out": "one\ntwo"
+  },
+  {
+   "text": "one\ntwo\nthree\nfour\nfive",
+   "lines": 3,
+   "out": "one\ntwo\nthree"
+  },
+  {
+   "text": "one\ntwo\nthree\nfour\nfive",
+   "lines": 10,
+   "out": "one\ntwo\nthree\nfour\nfive"
+  },
+  {
+   "text": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+   "lines": 1,
+   "out": "\n\n  \nfirst"
+  },
+  {
+   "text": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+   "lines": 2,
+   "out": "\n\n  \nfirst\n\n\nsecond"
+  },
+  {
+   "text": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+   "lines": 3,
+   "out": "\n\n  \nfirst\n\n\nsecond\n   \nthird"
+  },
+  {
+   "text": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+   "lines": 10,
+   "out": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth"
+  },
+  {
+   "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "lines": 1,
+   "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+   "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "lines": 2,
+   "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+   "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "lines": 3,
+   "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+   "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "lines": 10,
+   "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx"
+  },
+  {
+   "text": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nb\nc",
+   "lines": 1,
+   "out": "a"
+  },
+  {
+   "text": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nb\nc",
+   "lines": 2,
+   "out": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+  },
+  {
+   "text": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nb\nc",
+   "lines": 3,
+   "out": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy"
+  },
+  {
+   "text": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nb\nc",
+   "lines": 10,
+   "out": "a\nyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyy\nb\nc"
+  },
+  {
+   "text": "café — naïve\n😀 emoji line\nthird  \n fourth",
+   "lines": 1,
+   "out": "café — naïve"
+  },
+  {
+   "text": "café — naïve\n😀 emoji line\nthird  \n fourth",
+   "lines": 2,
+   "out": "café — naïve\n😀 emoji line"
+  },
+  {
+   "text": "café — naïve\n😀 emoji line\nthird  \n fourth",
+   "lines": 3,
+   "out": "café — naïve\n😀 emoji line\nthird  "
+  },
+  {
+   "text": "café — naïve\n😀 emoji line\nthird  \n fourth",
+   "lines": 10,
+   "out": "café — naïve\n😀 emoji line\nthird  \n fourth"
+  },
+  {
+   "text": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+   "lines": 1,
+   "out": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀"
+  },
+  {
+   "text": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+   "lines": 2,
+   "out": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀"
+  },
+  {
+   "text": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+   "lines": 3,
+   "out": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀"
+  },
+  {
+   "text": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+   "lines": 10,
+   "out": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀"
+  },
+  {
+   "text": "only\n",
+   "lines": 1,
+   "out": "only"
+  },
+  {
+   "text": "only\n",
+   "lines": 2,
+   "out": "only\n"
+  },
+  {
+   "text": "only\n",
+   "lines": 3,
+   "out": "only\n"
+  },
+  {
+   "text": "only\n",
+   "lines": 10,
+   "out": "only\n"
+  },
+  {
+   "text": "\n",
+   "lines": 1,
+   "out": "\n"
+  },
+  {
+   "text": "\n",
+   "lines": 2,
+   "out": "\n"
+  },
+  {
+   "text": "\n",
+   "lines": 3,
+   "out": "\n"
+  },
+  {
+   "text": "\n",
+   "lines": 10,
+   "out": "\n"
+  },
+  {
+   "text": "tab\there\n  \nreal\nlast",
+   "lines": 1,
+   "out": "tab\there"
+  },
+  {
+   "text": "tab\there\n  \nreal\nlast",
+   "lines": 2,
+   "out": "tab\there\n  \nreal"
+  },
+  {
+   "text": "tab\there\n  \nreal\nlast",
+   "lines": 3,
+   "out": "tab\there\n  \nreal\nlast"
+  },
+  {
+   "text": "tab\there\n  \nreal\nlast",
+   "lines": 10,
+   "out": "tab\there\n  \nreal\nlast"
+  },
+  {
+   "text": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+   "lines": 1,
+   "out": "l1"
+  },
+  {
+   "text": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+   "lines": 2,
+   "out": "l1\nl2"
+  },
+  {
+   "text": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+   "lines": 3,
+   "out": "l1\nl2\nl3"
+  },
+  {
+   "text": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+   "lines": 10,
+   "out": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10"
+  }
+ ],
+ "remote": [
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": false,
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": true,
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": false,
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": true,
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 3,
+    "settings": {
+     "driver": "phone"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     null,
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": false,
+   "out": {
+    "now": 3,
+    "settings": {
+     "driver": "phone"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     null,
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 3,
+    "settings": {
+     "driver": "phone"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     null,
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": true,
+   "out": {
+    "now": 3,
+    "settings": {
+     "driver": "phone"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     null,
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": false,
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "desk": true,
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 5,
+    "tiles": "not a list"
+   },
+   "desk": false,
+   "out": {
+    "now": 5,
+    "tiles": "not a list"
+   }
+  },
+  {
+   "meta": {
+    "now": 5,
+    "tiles": "not a list"
+   },
+   "desk": true,
+   "out": {
+    "now": 5,
+    "tiles": "not a list"
+   }
+  },
+  {
+   "meta": null,
+   "desk": false,
+   "out": null
+  },
+  {
+   "meta": null,
+   "desk": true,
+   "out": null
+  }
+ ],
+ "desk": [
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": true,
+   "phoneHas": [],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "a"
+   ],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [],
+   "hidden": false,
+   "phoneHas": [
+    "b"
+   ],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 40,
+       "rows": 12
+      },
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "c",
+    "zz"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "c"
+   ],
+   "out": {
+    "now": 1,
+    "settings": {
+     "msgLines": {
+      "normal": 3,
+      "wide": 10
+     },
+     "driver": "auto"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "one\ntwo\nthree\nfour\nfive",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "c",
+      "kind": "claude",
+      "lastText": null,
+      "ptySize": null,
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "d",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": true,
+   "phoneHas": [],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "a"
+   ],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [],
+   "hidden": false,
+   "phoneHas": [
+    "b"
+   ],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "c",
+    "zz"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "c"
+   ],
+   "out": {
+    "now": 2,
+    "settings": {
+     "msgLines": {
+      "normal": 1,
+      "wide": 2
+     },
+     "driver": "desk"
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "\n\n  \nfirst\n\n\nsecond\n   \nthird\nfourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     },
+     {
+      "id": "b",
+      "kind": "claude",
+      "lastText": "café — naïve\n😀 emoji line\nthird  \n fourth",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b",
+    "c",
+    "d"
+   ],
+   "hidden": false,
+   "phoneHas": [],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": true,
+   "phoneHas": [],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "a",
+    "b"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "a"
+   ],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": {
+       "cols": 120,
+       "rows": 30
+      },
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [],
+   "hidden": false,
+   "phoneHas": [
+    "b"
+   ],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  },
+  {
+   "meta": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle"
+     }
+    ]
+   },
+   "shown": [
+    "c",
+    "zz"
+   ],
+   "hidden": false,
+   "phoneHas": [
+    "c"
+   ],
+   "out": {
+    "now": 4,
+    "settings": {
+     "msgLines": {
+      "normal": 0,
+      "wide": "7"
+     }
+    },
+    "tiles": [
+     {
+      "id": "a",
+      "kind": "claude",
+      "lastText": "l1\nl2\nl3\nl4\nl5\nl6\nl7\nl8\nl9\nl10\nl11\nl12",
+      "ptySize": {
+       "cols": 120,
+       "rows": 30
+      },
+      "mirror": null,
+      "status": "idle",
+      "inWindow": null
+     }
+    ]
+   }
+  }
+ ]
+}

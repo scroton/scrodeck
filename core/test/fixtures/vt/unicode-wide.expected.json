@@ -1,0 +1,40 @@
+{
+ "fixture": "unicode-wide",
+ "xterm": "6.0.0",
+ "cols": 20,
+ "rows": 6,
+ "cursor": {
+  "x": 10,
+  "y": 4
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 5
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 4e2d,2,d,d,0 -,0,d,d,0 6587,2,d,d,0 -,0,d,d,0 5b57,2,d,d,0 -,0,d,d,0 7b26,2,d,d,0 -,0,d,d,0 20,1,d,d,0 d55c,2,d,d,0 -,0,d,d,0 ad6d,2,d,d,0 -,0,d,d,0 c5b4,2,d,d,0 -,0,d,d,0 20,1,d,d,0 65e5,2,d,d,0 -,0,d,d,0 672c,2,d,d,0 -,0,d,d,0",
+  "w 8a9e,2,d,d,0 -,0,d,d,0 20,1,d,d,0 ff46,2,d,d,0 -,0,d,d,0 ff55,2,d,d,0 -,0,d,d,0 ff4c,2,d,d,0 -,0,d,d,0 ff4c,2,d,d,0 -,0,d,d,0 9*-,1,d,d,0",
+  "n 61,1,d,d,0 4e2d,2,d,d,0 -,0,d,d,0 62,1,d,d,0 6587,2,d,d,0 -,0,d,d,0 63,1,d,d,0 13*-,1,d,d,0",
+  "n 2329,2,d,d,0 -,0,d,d,0 232a,2,d,d,0 -,0,d,d,0 3000,2,d,d,0 -,0,d,d,0 303f,1,d,d,0 a4cf,2,d,d,0 -,0,d,d,0 a4d0,1,d,d,0 ac00,2,d,d,0 -,0,d,d,0 d7a3,2,d,d,0 -,0,d,d,0 f900,2,d,d,0 -,0,d,d,0 fe10,2,d,d,0 -,0,d,d,0 fe30,2,d,d,0 -,0,d,d,0",
+  "w ff01,2,d,d,0 -,0,d,d,0 ff60,2,d,d,0 -,0,d,d,0 ff61,1,d,d,0 ffe0,2,d,d,0 -,0,d,d,0 ffe6,2,d,d,0 -,0,d,d,0 ffe7,1,d,d,0 10*-,1,d,d,0",
+  "n 20*-,1,d,d,0"
+ ],
+ "scrollback": []
+}

@@ -1,0 +1,15 @@
+wait 900; click 700 400; wait 200;
+feed \e[?1049h\e[?1000h\e[?1002h\e[?1006h\e[?2004h\e[2J\e[Hthe pane as Claude Code leaves it: alternate screen, mouse 1000 + 1002 + 1006, bracketed paste; wait 200; dump state;
+clip hello from this machine; tap ctrl+V; wait 150; tap ctrl+shift+V; wait 150; tap shift+ins; wait 150; rclick 700 400; wait 150;
+clip line one\r\nline two\nline three; tap ctrl+V; wait 150; rclick 700 400; wait 150;
+clip café 日本語 😀 done; tap ctrl+V; wait 150;
+clip an end marker \e[201~ inside; tap ctrl+V; wait 150;
+clip; tap ctrl+V; wait 150; tap shift+ins; wait 150; rclick 700 400; wait 150; dump state; shot paste-a-empty-note;
+wheel 700 400 120; wait 100; wheel 700 400 -120; wait 100;
+faketile mouseOn true; faketile sgrMouse true; wait 100; wheel 700 400 120; wait 100; wheel 700 400 -240; wait 100; mods ctrl; wheel 700 400 120; mods none; wait 100;
+tap pgup; wait 100; tap shift+pgup; wait 100;
+faketile mouseOn false; wait 100; wheel 700 400 120; wait 100; faketile mouseOn true; wait 100;
+faketile asleep true; wait 100; wheel 700 400 120; wait 100; faketile asleep false; wait 100;
+feed \e[?1000l\e[?1002l\e[?1006l; wait 100; faketile mouseOn false; faketile sgrMouse false; wheel 700 400 120; wait 100;
+feed \e[?1049l\e[?2004l; wait 100; clip plain shell paste\r\nsecond; tap ctrl+V; wait 100; rclick 700 400; wait 100;
+feed l1\r\nl2\r\nl3\r\nl4\r\nl5\r\nl6\r\nl7\r\nl8\r\nl9\r\nl10\r\nl11\r\nl12\r\nl13\r\nl14\r\nl15\r\nl16\r\nl17\r\nl18\r\nl19\r\nl20\r\nl21\r\nl22\r\nl23\r\nl24\r\nl25\r\nl26\r\nl27\r\nl28\r\nl29\r\nl30\r\nl31\r\nl32\r\nl33\r\nl34\r\nl35\r\nl36\r\nl37\r\nl38\r\nl39\r\nl40\r\nl41\r\nl42\r\nl43\r\nl44\r\nl45\r\nl46\r\nl47\r\nl48\r\nl49\r\nl50\r\nl51\r\nl52\r\nl53\r\nl54\r\nl55\r\nl56\r\nl57\r\nl58\r\nl59\r\nl60; wait 200; wheel 700 400 240; wait 100; dump state

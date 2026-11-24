@@ -1,0 +1,18 @@
+// windows/res/fonts.rc - the bundled console fonts (assets/fonts), inside the exe as RCDATA 2001.. (the list of
+// 2026-11-19: "fonts in the exe"). gfx.hpp loadFontResources reads them; the folder beside the exe is the fallback.
+// Re-made by windows/res/make-fonts-rc.py when assets/fonts changes.
+2001 RCDATA "../../assets/fonts/firacode/FiraCode[wght].ttf"
+2002 RCDATA "../../assets/fonts/ibmplexmono/IBMPlexMono-Bold.ttf"
+2003 RCDATA "../../assets/fonts/ibmplexmono/IBMPlexMono-BoldItalic.ttf"
+2004 RCDATA "../../assets/fonts/ibmplexmono/IBMPlexMono-Italic.ttf"
+2005 RCDATA "../../assets/fonts/ibmplexmono/IBMPlexMono-Regular.ttf"
+2006 RCDATA "../../assets/fonts/inconsolata/Inconsolata[wdth,wght].ttf"
+2007 RCDATA "../../assets/fonts/jetbrainsmono/JetBrainsMono-Italic[wght].ttf"
+2008 RCDATA "../../assets/fonts/jetbrainsmono/JetBrainsMono[wght].ttf"
+2009 RCDATA "../../assets/fonts/redditmono/RedditMono[wght].ttf"
+2010 RCDATA "../../assets/fonts/sourcecodepro/SourceCodePro-Italic[wght].ttf"
+2011 RCDATA "../../assets/fonts/sourcecodepro/SourceCodePro[wght].ttf"
+2012 RCDATA "../../assets/fonts/ubuntumono/UbuntuMono-Bold.ttf"
+2013 RCDATA "../../assets/fonts/ubuntumono/UbuntuMono-BoldItalic.ttf"
+2014 RCDATA "../../assets/fonts/ubuntumono/UbuntuMono-Italic.ttf"
+2015 RCDATA "../../assets/fonts/ubuntumono/UbuntuMono-Regular.ttf"

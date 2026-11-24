@@ -1,0 +1,43 @@
+{
+ "fixture": "decsc-scrolled",
+ "xterm": "6.0.0",
+ "cols": 12,
+ "rows": 4,
+ "cursor": {
+  "x": 12,
+  "y": 2
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 4,
+ "viewport": [
+  "n 12*-,1,d,d,0",
+  "n 12*-,1,d,d,0",
+  "n 73,1,d,d,0 63,1,d,d,0 72,1,d,d,0 6f,1,d,d,0 2*6c,1,d,d,0 5*-,1,d,d,0 50,1,d,d,0",
+  "w 79,1,d,d,0 7a,1,d,d,0 10*-,1,d,d,0"
+ ],
+ "scrollback": [
+  "n 61,1,d,d,0 11*-,1,d,d,0",
+  "n 12*-,1,d,d,0",
+  "n 12*-,1,d,d,0",
+  "n -,1,d,d,0 52,1,d,d,0 10*-,1,d,d,0"
+ ]
+}

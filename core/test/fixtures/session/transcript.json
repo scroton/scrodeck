@@ -1,0 +1,3802 @@
+{
+ "module": "transcript",
+ "generatedFrom": "lib/transcript.js",
+ "tzOffsetMin": 240,
+ "cases": [
+  {
+   "name": "titles",
+   "note": "custom-title beats ai-title; an empty one clears it",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYWktdGl0bGUiLCJhaVRpdGxlIjoiRml4IHRoZSB3b3JrbGlzdCBleHBvcnQifQo=",
+     "polled": true,
+     "after": {
+      "title": "Fix the worklist export",
+      "aiTitle": "Fix the worklist export",
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiY3VzdG9tLXRpdGxlIiwiY3VzdG9tVGl0bGUiOiJ3b3JrbGlzdCB2MiJ9Cg==",
+     "polled": true,
+     "after": {
+      "title": "worklist v2",
+      "aiTitle": "Fix the worklist export",
+      "customTitle": "worklist v2",
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYWktdGl0bGUiLCJhaVRpdGxlIjoiQSBuZXdlciBhaSB0aXRsZSJ9Cg==",
+     "polled": true,
+     "after": {
+      "title": "worklist v2",
+      "aiTitle": "A newer ai title",
+      "customTitle": "worklist v2",
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiY3VzdG9tLXRpdGxlIiwiY3VzdG9tVGl0bGUiOiIifQo=",
+     "polled": true,
+     "after": {
+      "title": "A newer ai title",
+      "aiTitle": "A newer ai title",
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYWktdGl0bGUifQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "a plain exchange",
+   "note": "last text is the last non-blank text block, trimmed; model/effort/usage only move when present",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE0NDg3MzY5MDEiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAxOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoicGxlYXNlIGxvb2sgYXQgdGhlIGV4cG9ydCJ9fQp7InR5cGUiOiJhc3Npc3RhbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAyOjAwLjI1MFoiLCJlZmZvcnQiOiJoaWdoIiwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwibW9kZWwiOiJjbGF1ZGUtZmFibGUtNS0xIiwiY29udGVudCI6W3sidHlwZSI6InRleHQiLCJ0ZXh0IjoiICBMb29raW5nIG5vdy4gICJ9XSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjoxMjAwLCJjYWNoZV9jcmVhdGlvbl9pbnB1dF90b2tlbnMiOjM0MDAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjo5NTAwMCwib3V0cHV0X3Rva2VucyI6ODAwfX19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "Looking now.",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowNTowMC4yNTBaIiwiZWZmb3J0IjoieGhpZ2giLCJtZXNzYWdlIjp7InJvbGUiOiJhc3Npc3RhbnQiLCJtb2RlbCI6ImNsYXVkZS1vcHVzLTQtOCIsImNvbnRlbnQiOm51bGwsInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjoxNTAwMDB9fX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "Looking now.",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:05:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:05:00.250Z",
+      "lastModel": "claude-opus-4-8",
+      "lastEffort": "xhigh",
+      "lastContextTokens": 150010,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowNjowMC4yNTBaIiwiZWZmb3J0IjoiIiwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwibW9kZWwiOiIiLCJjb250ZW50IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiJEb25lIOKckyDml6XmnKzoqp4ifV0sInVzYWdlIjpudWxsfX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "Done ✓ 日本語",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:06:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:06:00.250Z",
+      "lastModel": "claude-opus-4-8",
+      "lastEffort": "xhigh",
+      "lastContextTokens": 150010,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTg3NDk0MDcyNyIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDc6MDAuMjUwWiIsImN3ZCI6IkQ6XFxlbHNld2hlcmUiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoidGhhbmtzIn19CnsidHlwZSI6InVzZXIiLCJ1dWlkIjoidS0xODIxNTM2Mjg1IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowODowMC4yNTBaIiwiY3dkIjoiQzpcXFVzZXJzXFxmaXh0dXJlXFxwcm9qIiwic2Vzc2lvbklkIjoic2lkLTEiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6IjxtZXRhPiJ9LCJpc01ldGEiOnRydWV9CnsidHlwZSI6InVzZXIiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjA5OjAwLjI1MFoiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6W3sidHlwZSI6InRvb2xfcmVzdWx0IiwidG9vbF91c2VfaWQiOiJ0dV8xIiwiY29udGVudCI6IngifV19fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "Done ✓ 日本語",
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:09:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:06:00.250Z",
+      "lastModel": "claude-opus-4-8",
+      "lastEffort": "xhigh",
+      "lastContextTokens": 150010,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792420250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "split across polls",
+   "note": "a line is ingested only once its newline has arrived; junk lines are skipped",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTI4OTg0NzkxNSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDE6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiJow6lsbG8g8J8=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "mIAifX0KeyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0ZXh0IiwidGV4dCI6InLDqXBvbnNlIPA=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "n5iAIGZpbmFsZSJ9XSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjoxMjAwLCJjYWNoZV9jcmVhdGlvbl9pbnB1dF90b2tlbnMiOjM0MDAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjo5NTAwMCwib3V0cHV0X3Rva2VucyI6ODAwfX19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "réponse 😀 finale",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "Cgpub3QganNvbiBhdCBhbGwKeyJ0eXBlIjoiYWktdGl0bGUiLCJhaVRpdGxlIjoiYWZ0ZXIganVuayJ9DQp7InR5cGUiOiJjdXN0b20tdGl0bGUi",
+     "polled": true,
+     "after": {
+      "title": "after junk",
+      "aiTitle": "after junk",
+      "customTitle": null,
+      "lastText": "réponse 😀 finale",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "LCJjdXN0b21UaXRsZSI6ImpvaW5lZCJ9Cg==",
+     "polled": true,
+     "after": {
+      "title": "joined",
+      "aiTitle": "after junk",
+      "customTitle": "joined",
+      "lastText": "réponse 😀 finale",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "Nwoic3RyIgpbMSwyXQp7fQp7InR5cGUiOjd9Cg==",
+     "polled": true,
+     "after": {
+      "title": "joined",
+      "aiTitle": "after junk",
+      "customTitle": "joined",
+      "lastText": "réponse 😀 finale",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "a file that shrank is read again from the top",
+   "note": "what was learned stays; the new content is read from offset 0",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYWktdGl0bGUiLCJhaVRpdGxlIjoiZmlyc3QgbGlmZSJ9CnsidHlwZSI6InVzZXIiLCJ1dWlkIjoidS0xMTAxODIiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAxOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50Ijoib25lIn19CnsidHlwZSI6ImFzc2lzdGFudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDI6MDAuMjUwWiIsImVmZm9ydCI6ImhpZ2giLCJtZXNzYWdlIjp7InJvbGUiOiJhc3Npc3RhbnQiLCJtb2RlbCI6ImNsYXVkZS1mYWJsZS01LTEiLCJjb250ZW50IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiJhbnN3ZXIgb25lIn1dLCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjEyMDAsImNhY2hlX2NyZWF0aW9uX2lucHV0X3Rva2VucyI6MzQwMCwiY2FjaGVfcmVhZF9pbnB1dF90b2tlbnMiOjk1MDAwLCJvdXRwdXRfdG9rZW5zIjo4MDB9fX0K",
+     "polled": true,
+     "after": {
+      "title": "first life",
+      "aiTitle": "first life",
+      "customTitle": null,
+      "lastText": "answer one",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": true,
+     "b64": "eyJ0eXBlIjoiYWktdGl0bGUiLCJhaVRpdGxlIjoic2Vjb25kIGxpZmUifQo=",
+     "polled": true,
+     "after": {
+      "title": "second life",
+      "aiTitle": "second life",
+      "customTitle": null,
+      "lastText": "answer one",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTExNTI3NiIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MjA6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiJ0d28ifX0K",
+     "polled": true,
+     "after": {
+      "title": "second life",
+      "aiTitle": "second life",
+      "customTitle": null,
+      "lastText": "answer one",
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:20:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791793200250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "ultracode by attachment",
+   "note": "an \"on\" written before the running process started says nothing about it; no timestamp = unknown time = counts",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTMzMDQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAxOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiZ28ifX0KeyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTA6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InVsdHJhX2VmZm9ydF9lbnRlciJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792600250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791793200000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 1791794100000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MzA6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InVsdHJhX2VmZm9ydF9lbnRlciJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791793800250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791793200000,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791794100000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6NDA6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InVsdHJhX2VmZm9ydF9leGl0In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 1791793200000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 1791794100000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsImF0dGFjaG1lbnQiOnsidHlwZSI6InVsdHJhX2VmZm9ydF9lbnRlciJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791793200000,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791794100000,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6Im5vdCBhIGRhdGUiLCJhdHRhY2htZW50Ijp7InR5cGUiOiJ1bHRyYV9lZmZvcnRfZW50ZXIifX0KeyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6NDE6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InNvbWV0aGluZ19lbHNlIn19CnsidHlwZSI6ImF0dGFjaG1lbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjQyOjAwLjI1MFoifQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:01:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792060250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791793200000,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       },
+       {
+        "since": 1791794100000,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "ultracode by command output",
+   "note": "the wording read out of Claude Code 2.1.287",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEyNDA4ODM0ODEiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlVsdHJhY29kZSBvbiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE4NzMxNzg5OSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+VWx0cmFjb2RlIG9mZiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTExMzM0NjYzNiIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+U2V0IGVmZm9ydCBsZXZlbCB0byB1bHRyYWNvZGUgKHRoaXMgc2Vzc2lvbiBvbmx5KSJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTYxNTAyMjk2NiIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+Q3VycmVudCBlZmZvcnQgbGV2ZWw6IHhoaWdoIn19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE2OTMwNTQwMDUiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlNldCBlZmZvcnQgbGV2ZWwgdG8gbWF4IMK3IFVsdHJhY29kZSBvbjwvbG9jYWwtY29tbWFuZC1zdGRvdXQ+In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEzNTM1NzM3OTkiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlNldCBlZmZvcnQgbGV2ZWwgdG8gaGlnaCDCtyBVbHRyYWNvZGUgb2ZmIn19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEyMDk2NzU4OTkiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PkN1cnJlbnQgZWZmb3J0IGxldmVsOiBtYXggwrcgVWx0cmFjb2RlIG9uIn19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTExNzM2OTAwNSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+RWZmb3J0IGxldmVsOiBhdXRvIChjdXJyZW50bHkgaGlnaCkifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE1MTE4Nzk1NzgiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlVsdHJhY29kZSBvbmx5In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEyMTcwMjAxMzkiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlVsdHJhY29kZSBvbndhcmQifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTM5MTAxMzExNSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+bm90ZSA8Yj54PC9iPiDCtyBVbHRyYWNvZGUgb24ifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEyNDUzODY0OTYiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PlNldCBlZmZvcnQgbGV2ZWwgdG8gdWx0cmFjb2RlcyJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTg3MTQ1Nzc0NyIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+U2V0IGVmZm9ydCBsZXZlbCB0byB1bHRyYWNvZGUifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTMwNDUyNDA0NiIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+U2V0IGVmZm9ydCBsZXZlbCB0byBsb3cifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:12:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE0Mjc5OTU1NzYiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjEzOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiVWx0cmFjb2RlIG9mZiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:13:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792780250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MTQ6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiI8bG9jYWwtY29tbWFuZC1zdGRvdXQ+VWx0cmFjb2RlIG9mZiJ9XX19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:14:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": true,
+      "ultracodeAt": 1791792720250,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791792780250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": true,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "background work",
+   "note": "every launch shape and every ending lib/transcript.js lists",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfYjEiLCJuYW1lIjoiQmFzaCIsImlucHV0Ijp7ImNvbW1hbmQiOiJucG0gdGVzdCIsImRlc2NyaXB0aW9uIjoiICBydW4gICB0aGVcdHRlc3RzICAifX1dLCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjEyMDAsImNhY2hlX2NyZWF0aW9uX2lucHV0X3Rva2VucyI6MzQwMCwiY2FjaGVfcmVhZF9pbnB1dF90b2tlbnMiOjk1MDAwLCJvdXRwdXRfdG9rZW5zIjo4MDB9fX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X2IxIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJiYWNrZ3JvdW5kVGFza0lkIjoiYmFzaF83In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:03:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfdyIsIm5hbWUiOiJXb3JrZmxvdyIsImlucHV0Ijp7InByb21wdCI6Inh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eHh4eCJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfdyIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsic3RhdHVzIjoiYXN5bmNfbGF1bmNoZWQiLCJ0YXNrSWQiOiJ3Zl8xIiwid29ya2Zsb3dOYW1lIjoibmlnaHRseS1idWlsZCJ9fQp7InR5cGUiOiJhc3Npc3RhbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAyOjAwLjI1MFoiLCJlZmZvcnQiOiJoaWdoIiwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwibW9kZWwiOiJjbGF1ZGUtZmFibGUtNS0xIiwiY29udGVudCI6W3sidHlwZSI6InRvb2xfdXNlIiwiaWQiOiJ0dV90IiwibmFtZSI6IlRhc2siLCJpbnB1dCI6eyJkZXNjcmlwdGlvbiI6ImEgcGxhaW4gdGFzayJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfdCIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsic3RhdHVzIjoiYXN5bmNfbGF1bmNoZWQiLCJ0YXNrSWQiOiJ0YXNrXzkifX0KeyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfdDIiLCJuYW1lIjoiVGFzayIsImlucHV0Ijp7fX1dLCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjEyMDAsImNhY2hlX2NyZWF0aW9uX2lucHV0X3Rva2VucyI6MzQwMCwiY2FjaGVfcmVhZF9pbnB1dF90b2tlbnMiOjk1MDAwLCJvdXRwdXRfdG9rZW5zIjo4MDB9fX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X3QyIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJzdGF0dXMiOiJhc3luY19sYXVuY2hlZCIsInRhc2tJZCI6InRhc2tfMTAiLCJ0YXNrVHlwZSI6ImxvY2FsX3dvcmtmbG93In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfYSIsIm5hbWUiOiJBZ2VudCIsImlucHV0Ijp7ImRlc2NyaXB0aW9uIjoicmV2aWV3IHRoZSBkaWZmIiwicHJvbXB0IjoibG9uZyJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfYSIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsic3RhdHVzIjoiYXN5bmNfbGF1bmNoZWQiLCJhZ2VudElkIjoiYWdlbnRfMSIsImRlc2NyaXB0aW9uIjoicmV2aWV3ZXIifX0KeyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfYTIiLCJuYW1lIjoiQWdlbnQiLCJpbnB1dCI6eyJwcm9tcHQiOiJzZWNvbmQgYWdlbnQgcHJvbXB0In19XSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjoxMjAwLCJjYWNoZV9jcmVhdGlvbl9pbnB1dF90b2tlbnMiOjM0MDAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjo5NTAwMCwib3V0cHV0X3Rva2VucyI6ODAwfX19CnsidHlwZSI6InVzZXIiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAzOjAwLjI1MFoiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6W3sidHlwZSI6InRvb2xfcmVzdWx0IiwidG9vbF91c2VfaWQiOiJ0dV9hMiIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsic3RhdHVzIjoiYXN5bmNfbGF1bmNoZWQiLCJhZ2VudElkIjoiYWdlbnRfMiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfbSIsIm5hbWUiOiJNb25pdG9yIiwiaW5wdXQiOnsiZGVzY3JpcHRpb24iOiJ3YXRjaCBDSSJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowNDowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfbSIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsidGFza0lkIjoibW9uXzEiLCJ0aW1lb3V0TXMiOjYwMDAwMH19CnsidHlwZSI6ImFzc2lzdGFudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDI6MDAuMjUwWiIsImVmZm9ydCI6ImhpZ2giLCJtZXNzYWdlIjp7InJvbGUiOiJhc3Npc3RhbnQiLCJtb2RlbCI6ImNsYXVkZS1mYWJsZS01LTEiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF91c2UiLCJpZCI6InR1X20yIiwibmFtZSI6Ik1vbml0b3IiLCJpbnB1dCI6eyJkZXNjcmlwdGlvbiI6IndhdGNoIGZvcmV2ZXIifX1dLCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjEyMDAsImNhY2hlX2NyZWF0aW9uX2lucHV0X3Rva2VucyI6MzQwMCwiY2FjaGVfcmVhZF9pbnB1dF90b2tlbnMiOjk1MDAwLCJvdXRwdXRfdG9rZW5zIjo4MDB9fX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X20yIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJ0YXNrSWQiOiJtb25fMiIsInRpbWVvdXRNcyI6IjEwMDAiLCJwZXJzaXN0ZW50Ijp0cnVlfX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfYyIsIm5hbWUiOiJDcm9uQ3JlYXRlIiwiaW5wdXQiOnsicHJvbXB0IjoiY2hlY2sgdGhlIGJ1aWxkIn19XSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjoxMjAwLCJjYWNoZV9jcmVhdGlvbl9pbnB1dF90b2tlbnMiOjM0MDAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjo5NTAwMCwib3V0cHV0X3Rva2VucyI6ODAwfX19CnsidHlwZSI6InVzZXIiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjAzOjAwLjI1MFoiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6W3sidHlwZSI6InRvb2xfcmVzdWx0IiwidG9vbF91c2VfaWQiOiJ0dV9jIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJpZCI6ImNyb25fMSIsImR1cmFibGUiOmZhbHNlLCJyZWN1cnJpbmciOnRydWUsImh1bWFuU2NoZWR1bGUiOiIqLzUgKiAqICogKiJ9fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfbm9uZSIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsiaWQiOiJjcm9uX2R1cmFibGUiLCJkdXJhYmxlIjp0cnVlfX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X25vbmUyIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJpZCI6ImNyb25fbm9kdXIifX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowNTowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfcyIsIm5hbWUiOiJTY2hlZHVsZVdha2V1cCIsImlucHV0Ijp7ImRlbGF5U2Vjb25kcyI6NjAwLCJyZWFzb24iOiJ3YWl0IGZvciB0aGUgZGVwbG95In19XSwidXNhZ2UiOnsiaW5wdXRfdG9rZW5zIjoxMjAwLCJjYWNoZV9jcmVhdGlvbl9pbnB1dF90b2tlbnMiOjM0MDAsImNhY2hlX3JlYWRfaW5wdXRfdG9rZW5zIjo5NTAwMCwib3V0cHV0X3Rva2VucyI6ODAwfX19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:05:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:05:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "wakeup",
+          "kind": "wakeup",
+          "label": "wait for the deploy",
+          "at": 1791792300250,
+          "until": 1791792990250,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "bash_7",
+          "kind": "shell",
+          "label": "run the tests",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MjA6MDAuMjUwWiIsIm9yaWdpbiI6eyJraW5kIjoidGFzay1ub3RpZmljYXRpb24ifSwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD5iYXNoXzc8L3Rhc2staWQ+XG48c3RhdHVzPmNvbXBsZXRlZDwvc3RhdHVzPlxuPHN1bW1hcnk+ZG9uZTwvc3VtbWFyeT5cbjwvdGFzay1ub3RpZmljYXRpb24+In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:20:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:05:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "wakeup",
+          "kind": "wakeup",
+          "label": "wait for the deploy",
+          "at": 1791792300250,
+          "until": 1791792990250,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "wf_1",
+          "kind": "workflow",
+          "label": "nightly-build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_9",
+          "kind": "task",
+          "label": "a plain task",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoicXVldWUtb3BlcmF0aW9uIiwib3BlcmF0aW9uIjoiZW5xdWV1ZSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MjE6MDAuMjUwWiIsImNvbnRlbnQiOiI8dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD53Zl8xPC90YXNrLWlkPlxuPHN0YXR1cz5mYWlsZWQ8L3N0YXR1cz5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiBhbmQgPHRhc2stbm90aWZpY2F0aW9uPlxuPHRhc2staWQ+IHRhc2tfOSA8L3Rhc2staWQ+XG48c3RhdHVzPmtpbGxlZDwvc3RhdHVzPlxuPHN1bW1hcnk+ZG9uZTwvc3VtbWFyeT5cbjwvdGFzay1ub3RpZmljYXRpb24+In0KeyJ0eXBlIjoicXVldWUtb3BlcmF0aW9uIiwib3BlcmF0aW9uIjoiZGVxdWV1ZSIsImNvbnRlbnQiOiI8dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD50YXNrXzEwPC90YXNrLWlkPlxuPHN0YXR1cz5jb21wbGV0ZWQ8L3N0YXR1cz5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiJ9Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:20:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:05:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "wakeup",
+          "kind": "wakeup",
+          "label": "wait for the deploy",
+          "at": 1791792300250,
+          "until": 1791792990250,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MjI6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InF1ZXVlZF9jb21tYW5kIiwicHJvbXB0IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiI8dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD5hZ2VudF8xPC90YXNrLWlkPlxuPHN0YXR1cz5jb21wbGV0ZWQ8L3N0YXR1cz5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiJ9XX19CnsidHlwZSI6InVzZXIiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjIyOjAwLjI1MFoiLCJvcmlnaW4iOiJ0YXNrLW5vdGlmaWNhdGlvbiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiI8dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD5tb25fMTwvdGFzay1pZD5cbjxldmVudD50aWNrPC9ldmVudD5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiJ9XX19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:22:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:05:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "wakeup",
+          "kind": "wakeup",
+          "label": "wait for the deploy",
+          "at": 1791792300250,
+          "until": 1791792990250,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODoyMzowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfc20iLCJuYW1lIjoiU2VuZE1lc3NhZ2UiLCJpbnB1dCI6eyJ0byI6ImFnZW50XzEiLCJtZXNzYWdlIjoiYWdhaW4ifX0seyJ0eXBlIjoidG9vbF91c2UiLCJpZCI6InR1X3NtMiIsIm5hbWUiOiJTZW5kTWVzc2FnZSIsImlucHV0Ijp7InRvIjoiYWdlbnRfMiIsIm1lc3NhZ2UiOiJzdGlsbCBydW5uaW5nIn19LHsidHlwZSI6InRvb2xfdXNlIiwiaWQiOiJ0dV9zbTMiLCJuYW1lIjoiU2VuZE1lc3NhZ2UiLCJpbnB1dCI6eyJ0byI6Im5vYm9keSJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:23:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:23:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "wakeup",
+          "kind": "wakeup",
+          "label": "wait for the deploy",
+          "at": 1791792300250,
+          "until": 1791792990250,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "mon_2",
+          "kind": "monitor",
+          "label": "watch forever",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "cron_1",
+          "kind": "cron",
+          "label": "check the build",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": true
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X3giLCJjb250ZW50Ijoib2sifV19LCJ0b29sVXNlUmVzdWx0Ijp7InRhc2tfaWQiOiJtb25fMiIsIm1lc3NhZ2UiOiJUYXNrIFN0b3BwZWQgYnkgdXNlciJ9fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfeSIsImNvbnRlbnQiOiJvayJ9XX0sInRvb2xVc2VSZXN1bHQiOnsidGFza19pZCI6InRhc2tfMTAiLCJtZXNzYWdlIjoic3RpbGwgZ29pbmcifX0KeyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODowMjowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfY2QiLCJuYW1lIjoiQ3JvbkRlbGV0ZSIsImlucHV0Ijp7ImlkIjoiY3Jvbl8xIn19LHsidHlwZSI6InRvb2xfdXNlIiwiaWQiOiJ0dV9zMiIsIm5hbWUiOiJTY2hlZHVsZVdha2V1cCIsImlucHV0Ijp7InN0b3AiOnRydWV9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "task_10",
+          "kind": "workflow",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_2",
+          "kind": "agent",
+          "label": "second agent prompt",
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         },
+         {
+          "id": "agent_1",
+          "kind": "agent",
+          "label": "reviewer",
+          "at": 1791793380250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsImF0dGFjaG1lbnQiOnsidHlwZSI6InF1ZXVlZF9jb21tYW5kIiwicHJvbXB0IjoiPHRhc2stbm90aWZpY2F0aW9uPlxuPHRhc2staWQ+YWdlbnRfMTwvdGFzay1pZD5cbjxzdGF0dXM+Y29tcGxldGVkPC9zdGF0dXM+XG48c3VtbWFyeT5kb25lPC9zdW1tYXJ5PlxuPC90YXNrLW5vdGlmaWNhdGlvbj48dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD5hZ2VudF8yPC90YXNrLWlkPlxuPHN0YXR1cz5zdG9wcGVkPC9zdGF0dXM+XG48c3VtbWFyeT5kb25lPC9zdW1tYXJ5PlxuPC90YXNrLW5vdGlmaWNhdGlvbj48dGFzay1ub3RpZmljYXRpb24+XG48dGFzay1pZD50YXNrXzEwPC90YXNrLWlkPlxuPHN0YXR1cz5jb21wbGV0ZWQ8L3N0YXR1cz5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:02:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:02:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791792870000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 1791792210000,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       },
+       {
+        "since": 0,
+        "now": 1791793005000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "the newest prompt a person sent",
+   "note": "a person's prompts only; its kind after whitespace, markdown and the paste's tags; no timestamp = now",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTY0MDU1NzA5MCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MzA6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiJcblxuPHBhc3RlZF9jb250ZW50IGlkPVwiZjE1MFwiPlxuUEFVU0U6IHRoZSBDbGF1ZGUgRGVjayBpcyBhYm91dCB0byByZXN0YXJ0LlxuPC9wYXN0ZWRfY29udGVudD4ifSwib3JpZ2luIjp7ImtpbmQiOiJodW1hbiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:30:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "pause",
+      "lastPromptAt": 1791793800250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MzE6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X3AiLCJjb250ZW50Ijoib2sifV19LCJ0b29sVXNlUmVzdWx0Ijp7InN0ZG91dCI6IiJ9fQp7InR5cGUiOiJ1c2VyIiwidXVpZCI6InUtMzM0Nzk3MyIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MzI6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiJtZXRhIn0sImlzTWV0YSI6dHJ1ZX0KeyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTEyOTg4ODkyOTUiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjMzOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPHRhc2stbm90aWZpY2F0aW9uPng8L3Rhc2stbm90aWZpY2F0aW9uPiJ9LCJvcmlnaW4iOnsia2luZCI6InRhc2stbm90aWZpY2F0aW9uIn19CnsidHlwZSI6InVzZXIiLCJ1dWlkIjoidS0xMjY0MTkyNTg3IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODozNDowMC4yNTBaIiwiY3dkIjoiQzpcXFVzZXJzXFxmaXh0dXJlXFxwcm9qIiwic2Vzc2lvbklkIjoic2lkLTEiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6IiAgPGxvY2FsLWNvbW1hbmQtc3Rkb3V0PmRvbmUifX0KeyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE0MDA5NjkzMTAiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjM0OjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPGJhc2gtc3Rkb3V0PngifX0KeyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE4NTc2NDA1MzgiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjM1OjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50Ijoic3VtbWFyeSJ9LCJpc0NvbXBhY3RTdW1tYXJ5Ijp0cnVlfQp7InR5cGUiOiJ1c2VyIiwidXVpZCI6InUtMzUzMDA3MSIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MzU6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiJzaWRlIn0sImlzU2lkZWNoYWluIjp0cnVlfQp7InR5cGUiOiJ1c2VyIiwidXVpZCI6InUtNDU4OTY4MzI5IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODozNTowMC4yNTBaIiwiY3dkIjoiQzpcXFVzZXJzXFxmaXh0dXJlXFxwcm9qIiwic2Vzc2lvbklkIjoic2lkLTEiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6ImZyb20gYSBwZWVyIn0sIm9yaWdpbiI6eyJraW5kIjoicGVlciJ9fQp7InR5cGUiOiJhdHRhY2htZW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODozNjowMC4yNTBaIiwiYXR0YWNobWVudCI6eyJ0eXBlIjoicXVldWVkX2NvbW1hbmQiLCJwcm9tcHQiOiJwZWVyIiwiaXNNZXRhIjp0cnVlLCJvcmlnaW4iOnsia2luZCI6InBlZXIifX19CnsidHlwZSI6ImF0dGFjaG1lbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjM2OjAwLjI1MFoiLCJhdHRhY2htZW50Ijp7InR5cGUiOiJxdWV1ZWRfY29tbWFuZCIsInByb21wdCI6Ijx0YXNrLW5vdGlmaWNhdGlvbj5cbjx0YXNrLWlkPnQxPC90YXNrLWlkPlxuPHN0YXR1cz5jb21wbGV0ZWQ8L3N0YXR1cz5cbjxzdW1tYXJ5PmRvbmU8L3N1bW1hcnk+XG48L3Rhc2stbm90aWZpY2F0aW9uPiIsIm9yaWdpbiI6eyJraW5kIjoidGFzay1ub3RpZmljYXRpb24ifX19CnsidHlwZSI6ImF0dGFjaG1lbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjM2OjAwLjI1MFoiLCJhdHRhY2htZW50Ijp7InR5cGUiOiJxdWV1ZWRfY29tbWFuZCIsInByb21wdCI6Im5vIG9yaWdpbiJ9fQp7InR5cGUiOiJhc3Npc3RhbnQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjM3OjAwLjI1MFoiLCJlZmZvcnQiOiJoaWdoIiwibWVzc2FnZSI6eyJyb2xlIjoiYXNzaXN0YW50IiwibW9kZWwiOiJjbGF1ZGUtZmFibGUtNS0xIiwiY29udGVudCI6W3sidHlwZSI6InRleHQiLCJ0ZXh0IjoiUEFVU0VEIHQgLSBmIn1dLCJ1c2FnZSI6eyJpbnB1dF90b2tlbnMiOjEyMDAsImNhY2hlX2NyZWF0aW9uX2lucHV0X3Rva2VucyI6MzQwMCwiY2FjaGVfcmVhZF9pbnB1dF90b2tlbnMiOjk1MDAwLCJvdXRwdXRfdG9rZW5zIjo4MDB9fX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:37:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "pause",
+      "lastPromptAt": 1791793800250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6Mzg6MDAuMjUwWiIsImF0dGFjaG1lbnQiOnsidHlwZSI6InF1ZXVlZF9jb21tYW5kIiwicHJvbXB0IjoiUkVTVU1FOiBnbyBvbiIsIm9yaWdpbiI6eyJraW5kIjoiaHVtYW4ifSwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODozOTowMC4yNTBaIn19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:37:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "resume",
+      "lastPromptAt": 1791794340250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6NDA6MDAuMjUwWiIsIm9yaWdpbiI6eyJraW5kIjoiaHVtYW4ifSwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0ZXh0IiwidGV4dCI6Ij4gKipQQVVTRToqKiBhZ2FpbiJ9LHsidHlwZSI6ImltYWdlIn1dfX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:40:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "pause",
+      "lastPromptAt": 1791794400250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6NDE6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiJ4In0seyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InEifV19fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:41:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "pause",
+      "lastPromptAt": 1791794400250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXR0YWNobWVudCIsImF0dGFjaG1lbnQiOnsidHlwZSI6InF1ZXVlZF9jb21tYW5kIiwicHJvbXB0IjpbeyJ0eXBlIjoidGV4dCIsInRleHQiOiIgIHBhdXNlOiBsb3dlciBjYXNlIn1dLCJvcmlnaW4iOnsia2luZCI6Imh1bWFuIn19fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "assistant",
+      "lastAt": "2026-10-12T08:41:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791795600000,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE2NDM2MzU5NDgiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjQyOjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPC9wYXN0ZWRfY29udGVudD4gIGBSRVNVTUU6YCB5In19CnsidHlwZSI6InVzZXIiLCJ1dWlkIjoidS0xMzk3OTEyMTEyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQwODo0MzowMC4yNTBaIiwiY3dkIjoiQzpcXFVzZXJzXFxmaXh0dXJlXFxwcm9qIiwic2Vzc2lvbklkIjoic2lkLTEiLCJtZXNzYWdlIjp7InJvbGUiOiJ1c2VyIiwiY29udGVudCI6IjxwYXN0ZWRfY29udGVudHg+UEFVU0U6IG5vIn19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:43:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791794580250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE4MDkwNzg2OTQiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjQ0OjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoiPHBhc3RlZF9jb250ZW50IGlkPVwiYVwiIn19CnsidHlwZSI6InVzZXIiLCJ1dWlkIjoidS0xMDUzNjE5MzI2IiwidGltZXN0YW1wIjoiZ2FyYmFnZSIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiLCoOOAgFBBVVNFOiB3aWRlIHNwYWNlcyJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "user",
+      "lastAt": "garbage",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "pause",
+      "lastPromptAt": 1791795600000,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInV1aWQiOiJ1LTE2MjI4MTA1NzYiLCJ0aW1lc3RhbXAiOiIyMDI2LTEwLTEyVDA4OjQ1OjAwLjI1MFoiLCJjd2QiOiJDOlxcVXNlcnNcXGZpeHR1cmVcXHByb2oiLCJzZXNzaW9uSWQiOiJzaWQtMSIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjoicGxlYXNlIFBBVVNFOiBub3cifSwib3JpZ2luIjpudWxsfQp7InR5cGUiOiJ1c2VyIiwidXVpZCI6InUtMTUyNTM4NTE3NiIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6NDY6MDAuMjUwWiIsImN3ZCI6IkM6XFxVc2Vyc1xcZml4dHVyZVxccHJvaiIsInNlc3Npb25JZCI6InNpZC0xIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOiI8Y29tbWFuZC1uYW1lPi9lZmZvcnQ8L2NvbW1hbmQtbmFtZT4ifSwib3JpZ2luIjpbXX0K",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": "PAUSED t - f",
+      "lastRole": "user",
+      "lastAt": "2026-10-12T08:46:00.250Z",
+      "lastAssistantAt": "2026-10-12T08:37:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": "C:\\Users\\fixture\\proj",
+      "lastPromptKind": "other",
+      "lastPromptAt": 1791794760250,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "background: odd shapes are ignored",
+   "note": "a record with no timestamp is stamped with now",
+   "now": 1791795600000,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRvb2xVc2VSZXN1bHQiOiJhIHN0cmluZyJ9CnsidHlwZSI6InVzZXIiLCJ0b29sVXNlUmVzdWx0IjpbMV19CnsidHlwZSI6InVzZXIiLCJ0b29sVXNlUmVzdWx0Ijp7ImJhY2tncm91bmRUYXNrSWQiOjB9fQp7InR5cGUiOiJhc3Npc3RhbnQiLCJtZXNzYWdlIjp7ImNvbnRlbnQiOltudWxsLHsidHlwZSI6InRvb2xfdXNlIn0seyJ0eXBlIjoidG9vbF91c2UiLCJuYW1lIjoiQmFzaCIsImlkIjoidHVfcSIsImlucHV0IjpudWxsfSx7InR5cGUiOiJ0b29sX3VzZSIsIm5hbWUiOiJTY2hlZHVsZVdha2V1cCIsImlucHV0Ijp7ImRlbGF5U2Vjb25kcyI6InNvb24ifX1dfX0KeyJ0eXBlIjoiYXNzaXN0YW50IiwibWVzc2FnZSI6Im5vIn0KeyJ0eXBlIjoiYXR0YWNobWVudCJ9CnsidHlwZSI6InF1ZXVlLW9wZXJhdGlvbiIsIm9wZXJhdGlvbiI6ImVucXVldWUifQp7InR5cGUiOiJ1c2VyIiwib3JpZ2luIjp7ImtpbmQiOiJ0YXNrLW5vdGlmaWNhdGlvbiJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": null,
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": []
+       }
+      ]
+     }
+    },
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMDg6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X3EiLCJjb250ZW50Ijoib2sifV19LCJ0b29sVXNlUmVzdWx0Ijp7ImJhY2tncm91bmRUYXNrSWQiOjQyfX0KeyJ0eXBlIjoidXNlciIsIm1lc3NhZ2UiOnsiY29udGVudCI6W3sidHlwZSI6InRvb2xfcmVzdWx0IiwidG9vbF91c2VfaWQiOiJ0dV96eiJ9XX0sInRvb2xVc2VSZXN1bHQiOnsidGFza0lkIjoibm9fdGltZW91dCJ9fQo=",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T08:03:00.250Z",
+      "lastAssistantAt": null,
+      "lastModel": null,
+      "lastEffort": null,
+      "lastContextTokens": null,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791795600000,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "42",
+          "kind": "shell",
+          "label": null,
+          "at": 1791792180250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  },
+  {
+   "name": "one-shot cron (local time)",
+   "note": "LOCAL-TIME",
+   "now": 1791806581250,
+   "steps": [
+    {
+     "restart": false,
+     "b64": "eyJ0eXBlIjoiYXNzaXN0YW50IiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQxMjowMzowMC4yNTBaIiwiZWZmb3J0IjoiaGlnaCIsIm1lc3NhZ2UiOnsicm9sZSI6ImFzc2lzdGFudCIsIm1vZGVsIjoiY2xhdWRlLWZhYmxlLTUtMSIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3VzZSIsImlkIjoidHVfYzEiLCJuYW1lIjoiQ3JvbkNyZWF0ZSIsImlucHV0Ijp7InByb21wdCI6InJlbWluZCBtZSJ9fV0sInVzYWdlIjp7ImlucHV0X3Rva2VucyI6MTIwMCwiY2FjaGVfY3JlYXRpb25faW5wdXRfdG9rZW5zIjozNDAwLCJjYWNoZV9yZWFkX2lucHV0X3Rva2VucyI6OTUwMDAsIm91dHB1dF90b2tlbnMiOjgwMH19fQp7InR5cGUiOiJ1c2VyIiwidGltZXN0YW1wIjoiMjAyNi0xMC0xMlQxMjowMzowMC4yNTBaIiwibWVzc2FnZSI6eyJyb2xlIjoidXNlciIsImNvbnRlbnQiOlt7InR5cGUiOiJ0b29sX3Jlc3VsdCIsInRvb2xfdXNlX2lkIjoidHVfYzEiLCJjb250ZW50Ijoib2sifV19LCJ0b29sVXNlUmVzdWx0Ijp7ImlkIjoiY3Jvbl9vbmNlIiwiZHVyYWJsZSI6ZmFsc2UsImh1bWFuU2NoZWR1bGUiOiIzMCA5IDEyIDEwICoifX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMTI6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X2MyIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJpZCI6ImNyb25fcGFzdCIsImR1cmFibGUiOmZhbHNlLCJodW1hblNjaGVkdWxlIjoiMCA3IDEyIDEwICoifX0KeyJ0eXBlIjoidXNlciIsInRpbWVzdGFtcCI6IjIwMjYtMTAtMTJUMTI6MDM6MDAuMjUwWiIsIm1lc3NhZ2UiOnsicm9sZSI6InVzZXIiLCJjb250ZW50IjpbeyJ0eXBlIjoidG9vbF9yZXN1bHQiLCJ0b29sX3VzZV9pZCI6InR1X2MzIiwiY29udGVudCI6Im9rIn1dfSwidG9vbFVzZVJlc3VsdCI6eyJpZCI6ImNyb25fd29yZHMiLCJkdXJhYmxlIjpmYWxzZSwiaHVtYW5TY2hlZHVsZSI6ImV2ZXJ5IGRheSBhdCA5In19Cg==",
+     "polled": true,
+     "after": {
+      "title": null,
+      "aiTitle": null,
+      "customTitle": null,
+      "lastText": null,
+      "lastRole": null,
+      "lastAt": "2026-10-12T12:03:00.250Z",
+      "lastAssistantAt": "2026-10-12T12:03:00.250Z",
+      "lastModel": "claude-fable-5-1",
+      "lastEffort": "high",
+      "lastContextTokens": 99600,
+      "ultracode": false,
+      "ultracodeAt": null,
+      "cwd": null,
+      "lastPromptKind": null,
+      "lastPromptAt": null,
+      "queries": [
+       {
+        "since": 0,
+        "now": 1791806581250,
+        "ultracodeSince": false,
+        "background": [
+         {
+          "id": "cron_once",
+          "kind": "cron",
+          "label": "remind me",
+          "at": 1791806580250,
+          "until": 1791811920000,
+          "recurring": false
+         },
+         {
+          "id": "cron_past",
+          "kind": "cron",
+          "label": null,
+          "at": 1791806580250,
+          "until": 1823338920000,
+          "recurring": false
+         },
+         {
+          "id": "cron_words",
+          "kind": "cron",
+          "label": null,
+          "at": 1791806580250,
+          "until": null,
+          "recurring": false
+         }
+        ]
+       }
+      ]
+     }
+    }
+   ]
+  }
+ ],
+ "cron": [
+  {
+   "expr": "30 9 12 10 *",
+   "from": 1791806580250,
+   "out": 1791811800000
+  },
+  {
+   "expr": "0 7 12 10 *",
+   "from": 1791806580250,
+   "out": 1823338800000
+  },
+  {
+   "expr": "3 8 12 10 *",
+   "from": 1791806610250,
+   "out": 1791806580000
+  },
+  {
+   "expr": "*/5 * * * *",
+   "from": 1791806580250,
+   "out": null
+  },
+  {
+   "expr": "1 2 3",
+   "from": 1791806580250,
+   "out": null
+  },
+  {
+   "expr": "",
+   "from": 1791806580250,
+   "out": null
+  },
+  {
+   "expr": "  5   4  3  2  1 ",
+   "from": 1791806580250,
+   "out": 1801645500000
+  },
+  {
+   "expr": "5 4 3 2 x y",
+   "from": 1791806580250,
+   "out": null
+  }
+ ]
+}

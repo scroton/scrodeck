@@ -1,0 +1,3 @@
+# byte streams and their expected grids: stored exactly as written, never line-ending converted
+* -text
+*.bin binary

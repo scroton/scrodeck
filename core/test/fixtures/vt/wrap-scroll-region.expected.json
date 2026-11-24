@@ -1,0 +1,40 @@
+{
+ "fixture": "wrap-scroll-region",
+ "xterm": "6.0.0",
+ "cols": 10,
+ "rows": 6,
+ "cursor": {
+  "x": 5,
+  "y": 5
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 1,
+  "scrollBottom": 3
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 30,1,d,d,0 5*-,1,d,d,0",
+  "n 10*61,1,d,d,0",
+  "w 10*61,1,d,d,0",
+  "w 5*61,1,d,d,0 5*-,1,d,d,0",
+  "n 6c,1,d,d,0 69,1,d,d,0 6e,1,d,d,0 65,1,d,d,0 34,1,d,d,0 5*-,1,d,d,0",
+  "w 10*62,1,d,d,0"
+ ],
+ "scrollback": []
+}

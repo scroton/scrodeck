@@ -1,0 +1,1 @@
+wait 900; click 700 400; wait 600; faketile mirror {'cols':80,'rows':24}; wait 1500; dump state; faketile mirror {'cols':100,'rows':30}; wait 1500; dump state

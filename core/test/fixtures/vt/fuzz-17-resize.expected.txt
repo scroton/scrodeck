@@ -1,0 +1,91 @@
+init 64 20 40
+op feed 3810
+op resize 72 20
+op feed 3805
+op resize 65 20
+op feed 3821
+op resize 51 20
+op feed 3800
+op resize 39 20
+op feed 3825
+op resize 39 19
+op feed 3802
+op resize 37 16
+op feed 3804
+op resize 38 19
+op feed 3800
+op resize 25 21
+op feed 3815
+op resize 25 18
+op feed 3816
+op resize 10 19
+op feed 3789
+op resize 16 18
+op feed 3820
+op resize 8 20
+size 8 20
+cursor 2 7
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=1 mouse=0 mouseEnc=0 focus=1 cursorVisible=0 cursorShape=0 cursorBlink=-1 origin=0 wraparound=0 insert=0 sync=0 scrollTop=2 scrollBottom=17
+title 63757478787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878787878
+replies 1b5b3f32353b3124791b5b3f32353b3124791b50312472313b3230721b5c1b5b3f32353b3124791b5b353b3136521b5b3f373b3224791b5b3e303b3237363b30631b5b3f383b32521b5b3f313b32631b5b306e1b5b3e303b3237363b30631b5b3f373b3124791b5b306e1b5b3f313b32631b5b323b31521b5b333b39521b5b3f32353b3124791b5b306e1b5b313b3231521b5b306e1b5b3e303b3237363b30631b5b306e1b5b3f32353b322479
+scrollback 40
+V n 252c,1,r10203,d,20 20,1,p7d,d,57 240b,1,r10203,d,20 240d,1,r10203,d,20 240a,1,r10203,d,20 4e2d,2,r10203,d,20 -,0,r10203,d,20 -,1,r10203,d,20
+V n 252c,1,p7d,d,57 240b,1,p7d,d,57 240d,1,p7d,d,57 240a,1,p7d,d,57 4e2d,2,p7d,d,57 -,0,p7d,d,57 -,1,p7d,d,57 20,1,p7d,d,57
+V n 8*-,1,d,d,0
+V n 8*-,1,d,d,0
+V n 8*-,1,d,d,0
+V n 8*-,1,d,d,0
+V n 8*-,1,d,d,0
+V n 5*-,1,d,d,0 20,1,p7,d,2a5f 2*-,1,d,d,0
+V n 2*-,1,d,d,0 250c,1,d,d,45 2500,1,d,d,45 2510,1,d,d,45 252c,1,d,d,45 240b,1,d,d,45 240d,1,d,d,45
+V n 20,1,p7d,d,57 -,1,d,d,0 251c,1,d,d,45 2592,1,d,d,45 2409,1,d,d,45 3*-,1,d,d,0
+V n 8*-,1,d,d,0
+V n 6*-,1,d,d,0 2*2502,1,d,d,5
+V n 5*-,1,d,d,0 3*2502,1,d,d,5
+V n 5*-,1,d,d,0 3*2502,1,d,d,5
+V n 5*-,1,d,d,0 3*2502,1,d,d,5
+V n 2*-,1,d,d,0 54,1,p7d,d,57 2424,1,p7d,d,57 240a,1,p7d,d,57 20,1,p7d,d,57 2500,1,p7d,d,57 2524,1,p7d,d,57
+V n 5*-,1,d,d,0 3*2502,1,d,d,5
+V n 5*-,1,d,d,0 3*2502,1,d,d,5
+V n 3*-,1,d,d,0 5*2502,1,d,d,5
+V n 3*-,1,d,d,0 2502,1,d,d,5 3*-,1,d,d,0 5a,1,r10203,d,20
+S n 3*-,1,d,pa4,0 5*5a,1,d,pa4,a08
+S n 3*-,1,d,pa4,0 5*5a,1,d,pa4,a08
+S n 3*-,1,d,pa4,0 5*5a,1,d,pa4,a08
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 4*-,1,d,d,0 250c,1,d,d,5 2500,1,d,d,5 2510,1,d,d,5 -,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n ff46,2,d,d,5 -,0,d,d,5 ff55,2,d,d,5 -,0,d,d,5 ff4c,2,d,d,5 -,0,d,d,5 ff4c,2,d,d,5 -,0,d,d,5
+S n 250c,1,d,d,5 2500,1,d,d,5 2510,1,d,d,5 251c,1,d,d,5 2592,1,d,d,5 2409,1,d,d,5 2*-,1,d,d,0
+S n 240a,1,d,d,5 6*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 7*5a,1,d,d,5 -,1,d,d,0
+S n 4*5a,1,d,d,5 2424,1,d,d,5 240a,1,d,d,5 250c,1,d,d,5 -,1,d,d,0
+S n 20,1,d,d,5 23ba,1,d,d,5 6*-,1,d,d,0
+S n -,1,d,d,0 7*5a,1,d,d,5
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0
+S n 8*-,1,d,d,0

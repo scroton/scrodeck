@@ -1,0 +1,17 @@
+wait 700; ask appclick 40 23; wait 3200; ask dump; wait 300; shot asks2-a-replaced;
+ask eval - [...document.querySelectorAll('section.ap-sess:not(.ap-recent)')].map(function(e){return e.querySelector('.ap-name').textContent+' | notes: '+[...e.querySelectorAll('.ap-rnote')].filter(function(n){return !n.hidden}).map(function(n){return n.textContent}).join(' / ')+' | frame heights '+[...e.querySelectorAll('iframe')].map(function(f){return f.style.height}).join(',')}).join(' ## '); wait 300;
+
+ask in 0 document.querySelectorAll('.card')[0].querySelector('[data-pick]'); wait 700;
+ask host document.querySelector('section.ap-sess .ap-discard'); ask eval - [document.querySelector('.ap-confirm-text').textContent, 'Discard disabled: ' + document.querySelector('.ap-discard-yes').disabled].join(' | '); ask host document.querySelector('section.ap-sess .ap-discard-yes'); wait 100; shot asks2-c-confirm-unarmed;
+wait 800; ask eval - 'after 0.9 s, Discard disabled: ' + document.querySelector('.ap-discard-yes').disabled + ', the pane still shows the question: ' + !document.querySelector('.ap-confirm').hidden; wait 200; shot asks2-d-confirm-armed;
+ask host document.querySelector('section.ap-sess .ap-keep'); wait 400; ask eval - 'kept: confirm hidden ' + document.querySelector('.ap-confirm').hidden + ', ' + document.querySelector('.ap-count').textContent; wait 200;
+ask host document.querySelector('section.ap-sess .ap-discard'); wait 1000; ask host document.querySelector('section.ap-sess .ap-discard-yes'); wait 900; ask dump; wait 300; shot asks2-e-discarded;
+
+ask open all; wait 1800;
+ask host document.querySelectorAll('section.ap-sess')[2].querySelector('.ap-name'); wait 500; shot asks2-b-legacy;
+ask host document.querySelectorAll('section.ap-sess .ap-done')[2]; wait 900; ask eval - document.querySelectorAll('section.ap-sess')[2].querySelector('.ap-flash').textContent; wait 300;
+
+wm min; wait 700; ask dump; wait 200; wm restore; wait 700; ask dump; wait 300;
+
+tap ctrl+shift+P; wait 300; text use this pc; wait 300; tap enter; wait 2500; ask dump; wait 300; shot asks2-f-switched;
+close

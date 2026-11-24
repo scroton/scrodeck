@@ -1,0 +1,46 @@
+{
+ "fixture": "fuzz-05",
+ "xterm": "6.0.0",
+ "cols": 12,
+ "rows": 4,
+ "cursor": {
+  "x": 12,
+  "y": 2
+ },
+ "modes": {
+  "alt": 1,
+  "appCursor": 1,
+  "appKeypad": 1,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 1016,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 1,
+  "cursorBlink": 0,
+  "origin": 1,
+  "wraparound": 0,
+  "insert": 0,
+  "sync": 1,
+  "scrollTop": 0,
+  "scrollBottom": 3
+ },
+ "title": "t54",
+ "replies": "\u001b[1;2R\u001b[0n\u001b[?3;1R\u001bP1$r1;4r\u001b\\\u001b[?1;2c\u001b[?7;1$y\u001b[?4;2R\u001b[2;13R\u001b[0n",
+ "scrollbackLength": 7,
+ "viewport": [
+  "n 301,0,p7,p4d,2a28 54,1,p7,p4d,2a28 68,1,p7,p4d,2a28 61,1,p7,p4d,2a28 20,1,p7,p4d,2a28 71,1,p7,p4d,2a28 75,1,p7,p4d,2a28 69,1,p7,p4d,2a28 63,1,p7,p4d,2a28 6b,1,p7,p4d,2a28 2*20,1,p7,p4d,2a28",
+  "n 250c,1,r10203,r65e8a7,2a3c 2500,1,r10203,r65e8a7,2a3c 2510,1,r10203,r65e8a7,2a3c 301,0,r10203,r65e8a7,2a3c 8*-,1,d,d,0",
+  "n 4*78,1,p7,p4d,2a28 2764+fe0f,1,p7,p4d,2a28 54,1,p7,p4d,2a28 68,1,p7,p4d,2a28 65,1,p7,p4d,2a28 20,1,p7,p4d,2a28 71,1,p7,p4d,2a28 75,1,p7,p4d,2a28 61,1,p7,p4d,2a28",
+  "n 12*-,1,d,p4d,0"
+ ],
+ "scrollback": [
+  "n -,1,d,p5,0 10*-,1,d,d,0 -,1,d,d,40",
+  "w 1f600,1,d,p4d,103 -,1,d,p4d,103 ff55,2,d,d,40 -,0,d,d,40 ff4c,2,d,d,40 -,0,d,d,40 ff4c,2,d,d,40 -,0,d,d,40 1f469+200d,1,r10203,d,0 1f467,1,r10203,d,0 -,1,d,d,0 -,1,r10203,d,4",
+  "w 4e2d,2,r10203,d,4 -,0,r10203,d,4 20,1,d,p8,40 ff46,2,d,p8,40 -,0,d,p8,40 ff55,2,d,p8,40 -,0,d,p8,40 ff4c,2,d,p8,40 -,0,d,p8,40 ff4c,2,d,p8,40 -,0,d,p8,40 -,1,d,d,0",
+  "n 12*-,1,d,p4,0",
+  "w 12*79,1,rd3e527,p4d,70b",
+  "w 20,1,d,d,80 54,1,d,d,80 68,1,d,d,80 65,1,d,d,80 20,1,d,d,80 71,1,d,d,80 75,1,d,d,80 69,1,d,d,80 63,1,d,d,80 6b,1,d,d,80 20,1,d,d,80 62,1,d,d,80",
+  "w 72,1,d,d,80 6f,1,d,d,80 77,1,d,d,80 6e,1,d,d,80 20,1,d,d,80 66,1,d,d,80 6f,1,d,d,80 78,1,d,d,80 20,1,d,d,80 2500,1,rd3e527,p4d,103 2510,1,rd3e527,p4d,103 20,1,rd3e527,p4d,103"
+ ]
+}

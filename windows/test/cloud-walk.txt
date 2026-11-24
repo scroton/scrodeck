@@ -1,0 +1,39 @@
+wait 900; dump tiles; shot cloud-0-before;
+
+zone tile c1; wait 2600; cloud dump; wait 300; shot cloud-a-one;
+
+key alt+1; keyup 1; wait 600; sel Fix the label; key alt+2; keyup 2; wait 400; sel Read the CSV; key alt+3; keyup 3; wait 400; sel write the tests; key alt+4; keyup 4; wait 3200;
+dump layout; cloud dump; wait 300; shot cloud-b-grid;
+
+cloud eval c1 [document.getElementById('sid').textContent, document.getElementById('login').textContent, innerWidth, devicePixelRatio].join(' | '); wait 300;
+
+cloud focus c2 user; wait 600; cloud click c2 document.getElementById('box'); wait 700; cloud dump; wait 200;
+cloud text c2 typed into the page; wait 500; cloud eval c2 document.getElementById('box').value; wait 300; dump state; shot cloud-c-typed;
+
+cloud click c1 document.getElementById('in'); wait 900;
+cloud click c1 document.getElementById('out'); wait 900;
+cloud click c1 document.getElementById('blank'); wait 900;
+cloud click c1 document.getElementById('pop'); wait 900;
+cloud eval c1 location.href; wait 300;
+
+cloud click c3 document.getElementById('tologin'); wait 1500; cloud dump; wait 300; shot cloud-d-hint;
+tap ctrl+shift+P; wait 900; shot cloud-e-palette; tap esc; wait 900; cloud dump; wait 200; shot cloud-e2-uncovered;
+cloud click c3 document.getElementById('signin'); wait 1800; cloud dump; wait 200; cloud eval c3 document.getElementById('login').textContent; wait 300;
+
+cloud click c1 document.getElementById('wander'); wait 1200; cloud eval c1 location.pathname; wait 300;
+cloud focus c1 user; wait 500; cloud key c1 F5; wait 1600; cloud eval c1 location.pathname; wait 300; shot cloud-f-redrawn;
+zone tile c2; wait 900; zone tile-action c2 reload; wait 1500; cloud eval c2 document.getElementById('n').textContent; wait 300;
+zone tile-action c2 browser; wait 500;
+
+cloud key c2 F6; wait 900; cloud dump; wait 200; shot cloud-g-zoom; cloud key c2 F6; wait 900; cloud dump; wait 200;
+cloud key c2 F9; wait 700; shot cloud-h-collapsed; cloud key c2 F9; wait 600;
+size 1100 720; wait 900; cloud eval c2 innerWidth; wait 300; shot cloud-h2-resized; size 1400 900; wait 700;
+
+rzone tile c1; wait 800; shot cloud-i-menu; menu Open on claude.ai; wait 500;
+zone tile t1; wait 900; cloud dump; wait 200; shot cloud-j-terminal;
+tap F7; wait 1500; cloud dump; wait 200; shot cloud-k-asks; tap F7; wait 900; cloud dump; wait 200;
+
+wm min; wait 900; cloud dump; wait 200; wm restore; wait 900; cloud dump; wait 200;
+
+rzone tile c1; wait 500; menu Remove from layout; wait 700; cloud dump; wait 200; cloud age c1 960000; wait 1500; cloud dump; wait 200; shot cloud-l-dropped;
+close

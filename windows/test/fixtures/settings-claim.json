@@ -1,0 +1,163 @@
+{
+ "fontSize": 14,
+ "zoomFontSize": 0,
+ "fontFamily": "",
+ "cwd": "C:\\Users\\you",
+ "autoTrust": true,
+ "resumeChoice": "ask",
+ "animations": true,
+ "effortStyle": "tag",
+ "sidebarSide": "left",
+ "pinSide": "edge",
+ "bars": {
+  "session": {
+   "show": true,
+   "name": "Session (5 h)",
+   "from": "#22c55e",
+   "to": "#ef4444"
+  },
+  "week": {
+   "show": true,
+   "name": "Week",
+   "from": "#22c55e",
+   "to": "#ef4444"
+  },
+  "fable": {
+   "show": true,
+   "name": "Fable (if applicable)",
+   "from": "#22d3ee",
+   "to": "#d946ef"
+  },
+  "context": {
+   "show": false,
+   "name": "Context",
+   "from": "#fbbf24",
+   "to": "#f97316"
+  }
+ },
+ "barLabels": {
+  "time": true,
+  "day": true
+ },
+ "barLabelMode": "reset",
+ "msgLines": {
+  "normal": 3,
+  "wide": 10
+ },
+ "notify": {
+  "waiting": true,
+  "done": false,
+  "asks": true,
+  "minTurnSec": 20,
+  "sound": false
+ },
+ "phone": {
+  "enabled": true,
+  "port": 8788,
+  "bind": "tailscale"
+ },
+ "pages": [
+  {
+   "label": "Report",
+   "file": "C:\\Users\\you\\report.html"
+  }
+ ],
+ "hibernate": {
+  "enabled": true,
+  "idleMinutes": 30,
+  "keepPinned": true
+ },
+ "grid": {
+  "rows": 2,
+  "cols": 2
+ },
+ "oneWindow": true,
+ "stepEscape": true,
+ "driver": "remote",
+ "asks": {
+  "deckThreshold": null,
+  "picker": "alongside",
+  "usePages": true,
+  "background": true,
+  "showTile": true,
+  "showMarks": true,
+  "closeOnDone": true
+ },
+ "aliases": {
+  "main@example.com": "m",
+  "work@example.com": "wk"
+ },
+ "accounts": [
+  {
+   "id": "main",
+   "label": "main",
+   "abbr": "m",
+   "email": "main@example.com",
+   "key": "main",
+   "isDefault": true
+  },
+  {
+   "id": "work",
+   "label": "work",
+   "abbr": "wk",
+   "email": "work@example.com",
+   "key": "work",
+   "isDefault": false
+  },
+  {
+   "id": "side",
+   "label": "side",
+   "abbr": "",
+   "email": null,
+   "key": "side",
+   "isDefault": false
+  }
+ ],
+ "accountRows": [
+  {
+   "id": "main",
+   "keywords": [
+    "main",
+    "claude"
+   ],
+   "dir": "~\\.claude",
+   "email": "main@example.com",
+   "label": "m",
+   "isDefault": true
+  },
+  {
+   "id": "work",
+   "keywords": [
+    "work"
+   ],
+   "dir": "~\\.claude-work",
+   "email": "work@example.com",
+   "label": "wk",
+   "isDefault": false
+  },
+  {
+   "id": "side",
+   "keywords": [
+    "side"
+   ],
+   "dir": "~\\.claude-side",
+   "email": null,
+   "label": "",
+   "isDefault": false
+  }
+ ],
+ "phoneStatus": {
+  "enabled": true,
+  "running": true,
+  "port": 8788,
+  "bind": "tailscale",
+  "token": "0000000000000000",
+  "address": "100.64.0.1",
+  "serve": null,
+  "url": "https://your-pc.tailnet.ts.net/?t=0000000000000000",
+  "clients": 1,
+  "desks": 0,
+  "tailscale": "your-pc",
+  "error": null
+ }
+}

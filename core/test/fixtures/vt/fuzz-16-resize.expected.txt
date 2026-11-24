@@ -1,0 +1,34 @@
+init 50 12 10000
+op feed 1911
+op resize 52 11
+op feed 1880
+op resize 64 8
+op feed 1910
+op resize 73 10
+op feed 1874
+op resize 80 10
+size 80 10
+cursor 17 7
+modes alt=1 appCursor=0 appKeypad=0 bracketedPaste=1 mouse=1002 mouseEnc=1006 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=0 insert=1 sync=1 scrollTop=0 scrollBottom=9
+title 743731
+replies 1b5b306e1b5b3f32353b3124791b5b3f313b32631b50312472313b38721b5c1b5b306e1b5b3e303b3237363b30631b5b3f383b3331521b50312472323b38721b5c1b5b3e303b3237363b30631b5b313b31521b5b343b3224791b5b3e303b3237363b3063
+scrollback 9
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 6*-,1,d,rc9faa5,0 a0,1,r65d8dc,rc9faa5,31 1f600,1,r65d8dc,rc9faa5,31 ff46,2,r65d8dc,rc9faa5,31 -,0,r65d8dc,rc9faa5,31 ff55,2,r65d8dc,rc9faa5,31 -,0,r65d8dc,rc9faa5,31 ff4c,2,r65d8dc,rc9faa5,31 -,0,r65d8dc,rc9faa5,31 ff4c,2,r65d8dc,rc9faa5,31 -,0,r65d8dc,rc9faa5,31 64*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+V n 80*-,1,d,rc9faa5,0
+S n 80*-,1,d,d,0
+S n 80*-,1,d,d,0
+S n 80*-,1,d,d,0
+S n 80*-,1,d,d,0
+S n 250c,1,pfc,p40,468 2500,1,pfc,p40,468 2510,1,pfc,p40,468 250c,1,pfc,p40,468 2500,1,pfc,p40,468 2510,1,pfc,p40,468 54,1,pfc,p40,468 68,1,pfc,p40,468 65,1,pfc,p40,468 20,1,pfc,p40,468 71,1,pfc,p40,468 75,1,pfc,p40,468 69,1,pfc,p40,468 63,1,pfc,p40,468 6b,1,pfc,p40,468 20,1,pfc,p40,468 62,1,pfc,p40,468 72,1,pfc,p40,468 6f,1,pfc,p40,468 77,1,pfc,p40,468 6e,1,pfc,p40,468 20,1,pfc,p40,468 66,1,pfc,p40,468 6f,1,pfc,p40,468 78,1,pfc,p40,468 20,1,pfc,p40,468 74,1,pfc,p40,468 61,1,pfc,p40,468 62,1,pfc,p40,468 3*-,1,d,d,0 68,1,pfc,p40,468 65,1,pfc,p40,468 72,1,pfc,p40,468 65,1,pfc,p40,468 44*-,1,d,d,0
+S n 4e2d,2,d,d,0 -,0,d,d,0 78*-,1,d,d,0
+S n 47*2502,1,rdd80f1,d,408 a0,1,p4e,d,408 250c,1,p4e,d,408 2500,1,p4e,d,408 2510,1,p4e,d,408 252c,1,p4e,d,408 240b,1,p4e,d,408 240d,1,p4e,d,408 240a,1,p4e,d,408 4e2d,2,p4e,d,408 -,0,p4e,d,408 6587,2,p4e,d,408 -,0,p4e,d,408 5b57,2,p4e,d,408 -,0,p4e,d,408 19*-,1,d,d,0
+S n 50*2502,1,r10203,d,3 54,1,r10203,d,3 2424,1,r10203,d,3 240a,1,r10203,d,3 20,1,r10203,d,3 2500,1,r10203,d,3 2524,1,r10203,d,3 240b,1,r10203,d,3 240c,1,r10203,d,3 2510,1,r10203,d,3 20,1,r10203,d,3 2409,1,r10203,d,3 23bc,1,r10203,d,3 23ba,1,r10203,d,3 252c,1,r10203,d,3 253c,1,r10203,d,3 20,1,r10203,d,3 b0,1,r10203,d,3 23ba,1,r10203,d,3 2502,1,r10203,d,3 20,1,r10203,d,3 252c,1,r10203,d,2a0b 240b,1,r10203,d,2a0b 240d,1,r10203,d,2a0b 240a,1,r10203,d,2a0b 4e2d,2,r10203,d,2a0b -,0,r10203,d,2a0b 6587,2,r10203,d,2a0b -,0,r10203,d,2a0b 5b57,2,r10203,d,2a0b 240a,1,r10203,d,2a0b
+S n 80*-,1,d,r823f7e,0

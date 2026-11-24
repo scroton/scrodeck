@@ -1,0 +1,1604 @@
+{
+  "module": "layout",
+  "generatedFrom": "lib/layout.js",
+  "cases": [
+    {
+      "fn": "fullSet",
+      "args": [
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "note": ""
+    },
+    {
+      "fn": "fullSet",
+      "args": [
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": ""
+    },
+    {
+      "fn": "fullSet",
+      "args": [
+        {
+          "rows": 1,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3
+      ],
+      "note": ""
+    },
+    {
+      "fn": "isLegal",
+      "args": [
+        [
+          1,
+          2,
+          4,
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": true,
+      "note": "a 2x2 block"
+    },
+    {
+      "fn": "isLegal",
+      "args": [
+        [
+          1,
+          3
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": false,
+      "note": "gap at 2"
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          1,
+          4
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "note": "R1: diagonal -> full 2x2"
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          1,
+          9
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "opposite corners -> whole grid"
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          1,
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        4,
+        5
+      ],
+      "note": "top-left 2x2 block"
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          4,
+          6
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        4,
+        5,
+        6
+      ],
+      "note": "a middle row"
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          1
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "x": 0,
+        "y": 0,
+        "w": 0.5,
+        "h": 0.5
+      },
+      "note": ""
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          1,
+          2
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 0.5
+      },
+      "note": ""
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "x": 0.3333333333333333,
+        "y": 0.3333333333333333,
+        "w": 0.3333333333333333,
+        "h": 0.3333333333333333
+      },
+      "note": "centre cell"
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          3
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "x": 0.6666666666666666,
+        "y": 0,
+        "w": 0.3333333333333333,
+        "h": 0.3333333333333333
+      },
+      "note": "top-right"
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          6
+        ],
+        {
+          "rows": 2,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "x": 0.6666666666666666,
+        "y": 0.5,
+        "w": 0.3333333333333333,
+        "h": 0.5
+      },
+      "note": "bottom-right of a 2x3"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "b",
+        [
+          1
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "layout": {
+          "a": [
+            3,
+            4
+          ],
+          "b": [
+            1
+          ]
+        },
+        "evicted": [],
+        "shrunk": [
+          {
+            "id": "a",
+            "from": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "to": [
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "note": "R3: full 2x2 losing {1} -> bottom half"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "b",
+        [
+          3
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "layout": {
+          "a": [
+            1,
+            2
+          ],
+          "b": [
+            3
+          ]
+        },
+        "evicted": [],
+        "shrunk": [
+          {
+            "id": "a",
+            "from": [
+              1,
+              2,
+              3,
+              4
+            ],
+            "to": [
+              1,
+              2
+            ]
+          }
+        ]
+      },
+      "note": "R3: losing {3} -> top half"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1
+          ]
+        },
+        "b",
+        [
+          1,
+          2
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "layout": {
+          "b": [
+            1,
+            2
+          ]
+        },
+        "evicted": [
+          "a"
+        ],
+        "shrunk": []
+      },
+      "note": "R6: covered tile evicted"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        "b",
+        [
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "layout": {
+          "a": [
+            1,
+            2,
+            3
+          ],
+          "b": [
+            5
+          ]
+        },
+        "evicted": [],
+        "shrunk": [
+          {
+            "id": "a",
+            "from": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9
+            ],
+            "to": [
+              1,
+              2,
+              3
+            ]
+          }
+        ]
+      },
+      "note": "3x3: full loses the centre cell"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            4,
+            5
+          ],
+          "b": [
+            3
+          ]
+        },
+        "c",
+        [
+          2,
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "layout": {
+          "a": [
+            1,
+            4
+          ],
+          "b": [
+            3
+          ],
+          "c": [
+            2,
+            5
+          ]
+        },
+        "evicted": [],
+        "shrunk": [
+          {
+            "id": "a",
+            "from": [
+              1,
+              2,
+              4,
+              5
+            ],
+            "to": [
+              1,
+              4
+            ]
+          }
+        ]
+      },
+      "note": "partial overlap shrinks, disjoint kept"
+    },
+    {
+      "fn": "shrink",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9
+        ],
+        [
+          5
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3
+      ],
+      "note": "largest strip clear of the centre"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        0.5,
+        0.1,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2
+      ],
+      "note": "R15: 2x2 full, top triangle -> top half"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        0.5,
+        0.5,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "note": "R15: 2x2 full, centre -> whole"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2
+          ]
+        },
+        0.1,
+        0.25,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1
+      ],
+      "note": "R15: 2x2 top half, left -> {1}"
+    },
+    {
+      "fn": "directionalHalf",
+      "args": [
+        [
+          1,
+          3
+        ],
+        0.5,
+        0.1
+      ],
+      "out": [
+        1
+      ],
+      "note": "R15: tall half, top -> {1}"
+    },
+    {
+      "fn": "directionalHalf",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        0.05,
+        0.05
+      ],
+      "out": [
+        1
+      ],
+      "note": "R15: full pane top-left corner -> {1}"
+    },
+    {
+      "fn": "directionalHalf",
+      "args": [
+        [
+          1,
+          2,
+          3,
+          4
+        ],
+        0.95,
+        0.95
+      ],
+      "out": [
+        4
+      ],
+      "note": "R15: full pane bottom-right corner -> {4}"
+    },
+    {
+      "fn": "directionalHalf",
+      "args": [
+        [
+          1,
+          2
+        ],
+        0.45,
+        0.06
+      ],
+      "out": [
+        1
+      ],
+      "note": "a half: mid-axis near the edge is a split, not whole (centre is a square)"
+    },
+    {
+      "fn": "directionalHalf",
+      "args": [
+        [
+          1,
+          3
+        ],
+        0.5,
+        0.5
+      ],
+      "out": [
+        1,
+        3
+      ],
+      "note": "a half: the centre square is whole"
+    },
+    {
+      "fn": "resolveDrop",
+      "args": [
+        {
+          "y": [
+            1
+          ]
+        },
+        "y",
+        [
+          2
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2
+      ],
+      "note": "placed tile onto a neighbour -> grows into the rectangle"
+    },
+    {
+      "fn": "resolveDrop",
+      "args": [
+        {
+          "y": [
+            1
+          ]
+        },
+        "y",
+        [
+          4
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        4
+      ],
+      "note": "placed tile onto the diagonal -> moves"
+    },
+    {
+      "fn": "resolveDrop",
+      "args": [
+        {
+          "y": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "y",
+        [
+          3,
+          4
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        3,
+        4
+      ],
+      "note": "placed tile onto part of itself -> shrinks"
+    },
+    {
+      "fn": "resolveDrop",
+      "args": [
+        {
+          "x": [
+            1,
+            2
+          ]
+        },
+        "y",
+        [
+          3
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        3
+      ],
+      "note": "unplaced tile -> the set as is"
+    },
+    {
+      "fn": "regrid",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            2
+          ],
+          "c": [
+            3,
+            4
+          ]
+        },
+        {
+          "rows": 2,
+          "cols": 2
+        },
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "a": [
+          1
+        ],
+        "b": [
+          2
+        ],
+        "c": [
+          4,
+          5
+        ]
+      },
+      "note": "grid change 2x2 -> 3x3: blocks keep rows/cols, cells renumbered"
+    },
+    {
+      "fn": "regrid",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            3
+          ],
+          "c": [
+            4,
+            5
+          ],
+          "d": [
+            9
+          ]
+        },
+        {
+          "rows": 3,
+          "cols": 3
+        },
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": {
+        "a": [
+          1
+        ],
+        "c": [
+          3,
+          4
+        ]
+      },
+      "note": "grid change 3x3 -> 2x2: blocks that no longer fit are dropped"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            2
+          ],
+          "c": [
+            3,
+            4
+          ]
+        },
+        0.5,
+        0.5,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4
+      ],
+      "note": "junction: the centre crossing of a split 2x2 -> whole"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            2
+          ],
+          "c": [
+            3,
+            4
+          ]
+        },
+        0.5,
+        0.04,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2
+      ],
+      "note": "junction: top border between two quadrants -> the pair"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        0.6666666666666666,
+        0.6666666666666666,
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        5,
+        6,
+        8,
+        9
+      ],
+      "note": "junction: 3x3 crossing -> the 2x2 block {5,6,8,9}"
+    },
+    {
+      "fn": "junctionAt",
+      "args": [
+        0.02,
+        0.02,
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": null,
+      "note": "an outer corner is not a junction -> null"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        0.5,
+        0.5,
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        5
+      ],
+      "note": "R16: 3x3 -> the cell under the cursor (5)"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9
+          ]
+        },
+        0.9,
+        0.1,
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        3
+      ],
+      "note": "R16: 3x3 top-right -> cell 3"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {},
+        0.5,
+        0.5,
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "note": "empty layout -> whole grid"
+    },
+    {
+      "fn": "cellAt",
+      "args": [
+        0.9,
+        0.5,
+        {
+          "rows": 1,
+          "cols": 3
+        }
+      ],
+      "out": [
+        3
+      ],
+      "note": "1x3 right third -> cell 3"
+    },
+    {
+      "fn": "norm",
+      "args": [
+        [
+          4,
+          1,
+          4,
+          9,
+          0,
+          2
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2,
+        4
+      ],
+      "note": "drops out-of-range, dedupes, sorts"
+    },
+    {
+      "fn": "norm",
+      "args": [
+        [
+          1,
+          5,
+          9
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": [
+        1,
+        5,
+        9
+      ],
+      "note": "all valid on 3x3"
+    },
+    {
+      "fn": "dims",
+      "args": [
+        {
+          "rows": 0,
+          "cols": 9
+        }
+      ],
+      "out": {
+        "R": 1,
+        "C": 4,
+        "N": 4
+      },
+      "note": "clamps to 1..4"
+    },
+    {
+      "fn": "dims",
+      "args": [
+        {
+          "rows": 5,
+          "cols": 5
+        }
+      ],
+      "out": {
+        "R": 4,
+        "C": 4,
+        "N": 16
+      },
+      "note": "4x4 is the ceiling"
+    },
+    {
+      "fn": "fullSet",
+      "args": [
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "note": ""
+    },
+    {
+      "fn": "fullSet",
+      "args": [
+        {
+          "rows": 3,
+          "cols": 4
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "note": ""
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          6,
+          11
+        ],
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        6,
+        7,
+        10,
+        11
+      ],
+      "note": "4x4: the centre 2x2 block"
+    },
+    {
+      "fn": "legalize",
+      "args": [
+        [
+          1,
+          16
+        ],
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+      ],
+      "note": "4x4: opposite corners -> whole grid"
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          16
+        ],
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": {
+        "x": 0.75,
+        "y": 0.75,
+        "w": 0.25,
+        "h": 0.25
+      },
+      "note": "4x4: bottom-right cell"
+    },
+    {
+      "fn": "rect",
+      "args": [
+        [
+          12
+        ],
+        {
+          "rows": 3,
+          "cols": 4
+        }
+      ],
+      "out": {
+        "x": 0.75,
+        "y": 0.6666666666666666,
+        "w": 0.25,
+        "h": 0.3333333333333333
+      },
+      "note": "3x4: bottom-right cell"
+    },
+    {
+      "fn": "place",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        "b",
+        [
+          6,
+          7,
+          10,
+          11
+        ],
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": {
+        "layout": {
+          "a": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "b": [
+            6,
+            7,
+            10,
+            11
+          ]
+        },
+        "evicted": [],
+        "shrunk": [
+          {
+            "id": "a",
+            "from": [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              7,
+              8,
+              9,
+              10,
+              11,
+              12,
+              13,
+              14,
+              15,
+              16
+            ],
+            "to": [
+              1,
+              2,
+              3,
+              4
+            ]
+          }
+        ]
+      },
+      "note": "4x4: full loses the centre block -> top row"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        0.5,
+        0.5,
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        6,
+        7,
+        10,
+        11
+      ],
+      "note": "4x4: centre crossing -> the four cells meeting there"
+    },
+    {
+      "fn": "dropTarget",
+      "args": [
+        {
+          "a": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        },
+        0.9,
+        0.9,
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        16
+      ],
+      "note": "4x4: the cell under the cursor (16)"
+    },
+    {
+      "fn": "regrid",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            5,
+            6,
+            8,
+            9
+          ]
+        },
+        {
+          "rows": 3,
+          "cols": 3
+        },
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": {
+        "a": [
+          1
+        ],
+        "b": [
+          6,
+          7,
+          10,
+          11
+        ]
+      },
+      "note": "grid change 3x3 -> 4x4: blocks keep rows/cols"
+    },
+    {
+      "fn": "regrid",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "b": [
+            6,
+            7,
+            10,
+            11
+          ],
+          "d": [
+            16
+          ]
+        },
+        {
+          "rows": 4,
+          "cols": 4
+        },
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "a": [
+          1
+        ],
+        "b": [
+          5,
+          6,
+          8,
+          9
+        ]
+      },
+      "note": "grid change 4x4 -> 3x3: what no longer fits drops"
+    },
+    {
+      "fn": "norm",
+      "args": [
+        [
+          9,
+          10,
+          16,
+          17
+        ],
+        {
+          "rows": 4,
+          "cols": 4
+        }
+      ],
+      "out": [
+        9,
+        10,
+        16
+      ],
+      "note": "4x4: 10..16 valid, 17 not"
+    },
+    {
+      "fn": "prune",
+      "args": [
+        {
+          "a": [
+            1
+          ],
+          "gone": [
+            2
+          ],
+          "bad": [
+            1,
+            3
+          ]
+        },
+        [
+          "a",
+          "bad"
+        ],
+        {
+          "rows": 3,
+          "cols": 3
+        }
+      ],
+      "out": {
+        "a": [
+          1
+        ]
+      },
+      "note": "drop dead + illegal"
+    },
+    {
+      "fn": "occupancy",
+      "args": [
+        {
+          "a": [
+            1,
+            2
+          ]
+        },
+        "a",
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": [
+        1,
+        2
+      ],
+      "note": ""
+    },
+    {
+      "fn": "same",
+      "args": [
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          2
+        ],
+        {
+          "rows": 2,
+          "cols": 2
+        }
+      ],
+      "out": true,
+      "note": "order-insensitive"
+    }
+  ]
+}

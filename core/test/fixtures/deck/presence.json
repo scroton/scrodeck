@@ -1,0 +1,1825 @@
+{
+ "source": "_wt-deck-officecheck/lib/presence.js",
+ "scenarios": [
+  {
+   "name": "remote on this PC",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null,
+    "pcName": "demo-pc-01"
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "demo-pc-01",
+      "kind": "native"
+     },
+     "phone": false,
+     "now": 1795039201000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "demo-pc-01"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"demo-pc-01\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "remote",
+     "now": 1795039202000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:02.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "demo-pc-01"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk window on this PC (demo-pc-01, native app): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:02.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"demo-pc-01\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk window on this PC (demo-pc-01, native app): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "HOME-PC-2",
+      "kind": "native"
+     },
+     "phone": false,
+     "now": 1795039203000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:02.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "HOME-PC-2"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (HOME-PC-2, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:02.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"HOME-PC-2\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (HOME-PC-2, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "demo-pc-01",
+      "kind": "browser"
+     },
+     "phone": false,
+     "now": 1795039204000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:02.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "demo-pc-01"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk window on this PC (demo-pc-01, browser): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:02.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"demo-pc-01\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk window on this PC (demo-pc-01, browser): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "input decides where",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "office",
+     "now": 1795039201000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "office",
+     "now": 1795039202000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795039260000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "remote",
+     "now": 1795039500000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:05:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:05:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "remote",
+     "now": 1795039500500,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:05:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:05:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "phone",
+     "now": 1795039560000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:06:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:06:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "office",
+     "now": 1795039620000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:07:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:07:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "deck",
+     "now": 1795039680000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:07:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:07:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "what is connected",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "laptop",
+      "kind": "browser"
+     },
+     "phone": false,
+     "now": 1795039201000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "laptop",
+      "kind": "browser"
+     },
+     "phone": false,
+     "now": 1795039203000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "remote",
+     "now": 1795039204000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:04.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (laptop, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:04.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (laptop, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "HOME-PC",
+      "kind": "native"
+     },
+     "phone": false,
+     "now": 1795039205000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:04.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "HOME-PC"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (HOME-PC, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:04.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"HOME-PC\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (HOME-PC, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {},
+     "phone": false,
+     "now": 1795039206000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:04.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": null
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (unnamed, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:04.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": null\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (unnamed, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {},
+     "phone": true,
+     "now": 1795039207000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:04.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": null
+      },
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (unnamed, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:04.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": null\n  },\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (unnamed, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": null,
+     "phone": true,
+     "now": 1795039208000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:00:04.000Z",
+      "remote": null,
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:00:04.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "phone",
+     "now": 1795039209000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:09.000Z",
+      "remote": null,
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user is on the phone, not at this PC: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:09.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user is on the phone, not at this PC: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": null,
+     "phone": false,
+     "now": 1795039210000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:09.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:09.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "  a\u0007 very long name that goes on and on past forty characters  ",
+      "kind": "weird"
+     },
+     "phone": false,
+     "now": 1795039211000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:09.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "a very long name that goes on and on pas"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:09.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"a very long name that goes on and on pas\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": 7
+     },
+     "phone": false,
+     "now": 1795039212000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:09.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": null
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:09.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": null\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "away",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795040940000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795041000000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:30:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:30:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795041060000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:30:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:30:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "laptop",
+      "kind": "native"
+     },
+     "phone": true,
+     "now": 1795041120000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:30:00.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 30+ minutes (no input since the deck started; a remote desk (laptop, native app) is connected, the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:30:00.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 30+ minutes (no input since the deck started; a remote desk (laptop, native app) is connected, the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "remote",
+     "now": 1795041600000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:40:00.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (laptop, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:40:00.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (laptop, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795043340000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T22:40:00.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (laptop, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T22:40:00.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (laptop, native app), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795043400000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T23:10:00.000Z",
+      "remote": {
+       "kind": "native",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "No input on any screen for 30+ minutes (last input: a remote desk; a remote desk (laptop, native app) is connected, the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T23:10:00.000Z\",\n  \"remote\": {\n    \"kind\": \"native\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: a remote desk; a remote desk (laptop, native app) is connected, the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": null,
+     "phone": true,
+     "now": 1795043460000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T23:10:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": true
+      },
+      "lastInputFrom": "remote",
+      "deliver": "No input on any screen for 30+ minutes (last input: a remote desk; the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T23:10:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": true\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: a remote desk; the phone is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": null,
+     "phone": false,
+     "now": 1795043520000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T23:10:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "No input on any screen for 30+ minutes (last input: a remote desk): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T23:10:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: a remote desk): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "phone",
+     "now": 1795044000000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T23:20:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T23:20:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795045860000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T23:51:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "No input on any screen for 30+ minutes (last input: the phone): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T23:51:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: the phone): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "office",
+     "now": 1795046400000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-19T00:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-19T00:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795048260000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-19T00:31:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "No input on any screen for 30+ minutes (last input: the office PC): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-19T00:31:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: the office PC): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "the setting",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": 5,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795039440000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795039500000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:05:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 5+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:05:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 5+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": 5,
+     "now": 1795039560000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:05:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 5+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:05:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 5+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": 0,
+     "now": 1795039620000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:07:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:07:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795069200000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:07:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:07:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": "2",
+     "now": 1795069260000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-19T06:21:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 2+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-19T06:21:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 2+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": 99999,
+     "now": 1795069320000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-19T06:22:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-19T06:22:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": "junk",
+     "now": 1795069380000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-19T06:23:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-19T06:23:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "away",
+     "value": null,
+     "now": 1795069440000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-19T06:23:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-19T06:23:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"No input on any screen for 30+ minutes (no input since the deck started): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "never away",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": 0,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795339200000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "phone",
+     "now": 1795339260000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-22T09:21:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-22T09:21:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "a restart from a remote desk",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039800000,
+    "awayMinutes": null,
+    "prev": {
+     "v": 1,
+     "where": "remote",
+     "since": "2026-11-18T21:00:00.000Z",
+     "lastInputFrom": "remote"
+    }
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T21:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T21:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795039860000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T21:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T21:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user was last active on a remote desk, which is not connected now: they are not at this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "connections",
+     "remote": {
+      "name": "laptop"
+     },
+     "phone": false,
+     "now": 1795039920000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "remote",
+      "since": "2026-11-18T21:00:00.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "The user is on a remote desk (laptop, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"remote\",\n  \"since\": \"2026-11-18T21:00:00.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"The user is on a remote desk (laptop, browser), not at this PC: they cannot open files on this PC. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "tick",
+     "now": 1795041660000,
+     "changed": true,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "away",
+      "since": "2026-11-18T22:41:00.000Z",
+      "remote": {
+       "kind": "browser",
+       "name": "laptop"
+      },
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "remote",
+      "deliver": "No input on any screen for 30+ minutes (last input: a remote desk; a remote desk (laptop, browser) is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"away\",\n  \"since\": \"2026-11-18T22:41:00.000Z\",\n  \"remote\": {\n    \"kind\": \"browser\",\n    \"name\": \"laptop\"\n  },\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"remote\",\n  \"deliver\": \"No input on any screen for 30+ minutes (last input: a remote desk; a remote desk (laptop, browser) is connected): where the user will read this is unknown. Give the local path AND send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "a restart while away",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": {
+     "v": 1,
+     "where": "away",
+     "since": "2026-11-18T21:00:00.000Z",
+     "lastInputFrom": "phone"
+    }
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    },
+    {
+     "op": "input",
+     "kind": "phone",
+     "now": 1795039201000,
+     "changed": false,
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "phone",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "phone",
+      "deliver": "The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"phone\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"phone\",\n  \"deliver\": \"The user was last active on the phone, which is not connected now: keep it short. To hand something over, send files with SendUserFile, or give a link.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "a restart: since in the future is not kept",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": {
+     "v": 1,
+     "where": "office",
+     "since": "2030-01-01T00:00:00.000Z",
+     "lastInputFrom": "office"
+    }
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": "office",
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": \"office\",\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "a previous file of another version",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": {
+     "v": 2,
+     "where": "remote",
+     "since": "2026-11-18T21:00:00.000Z",
+     "lastInputFrom": "remote"
+    }
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "a previous file that is junk",
+   "opts": {
+    "deck": {
+     "pid": 4242,
+     "startedAt": 1795039200000,
+     "version": "1.2.3"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": {
+     "v": 1,
+     "lastInputFrom": "deck"
+    }
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 4242,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": "1.2.3"
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 4242,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": \"1.2.3\"\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "the deck block",
+   "opts": {
+    "deck": {
+     "pid": 7,
+     "startedAt": "2026-11-01T10:00:00.000Z"
+    },
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": 7,
+       "startedAt": "2026-11-01T10:00:00.000Z",
+       "version": null
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": 7,\n    \"startedAt\": \"2026-11-01T10:00:00.000Z\",\n    \"version\": null\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  },
+  {
+   "name": "the deck block, nothing given",
+   "opts": {
+    "deck": {},
+    "now": 1795039200000,
+    "awayMinutes": null,
+    "prev": null
+   },
+   "steps": [
+    {
+     "op": "new",
+     "state": {
+      "v": 1,
+      "deck": {
+       "pid": null,
+       "startedAt": "2026-11-18T22:00:00.000Z",
+       "version": null
+      },
+      "where": "office",
+      "since": "2026-11-18T22:00:00.000Z",
+      "remote": null,
+      "phone": {
+       "attached": false
+      },
+      "lastInputFrom": null,
+      "deliver": "The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works."
+     },
+     "text": "{\n  \"v\": 1,\n  \"deck\": {\n    \"pid\": null,\n    \"startedAt\": \"2026-11-18T22:00:00.000Z\",\n    \"version\": null\n  },\n  \"where\": \"office\",\n  \"since\": \"2026-11-18T22:00:00.000Z\",\n  \"remote\": null,\n  \"phone\": {\n    \"attached\": false\n  },\n  \"lastInputFrom\": null,\n  \"deliver\": \"The user is at the office PC (the deck's own window): a local path, or opening the file on this PC, works.\"\n}\n"
+    }
+   ]
+  }
+ ],
+ "away": [
+  {
+   "in": null,
+   "out": 30
+  },
+  {
+   "in": "",
+   "out": 30
+  },
+  {
+   "in": 0,
+   "out": 0
+  },
+  {
+   "in": "0",
+   "out": 0
+  },
+  {
+   "in": 5,
+   "out": 5
+  },
+  {
+   "in": "5",
+   "out": 5
+  },
+  {
+   "in": 5.4,
+   "out": 5
+  },
+  {
+   "in": 5.5,
+   "out": 6
+  },
+  {
+   "in": -3,
+   "out": 0
+  },
+  {
+   "in": 1440,
+   "out": 1440
+  },
+  {
+   "in": 1441,
+   "out": 1440
+  },
+  {
+   "in": "x",
+   "out": 30
+  },
+  {
+   "in": true,
+   "out": 1
+  },
+  {
+   "in": "  12  ",
+   "out": 12
+  }
+ ],
+ "kinds": [
+  {
+   "in": "native",
+   "out": "native"
+  },
+  {
+   "in": "browser",
+   "out": "browser"
+  },
+  {
+   "in": "NATIVE",
+   "out": "browser"
+  },
+  {
+   "in": "",
+   "out": "browser"
+  },
+  {
+   "in": null,
+   "out": "browser"
+  },
+  {
+   "in": 7,
+   "out": "browser"
+  }
+ ],
+ "env": {
+  "CLAUDE_DECK_TILE": "tile-1",
+  "CLAUDE_DECK_STATE": "C:\\state\\deck-state.json"
+ },
+ "defaultAway": 30
+}

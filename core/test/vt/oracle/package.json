@@ -1,0 +1,6 @@
+{
+  "name": "deck-vt-oracle",
+  "private": true,
+  "description": "xterm.js headless oracle for core/vt parity tests",
+  "dependencies": { "@xterm/headless": "6.0.0" }
+}

@@ -1,0 +1,13 @@
+init 40 6 10000
+size 40 6
+cursor 9 4
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=0 scrollBottom=5
+title -
+replies -
+scrollback 0
+V n 25c6,1,d,d,0 2592,1,d,d,0 2409,1,d,d,0 240c,1,d,d,0 240d,1,d,d,0 240a,1,d,d,0 b0,1,d,d,0 b1,1,d,d,0 2424,1,d,d,0 240b,1,d,d,0 2518,1,d,d,0 2510,1,d,d,0 250c,1,d,d,0 2514,1,d,d,0 253c,1,d,d,0 23ba,1,d,d,0 23bb,1,d,d,0 2500,1,d,d,0 23bc,1,d,d,0 23bd,1,d,d,0 251c,1,d,d,0 2524,1,d,d,0 2534,1,d,d,0 252c,1,d,d,0 2502,1,d,d,0 2264,1,d,d,0 2265,1,d,d,0 3c0,1,d,d,0 2260,1,d,d,0 a3,1,d,d,0 b7,1,d,d,0 9*-,1,d,d,0
+V n 250c,1,d,d,0 3*2500,1,d,d,0 2510,1,d,d,0 35*-,1,d,d,0
+V n 2502,1,d,d,0 3*20,1,d,d,0 2502,1,d,d,0 35*-,1,d,d,0
+V n 2514,1,d,d,0 3*2500,1,d,d,0 2518,1,d,d,0 35*-,1,d,d,0
+V n 6c,1,d,d,0 71,1,d,d,0 6b,1,d,d,0 20,1,d,d,0 41,1,d,d,0 42,1,d,d,0 43,1,d,d,0 20,1,d,d,0 5f,1,d,d,0 31*-,1,d,d,0
+V n 40*-,1,d,d,0

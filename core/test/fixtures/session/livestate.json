@@ -1,0 +1,399 @@
+{
+ "module": "livestate",
+ "generatedFrom": "lib/sessions.js",
+ "alivePids": [
+  51000
+ ],
+ "deadPids": [
+  38344
+ ],
+ "cases": [
+  {
+   "name": "one live session",
+   "note": "",
+   "files": [
+    {
+     "account": "claudev",
+     "name": "51000.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s-1\",\"status\":\"busy\",\"statusUpdatedAt\":1760000000000,\"name\":\"my session\",\"bridgeSessionId\":\"session_abc\",\"kind\":\"interactive\",\"cwd\":\"C:\\\\Users\\\\fixture\",\"startedAt\":1759999990000,\"procStart\":\"Mon Oct 12\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s-1",
+     "account": "claudev",
+     "status": "busy",
+     "statusUpdatedAt": 1760000000000,
+     "alive": true,
+     "pid": 51000,
+     "name": "my session",
+     "bridgeSessionId": "session_abc",
+     "waitingFor": null,
+     "kind": "interactive",
+     "cwd": "C:\\Users\\fixture",
+     "startedAt": 1759999990000,
+     "procStart": "Mon Oct 12"
+    }
+   ]
+  },
+  {
+   "name": "defaults",
+   "note": "status idle, time 0, the rest null",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"s-2\"}"
+    },
+    {
+     "account": "a",
+     "name": "2.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s-3\",\"updatedAt\":5,\"status\":\"\",\"waitingFor\":\"permission prompt\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s-2",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 0,
+     "alive": false,
+     "pid": 38344,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    },
+    {
+     "sessionId": "s-3",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 5,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": "permission prompt",
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "not records",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "a.json",
+     "text": "not json"
+    },
+    {
+     "account": "a",
+     "name": "b.json",
+     "text": "{\"pid\":51000}"
+    },
+    {
+     "account": "a",
+     "name": "c.json",
+     "text": "{\"sessionId\":\"s-x\"}"
+    },
+    {
+     "account": "a",
+     "name": "d.json",
+     "text": "{\"pid\":0,\"sessionId\":\"s-0\"}"
+    },
+    {
+     "account": "a",
+     "name": "e.txt",
+     "text": "{\"pid\":51000,\"sessionId\":\"s-txt\"}"
+    },
+    {
+     "account": "a",
+     "name": "f.json",
+     "text": "null"
+    },
+    {
+     "account": "a",
+     "name": "g.json",
+     "text": "[1]"
+    },
+    {
+     "account": "a",
+     "name": "h.json",
+     "text": "\"s\""
+    },
+    {
+     "account": "a",
+     "name": "i.json",
+     "text": ""
+    },
+    {
+     "account": "a",
+     "name": "j.json",
+     "text": "﻿{\"pid\":51000,\"sessionId\":\"s-bom\"}"
+    },
+    {
+     "account": "a",
+     "name": "k.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s-ok\",\"status\":\"waiting\",\"waitingFor\":\"permission prompt\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s-ok",
+     "account": "a",
+     "status": "waiting",
+     "statusUpdatedAt": 0,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": "permission prompt",
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "live beats dead",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"s\",\"status\":\"busy\",\"statusUpdatedAt\":900}"
+    },
+    {
+     "account": "a",
+     "name": "2.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s\",\"status\":\"idle\",\"statusUpdatedAt\":100}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 100,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "live is not replaced by a newer dead one",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s\",\"status\":\"idle\",\"statusUpdatedAt\":100}"
+    },
+    {
+     "account": "a",
+     "name": "2.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"s\",\"status\":\"busy\",\"statusUpdatedAt\":900}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 100,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "newer wins between two dead, across accounts",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"s\",\"status\":\"idle\",\"statusUpdatedAt\":100}"
+    },
+    {
+     "account": "b",
+     "name": "9.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"s\",\"status\":\"waiting\",\"statusUpdatedAt\":200,\"name\":\"from b\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s",
+     "account": "b",
+     "status": "waiting",
+     "statusUpdatedAt": 200,
+     "alive": false,
+     "pid": 38344,
+     "name": "from b",
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "a tie keeps the first seen",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s\",\"status\":\"idle\",\"statusUpdatedAt\":100,\"name\":\"first\"}"
+    },
+    {
+     "account": "a",
+     "name": "2.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"s\",\"status\":\"busy\",\"statusUpdatedAt\":100,\"name\":\"second\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 100,
+     "alive": true,
+     "pid": 51000,
+     "name": "first",
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "several sessions keep first-seen order",
+   "note": "",
+   "files": [
+    {
+     "account": "b",
+     "name": "3.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"z\",\"statusUpdatedAt\":1}"
+    },
+    {
+     "account": "b",
+     "name": "4.json",
+     "text": "{\"pid\":38344,\"sessionId\":\"y\",\"statusUpdatedAt\":2}"
+    },
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"x\",\"statusUpdatedAt\":3}"
+    },
+    {
+     "account": "a",
+     "name": "2.json",
+     "text": "{\"pid\":51000,\"sessionId\":\"y\",\"statusUpdatedAt\":1}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "z",
+     "account": "b",
+     "status": "idle",
+     "statusUpdatedAt": 1,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    },
+    {
+     "sessionId": "y",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 1,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    },
+    {
+     "sessionId": "x",
+     "account": "a",
+     "status": "idle",
+     "statusUpdatedAt": 3,
+     "alive": true,
+     "pid": 51000,
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  },
+  {
+   "name": "a pid that is not a number is not running",
+   "note": "",
+   "files": [
+    {
+     "account": "a",
+     "name": "1.json",
+     "text": "{\"pid\":\"51000\",\"sessionId\":\"s\",\"status\":\"busy\"}"
+    }
+   ],
+   "out": [
+    {
+     "sessionId": "s",
+     "account": "a",
+     "status": "busy",
+     "statusUpdatedAt": 0,
+     "alive": true,
+     "pid": "51000",
+     "name": null,
+     "bridgeSessionId": null,
+     "waitingFor": null,
+     "kind": null,
+     "cwd": null,
+     "startedAt": 0,
+     "procStart": null
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,39 @@
+{
+ "fixture": "erase-wide",
+ "xterm": "6.0.0",
+ "cols": 12,
+ "rows": 5,
+ "cursor": {
+  "x": 5,
+  "y": 4
+ },
+ "modes": {
+  "alt": 0,
+  "appCursor": 0,
+  "appKeypad": 0,
+  "bracketedPaste": 0,
+  "mouse": 0,
+  "mouseEnc": 0,
+  "focus": 0,
+  "cursorVisible": 1,
+  "cursorShape": 0,
+  "cursorBlink": -1,
+  "origin": 0,
+  "wraparound": 1,
+  "insert": 0,
+  "sync": 0,
+  "scrollTop": 0,
+  "scrollBottom": 4
+ },
+ "title": "",
+ "replies": "",
+ "scrollbackLength": 0,
+ "viewport": [
+  "n 4e2d,2,d,d,0 -,0,d,d,0 10*-,1,d,d,0",
+  "n 4*-,1,d,d,0 5b57,2,d,d,0 -,0,d,d,0 7b26,2,d,d,0 -,0,d,d,0 6d4b,2,d,d,0 -,0,d,d,0 8bd5,2,d,d,0 -,0,d,d,0",
+  "n 4e2d,2,d,d,0 -,0,d,d,0 4*-,1,d,d,0 7b26,2,d,d,0 -,0,d,d,0 6d4b,2,d,d,0 -,0,d,d,0 8bd5,2,d,d,0 -,0,d,d,0",
+  "n 4e2d,2,d,d,0 -,0,d,d,0 4*-,1,d,d,0 7b26,2,d,d,0 -,0,d,d,0 6d4b,2,d,d,0 -,0,d,d,0 8bd5,2,d,d,0 -,0,d,d,0",
+  "n 4e2d,2,d,d,0 -,0,d,d,0 6587,2,d,d,0 -,0,d,d,0 -,1,d,d,0 7b26,2,d,d,0 -,0,d,d,0 6d4b,2,d,d,0 -,0,d,d,0 8bd5,2,d,d,0 -,0,d,d,0 -,1,d,d,0"
+ ],
+ "scrollback": []
+}

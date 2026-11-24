@@ -1,0 +1,12 @@
+wait 900; click 700 400; wait 200;
+feed \e[?1049h\e[?1000h\e[?1002h\e[?1006h\e[2J\e[Hrow01 a clickable prompt\r\nrow02 1: Bad  2: Fine  3: Good; wait 200;
+faketile mouseOn false; faketile sgrMouse false; wait 100; click 360 120; wait 150; dump state;
+faketile mouseOn true; faketile sgrMouse true; wait 100; click 360 120; wait 150; dump state;
+mods ctrl; click 400 120; mods none; wait 150;
+down 352 100; move 420 120; up 420 120; wait 150; dump selection;
+rclick 360 120; wait 150;
+mods shift; click 380 120; mods none; wait 150;
+dbl 360 100; wait 150; dump selection;
+faketile asleep true; wait 100; click 360 120; wait 150; faketile asleep false; wait 100;
+feed \e[?1000l\e[?1002l\e[?1006l; wait 100; click 360 120; wait 150;
+feed \e[?1000h\e[?1006h; wait 100; click 360 120; wait 150

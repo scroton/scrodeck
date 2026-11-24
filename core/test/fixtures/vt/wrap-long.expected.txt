@@ -1,0 +1,15 @@
+init 10 6 10000
+size 10 6
+cursor 10 5
+modes alt=0 appCursor=0 appKeypad=0 bracketedPaste=0 mouse=0 mouseEnc=0 focus=0 cursorVisible=1 cursorShape=0 cursorBlink=-1 origin=0 wraparound=1 insert=0 sync=0 scrollTop=0 scrollBottom=5
+title -
+replies -
+scrollback 2
+V w 6a,1,d,d,0 75,1,d,d,0 6d,1,d,d,0 70,1,d,d,0 73,1,d,d,0 20,1,d,d,0 6f,1,d,d,0 76,1,d,d,0 65,1,d,d,0 72,1,d,d,0
+V w 20,1,d,d,0 74,1,d,d,0 68,1,d,d,0 65,1,d,d,0 20,1,d,d,0 6c,1,d,d,0 61,1,d,d,0 7a,1,d,d,0 79,1,d,d,0 20,1,d,d,0
+V w 64,1,d,d,0 6f,1,d,d,0 67,1,d,d,0 20,1,d,d,0 61,1,d,d,0 6e,1,d,d,0 64,1,d,d,0 20,1,d,d,0 6b,1,d,d,0 65,1,d,d,0
+V w 65,1,d,d,0 70,1,d,d,0 73,1,d,d,0 20,1,d,d,0 72,1,d,d,0 75,1,d,d,0 2*6e,1,d,d,0 69,1,d,d,0 6e,1,d,d,0
+V w 67,1,d,d,0 20,1,d,d,0 66,1,d,d,0 61,1,d,d,0 72,1,d,d,0 20,1,d,d,0 61,1,d,d,0 77,1,d,d,0 61,1,d,d,0 79,1,d,d,0
+V w 20,1,d,d,0 66,1,d,d,0 72,1,d,d,0 6f,1,d,d,0 6d,1,d,d,0 20,1,d,d,0 68,1,d,d,0 65,1,d,d,0 72,1,d,d,0 65,1,d,d,0
+S n 54,1,d,d,0 68,1,d,d,0 65,1,d,d,0 20,1,d,d,0 71,1,d,d,0 75,1,d,d,0 69,1,d,d,0 63,1,d,d,0 6b,1,d,d,0 20,1,d,d,0
+S w 62,1,d,d,0 72,1,d,d,0 6f,1,d,d,0 77,1,d,d,0 6e,1,d,d,0 20,1,d,d,0 66,1,d,d,0 6f,1,d,d,0 78,1,d,d,0 20,1,d,d,0

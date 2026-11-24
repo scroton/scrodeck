@@ -1,0 +1,161 @@
+{
+  "module": "prompts",
+  "generatedFrom": "lib/queue.js",
+  "cases": [
+    {
+      "fn": "inWindow",
+      "args": [
+        600,
+        540,
+        660
+      ],
+      "out": true,
+      "note": "inside a normal window"
+    },
+    {
+      "fn": "inWindow",
+      "args": [
+        700,
+        540,
+        660
+      ],
+      "out": false,
+      "note": "outside"
+    },
+    {
+      "fn": "inWindow",
+      "args": [
+        30,
+        1380,
+        120
+      ],
+      "out": true,
+      "note": "wraps past midnight (inside)"
+    },
+    {
+      "fn": "inWindow",
+      "args": [
+        300,
+        1380,
+        120
+      ],
+      "out": false,
+      "note": "wraps past midnight (outside)"
+    },
+    {
+      "fn": "inWindow",
+      "args": [
+        0,
+        500,
+        500
+      ],
+      "out": true,
+      "note": "zero-length window = any time"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "timed",
+          "at": 9999
+        },
+        10000
+      ],
+      "out": "due",
+      "note": "timed at/after its time -> due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "timed",
+          "at": 10001
+        },
+        10000
+      ],
+      "out": null,
+      "note": "timed before its time -> not due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "next",
+          "at": 0
+        },
+        10000
+      ],
+      "out": "due",
+      "note": "next -> due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "recurring",
+          "everyMin": 10,
+          "startMin": 0,
+          "endMin": 0,
+          "lastSentAt": 0
+        },
+        10000
+      ],
+      "out": "due",
+      "note": "recurring any-time, never sent -> due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "recurring",
+          "everyMin": 10,
+          "startMin": 0,
+          "endMin": 0,
+          "lastSentAt": -50000
+        },
+        10000
+      ],
+      "out": null,
+      "note": "recurring within the interval -> not due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "triggered",
+          "trigger": "ready",
+          "firedAt": 0
+        },
+        10000
+      ],
+      "out": "due",
+      "note": "triggered, trigger risen, not yet fired -> due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "triggered",
+          "trigger": "ready",
+          "firedAt": 5000
+        },
+        10000
+      ],
+      "out": null,
+      "note": "triggered, already fired for this edge -> not due"
+    },
+    {
+      "fn": "dueReason",
+      "args": [
+        {
+          "kind": "triggered",
+          "trigger": "cold",
+          "firedAt": 0
+        },
+        10000
+      ],
+      "out": null,
+      "note": "triggered, trigger false -> not due"
+    }
+  ]
+}

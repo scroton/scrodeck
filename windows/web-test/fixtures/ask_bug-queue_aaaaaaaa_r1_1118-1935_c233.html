@@ -1,0 +1,360 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>bug-queue asks - round 1</title>
+<script>(function () { var d = document.documentElement, q = /[?&]embed=([a-z]+)/.exec(location.search), th = /[?&]theme=(dark|light)/.exec(location.search);
+  if (q || window.parent !== window) d.classList.add('embed');      /* inside the Claude Deck or the phone: the host draws the bar */
+  try { var t = (th && th[1]) || localStorage.getItem('askpage:theme') || 'dark'; if (t === 'light' || t === 'dark') d.setAttribute('data-theme', t); } catch (e) { d.setAttribute('data-theme', (th && th[1]) || 'dark'); } })();</script>
+<style>
+/* The Claude Deck's shape (renderer/style.css): square and compact; the colours stay (11-10). */
+:root { color-scheme: light; --bg:#f2f2f2; --bar:#eaeaea; --tile:#ffffff; --line:#d2d2d2; --box:#f0f0ee; --fg:#141414; --dim:#5e5e5e; --faint:#8a8a8a;
+  --accent:#0a5cb8; --accent-fg:#ffffff; --green:#1d9a3a; --rec:#e9f4ea; --rec-line:#2e7d32; --rec-edge:#7fb98d; --sel:#0a5cb8; --sel-bg:#e8f0fb;
+  --btn:#f4f4f4; --btn-line:#b5b5b5; --in:#ffffff; --in-line:#b5b5b5; --ans:#fffbe6; --later:#e9e9e7; --hdr:0px; }
+:root[data-theme="dark"] { color-scheme: dark; --bg:#0c0c0c; --bar:#0f0f0f; --tile:#171717; --line:#2c2c2c; --box:#1f1f1f; --fg:#ececec; --dim:#9a9a9a; --faint:#6a6a6a;
+  --accent:#6aa9ff; --accent-fg:#0b1220; --green:#3ecf5a; --rec:#16281b; --rec-line:#3ecf5a; --rec-edge:#2f6e3d; --sel:#6aa9ff; --sel-bg:#16243a;
+  --btn:#262626; --btn-line:#4e4e4e; --in:#111111; --in-line:#4e4e4e; --ans:#24211a; --later:#121212; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) { color-scheme: dark; --bg:#0c0c0c; --bar:#0f0f0f; --tile:#171717; --line:#2c2c2c; --box:#1f1f1f; --fg:#ececec; --dim:#9a9a9a; --faint:#6a6a6a;
+    --accent:#6aa9ff; --accent-fg:#0b1220; --green:#3ecf5a; --rec:#16281b; --rec-line:#3ecf5a; --rec-edge:#2f6e3d; --sel:#6aa9ff; --sel-bg:#16243a;
+    --btn:#262626; --btn-line:#4e4e4e; --in:#111111; --in-line:#4e4e4e; --ans:#24211a; --later:#121212; }
+}
+* { box-sizing: border-box; border-radius: 0; }
+html { -webkit-text-size-adjust: 100%; }
+body { margin: 0; background: var(--bg); color: var(--fg); font: 13px/1.4 "Segoe UI Variable Text", "Segoe UI", system-ui, -apple-system, sans-serif; }
+a { color: var(--accent); }
+button { font: inherit; color: var(--fg); cursor: pointer; background: var(--btn); border: 1px solid var(--btn-line); height: 20px; padding: 0 8px;
+  font-size: 11.5px; line-height: 18px; white-space: nowrap; }
+button:hover:not(:disabled) { filter: brightness(1.18); }
+button:disabled { opacity: .35; cursor: default; }
+button.primary { background: var(--accent); color: var(--accent-fg); border-color: var(--accent); font-weight: 600; }
+header { position: sticky; top: 0; z-index: 5; background: var(--bar); border-bottom: 1px solid var(--line); padding: 5px 0; }
+.top, .bar { display: flex; flex-wrap: wrap; align-items: center; gap: 2px 10px; max-width: 1000px; margin: 0 auto; padding: 0 8px; }
+.bar { margin-top: 4px; gap: 4px 6px; }
+h1 { font-size: 14px; margin: 0; font-weight: 600; }
+.meta { color: var(--dim); font-size: 11.5px; }
+#count { font-weight: 600; font-size: 12px; margin-right: 6px; font-variant-numeric: tabular-nums; }
+#theme { margin-left: auto; color: var(--dim); }
+#flash { color: var(--green); font-size: 11.5px; }
+main { max-width: 1000px; margin: 0 auto; padding: 2px 8px 40px; }
+section > h2, .subhead { font-size: 10.5px; font-weight: 600; text-transform: uppercase; letter-spacing: .06em; color: var(--dim); margin: 12px 0 4px; }
+.summary ul, .fyi ul { margin: 0; padding-left: 16px; }
+.summary li, .fyi li { margin: 1px 0; }
+.card { background: var(--tile); border: 1px solid var(--line); border-left: 2px solid var(--line); padding: 6px 8px 7px; margin: 0 0 4px;
+  scroll-margin-top: calc(var(--hdr) + 4px); }
+.card.answered { border-left-color: var(--green); }
+.replaced { margin: 8px 0 4px; padding: 6px 10px; border: 1px solid var(--accent); background: var(--box); }
+.chip.carried-draft { color: var(--accent); }
+/* a related series (Q38a, Q38b, ...): one block; the later parts indent under the first, which explains them all */
+.card.grouped:not(.group-last) { margin-bottom: 2px; }
+.card.group-next { margin-left: 18px; }
+.card.later { background: var(--later); }
+.cardhead { display: flex; gap: 8px; align-items: baseline; }
+.qid { font-weight: 700; color: var(--accent); font-variant-numeric: tabular-nums; white-space: nowrap; }
+.card h3 { font-size: 13.5px; margin: 0; font-weight: 600; flex: 1 1 auto; }
+.chip { font-size: 10.5px; color: var(--dim); white-space: nowrap; }
+.card.answered .state { color: var(--green); }
+.context { margin: 3px 0 0; overflow-wrap: anywhere; }
+.context p { margin: 3px 0; }
+.context ul { margin: 3px 0; padding-left: 16px; }
+.context blockquote { margin: 3px 0; padding: 1px 8px; border-left: 2px solid var(--line); color: var(--dim); }
+.context pre { background: var(--in); border: 1px solid var(--line); padding: 4px 6px; margin: 4px 0; overflow-x: auto; white-space: pre-wrap; font: 12px/1.4 Consolas, "Cascadia Mono", monospace; }
+code { font: 12px Consolas, "Cascadia Mono", monospace; background: var(--box); padding: 0 3px; }
+.context table { border-collapse: separate; border-spacing: 0; margin: 4px 0; font-size: 12.5px; }
+.context th { position: sticky; top: var(--hdr); z-index: 2; background: var(--tile); text-align: left; font-weight: 600; color: var(--dim);
+  padding: 1px 8px 1px 0; border-bottom: 1px solid var(--line); }
+.context td { padding: 1px 8px 1px 0; border-bottom: 1px solid var(--line); vertical-align: top; }
+.context td.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+.options { margin: 5px 0 0; display: flex; flex-direction: column; gap: 2px; }
+button.opt { display: flex; gap: 8px; width: 100%; height: auto; min-height: 22px; text-align: left; white-space: normal; background: var(--box);
+  border: 1px solid transparent; padding: 2px 6px; font-size: 13px; line-height: 1.35; }
+button.opt.rec { border-left: 5px solid var(--rec-edge); padding-left: 2px; }
+button.opt[aria-checked="true"] { background: var(--sel-bg); border-color: var(--sel); box-shadow: inset 0 0 0 1px var(--sel); }
+button.opt.rec[aria-checked="true"] { background: var(--box); border-color: var(--green); box-shadow: inset 0 0 0 1px var(--green); }
+.okey { font-weight: 700; color: var(--dim); }
+button.opt[aria-checked="true"] .okey { color: var(--fg); }
+.otext { flex: 1 1 auto; }
+.olabel { font-weight: 600; }
+.cons { color: var(--dim); }
+.rectag { font-size: 10.5px; font-weight: 600; color: var(--green); opacity: .8; margin-left: 6px; white-space: nowrap; }
+.replies { display: grid; grid-template-columns: repeat(10, minmax(0, 1fr)); gap: 2px; margin: 4px 0 0; }
+button.reply { width: 100%; padding: 0 2px; color: var(--dim); overflow: hidden; text-overflow: clip; }
+button.reply[aria-checked="true"] { background: var(--sel-bg); border-color: var(--sel); color: var(--fg); box-shadow: inset 0 0 0 1px var(--sel); }
+button.reply.none { border-style: dashed; }
+.question { font-weight: 600; margin: 6px 0 3px; }
+textarea { display: block; width: 100%; min-height: 40px; font: 13px/1.4 "Segoe UI Variable Text", "Segoe UI", system-ui, sans-serif; padding: 3px 6px;
+  border: 1px solid var(--in-line); background: var(--in); color: var(--fg); resize: none; overflow: hidden; }
+textarea:focus { outline: 1px solid var(--accent); outline-offset: -1px; }
+.card.answered textarea { background: var(--ans); }
+.tools { display: flex; gap: 8px; align-items: center; margin-top: 3px; font-size: 11px; color: var(--dim); }
+footer { max-width: 1000px; margin: 0 auto; padding: 0 8px 24px; color: var(--faint); font-size: 11px; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  header { position: static; }
+  .context th { position: static; }
+  .tablewrap { overflow-x: auto; }
+  .replies { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  button { height: 26px; line-height: 24px; }
+  button.opt { min-height: 30px; }
+  #theme { margin-left: 0; }
+}
+@media print { header { position: static; } .replies, .tools, .bar button { display: none; } }
+/* Embedded (the Claude Deck's ask pane, the phone's ask screen): the host draws the title, the counts and Done,
+   so the page is only its summary, cards and FYI, edge to edge, and grows to its full height (no inner scroll). */
+.embed body { background: var(--bg); overflow: hidden; }
+.embed header, .embed footer { display: none; }
+.embed main { max-width: none; padding: 0 0 2px; }
+.embed section > h2:first-child { margin-top: 4px; }
+/* Sent (the host's read-only view of answers already submitted): every choice shown, nothing changes. */
+.locked .card button.opt, .locked .card button.reply { cursor: default; }
+.locked .card button.opt:not([aria-checked="true"]), .locked .card button.reply:not([aria-checked="true"]) { opacity: .45; }
+.locked .card button[aria-checked="true"]:disabled { opacity: 1; }
+.locked textarea { background: var(--box); }
+</style></head><body>
+<header>
+  <div class="top"><h1>bug-queue asks</h1>
+    <span class="meta">round 1 · vv account · session aaaaaaaa &middot; asked Wed Nov 18, 7:35 PM &middot; <a href="../claude-asks.html">all asks</a></span></div>
+  <div class="bar">
+    <span id="count">0 of 2 answered</span>
+    <button type="button" id="copyAll" class="primary">Copy all answers</button>
+    <button type="button" id="dlJson" title="Save the answers file; the session picks it up by itself">Done</button>
+    <button type="button" id="dlTxt">as text</button>
+    <span id="flash" aria-live="polite"></span>
+    <button type="button" id="theme" title="Dark, light, or follow the system">Theme: dark</button>
+  </div>
+</header>
+<main>
+
+<section class="summary"><h2>Summary</h2><ul><li>Rebuilt the todo list for Node 3 from the 9:00 AM pull: 41 URLs, 6 more than yesterday.</li></ul></section>
+<section class="items"><h2>Questions and decisions</h2>
+
+<article class="card" id="Q1" data-qid="Q1">
+  <div class="cardhead"><span class="qid">Q1</span><h3>Apollo release</h3><span class="state chip">open</span></div>
+  <div class="context"><p>Apollo (5313) has 2,675 MB in the cache and 30 MB on order.<br>The 90-day need is 1,940 MB.<br>See <a href="http://example.invalid/po/31270201" target="_blank" rel="noopener">http://example.invalid/po/31270201</a> for the PR.</p></div>
+  <div class="options" role="radiogroup" aria-label="Q1 options"><button type="button" class="opt rec" data-pick="a" title="Recommended" role="radio" aria-checked="false"><span class="okey">a</span><span class="otext"><span class="olabel">skip this order</span><span class="cons"> - covers about 120 days</span></span></button><button type="button" class="opt" data-pick="b" role="radio" aria-checked="false"><span class="okey">b</span><span class="otext"><span class="olabel">add 200 MB</span><span class="cons"> - covers about 135 days; $1,180 more on the PR</span></span></button></div>
+  <div class="replies"><button type="button" class="reply" data-pick="r:explain" role="radio" aria-checked="false" title="Explain more: ask it again with more context">Explain</button><button type="button" class="reply" data-pick="r:later" role="radio" aria-checked="false" title="Ask me in a later round">Later</button><button type="button" class="reply" data-pick="r:check" role="radio" aria-checked="false" title="Check the facts first; go with the recommendation if they hold">Check first</button><button type="button" class="reply" data-pick="r:both" role="radio" aria-checked="false" title="Do both options">Both</button><button type="button" class="reply" data-pick="r:drop" role="radio" aria-checked="false" title="Don&#x27;t do it, don&#x27;t ask again">Drop it</button><button type="button" class="reply" data-pick="r:yourcall" role="radio" aria-checked="false" title="You decide; the recommendation stands unless you find better">Your call</button><button type="button" class="reply" data-pick="r:remind" role="radio" aria-checked="false" title="Remind me about this later (a nag)">Remind me</button><button type="button" class="reply" data-pick="r:workaround" role="radio" aria-checked="false" title="Work around it for now">Workaround</button><button type="button" class="reply" data-pick="r:after" role="radio" aria-checked="false" title="Ask me again once the other questions here have answers">After others</button><button type="button" class="reply none" data-pick="r:none" role="radio" aria-checked="false" title="None of the options: my note below is the answer">See below</button></div>
+  <p class="question">Leave Apollo off this bug queue?</p>
+  <textarea rows="2" spellcheck="true" aria-label="Q1 answer" placeholder="Your answer to Q1"></textarea>
+  <div class="tools"><button type="button" class="copy">Copy</button><span class="note"></span></div>
+</article>
+<article class="card" id="Q2" data-qid="Q2">
+  <div class="cardhead"><span class="qid">Q2</span><h3>label printer</h3><span class="state chip">open</span></div>
+  <div class="context"><p>The Zebra on Node 5 printed blank labels twice this morning (8:12 AM, 9:47 AM).</p>
+<ul><li>Avery reloaded the ribbon both times</li><li>the driver is 3 versions old</li></ul></div>
+  <div class="options" role="radiogroup" aria-label="Q2 options"><button type="button" class="opt rec" data-pick="a" title="Recommended" role="radio" aria-checked="false"><span class="okey">a</span><span class="otext"><span class="olabel">update the driver tonight</span><span class="cons"> - 20 min offline after 5 PM</span></span></button><button type="button" class="opt" data-pick="b" role="radio" aria-checked="false"><span class="okey">b</span><span class="otext"><span class="olabel">wait for a third failure</span><span class="cons"> - no downtime now; another blank batch possible</span></span></button></div>
+  <div class="replies"><button type="button" class="reply" data-pick="r:explain" role="radio" aria-checked="false" title="Explain more: ask it again with more context">Explain</button><button type="button" class="reply" data-pick="r:later" role="radio" aria-checked="false" title="Ask me in a later round">Later</button><button type="button" class="reply" data-pick="r:check" role="radio" aria-checked="false" title="Check the facts first; go with the recommendation if they hold">Check first</button><button type="button" class="reply" data-pick="r:both" role="radio" aria-checked="false" title="Do both options">Both</button><button type="button" class="reply" data-pick="r:drop" role="radio" aria-checked="false" title="Don&#x27;t do it, don&#x27;t ask again">Drop it</button><button type="button" class="reply" data-pick="r:yourcall" role="radio" aria-checked="false" title="You decide; the recommendation stands unless you find better">Your call</button><button type="button" class="reply" data-pick="r:remind" role="radio" aria-checked="false" title="Remind me about this later (a nag)">Remind me</button><button type="button" class="reply" data-pick="r:workaround" role="radio" aria-checked="false" title="Work around it for now">Workaround</button><button type="button" class="reply" data-pick="r:after" role="radio" aria-checked="false" title="Ask me again once the other questions here have answers">After others</button><button type="button" class="reply none" data-pick="r:none" role="radio" aria-checked="false" title="None of the options: my note below is the answer">See below</button></div>
+  <p class="question">Update the Node 5 printer driver tonight?</p>
+  <textarea rows="2" spellcheck="true" aria-label="Q2 answer" placeholder="Your answer to Q2"></textarea>
+  <div class="tools"><button type="button" class="copy">Copy</button><span class="note"></span></div>
+</article>
+</section>
+
+</main>
+<footer>Pick an option or a reply, add a note if you like (it all saves in this browser), then <b>Done</b> (it saves the answers file; the session picks it up by itself) or <b>Copy all answers</b> into its terminal. Skipping is fine. Hover a reply button for what it means.<br>Page ask_bug-queue_aaaaaaaa_r1_1118-1935_c233 &middot; items 724661177e494f58</footer>
+<script type="application/json" id="askdata">{"id": "ask_bug-queue_aaaaaaaa_r1_1118-1935_c233", "session_id": "aaaaaaaa-bbbb-4ccc-8ddd-eeeeeeeeeeee", "session_name": "bug-queue", "account": "vv", "round": 1, "asked_at": "2026-11-18T19:35:33.923-05:00", "items_hash": "724661177e494f58", "superseded_by": null, "inherits": {}, "replies": {"explain": {"label": "Explain", "fill": "explain more", "status": "later"}, "later": {"label": "Later", "fill": "later", "status": "later"}, "check": {"label": "Check first", "fill": "check first", "status": "answered"}, "both": {"label": "Both", "fill": "both", "status": "answered"}, "all": {"label": "All", "fill": "all of them", "status": "answered"}, "drop": {"label": "Drop it", "fill": "drop it", "status": "dropped"}, "yourcall": {"label": "Your call", "fill": "your call", "status": "answered"}, "remind": {"label": "Remind me", "fill": "remind me later", "status": "later"}, "workaround": {"label": "Workaround", "fill": "work around it for now", "status": "answered"}, "after": {"label": "After others", "fill": "after the others", "status": "later"}, "none": {"label": "See below", "fill": "", "status": "answered"}}, "items": [{"qid": "Q1", "key": "r1-Q1", "title": "Apollo release", "question": "Leave Apollo off this bug queue?", "options": [{"key": "a", "label": "skip this order"}, {"key": "b", "label": "add 200 MB"}], "recommend": "a", "multi": false}, {"qid": "Q2", "key": "r1-Q2", "title": "label printer", "question": "Update the Node 5 printer driver tonight?", "options": [{"key": "a", "label": "update the driver tonight"}, {"key": "b", "label": "wait for a third failure"}], "recommend": "a", "multi": false}]}</script>
+<script>
+(function () {
+  const D = JSON.parse(document.getElementById('askdata').textContent);
+  const R = D.replies;
+  const KEY = 'askpage:' + D.id;
+  let S = {};
+  try { S = JSON.parse(localStorage.getItem(KEY) || '{}') || {}; } catch (e) { S = {}; }
+  // 11-10, "not discard user entered info": this page may replace older ones (a later round, or another
+  // session's page). What he typed on a replaced card comes over here once, unless this card already has his words.
+  const inheritedFrom = {};
+  try {
+    for (const [from, map] of Object.entries(D.inherits || {})) {
+      let old = null; try { old = JSON.parse(localStorage.getItem('askpage:' + from) || 'null'); } catch (e) { old = null; }
+      if (!old) continue;
+      for (const [oq, nq] of Object.entries(map)) {
+        const o = old[oq];
+        if (!o || (!(o.text || '').trim() && !o.pick && !o.later)) continue;
+        const cur = S[nq];
+        if (cur && ((cur.text || '').trim() || cur.pick)) continue;
+        S[nq] = { text: o.text || '', pick: (typeof o.pick === 'string' && o.pick.startsWith('r:')) ? o.pick : null };
+        inheritedFrom[nq] = from;
+      }
+    }
+    if (Object.keys(inheritedFrom).length) { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} }
+  } catch (e) {}
+  let onChange = null;                                   // set by the host bridge below (embedded pages only)
+  const persist = () => { try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {} if (onChange) onChange(); };
+  const fit = ta => { ta.style.height = 'auto'; ta.style.height = (ta.scrollHeight + 2) + 'px'; };
+  const fitAll = () => document.querySelectorAll('textarea').forEach(fit);
+  const setHdr = () => { const h = document.querySelector('header');
+    document.documentElement.style.setProperty('--hdr', getComputedStyle(h).position === 'sticky' ? h.offsetHeight + 'px' : '0px'); };
+  const byQ = {}; D.items.forEach(i => { byQ[i.qid] = i; });
+  const flash = msg => { const f = document.getElementById('flash'); f.textContent = msg; clearTimeout(flash.t); flash.t = setTimeout(() => { f.textContent = ''; }, 4000); };
+
+  // what a pick puts at the start of the box: an option's label, a reply's phrase; "none" puts nothing
+  const labelOf = (it, k) => (it.options.find(o => String(o.key) === k) || {}).label || '';
+  const fillOf = (it, pick) => !pick ? '' : Array.isArray(pick) ? it.options.filter(o => pick.includes(String(o.key))).map(o => o.label).join(', ')
+    : pick.startsWith('r:') ? (R[pick.slice(2)] || {}).fill || '' : labelOf(it, pick);
+  const allFills = it => it.options.map(o => o.label).concat(Object.values(R).map(r => r.fill)).filter(Boolean).sort((a, b) => b.length - a.length);
+  function stripFill(it, text) {
+    const t = text.replace(/^\s+/, '');
+    for (const f of allFills(it)) if (t.toLowerCase().startsWith(f.toLowerCase())) return t.slice(f.length).replace(/^\s*[-:;,]\s*/, '');
+    return t;
+  }
+  function pickOf(q) { const p = S[q] && S[q].pick; return Array.isArray(p) ? (p.length ? p : null) : (p || null); }
+  const isReply = p => typeof p === 'string' && p.startsWith('r:');
+  function textOf(q) { const c = document.getElementById(q); return c ? c.querySelector('textarea').value : ''; }
+  function statusOf(q) {
+    const p = pickOf(q), t = textOf(q).trim();
+    if (S[q] && S[q].later && !p) return 'later';                     // older pages' Later flag
+    if (isReply(p)) { const r = R[p.slice(2)]; return p === 'r:none' && !t ? 'skipped' : r.status; }
+    if (p) return 'answered';
+    return t ? 'answered' : 'skipped';
+  }
+  function choiceOf(it, text) {
+    const p = pickOf(it.qid); if (p && !isReply(p)) return p;
+    if (p) return null;
+    const a = text.trim().toLowerCase();
+    for (const o of it.options) { const l = o.label.trim().toLowerCase(); if (a === l || (l && a.startsWith(l))) return o.key; }
+    return null;
+  }
+  const replyOf = q => { const p = pickOf(q); return isReply(p) ? p.slice(2) : null; };
+  const oneLine = t => t.trim().replace(/\s*\n\s*/g, ' / ');
+  function lineOf(it) { const t = oneLine(textOf(it.qid)); return `${it.qid} (${it.title}): ${t || (statusOf(it.qid) === 'later' ? 'later' : '')}`; }
+
+  function paint(card) {
+    const q = card.dataset.qid, s = statusOf(q), p = pickOf(q);
+    card.classList.toggle('answered', s === 'answered' || s === 'dropped');
+    card.classList.toggle('later', s === 'later');
+    card.querySelector('.state').textContent = s === 'skipped' ? 'open' : s;
+    card.querySelectorAll('[data-pick]').forEach(b => b.setAttribute('aria-checked', (Array.isArray(p) ? p.includes(b.dataset.pick) : b.dataset.pick === p) ? 'true' : 'false'));
+  }
+  function count() {
+    let n = 0, l = 0; D.items.forEach(i => { const s = statusOf(i.qid); if (s === 'answered' || s === 'dropped') n++; else if (s === 'later') l++; });
+    document.getElementById('count').textContent = `${n} of ${D.items.length} answered` + (l ? `, ${l} later` : '');
+  }
+  function save(q) { const ta = document.getElementById(q).querySelector('textarea');
+    S[q] = { text: ta.value, pick: pickOf(q) }; persist(); paint(document.getElementById(q)); count(); }
+
+  async function copy(text) {
+    try { await navigator.clipboard.writeText(text); return true; } catch (e) {}
+    const t = document.createElement('textarea'); t.value = text; t.style.position = 'fixed'; t.style.opacity = '0';
+    document.body.appendChild(t); t.select(); let ok = false; try { ok = document.execCommand('copy'); } catch (e) {}
+    t.remove(); return ok;
+  }
+
+  document.querySelectorAll('.card').forEach(card => {
+    const q = card.dataset.qid, it = byQ[q], ta = card.querySelector('textarea');
+    if (S[q] && typeof S[q].text === 'string') ta.value = S[q].text;
+    if (S[q] && S[q].later && !S[q].pick) S[q].pick = 'r:later';
+    ta.addEventListener('input', () => { fit(ta); save(q); });
+    card.querySelectorAll('[data-pick]').forEach(b => b.addEventListener('click', () => {
+      const was = pickOf(q), k = b.dataset.pick;
+      let now;
+      if (it.multi && !k.startsWith('r:')) {                                         // several options may be picked
+        const cur = Array.isArray(was) ? was.slice() : [];
+        now = cur.includes(k) ? cur.filter(x => x !== k) : cur.concat(k);
+        now = it.options.map(o => String(o.key)).filter(x => now.includes(x));
+        if (!now.length) now = null;
+      } else now = was === k ? null : k;                                             // a second click unpicks
+      const prev = fillOf(it, was), cur = ta.value.replace(/^\s+/, '');
+      const note = prev && cur.toLowerCase().startsWith(prev.toLowerCase()) ? cur.slice(prev.length).replace(/^\s*[-:;,]\s*/, '') : stripFill(it, ta.value);
+      const fill = fillOf(it, now);                                                  // his own words are kept
+      ta.value = fill && note ? fill + ' - ' + note : (fill || note);
+      S[q] = { text: ta.value, pick: now }; persist(); fit(ta); paint(card); count();
+      if (now === 'r:none') ta.focus();
+    }));
+    card.querySelector('button.copy').addEventListener('click', async () => {
+      const ok = await copy(lineOf(it)); card.querySelector('.note').textContent = ok ? 'Copied: ' + lineOf(it) : 'Copy failed - select the text by hand';
+      setTimeout(() => { card.querySelector('.note').textContent = ''; }, 5000);
+    });
+    paint(card);
+  });
+
+  function answers() {
+    const list = D.items.map(i => { const s = statusOf(i.qid), t = textOf(i.qid).trim();
+      return { qid: i.qid, key: i.key, title: i.title, question: i.question, status: s,
+               choice: s === 'answered' ? choiceOf(i, t) : null, reply: replyOf(i.qid),
+               answer: t || (s === 'later' ? 'later' : '') }; });
+    return { kind: 'ask-page-answers', version: 2, id: D.id, session_id: D.session_id, session_name: D.session_name,
+             account: D.account, round: D.round, asked_at: D.asked_at, saved_at: new Date().toISOString(),
+             items_hash: D.items_hash, question_ids: D.items.map(i => i.qid),
+             answered: list.filter(x => x.status === 'answered' || x.status === 'dropped').length,
+             later: list.filter(x => x.status === 'later').length, total: list.length, answers: list,
+             lines: D.items.filter(i => statusOf(i.qid) !== 'skipped').map(lineOf) };
+  }
+  function asText(A) {
+    const open = A.answers.filter(x => x.status === 'skipped').map(x => `${x.qid} (${x.title})`);
+    return [A.id, `${A.session_name} (${A.account}) round ${A.round}, saved ${A.saved_at}`,
+            `${A.answered} of ${A.total} answered` + (A.later ? `, ${A.later} later` : ''), '', ...A.lines,
+            ...(open.length ? ['', 'not answered: ' + open.join(', ')] : []), ''].join('\n');
+  }
+  function download(name, text, type) {
+    const a = document.createElement('a'); a.href = URL.createObjectURL(new Blob([text], { type })); a.download = name;
+    document.body.appendChild(a); a.click(); a.remove(); setTimeout(() => URL.revokeObjectURL(a.href), 4000);
+  }
+  window.askPage = { answers, asText, fitAll, inheritedFrom };
+  // a replaced page: Done is off (his answers belong on the newer page, which already has what he typed here)
+  if (D.superseded_by) { const b = document.getElementById('dlJson'); b.disabled = true; b.title = 'Replaced: answer on the newer page'; }
+  Object.keys(inheritedFrom).forEach(q => { const c = document.getElementById(q); const h = c && c.querySelector('.cardhead');
+    if (h) { const s = document.createElement('span'); s.className = 'chip carried-draft'; s.textContent = 'your earlier answer'; h.insertBefore(s, h.querySelector('.state')); } });
+
+  // ---- the host bridge: the Claude Deck's ask pane and the phone's ask screen frame this page (?embed=<host>).
+  // The page stays the one UI; the host keeps the drafts (so the Deck's windows and the phone share them),
+  // draws the bar, and asks for the answers when the user presses its Done. Messages are {askpage: <what>, id, ...}:
+  //   page -> host: ready, change {state, answered, later, drafted, total}, height {h}, answers {req, answers, text}
+  //   host -> page: load {state | null, readonly?}, get {req}, clear, lock (read-only: the answers were sent)
+  const host = window.parent !== window ? window.parent : null;
+  if (host) {
+    const tell = (what, extra) => { try { host.postMessage(Object.assign({ askpage: what, id: D.id }, extra || {}), '*'); } catch (e) {} };
+    const drafted = () => D.items.filter(i => { const s = S[i.qid]; return s && (s.pick || (s.text || '').trim() || s.later); }).length;
+    const progress = () => { const A = answers(); return { answered: A.answered, later: A.later, total: A.total, drafted: drafted() }; };
+    const applyState = st => {
+      S = st && typeof st === 'object' ? JSON.parse(JSON.stringify(st)) : {};
+      try { localStorage.setItem(KEY, JSON.stringify(S)); } catch (e) {}
+      document.querySelectorAll('.card').forEach(card => { const ta = card.querySelector('textarea'), s = S[card.dataset.qid];
+        ta.value = s && typeof s.text === 'string' ? s.text : ''; paint(card); });
+      count(); fitAll();
+    };
+    let lastH = 0, changeT = null;
+    const sendHeight = () => { const h = Math.ceil(document.documentElement.scrollHeight); if (h !== lastH) { lastH = h; tell('height', { h }); } };
+    const changed = () => tell('change', Object.assign({ state: S }, progress()));
+    let locked = false;
+    const lock = () => {
+      locked = true;
+      document.documentElement.classList.add('locked');
+      document.querySelectorAll('.card [data-pick]').forEach(b => { b.disabled = true; });
+      document.querySelectorAll('.card textarea').forEach(t => { t.readOnly = true; });
+    };
+    onChange = () => { clearTimeout(changeT); changeT = setTimeout(changed, 120); };
+    window.addEventListener('message', ev => {
+      const m = ev.data;
+      if (ev.source !== host || !m || typeof m !== 'object' || (m.id && m.id !== D.id)) return;
+      if (m.askpage === 'load') { if (m.state) applyState(m.state); if (m.readonly) lock(); else if (!locked) changed(); sendHeight(); }
+      else if (m.askpage === 'lock') lock();
+      else if (m.askpage === 'get') { const A = answers(); tell('answers', { req: m.req, answers: A, text: asText(A), locked }); }
+      else if (m.askpage === 'clear' && !locked) { applyState({}); changed(); }
+    });
+    new ResizeObserver(sendHeight).observe(document.body);
+    tell('ready', Object.assign({ h: Math.ceil(document.documentElement.scrollHeight), session_id: D.session_id, round: D.round }, progress()));
+  }
+  document.getElementById('copyAll').addEventListener('click', async () => {
+    const A = answers(); if (!A.lines.length) { flash('Nothing answered yet.'); return; }
+    flash((await copy(A.lines.join('\n'))) ? `Copied ${A.lines.length} line${A.lines.length === 1 ? '' : 's'} - paste them into the session's terminal.` : 'Copy failed.');
+  });
+  document.getElementById('dlJson').addEventListener('click', () => { download(D.id + '.answers.json', JSON.stringify(answers(), null, 1), 'application/json');
+    flash('Done: saved ' + D.id + '.answers.json - the session picks it up by itself.'); });
+  document.getElementById('dlTxt').addEventListener('click', () => { download(D.id + '.answers.txt', asText(answers()), 'text/plain');
+    flash('Saved ' + D.id + '.answers.txt to Downloads.'); });
+
+  // Theme: dark (the default) -> light -> auto (follow the system); kept for every ask page and the index
+  const themeBtn = document.getElementById('theme');
+  const themeNow = () => document.documentElement.getAttribute('data-theme') || 'auto';
+  const showTheme = () => { themeBtn.textContent = 'Theme: ' + themeNow(); };
+  themeBtn.addEventListener('click', () => {
+    const next = { dark: 'light', light: 'auto', auto: 'dark' }[themeNow()];
+    if (next === 'auto') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', next);
+    try { localStorage.setItem('askpage:theme', next); } catch (e) {}
+    showTheme();
+  });
+  showTheme();
+
+  count(); setHdr();
+  requestAnimationFrame(() => { fitAll(); setHdr(); });
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+  window.addEventListener('resize', () => { fitAll(); setHdr(); });
+  document.querySelectorAll('details').forEach(d => d.addEventListener('toggle', () => { if (d.open) d.querySelectorAll('textarea').forEach(fit); }));
+})();
+</script></body></html>

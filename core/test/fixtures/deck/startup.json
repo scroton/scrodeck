@@ -1,0 +1,1128 @@
+{
+ "streams": [
+  {
+   "name": "startup-mcp-prompt.raw",
+   "size": 705,
+   "chunks": [
+    "\u001b[?2026h\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[25;3HNew\u001b[1CMCP\u001b[1Cserver\u001b[1Cfound\u001b[1Cin\u001b[1Cthis\u001b[1Cproject:\u001b[1Cslack\u001b[27;3HMCP\u001b[1Cservers\u001b[1Cmay\u001b[1Cexecute\u001b[1Ccode\u001b[1Cor\u001b[1Caccess\u001b[1Csystem\u001b[1Cresources.\u001b[1CAll\u001b[1Ctool\u001b[1Ccalls\u001b[1Crequire\u001b[1Capproval.\u001b[1CLearn\u001b[1Cmore\u001b[1Cin\u001b[1Cthe\u001b]8;id=u-c415zw%2666840025641304634;https://code.claude.com/docs/en/mcp\u001b\\\u001b[1CMCP \u001b[28;3Hdocumentation\u001b]8;;\u001b\\.\u001b[30;5HUse\u001b[1Cthis\u001b[1CMCP\u001b[1Cserver\r\n    Use this and all future MCP servers in this project\u001b[65C\r\n  ❯ Continue without using this MCP server\u001b[78C\r\n\u001b[120C\r\n  Enter to confirm · Esc to cancel\u001b[86C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-mcp-prompt.raw",
+   "size": 4096,
+   "chunks": [
+    "\u001b[?2026h\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[25;3HNew\u001b[1CMCP\u001b[1Cserver\u001b[1Cfound\u001b[1Cin\u001b[1Cthis\u001b[1Cproject:\u001b[1Cslack\u001b[27;3HMCP\u001b[1Cservers\u001b[1Cmay\u001b[1Cexecute\u001b[1Ccode\u001b[1Cor\u001b[1Caccess\u001b[1Csystem\u001b[1Cresources.\u001b[1CAll\u001b[1Ctool\u001b[1Ccalls\u001b[1Crequire\u001b[1Capproval.\u001b[1CLearn\u001b[1Cmore\u001b[1Cin\u001b[1Cthe\u001b]8;id=u-c415zw%2666840025641304634;https://code.claude.com/docs/en/mcp\u001b\\\u001b[1CMCP \u001b[28;3Hdocumentation\u001b]8;;\u001b\\.\u001b[30;5HUse\u001b[1Cthis\u001b[1CMCP\u001b[1Cserver\r\n    Use this and all future MCP servers in this project\u001b[65C\r\n  ❯ Continue without using this MCP server\u001b[78C\r\n\u001b[120C\r\n  Enter to confirm · Esc to cancel\u001b[86C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-mcp-prompt.raw",
+   "size": 97,
+   "chunks": [
+    "\u001b[?2026h\r\n───────────────────────────────────────────────────────────────────────────────────────",
+    "─────────────────────────────────\u001b[25;3HNew\u001b[1CMCP\u001b[1Cserver\u001b[1Cfound\u001b[1Cin\u001b[1Cthis\u001b[1Cproject:\u001b[",
+    "1Cslack\u001b[27;3HMCP\u001b[1Cservers\u001b[1Cmay\u001b[1Cexecute\u001b[1Ccode\u001b[1Cor\u001b[1Caccess\u001b[1Csystem\u001b[1Cresources.\u001b[1",
+    "CAll\u001b[1Ctool\u001b[1Ccalls\u001b[1Crequire\u001b[1Capproval.\u001b[1CLearn\u001b[1Cmore\u001b[1Cin\u001b[1Cthe\u001b]8;id=u-c415zw%266684",
+    "0025641304634;https://code.claude.com/docs/en/mcp\u001b\\\u001b[1CMCP \u001b[28;3Hdocumentation\u001b]8;;\u001b\\.\u001b[30;5HUse",
+    "\u001b[1Cthis\u001b[1CMCP\u001b[1Cserver\r\n    Use this and all future MCP servers in this project\u001b[65C\r\n  ❯ Cont",
+    "inue without using this MCP server\u001b[78C\r\n\u001b[120C\r\n  Enter to confirm · Esc to cancel\u001b[86C\u001b[?2026l\u001b",
+    "[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-mcp-prompt.raw",
+   "size": 13,
+   "chunks": [
+    "\u001b[?2026h\r\n───",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "\u001b[25;3HNew\u001b[1",
+    "CMCP\u001b[1Cserve",
+    "r\u001b[1Cfound\u001b[1",
+    "Cin\u001b[1Cthis\u001b[",
+    "1Cproject:\u001b[1",
+    "Cslack\u001b[27;3H",
+    "MCP\u001b[1Cserver",
+    "s\u001b[1Cmay\u001b[1Ce",
+    "xecute\u001b[1Ccod",
+    "e\u001b[1Cor\u001b[1Cac",
+    "cess\u001b[1Csyste",
+    "m\u001b[1Cresource",
+    "s.\u001b[1CAll\u001b[1C",
+    "tool\u001b[1Ccalls",
+    "\u001b[1Crequire\u001b[",
+    "1Capproval.\u001b[",
+    "1CLearn\u001b[1Cmo",
+    "re\u001b[1Cin\u001b[1Ct",
+    "he\u001b]8;id=u-c4",
+    "15zw%26668400",
+    "25641304634;h",
+    "ttps://code.c",
+    "laude.com/doc",
+    "s/en/mcp\u001b\\\u001b[1",
+    "CMCP \u001b[28;3Hd",
+    "ocumentation\u001b",
+    "]8;;\u001b\\.\u001b[30;5",
+    "HUse\u001b[1Cthis\u001b",
+    "[1CMCP\u001b[1Cser",
+    "ver\r\n    Use ",
+    "this and all ",
+    "future MCP se",
+    "rvers in this",
+    " project\u001b[65C",
+    "\r\n  ❯ Continu",
+    "e without usi",
+    "ng this MCP s",
+    "erver\u001b[78C\r\n\u001b",
+    "[120C\r\n  Ente",
+    "r to confirm ",
+    "· Esc to canc",
+    "el\u001b[86C\u001b[?202",
+    "6l\u001b[>0q\u001b[?u\u001b]",
+    "7501;?\u0007\r\n\u001b[12",
+    "0C"
+   ],
+   "prompt": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-settings-warning-narrow.raw",
+   "size": 1047,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[60C\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[?2026h\u001b[?2026l\u001b[2;1H────────────────────────────────────────────────────────────\u001b[3;3HSettings\u001b[1CWarning\u001b[5;3HD:\\scratchdir\\26-10-08\u001b[1CDECK\u001b[1CE2E\u001b[1CSCRATCH\\cap\u001b[1Cnarrow\u001b[6;3Hdir\\bad-settings.json\u001b[7;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"gh\u001b[8;5Hworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[9;5Hnames\u001b[1Cmust\u001b[1Cstart\u001b[1Cwith\u001b[1Cuppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[10;5Happly-migration.yml\"\u001b[12;3HThe\u001b[1Cvalues\u001b[1Clisted\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[13;3Hfile\u001b[1Cis\u001b[1Cin\u001b[1Ceffect.\u001b[15;3H❯\u001b[1C1.\u001b[1CContinue\u001b[16;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[17;5H3.\u001b[1CExit\u001b[1Cand\u001b[1Cfix\u001b[1Cmanually\u001b[19;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning-narrow.raw",
+   "size": 4096,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[60C\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[?2026h\u001b[?2026l\u001b[2;1H────────────────────────────────────────────────────────────\u001b[3;3HSettings\u001b[1CWarning\u001b[5;3HD:\\scratchdir\\26-10-08\u001b[1CDECK\u001b[1CE2E\u001b[1CSCRATCH\\cap\u001b[1Cnarrow\u001b[6;3Hdir\\bad-settings.json\u001b[7;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"gh\u001b[8;5Hworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[9;5Hnames\u001b[1Cmust\u001b[1Cstart\u001b[1Cwith\u001b[1Cuppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[10;5Happly-migration.yml\"\u001b[12;3HThe\u001b[1Cvalues\u001b[1Clisted\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[13;3Hfile\u001b[1Cis\u001b[1Cin\u001b[1Ceffect.\u001b[15;3H❯\u001b[1C1.\u001b[1CContinue\u001b[16;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[17;5H3.\u001b[1CExit\u001b[1Cand\u001b[1Cfix\u001b[1Cmanually\u001b[19;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning-narrow.raw",
+   "size": 97,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[",
+    "60C\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h",
+    "\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[?2026h\u001b[?2026l\u001b[2;1H──────────────────────────────────────────────────────",
+    "──────\u001b[3;3HSettings\u001b[1CWarning\u001b[5;3HD:\\scratchdir\\26-10-08\u001b[1CDECK\u001b[1CE2E\u001b[1CSCRATCH\\cap\u001b[1Cnarr",
+    "ow\u001b[6;3Hdir\\bad-settings.json\u001b[7;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"g",
+    "h\u001b[8;5Hworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[9;5Hnames\u001b[1Cmust\u001b[1Cs",
+    "tart\u001b[1Cwith\u001b[1Cuppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[10;5Happly-migration.yml\"\u001b[12;3HThe\u001b",
+    "[1Cvalues\u001b[1Clisted\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[13;3Hfile\u001b[1Cis\u001b[1C",
+    "in\u001b[1Ceffect.\u001b[15;3H❯\u001b[1C1.\u001b[1CContinue\u001b[16;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[17;5H3.\u001b[1CExit\u001b[1Cand",
+    "\u001b[1Cfix\u001b[1Cmanually\u001b[19;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning-narrow.raw",
+   "size": 13,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2",
+    "031l\u001b[?2004l\u001b",
+    "[?2026h\u001b[?202",
+    "6l\u001b[H\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\r\n\u001b",
+    "[K\r\n\u001b[K\r\n\u001b[K\r",
+    "\n\u001b[K\r\n\u001b[K\r\n\u001b[",
+    "K\r\n\u001b[K\r\n\u001b[K\r\n",
+    "\u001b[K\r\n\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\r\n\u001b",
+    "[K\r\n\u001b[K\r\n\u001b[K\r",
+    "\n\u001b[K\r\n\u001b[K\r\n\u001b[",
+    "K\r\n\u001b[K\r\n\u001b[K\r\n",
+    "\u001b[K\r\n\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\u001b[6",
+    "0C\u001b[?2004h\u001b[?",
+    "2031h\u001b[?1004h",
+    "\u001b[<u\u001b[>5u\u001b[>4",
+    ";2m\u001b[>0q\u001b[>4m",
+    "\u001b[<u\u001b[?2031l\u001b",
+    "[?2004l\u001b[?200",
+    "4h\u001b[?2031h\u001b[?",
+    "1004h\u001b[<u\u001b[>5",
+    "u\u001b[>4;2m\u001b[>0q",
+    "\u001b[?2026h\u001b[?20",
+    "26l\u001b[2;1H────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "────\u001b[3;3HSet",
+    "tings\u001b[1CWarn",
+    "ing\u001b[5;3HD:\\s",
+    "cratchdir\\26-",
+    "10-08\u001b[1CDECK",
+    "\u001b[1CE2E\u001b[1CSC",
+    "RATCH\\cap\u001b[1C",
+    "narrow\u001b[6;3Hd",
+    "ir\\bad-settin",
+    "gs.json\u001b[7;3H",
+    "└\u001b[1Cpermissi",
+    "ons.allow:\u001b[1",
+    "CInvalid\u001b[1Cp",
+    "ermission\u001b[1C",
+    "rule\u001b[1C\"gh\u001b[",
+    "8;5Hworkflow\u001b",
+    "[1Crun\u001b[1Capp",
+    "ly-migration.",
+    "yml\"\u001b[1Cwas\u001b[",
+    "1Cskipped:\u001b[1",
+    "CTool\u001b[9;5Hna",
+    "mes\u001b[1Cmust\u001b[",
+    "1Cstart\u001b[1Cwi",
+    "th\u001b[1Cupperca",
+    "se.\u001b[1CUse\u001b[1",
+    "C\"Gh\u001b[1Cworkf",
+    "low\u001b[1Crun\u001b[1",
+    "0;5Happly-mig",
+    "ration.yml\"\u001b[",
+    "12;3HThe\u001b[1Cv",
+    "alues\u001b[1Clist",
+    "ed\u001b[1Cabove\u001b[",
+    "1Cwere\u001b[1Cski",
+    "pped;\u001b[1Cthe\u001b",
+    "[1Crest\u001b[1Cof",
+    "\u001b[1Cthe\u001b[13;3",
+    "Hfile\u001b[1Cis\u001b[",
+    "1Cin\u001b[1Ceffec",
+    "t.\u001b[15;3H❯\u001b[1",
+    "C1.\u001b[1CContin",
+    "ue\u001b[16;5H2.\u001b[",
+    "1CFix\u001b[1Cwith",
+    "\u001b[1CClaude\u001b[1",
+    "7;5H3.\u001b[1CExi",
+    "t\u001b[1Cand\u001b[1Cf",
+    "ix\u001b[1Cmanuall",
+    "y\u001b[19;3HEnter",
+    "\u001b[1Cto\u001b[1Ccon",
+    "firm\u001b[1C·\u001b[1C",
+    "Esc\u001b[1Cto\u001b[1C",
+    "cancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "D:\\scratchdir\\26-10-08 DECK E2E SCRATCH\\cap narrowdir\\bad-settings.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning.raw",
+   "size": 1122,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[6;1H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[120C\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[?2026h\u001b[?2026l\u001b[7;1H────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[8;3HSettings\u001b[1CWarning\u001b[10;3HC:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinx\u001b[11;3Hgs.json\u001b[12;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"gh\u001b[1Cworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[1Cnames\u001b[1Cmust\u001b[13;5Hstart\u001b[1Cwith\u001b[1Cuppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[15;3HThe\u001b[1Cvalues\u001b[1Clisted\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[1Cfile\u001b[1Cis\u001b[1Cin\u001b[1Ceffect.\u001b[17;3H❯\u001b[1C1.\u001b[1CContinue\u001b[18;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[19;5H3.\u001b[1CExit\u001b[1Cand\u001b[1Cfix\u001b[1Cmanually\u001b[21;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning.raw",
+   "size": 4096,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[6;1H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[120C\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[?2026h\u001b[?2026l\u001b[7;1H────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[8;3HSettings\u001b[1CWarning\u001b[10;3HC:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinx\u001b[11;3Hgs.json\u001b[12;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"gh\u001b[1Cworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[1Cnames\u001b[1Cmust\u001b[13;5Hstart\u001b[1Cwith\u001b[1Cuppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[15;3HThe\u001b[1Cvalues\u001b[1Clisted\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[1Cfile\u001b[1Cis\u001b[1Cin\u001b[1Ceffect.\u001b[17;3H❯\u001b[1C1.\u001b[1CContinue\u001b[18;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[19;5H3.\u001b[1CExit\u001b[1Cand\u001b[1Cfix\u001b[1Cmanually\u001b[21;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning.raw",
+   "size": 97,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2026h\u001b[?2026l\u001b[6;1H\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n",
+    "\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\r\n\u001b[K\u001b[120C\u001b[?2004h\u001b[?2031h\u001b[",
+    "?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q\u001b[>4m\u001b[<u\u001b[?2031l\u001b[?2004l\u001b[?2004h\u001b[?2031h\u001b[?1004h\u001b[<u\u001b[>5u\u001b[>4;2m\u001b[>0q",
+    "\u001b[?2026h\u001b[?2026l\u001b[7;1H───────────────────────────────────────────────────────────────────────────",
+    "─────────────────────────────────────────────\u001b[8;3HSettings\u001b[1CWarning\u001b[10;3HC:\\Users\\someone\\.cl",
+    "aude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinx\u001b",
+    "[11;3Hgs.json\u001b[12;3H└\u001b[1Cpermissions.allow:\u001b[1CInvalid\u001b[1Cpermission\u001b[1Crule\u001b[1C\"gh\u001b[1Cworkflow\u001b[",
+    "1Crun\u001b[1Capply-migration.yml\"\u001b[1Cwas\u001b[1Cskipped:\u001b[1CTool\u001b[1Cnames\u001b[1Cmust\u001b[13;5Hstart\u001b[1Cwith\u001b[1C",
+    "uppercase.\u001b[1CUse\u001b[1C\"Gh\u001b[1Cworkflow\u001b[1Crun\u001b[1Capply-migration.yml\"\u001b[15;3HThe\u001b[1Cvalues\u001b[1Clisted",
+    "\u001b[1Cabove\u001b[1Cwere\u001b[1Cskipped;\u001b[1Cthe\u001b[1Crest\u001b[1Cof\u001b[1Cthe\u001b[1Cfile\u001b[1Cis\u001b[1Cin\u001b[1Ceffect.\u001b[17;3H❯\u001b",
+    "[1C1.\u001b[1CContinue\u001b[18;5H2.\u001b[1CFix\u001b[1Cwith\u001b[1CClaude\u001b[19;5H3.\u001b[1CExit\u001b[1Cand\u001b[1Cfix\u001b[1Cmanually\u001b[2",
+    "1;3HEnter\u001b[1Cto\u001b[1Cconfirm\u001b[1C·\u001b[1CEsc\u001b[1Cto\u001b[1Ccancel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-settings-warning.raw",
+   "size": 13,
+   "chunks": [
+    "\u001b[>4m\u001b[<u\u001b[?2",
+    "031l\u001b[?2004l\u001b",
+    "[?2026h\u001b[?202",
+    "6l\u001b[6;1H\u001b[K\r\n",
+    "\u001b[K\r\n\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\r\n\u001b",
+    "[K\r\n\u001b[K\r\n\u001b[K\r",
+    "\n\u001b[K\r\n\u001b[K\r\n\u001b[",
+    "K\r\n\u001b[K\r\n\u001b[K\r\n",
+    "\u001b[K\r\n\u001b[K\r\n\u001b[K",
+    "\r\n\u001b[K\r\n\u001b[K\r\n\u001b",
+    "[K\r\n\u001b[K\r\n\u001b[K\r",
+    "\n\u001b[K\r\n\u001b[K\r\n\u001b[",
+    "K\u001b[120C\u001b[?200",
+    "4h\u001b[?2031h\u001b[?",
+    "1004h\u001b[<u\u001b[>5",
+    "u\u001b[>4;2m\u001b[>0q",
+    "\u001b[>4m\u001b[<u\u001b[?2",
+    "031l\u001b[?2004l\u001b",
+    "[?2004h\u001b[?203",
+    "1h\u001b[?1004h\u001b[<",
+    "u\u001b[>5u\u001b[>4;2m",
+    "\u001b[>0q\u001b[?2026h",
+    "\u001b[?2026l\u001b[7;1",
+    "H────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "────\u001b[8;3HSet",
+    "tings\u001b[1CWarn",
+    "ing\u001b[10;3HC:\\",
+    "Users\\someone",
+    "\\.claude-acco",
+    "unt\\projects\\",
+    "settings-fold",
+    "er\\with-a-lon",
+    "g-name-so-it-",
+    "wraps\\like-th",
+    "e-real-one\\ba",
+    "d-settinx\u001b[11",
+    ";3Hgs.json\u001b[1",
+    "2;3H└\u001b[1Cperm",
+    "issions.allow",
+    ":\u001b[1CInvalid\u001b",
+    "[1Cpermission",
+    "\u001b[1Crule\u001b[1C\"",
+    "gh\u001b[1Cworkflo",
+    "w\u001b[1Crun\u001b[1Ca",
+    "pply-migratio",
+    "n.yml\"\u001b[1Cwas",
+    "\u001b[1Cskipped:\u001b",
+    "[1CTool\u001b[1Cna",
+    "mes\u001b[1Cmust\u001b[",
+    "13;5Hstart\u001b[1",
+    "Cwith\u001b[1Cuppe",
+    "rcase.\u001b[1CUse",
+    "\u001b[1C\"Gh\u001b[1Cwo",
+    "rkflow\u001b[1Crun",
+    "\u001b[1Capply-mig",
+    "ration.yml\"\u001b[",
+    "15;3HThe\u001b[1Cv",
+    "alues\u001b[1Clist",
+    "ed\u001b[1Cabove\u001b[",
+    "1Cwere\u001b[1Cski",
+    "pped;\u001b[1Cthe\u001b",
+    "[1Crest\u001b[1Cof",
+    "\u001b[1Cthe\u001b[1Cfi",
+    "le\u001b[1Cis\u001b[1Ci",
+    "n\u001b[1Ceffect.\u001b",
+    "[17;3H❯\u001b[1C1.",
+    "\u001b[1CContinue\u001b",
+    "[18;5H2.\u001b[1CF",
+    "ix\u001b[1Cwith\u001b[1",
+    "CClaude\u001b[19;5",
+    "H3.\u001b[1CExit\u001b[",
+    "1Cand\u001b[1Cfix\u001b",
+    "[1Cmanually\u001b[",
+    "21;3HEnter\u001b[1",
+    "Cto\u001b[1Cconfir",
+    "m\u001b[1C·\u001b[1CEsc",
+    "\u001b[1Cto\u001b[1Ccan",
+    "cel"
+   ],
+   "prompt": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "describe": "\"gh workflow run apply-migration.yml\" in C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply-migration.yml"
+    ],
+    "errors": [
+     "permissions.allow: Invalid permission rule \"gh workflow run apply-migration.yml\" was skipped: Tool names must start with uppercase. Use \"Gh workflow run apply-migration.yml\""
+    ],
+    "file": "C:\\Users\\someone\\.claude-account\\projects\\settings-folder\\with-a-long-name-so-it-wraps\\like-the-real-one\\bad-settinxgs.json"
+   },
+   "wants": true,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": true
+  },
+  {
+   "name": "startup-trust-prompt.raw",
+   "size": 881,
+   "chunks": [
+    "\u001b[?2026h\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[25;2HAccessing\u001b[1Cworkspace:\u001b[27;2HC:\\Users\\demo\\Documents\\GitHub\\claude-deck\u001b[29;2HQuick\u001b[1Csafety\u001b[1Ccheck:\u001b[1CIs\u001b[1Cthis\u001b[1Ca\u001b[1Cproject\u001b[1Cyou\u001b[1Ccreated\u001b[1Cor\u001b[1Cone\u001b[1Cyou\u001b[1Ctrust?\u001b[1C(Like\u001b[1Cyour\u001b[1Cown\u001b[1Ccode,\u001b[1Ca\u001b[1Cwell-known\u001b[1Copen\u001b[1Csource\u001b[30;2Hproject,\u001b[1Cor\u001b[1Cwork\u001b[1Cfrom\u001b[1Cyour\u001b[1Cteam).\u001b[1CIf\u001b[1Cnot,\u001b[1Ctake\u001b[1Ca\u001b[1Cmoment\u001b[1Cto\u001b[1Creview\u001b[1Cwhat's\u001b[1Cin\u001b[1Cthis\u001b[1Cfolder\u001b[1Cfirst.\r\n\u001b[120C\r\n Claude Code'll be able to read, edit, and execute files here.\u001b[58C\r\n\u001b[120C\r\n \u001b]8;id=u-zaxmda%5166649326141359084;https://code.claude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\u001b[K\u001b[105C\r\n\u001b[120C\r\n ❯ No, exit\u001b[109C\r\n   Yes, I trust this folder\u001b[93C\r\n\u001b[120C\r\n Enter to confirm · Esc to cancel\u001b[87C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-trust-prompt.raw",
+   "size": 4096,
+   "chunks": [
+    "\u001b[?2026h\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[25;2HAccessing\u001b[1Cworkspace:\u001b[27;2HC:\\Users\\demo\\Documents\\GitHub\\claude-deck\u001b[29;2HQuick\u001b[1Csafety\u001b[1Ccheck:\u001b[1CIs\u001b[1Cthis\u001b[1Ca\u001b[1Cproject\u001b[1Cyou\u001b[1Ccreated\u001b[1Cor\u001b[1Cone\u001b[1Cyou\u001b[1Ctrust?\u001b[1C(Like\u001b[1Cyour\u001b[1Cown\u001b[1Ccode,\u001b[1Ca\u001b[1Cwell-known\u001b[1Copen\u001b[1Csource\u001b[30;2Hproject,\u001b[1Cor\u001b[1Cwork\u001b[1Cfrom\u001b[1Cyour\u001b[1Cteam).\u001b[1CIf\u001b[1Cnot,\u001b[1Ctake\u001b[1Ca\u001b[1Cmoment\u001b[1Cto\u001b[1Creview\u001b[1Cwhat's\u001b[1Cin\u001b[1Cthis\u001b[1Cfolder\u001b[1Cfirst.\r\n\u001b[120C\r\n Claude Code'll be able to read, edit, and execute files here.\u001b[58C\r\n\u001b[120C\r\n \u001b]8;id=u-zaxmda%5166649326141359084;https://code.claude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\u001b[K\u001b[105C\r\n\u001b[120C\r\n ❯ No, exit\u001b[109C\r\n   Yes, I trust this folder\u001b[93C\r\n\u001b[120C\r\n Enter to confirm · Esc to cancel\u001b[87C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-trust-prompt.raw",
+   "size": 97,
+   "chunks": [
+    "\u001b[?2026h\r\n───────────────────────────────────────────────────────────────────────────────────────",
+    "─────────────────────────────────\u001b[25;2HAccessing\u001b[1Cworkspace:\u001b[27;2HC:\\Users\\demo\\Documents\\Git",
+    "Hub\\claude-deck\u001b[29;2HQuick\u001b[1Csafety\u001b[1Ccheck:\u001b[1CIs\u001b[1Cthis\u001b[1Ca\u001b[1Cproject\u001b[1Cyou\u001b[1Ccreated\u001b[",
+    "1Cor\u001b[1Cone\u001b[1Cyou\u001b[1Ctrust?\u001b[1C(Like\u001b[1Cyour\u001b[1Cown\u001b[1Ccode,\u001b[1Ca\u001b[1Cwell-known\u001b[1Copen\u001b[1Csourc",
+    "e\u001b[30;2Hproject,\u001b[1Cor\u001b[1Cwork\u001b[1Cfrom\u001b[1Cyour\u001b[1Cteam).\u001b[1CIf\u001b[1Cnot,\u001b[1Ctake\u001b[1Ca\u001b[1Cmoment\u001b[1C",
+    "to\u001b[1Creview\u001b[1Cwhat's\u001b[1Cin\u001b[1Cthis\u001b[1Cfolder\u001b[1Cfirst.\r\n\u001b[120C\r\n Claude Code'll be able to read",
+    ", edit, and execute files here.\u001b[58C\r\n\u001b[120C\r\n \u001b]8;id=u-zaxmda%5166649326141359084;https://code.c",
+    "laude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\u001b[K\u001b[105C\r\n\u001b[120C\r\n ❯ No, exit\u001b[109C\r\n   Yes, I ",
+    "trust this folder\u001b[93C\r\n\u001b[120C\r\n Enter to confirm · Esc to cancel\u001b[87C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r",
+    "\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  },
+  {
+   "name": "startup-trust-prompt.raw",
+   "size": 13,
+   "chunks": [
+    "\u001b[?2026h\r\n───",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "─────────────",
+    "\u001b[25;2HAccess",
+    "ing\u001b[1Cworksp",
+    "ace:\u001b[27;2HC:",
+    "\\Users\\demo\\D",
+    "ocuments\\GitH",
+    "ub\\claude-dec",
+    "k\u001b[29;2HQuick",
+    "\u001b[1Csafety\u001b[1",
+    "Ccheck:\u001b[1CIs",
+    "\u001b[1Cthis\u001b[1Ca",
+    "\u001b[1Cproject\u001b[",
+    "1Cyou\u001b[1Ccrea",
+    "ted\u001b[1Cor\u001b[1C",
+    "one\u001b[1Cyou\u001b[1",
+    "Ctrust?\u001b[1C(L",
+    "ike\u001b[1Cyour\u001b[",
+    "1Cown\u001b[1Ccode",
+    ",\u001b[1Ca\u001b[1Cwel",
+    "l-known\u001b[1Cop",
+    "en\u001b[1Csource\u001b",
+    "[30;2Hproject",
+    ",\u001b[1Cor\u001b[1Cwo",
+    "rk\u001b[1Cfrom\u001b[1",
+    "Cyour\u001b[1Cteam",
+    ").\u001b[1CIf\u001b[1Cn",
+    "ot,\u001b[1Ctake\u001b[",
+    "1Ca\u001b[1Cmoment",
+    "\u001b[1Cto\u001b[1Crev",
+    "iew\u001b[1Cwhat's",
+    "\u001b[1Cin\u001b[1Cthi",
+    "s\u001b[1Cfolder\u001b[",
+    "1Cfirst.\r\n\u001b[1",
+    "20C\r\n Claude ",
+    "Code'll be ab",
+    "le to read, e",
+    "dit, and exec",
+    "ute files her",
+    "e.\u001b[58C\r\n\u001b[12",
+    "0C\r\n \u001b]8;id=u",
+    "-zaxmda%51666",
+    "4932614135908",
+    "4;https://cod",
+    "e.claude.com/",
+    "docs/en/secur",
+    "ity\u001b\\Security",
+    " guide\u001b]8;;\u001b\\",
+    "\u001b[K\u001b[105C\r\n\u001b[",
+    "120C\r\n ❯ No, ",
+    "exit\u001b[109C\r\n ",
+    "  Yes, I trus",
+    "t this folder",
+    "\u001b[93C\r\n\u001b[120C",
+    "\r\n Enter to c",
+    "onfirm · Esc ",
+    "to cancel\u001b[87",
+    "C\u001b[?2026l\u001b[>0",
+    "q\u001b[?u\u001b]7501;?",
+    "\u0007\r\n\u001b[120C"
+   ],
+   "prompt": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "describe": "an entry it could not read",
+   "waitingSoon": null,
+   "waitingLater": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "wants": false,
+   "wantsOff": false,
+   "wantsTyped": false,
+   "wantsOldKey": false
+  }
+ ],
+ "screen": [
+  {
+   "in": "",
+   "out": ""
+  },
+  {
+   "in": "plain \u001b[1mbold\u001b[0m",
+   "out": "plain bold"
+  },
+  {
+   "in": "a\u001b[3Cb\u001b[Cc\u001b[0Cd\u001b[999Ce",
+   "out": "a   b c d                                                                                                                                                                                                        e"
+  },
+  {
+   "in": "x\u001b[5;10Hy\u001b[Hz\u001b[7fq",
+   "out": "x\ny\nz\nq"
+  },
+  {
+   "in": "\u001b]0;title\u0007after\u001b]8;;http://x\u001b\\link",
+   "out": "afterlink"
+  },
+  {
+   "in": "cut \u001b[?25l\u001b[2J\u001b=\u001b>end",
+   "out": "cut end"
+  },
+  {
+   "in": "\u001b[38;2;1;2;3mrgb\u001b[m \u001b[ q \u001b[!p",
+   "out": "rgb  "
+  },
+  {
+   "in": "half \u001b[12",
+   "out": "half \u001b[12"
+  },
+  {
+   "in": "osc open \u001b]0;never closed",
+   "out": "osc open \u001b]0;never closed"
+  },
+  {
+   "in": "❯ 1. Continue x",
+   "out": "❯ 1. Continue x"
+  }
+ ],
+ "split": [
+  {
+   "in": "",
+   "whole": "",
+   "rest": ""
+  },
+  {
+   "in": "plain \u001b[1mbold\u001b[0m",
+   "whole": "plain \u001b[1mbold\u001b[0m",
+   "rest": ""
+  },
+  {
+   "in": "a\u001b[3Cb\u001b[Cc\u001b[0Cd\u001b[999Ce",
+   "whole": "a\u001b[3Cb\u001b[Cc\u001b[0Cd\u001b[999Ce",
+   "rest": ""
+  },
+  {
+   "in": "x\u001b[5;10Hy\u001b[Hz\u001b[7fq",
+   "whole": "x\u001b[5;10Hy\u001b[Hz\u001b[7fq",
+   "rest": ""
+  },
+  {
+   "in": "\u001b]0;title\u0007after\u001b]8;;http://x\u001b\\link",
+   "whole": "\u001b]0;title\u0007after\u001b]8;;http://x\u001b\\link",
+   "rest": ""
+  },
+  {
+   "in": "cut \u001b[?25l\u001b[2J\u001b=\u001b>end",
+   "whole": "cut \u001b[?25l\u001b[2J\u001b=\u001b>end",
+   "rest": ""
+  },
+  {
+   "in": "\u001b[38;2;1;2;3mrgb\u001b[m \u001b[ q \u001b[!p",
+   "whole": "\u001b[38;2;1;2;3mrgb\u001b[m \u001b[ q \u001b[!p",
+   "rest": ""
+  },
+  {
+   "in": "half \u001b[12",
+   "whole": "half ",
+   "rest": "\u001b[12"
+  },
+  {
+   "in": "osc open \u001b]0;never closed",
+   "whole": "osc open ",
+   "rest": "\u001b]0;never closed"
+  },
+  {
+   "in": "❯ 1. Continue x",
+   "whole": "❯ 1. Continue x",
+   "rest": ""
+  },
+  {
+   "in": "done\u001b[1m",
+   "whole": "done\u001b[1m",
+   "rest": ""
+  },
+  {
+   "in": "tail \u001b",
+   "whole": "tail ",
+   "rest": "\u001b"
+  },
+  {
+   "in": "tail \u001b[",
+   "whole": "tail ",
+   "rest": "\u001b["
+  },
+  {
+   "in": "tail \u001b]",
+   "whole": "tail ",
+   "rest": "\u001b]"
+  },
+  {
+   "in": "tail \u001bM",
+   "whole": "tail \u001bM",
+   "rest": ""
+  },
+  {
+   "in": "tail \u001b\u001b",
+   "whole": "tail \u001b",
+   "rest": "\u001b"
+  },
+  {
+   "in": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz\u001b[",
+   "whole": "zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+   "rest": "\u001b["
+  },
+  {
+   "in": "\u001b[1zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+   "whole": "\u001b[1zzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzzz",
+   "rest": ""
+  },
+  {
+   "in": "two \u001b]0;a\u0007 and \u001b]0;b",
+   "whole": "two \u001b]0;a\u0007 and ",
+   "rest": "\u001b]0;b"
+  }
+ ],
+ "classify": [
+  {
+   "in": "nothing here",
+   "out": null,
+   "describe": ""
+  },
+  {
+   "in": "Enter to confirm",
+   "out": {
+    "kind": "other",
+    "title": "a prompt"
+   },
+   "describe": "an entry it could not read"
+  },
+  {
+   "in": "Do you trust?\n❯ Yes, I trust this folder\n  No, exit\nEnter to confirm",
+   "out": {
+    "kind": "trust",
+    "title": "trust prompt"
+   },
+   "describe": "an entry it could not read"
+  },
+  {
+   "in": "New MCP server found\nEnter to confirm",
+   "out": {
+    "kind": "mcp",
+    "title": "MCP server prompt"
+   },
+   "describe": "an entry it could not read"
+  },
+  {
+   "in": "Settings Warning\n C:\\Users\\x\\.claude\\settings.json\n  └ Invalid permission rule \"gh workflow\n run apply.yml\"\n  └ second   error\nThe values listed will be skipped\n❯ 1. Continue\n  2. Fix with Claude\n  3. Exit and fix manually\nEnter to confirm",
+   "out": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": true,
+    "rules": [
+     "gh workflow run apply.yml"
+    ],
+    "errors": [
+     "Invalid permission rule \"gh workflow run apply.yml\"",
+     "second error"
+    ],
+    "file": "C:\\Users\\x\\.claude\\settings.json"
+   },
+   "describe": "\"gh workflow run apply.yml\" in C:\\Users\\x\\.claude\\settings.json"
+  },
+  {
+   "in": "Settings Warning\n C:\\Users\\x y\\.claude\\set\ntings.json\n  └ broken thing\n  1. Continue\n❯ 3. Exit and fix manually\nEnter to confirm",
+   "out": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": false,
+    "rules": [],
+    "errors": [
+     "broken thing 1. Continue"
+    ],
+    "file": "C:\\Users\\x y\\.claude\\settings.json"
+   },
+   "describe": "broken thing 1. Continue in C:\\Users\\x y\\.claude\\settings.json"
+  },
+  {
+   "in": "Settings  Warning with no elbow\nExit and fix manually\nEnter  to  confirm",
+   "out": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": false,
+    "rules": [],
+    "errors": [],
+    "file": null
+   },
+   "describe": "an entry it could not read"
+  },
+  {
+   "in": "Settings Warning\n└└ x\nExit and fix manually Enter to confirm",
+   "out": {
+    "kind": "settings-warning",
+    "title": "settings warning",
+    "continueSelected": false,
+    "rules": [],
+    "errors": [
+     "",
+     "x Exit and fix manually"
+    ],
+    "file": null
+   },
+   "describe": "an entry it could not read"
+  }
+ ],
+ "trust": {
+  "cases": [
+   {
+    "text": "",
+    "seen": false,
+    "option": false,
+    "marker": ""
+   },
+   {
+    "text": "Quick safety check",
+    "seen": true,
+    "option": false,
+    "marker": ""
+   },
+   {
+    "text": "Quick\n safety  check: is this a project you trust?",
+    "seen": true,
+    "option": false,
+    "marker": ""
+   },
+   {
+    "text": "\n ❯ Yes, I trust this folder\n   No, exit",
+    "seen": true,
+    "option": true,
+    "marker": "yes"
+   },
+   {
+    "text": "\n   Yes, I trust this folder\n > No, exit",
+    "seen": true,
+    "option": true,
+    "marker": "no"
+   },
+   {
+    "text": "\n> No, exit\n❯ Yes, I trust this folder",
+    "seen": true,
+    "option": true,
+    "marker": "yes"
+   },
+   {
+    "text": "\n❯Yes, I trust",
+    "seen": false,
+    "option": false,
+    "marker": ""
+   },
+   {
+    "text": "x\n\t❯\tNo,\n exit",
+    "seen": false,
+    "option": false,
+    "marker": "no"
+   },
+   {
+    "text": "❯ Yes, I trust this folder",
+    "seen": true,
+    "option": true,
+    "marker": ""
+   },
+   {
+    "text": "Yes, I trust this folder",
+    "seen": true,
+    "option": true,
+    "marker": ""
+   },
+   {
+    "text": "Yes, I trust this  folderish",
+    "seen": true,
+    "option": true,
+    "marker": ""
+   },
+   {
+    "text": "\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────Accessingworkspace:C:\\Users\\demo\\Documents\\GitHub\\claude-deck\u001b[29;2HQuicksafetycheck:Isthisaprojectyoucreatedoroneyoutrust?(Likeyourowncode,awell-knownopensourceproject,orworkfromyourteam).Ifnot,takeamomenttoreviewwhat'sinthisfolderfirst.\r\n\r\n Claude Code'll be able to read, edit, and execute files here.\r\n\r\n \u001b]8;id=u-zaxmda%5166649326141359084;https://code.claude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\r\n\r\n ❯ No, exit\r\n   Yes, I trust this folder\r\n\r\n Enter to confirm · Esc to cancel\u001b[87C\u001b[>0q\u001b]7501;?\u0007\r\n",
+    "seen": true,
+    "option": true,
+    "marker": "no"
+   }
+  ],
+  "append": [
+   {
+    "text": "",
+    "d": "a\u001b[1mb\u001b[0mc",
+    "out": "abc"
+   },
+   {
+    "text": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+    "d": "yz\u001b[2J!",
+    "out": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxyz!"
+   },
+   {
+    "text": "",
+    "d": "\u001b[?25lq\u001b[12;3Hr\u001b]0;t\u0007",
+    "out": "qr\u001b]0;t\u0007"
+   },
+   {
+    "text": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀",
+    "d": "ab",
+    "out": "😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀😀ab"
+   }
+  ],
+  "raw": {
+   "chunks": [
+    "\u001b[?2026h\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────\u001b[25;2HAccessing\u001b[1Cworkspace:\u001b[27;2HC:\\Users\\demo\\Documents\\GitHub\\claude-deck\u001b[",
+    "29;2HQuick\u001b[1Csafety\u001b[1Ccheck:\u001b[1CIs\u001b[1Cthis\u001b[1Ca\u001b[1Cproject\u001b[1Cyou\u001b[1Ccreated\u001b[1Cor\u001b[1Cone\u001b[1Cyou\u001b[1Ctrust?\u001b[1C(Like\u001b[1Cyour\u001b[1Cown\u001b[1Ccode,\u001b[1Ca\u001b[1Cwell-known\u001b[1Copen\u001b[1Csource\u001b[30;2Hproject,\u001b[1Cor\u001b[1Cwork\u001b[1C",
+    "from\u001b[1Cyour\u001b[1Cteam).\u001b[1CIf\u001b[1Cnot,\u001b[1Ctake\u001b[1Ca\u001b[1Cmoment\u001b[1Cto\u001b[1Creview\u001b[1Cwhat's\u001b[1Cin\u001b[1Cthis\u001b[1Cfolder\u001b[1Cfirst.\r\n\u001b[120C\r\n Claude Code'll be able to read, edit, and execute files here.\u001b[58C\r\n\u001b[120C\r\n \u001b]8;",
+    "id=u-zaxmda%5166649326141359084;https://code.claude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\u001b[K\u001b[105C\r\n\u001b[120C\r\n ❯ No, exit\u001b[109C\r\n   Yes, I trust this folder\u001b[93C\r\n\u001b[120C\r\n Enter to confirm · Esc to cancel\u001b[8",
+    "7C\u001b[?2026l\u001b[>0q\u001b[?u\u001b]7501;?\u0007\r\n\u001b[120C"
+   ],
+   "text": "\r\n────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────Accessingworkspace:C:\\Users\\demo\\Documents\\GitHub\\claude-deck\u001b[29;2HQuicksafetycheck:Isthisaprojectyoucreatedoroneyoutrust?(Likeyourowncode,awell-knownopensourceproject,orworkfromyourteam).Ifnot,takeamomenttoreviewwhat'sinthisfolderfirst.\r\n\r\n Claude Code'll be able to read, edit, and execute files here.\r\n\r\n \u001b]8;id=u-zaxmda%5166649326141359084;https://code.claude.com/docs/en/security\u001b\\Security guide\u001b]8;;\u001b\\\r\n\r\n ❯ No, exit\r\n   Yes, I trust this folder\r\n\r\n Enter to confirm · Esc to cancel\u001b[87C\u001b[>0q\u001b]7501;?\u0007\r\n"
+  }
+ }
+}

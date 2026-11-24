@@ -1,0 +1,242 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self' data:; frame-src 'self' file:">
+  <title>Claude Deck</title>
+  <link rel="stylesheet" href="../node_modules/@xterm/xterm/css/xterm.css">
+  <link rel="stylesheet" href="../assets/fonts/fonts.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <aside id="sidebar">
+      <div id="tiles"></div>
+      <div id="sb-bottom">
+        <!-- the tooltip is renamed at boot to the platform's shell: "New PowerShell terminal" / "New zsh terminal" -->
+        <div id="new-tile" class="tile new-tile" title="New terminal">
+          <div class="t-top"><span class="t-title">New terminal</span><span class="t-age">+</span></div>
+          <div class="new-accts"></div>
+          <!-- past and elsewhere span the bottom of the tile, equal halves -->
+          <span class="new-links"><button id="pull-btn" class="pull-btn" title="Claude sessions running in other windows: bring one in here">Elsewhere</button><button id="past-btn" class="pull-btn" title="Sessions on disk that are not open: reopen one">Past</button></span>
+        </div>
+        <div id="pull-menu" class="menu" hidden></div>
+        <div id="search-pane" class="search-pane" hidden>
+          <input id="search-input" type="text" placeholder="search sessions (title, message, account)" spellcheck="false">
+          <span id="search-count" class="hint"></span>
+          <button id="search-clear" class="icon-btn" title="Clear">×</button>
+        </div>
+        <!-- restart when quiet: what it waits on, or the offer when the deck's own code changed or is behind origin/main (js/82-restart.js) -->
+        <div id="restart-strip" class="restart-strip" hidden>
+          <div class="rs-title"></div>
+          <div class="rs-code" hidden></div>
+          <div class="rs-list"></div>
+          <div class="rs-actions"><span class="rs-note hint"></span><button data-act="update" title="git pull --ff-only origin main in the deck's folder, then restart when every session is quiet">Update</button><button data-act="arm">Restart when quiet</button><button data-act="later">Later</button><button data-act="now">Now</button><button data-act="cancel">Cancel</button></div>
+        </div>
+        <div id="sb-tools">
+          <button id="collapse" class="collapse-btn" title="Hide sidebar">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 6l-6 6 6 6"/></svg>
+            <span id="clock"></span>
+          </button>
+          <button id="search-btn" class="icon-btn" title="Search sessions (local)">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l5 5"/></svg>
+          </button>
+          <button id="groups-btn" class="icon-btn" title="Grouped view (left click) · new group (right click)">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 6h16M4 12h16M4 18h16"/><path d="M8 9v0M8 15v0" stroke-width="3"/></svg>
+          </button>
+          <button id="msgs-btn" class="icon-btn" title="Show / hide recent messages">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-8 8H7l-4 3V12a8 8 0 0 1 8-8h2a8 8 0 0 1 8 8z"/><path class="msgs-line" d="M8 11h8M8 14h5"/></svg>
+          </button>
+          <button id="bars-btn" class="icon-btn" title="Show / hide usage bars">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path class="bars-line" d="M4 7h16M4 12h11M4 17h7"/><path class="bars-slash" d="M5 20L19 4"/></svg>
+          </button>
+          <span class="tools-right">
+          <button id="moveall-btn" class="icon-btn" title="Open all sessions of one account as another">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h13M13 4l4 4-4 4"/><path d="M20 16H7M11 12l-4 4 4 4"/></svg>
+          </button>
+          <!-- who drives the size (js/80-sidebar.js paintDrive): the ICON is who — a monitor (the office deck), a phone,
+               two screens (the remote desk), an eye (auto: whoever is looking) — and the COLOUR is whether that is this screen -->
+          <button id="drive-btn" class="icon-btn drive-auto" data-driver="auto" title="Who drives the size of the sessions">
+            <svg class="drv drv-office" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12.5" rx="1.5"/><path d="M8.5 20.5h7M12 16.5v4"/></svg>
+            <svg class="drv drv-phone" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2"/><path d="M11 18h2"/></svg>
+            <svg class="drv drv-remote" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="8.5" y="3.5" width="12.5" height="9.5" rx="1.5"/><path d="M5.5 8.5h-1A1.5 1.5 0 0 0 3 10v8a1.5 1.5 0 0 0 1.5 1.5h10A1.5 1.5 0 0 0 16 18v-2"/></svg>
+            <svg class="drv drv-auto" viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 12s3.5-6.5 9.5-6.5 9.5 6.5 9.5 6.5-3.5 6.5-9.5 6.5S2.5 12 2.5 12z"/><circle cx="12" cy="12" r="2.6"/></svg>
+          </button>
+          <button id="restart-btn" class="icon-btn" title="Restart the deck when every session is quiet">
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.34-5.66"/><path d="M20 4.5v4.5h-4.5"/></svg>
+          </button>
+          <button id="settings-btn" class="icon-btn" title="Settings">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1z"/></svg>
+          </button>
+          </span>
+        </div>
+        <div id="moveall-menu" class="menu" hidden>
+          <div class="menu-title fit-title">Open sessions of one account as another</div>
+          <div class="move-mode"><button id="move-mode-all" class="mode-btn on">all</button><button id="move-mode-these" class="mode-btn">these</button></div>
+          <div class="move-all">
+            <div class="move-line"><select id="move-from"></select></div>
+            <div id="move-from-bars" class="t-bars acct-bars"></div>
+            <div class="move-line"><span>as</span><select id="move-to"></select></div>
+            <div id="move-to-bars" class="t-bars acct-bars"></div>
+          </div>
+          <div id="move-pick" class="move-pick" hidden></div>
+          <input id="move-advanced" type="checkbox" hidden>
+          <label class="move-opt"><input id="move-continue" type="checkbox"><span>say <code>continue</code> where the last message was a usage notice</span></label>
+          <div class="move-actions"><span id="move-all-confirm" class="hint"></span><button id="move-all-btn">Go</button></div>
+        </div>
+      </div>
+      <div id="settings" class="panel" hidden>
+        <div class="panel-head"><span>Settings</span><span class="panel-head-actions"><span id="settings-status" class="hint"></span><button id="settings-close" class="head-btn">Cancel</button><button id="settings-save" class="head-btn primary">Save</button></span></div>
+        <div class="panel-body">
+          <h3>Accounts</h3>
+          <p class="hint">One row per Claude account: the keyword(s) you type to run it, its config folder, and the short label shown in the sidebar. Saving writes the alias file that userswitch reads too. Sign in from the row's button once; the email appears after.</p>
+          <div id="alias-rows"></div>
+          <button id="acct-add" class="small-btn">+ add account</button>
+          <h3>Tiles</h3>
+          <div class="field"><span>Effort level shown as</span>
+            <select id="set-effort"><option value="tag">tag</option><option value="color">color (left border; whole border when selected)</option><option value="none">nothing</option></select>
+          </div>
+          <div class="field"><span>Sidebar on the</span>
+            <select id="set-side"><option value="left">left</option><option value="right">right</option></select>
+          </div>
+          <div class="field"><span>Pin sits on the</span>
+            <select id="set-pinside"><option value="edge">window edge</option><option value="centre">terminal side</option></select>
+          </div>
+          <div class="field"><span>Size is driven by</span>
+            <select id="set-driver"><option value="auto">auto: whoever is looking (a phone, else a remote desk, else the office deck)</option><option value="office">the office deck (the deck's own windows)</option><option value="phone">the phone</option><option value="remote">the remote desk (for the sessions it shows)</option></select>
+          </div>
+          <div class="field"><span>Away after</span><span class="inline-fields"><input id="set-away" type="number" min="0" max="1440" title="The sessions the deck hosts can read where you are (deck-state.json): the office PC, a remote desk, or the phone - wherever you typed last. After this long with no input anywhere it says 'away'."> <span class="hint">minutes with no input on any screen (0 = never); what sessions read as "away"</span></span></div>
+          <div class="field"><span>Preview lines</span>
+            <span class="inline-fields"><input id="set-msg-normal" type="number" min="1" max="40" title="normal"> <span class="hint">normal</span>
+            <input id="set-msg-wide" type="number" min="1" max="40" title="sidebar wider than 400px"> <span class="hint">wide</span></span>
+          </div>
+          <h3>Layout</h3>
+          <p class="hint">The terminal area is a grid of up to 4&times;4. Place a session with the number keys (hold the cells you want, in reading order &mdash; <code>1&nbsp;2&nbsp;3</code> top row, <code>4&nbsp;5&nbsp;6</code> next &mdash; and release) or by dragging a tile onto it. One shape for the whole deck; changing it clears the current arrangement.</p>
+          <div class="field"><span>Grid</span><span class="inline-fields"><input id="set-grid-rows" type="number" min="1" max="4"> <span class="hint">rows</span> <span class="hint">&times;</span> <input id="set-grid-cols" type="number" min="1" max="4"> <span class="hint">cols</span></span></div>
+          <label class="field check"><span>A session shows in one window at a time</span><input id="set-one-window" type="checkbox"></label>
+          <p class="hint">On: moving a session to another window removes it from the one it was in (growing into a neighbouring region never removes). Off: it can be on screen in several windows; the focused window drives its size.</p>
+          <label class="field check"><span>Esc during an F11 / F12 walk returns to where you started</span><input id="set-step-esc" type="checkbox"></label>
+          <p class="hint">Stepping with F11 / F12 (or Up / Down) is a preview until you click or type; the first Esc undoes the walk and reaches no session.</p>
+          <h3>Asks</h3>
+          <p class="hint">Claude sessions can put their questions for you on an ask page (the ask-page skill) instead of in their terminal: one card per question, answered with a click or a note. The asks tile at the top of the sidebar lists every session's, sessions outside the deck included: click it to answer them (F6 or F7 closes); F7 on a session shows just its own. Done types your answers into the session.</p>
+          <div class="subhead">How sessions in the deck ask you</div>
+          <label class="field check" title="On: sessions use ask pages, by the rules below.&#10;Off: sessions in the deck never make a page; every question is asked in their terminal, Claude Code&#39;s own picker included. Nothing new shows in the asks tile (the recently answered stay)."><span>Use ask pages</span><input id="set-ask-pages" type="checkbox"></label>
+          <div class="field ask-dep" title="A session puts its questions on a page when it has MORE than this many at once; at or under it, it asks in its terminal.&#10;Blank = the skill&#39;s own number (3). 0 = always the page, never the terminal. A big number (99) = practically never a page by itself."><span>A page when a session has more than</span><span class="inline-fields"><input id="set-ask-threshold" type="number" min="0" max="999" placeholder="3"> <span class="hint">questions</span></span></div>
+          <label class="field check ask-dep" title="On: a question asked in the terminal (at or under the number above, or in Claude Code&#39;s own picker) also gets a page in the asks tile. Answer it in either place; answered from the tile, Done types your answers into the session and it carries on.&#10;Off: terminal questions stay in the terminal only."><span>Also list terminal questions in the asks tile</span><input id="set-ask-background" type="checkbox"></label>
+          <div class="field ask-dep" title="Claude Code&#39;s own question picker (the numbered options in the terminal).&#10;Shown: it appears as usual, with the same questions on a page beside it (F7); answer either one.&#10;Not shown: the session puts its questions on a page instead, and waits for your Done."><span>Claude Code&#39;s own question picker</span>
+            <select id="set-ask-picker"><option value="alongside">shown, with a page beside it</option><option value="pane">not shown: its questions go on a page</option></select>
+          </div>
+          <p class="hint ask-recipe" title="Every question in the terminal, every one answerable from the asks tile:&#10;1. Use ask pages: on&#10;2. A page when more than: 99 (no page on its own)&#10;3. Also list terminal questions in the asks tile: on&#10;4. Claude Code&#39;s own question picker: shown&#10;Each question then appears in its session&#39;s terminal AND in the asks tile. Answer in the terminal as usual, or in the tile: Done saves your answers to a file and tells the session where it is in one line; it reads them and carries on.">&#9432; Questions in the terminal, answers from the asks tile too: hover here for the settings that do it.</p>
+          <div class="subhead">What the deck shows</div>
+          <label class="field check" title="The asks tile at the top of the sidebar: every session&#39;s waiting questions and the recently answered ones. Off hides it; F7 on a session and the palette still open the asks."><span>The asks tile at the top of the sidebar</span><input id="set-ask-tile" type="checkbox"></label>
+          <label class="field check" title="A small ? mark with the number of questions on a session&#39;s tile and on its pane name: hollow = waiting, filled = answers in progress, a tick = sent and not yet read. Off hides the marks (the asks tile keeps its own)."><span>Ask marks on session tiles and panes</span><input id="set-ask-marks" type="checkbox"></label>
+          <div class="subhead">After Done</div>
+          <label class="field check" title="On: Done closes a session&#39;s ask. F7 on that session shows what you sent, read-only, until it asks again. In the every-session view (F6 on the asks tile) it closes only when no other session is waiting.&#10;Off: it stays open, showing your answers read-only."><span>Close the ask (F7 shows your answers again, read-only)</span><input id="set-ask-close" type="checkbox"></label>
+          <p class="hint">Sessions in the deck read the first four at their next question (the deck writes them to deck.json in the skill&#39;s state folder). Sessions outside the deck keep the skill&#39;s own settings.</p>
+          <h3>Sleep</h3>
+          <p class="hint">A session nobody is looking at has its process killed and comes back with <code>--resume</code> the moment it is wanted &mdash; on screen, typed into, or holding a prompt that is due. The conversation is untouched and resuming costs no tokens; a Claude process is about 244&nbsp;MB, so this is where the deck&rsquo;s memory goes. A session that is busy, waiting on you, or holding a prompt never sleeps.</p>
+          <label class="field check"><span>Sleep idle sessions</span><input id="set-hib-enabled" type="checkbox"></label>
+          <div class="field"><span>After</span><span class="inline-fields"><input id="set-hib-idle" type="number" min="1" max="1440"> <span class="hint">minutes idle</span></span></div>
+          <label class="field check"><span>Keep pinned sessions awake</span><input id="set-hib-pinned" type="checkbox"></label>
+          <h3>Notifications</h3>
+          <p class="hint">Windows toasts while the deck is not the focused window. Clicking a toast brings the session up.</p>
+          <div class="field labels-field"><span>Toast when</span>
+            <label class="chk"><input id="set-notify-waiting" type="checkbox"> a session waits for you</label>
+            <label class="chk"><input id="set-notify-done" type="checkbox"> a turn finishes</label>
+            <label class="chk"><input id="set-notify-asks" type="checkbox"> a session asks you on a page</label>
+          </div>
+          <div class="field"><span>Only turns longer than</span><span class="inline-fields"><input id="set-notify-min" type="number" min="0" max="3600"> <span class="hint">seconds</span></span></div>
+          <label class="field check"><span>Sound</span><input id="set-notify-sound" type="checkbox"></label>
+          <h3>Graphs</h3>
+          <div class="field labels-field"><span>Labels</span>
+            <label class="chk"><input id="set-lbl-time" type="checkbox"> session</label>
+            <label class="chk"><input id="set-lbl-day" type="checkbox"> week</label>
+          </div>
+          <div class="field"><span>Labels show</span>
+            <select id="set-lbl-mode">
+              <option value="reset">reset time and reset day</option>
+              <option value="countdown">time until reset (hours; days for the week, hours under 24 h; one line when both reset together)</option>
+            </select>
+          </div>
+          <div id="bar-rows" class="bar-settings"></div>
+          <h3>Terminal</h3>
+          <label class="field"><span>Font size</span><input id="set-font" type="number" min="9" max="28"></label>
+          <label class="field"><span>Zoomed pane font size</span><input id="set-zoomfont" type="number" min="0" max="40" title="Font size while a pane is zoomed to fill the terminal area (double-click its name / F6). 0 = same as Font size."></label>
+          <div class="field font-field"><span>Font</span>
+            <select id="set-fontsel" title="Bundled fonts and ones you have used before"></select>
+            <input id="set-fontfamily" type="text" spellcheck="false" placeholder="or type a font name">
+          </div>
+          <p class="hint">Bundled with the deck (no install needed): Reddit Mono, JetBrains Mono, Fira Code, Source Code Pro, IBM Plex Mono, Inconsolata, Ubuntu Mono. Any font installed on this machine works too. Blank = Cascadia Mono. Licenses: assets/fonts/LICENSES.md.</p>
+          <label class="field"><span>New session folder</span><input id="set-cwd" type="text" spellcheck="false"></label>
+          <label class="field check"><span>Answer the home-folder trust prompt automatically</span><input id="set-autotrust" type="checkbox"></label>
+          <div class="field"><span>Large-session resume prompt</span>
+            <select id="set-resume"><option value="ask">ask me each time</option><option value="full">always resume the full session</option><option value="never">full session, and tell Claude not to ask again for that session</option><option value="summary">always resume from summary</option></select>
+          </div>
+          <p class="hint">Claude Code asks this whenever a big session is resumed, which the deck does on every restart, refresh and account move; the prompt itself costs nothing. Full keeps every detail (the first message afterwards re-reads the history once); summary shrinks the context so later turns cost less. Only "don't ask again" is remembered by Claude Code, per session.</p>
+          <label class="field check"><span>Animations (rainbow drift for max, purple pulse for ultracode)</span><input id="set-anim" type="checkbox"></label>
+          <p class="hint">Claude Code never remembers trust for a session rooted at your home folder, so it asks on every launch. With this on, the deck picks "Yes, I trust this folder" for you.</p>
+          <label class="field check"><span>Type each file an auditor writes into its child without asking (off: each waits on the child's tile for Send)</span><input id="set-auditor-autosend" type="checkbox"></label>
+          <label class="field check"><span>Send RESUME after a restart to paused sessions</span><input id="set-resume-after-restart" type="checkbox"></label>
+          <p class="hint">At the deck's next start, each tile still marked paused (the deck's Pause, or a PAUSE pasted into the session) gets the RESUME prompt by itself once its session is up and idle. Off: only "Pause until restart" tiles do; the others keep their mark until their next prompt.</p>
+          <p class="hint">An auditor session (tile menu: Prompts, Make auditor) writes to-&lt;n&gt;.md in its inbox for its child n; the deck types that file into the child as your own message once the child is idle, and moves it to sent. A to-&lt;n&gt;.now.md file is typed at once, interrupting the child's turn (Esc). The inbox's log.md has one line per delivery or refusal.</p>
+          <h3>Phone</h3>
+          <p class="hint">Serves this deck as a phone-sized page: the same tiles, usage bars and account moves, plus the terminals themselves. It listens on the Tailscale interface only — not the house LAN, never the internet — and the token in the link guards it anyway. The sessions stay on this PC; the phone is a second view of them.</p>
+          <label class="field check"><span>Serve the phone view</span><input id="set-phone-on" type="checkbox"></label>
+          <div class="field"><span>Port</span><span class="inline-fields"><input id="set-phone-port" type="number" min="1024" max="65535"></span></div>
+          <div class="field"><span>Listen on</span>
+            <select id="set-phone-bind">
+              <option value="tailscale">the Tailscale interface only</option>
+              <option value="all">every interface (the house LAN too)</option>
+              <option value="localhost">localhost only (behind Tailscale Serve)</option>
+            </select>
+          </div>
+          <div class="field"><span>Link</span><span class="inline-fields"><button id="phone-copy" class="small-btn">copy</button><button id="phone-newtoken" class="small-btn danger">new token</button></span></div>
+          <textarea id="set-phone-url" class="phone-url" readonly rows="2" spellcheck="false" title="Click to copy the link"></textarea>
+          <p class="hint" id="phone-state"></p>
+          <div class="field"><span>Pages on the phone</span></div>
+          <textarea id="set-phone-pages" class="phone-url phone-pages" rows="3" spellcheck="false" placeholder="Report = C:\Users\you\report.html"></textarea>
+          <p class="hint">One per line, <code>Label = full path of an .html file</code>. Each becomes a button in the phone's top bar that opens the file as it is on this PC now (and any .html file beside it that the page links to). For self-contained pages, like a report a scheduled job rewrites.</p>
+        </div>
+      </div>
+      <div id="sb-resize" title="Drag to resize"></div>
+    </aside>
+    <div id="rail" hidden>
+      <button id="expand" class="icon-btn" title="Show sidebar">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+      </button>
+    </div>
+    <main id="main">
+      <div id="empty">No session selected. Use the tile at the bottom of the sidebar to start one.</div>
+    </main>
+  </div>
+  <div id="palette" class="palette" hidden>
+    <div class="pal-box">
+      <input id="palette-input" type="text" placeholder="type a command or a session name" spellcheck="false">
+      <div id="palette-list" class="pal-list"></div>
+    </div>
+  </div>
+  <script src="../node_modules/@xterm/xterm/lib/xterm.js"></script>
+  <script src="../node_modules/@xterm/addon-fit/lib/addon-fit.js"></script>
+  <script src="js/00-state.js"></script>
+  <script src="js/10-format.js"></script>
+  <script src="js/20-terminals.js"></script>
+  <script src="../lib/layout.js"></script>
+  <script src="js/25-layout.js"></script>
+  <script src="js/30-tiles.js"></script>
+  <script src="js/35-groups.js"></script>
+  <script src="js/40-new-tile.js"></script>
+  <script src="js/45-elsewhere.js"></script>
+  <script src="js/46-search.js"></script>
+  <script src="js/47-past.js"></script>
+  <script src="js/48-cloud.js"></script>
+  <script src="js/49-asks.js"></script>
+  <script src="js/50-settings.js"></script>
+  <script src="js/60-move.js"></script>
+  <script src="js/70-meta.js"></script>
+  <script src="js/80-sidebar.js"></script>
+  <script src="js/82-restart.js"></script>
+  <script src="js/85-focus.js"></script>
+  <script src="js/88-palette.js"></script>
+  <script src="js/90-boot.js"></script>
+</body>
+</html>
